@@ -1,0 +1,17 @@
+C:\Users\catac\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP_CAI.Form1.resources
+C:\Users\catac\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.csproj.GenerateResource.cache
+C:\Users\catac\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\catac\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.AssemblyInfoInputs.cache
+C:\Users\catac\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.AssemblyInfo.cs
+C:\Users\catac\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.csproj.CoreCompileInputs.cache
+C:\Users\catac\source\repos\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.exe
+C:\Users\catac\source\repos\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.deps.json
+C:\Users\catac\source\repos\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.runtimeconfig.json
+C:\Users\catac\source\repos\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.dll
+C:\Users\catac\source\repos\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.pdb
+C:\Users\catac\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.dll
+C:\Users\catac\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\refint\TP CAI.dll
+C:\Users\catac\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.pdb
+C:\Users\catac\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.genruntimeconfig.cache
+C:\Users\catac\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\ref\TP CAI.dll
+C:\Users\catac\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\Properties.Resources.resources
