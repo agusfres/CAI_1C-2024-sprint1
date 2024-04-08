@@ -112,7 +112,25 @@ namespace TP_CAI
         {
             string msgError = "";
             msgError = msgError + validarLongitud(texto, campo, 1, 50);
+
+            if (contieneNumeros(texto))
+            {
+                msgError += "El campo " + campo + " no debe contener números." + System.Environment.NewLine;
+            }
+
             error = msgError;
+        }
+
+        private bool contieneNumeros(string texto)
+        {
+            foreach (char c in texto)
+            {
+                if (char.IsDigit(c))
+                {
+                    return true;
+                }
+            }
+            return false;
         }
 
 
@@ -123,7 +141,7 @@ namespace TP_CAI
 
             if (campo == "Email")
             {
-                if (texto.Contains("@"))
+                if (texto.Contains("@") && texto.IndexOf("@") > 0 && texto.LastIndexOf("@") < texto.Length - 1)
                 {
                     msgError = msgError + "";
                 }
@@ -191,7 +209,7 @@ namespace TP_CAI
         public void validarTipoUsuario(string texto, string campo, ref string error)
         {
             string msgError = "";
-            List<string> opciones = new List<string>() { "1. Vendedor ", "2. Supervisor ", "3. Vendedor " };
+            List<string> opciones = new List<string>() { "1. Vendedor ", "2. Supervisor ", "3. Administrador " };
             msgError = msgError + validarVacio(texto, campo);
             if (!opciones.Contains(texto))
             {

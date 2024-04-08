@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\agust\\Downloads\\FACULTAD\\2024\\cai\\prueba-main\\prueba-main\\TP CAI\\TP CAI\\TP CAI.csproj": {}
+    "C:\\Users\\agust\\Downloads\\FACULTAD\\2024\\cai\\lauti sabado\\prueba-main - Copy\\prueba-main - Copy\\prueba-main\\TP CAI\\TP CAI\\TP CAI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\agust\\Downloads\\FACULTAD\\2024\\cai\\prueba-main\\prueba-main\\TP CAI\\TP CAI\\TP CAI.csproj": {
+    "C:\\Users\\agust\\Downloads\\FACULTAD\\2024\\cai\\lauti sabado\\prueba-main - Copy\\prueba-main - Copy\\prueba-main\\TP CAI\\TP CAI\\TP CAI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\agust\\Downloads\\FACULTAD\\2024\\cai\\prueba-main\\prueba-main\\TP CAI\\TP CAI\\TP CAI.csproj",
+        "projectUniqueName": "C:\\Users\\agust\\Downloads\\FACULTAD\\2024\\cai\\lauti sabado\\prueba-main - Copy\\prueba-main - Copy\\prueba-main\\TP CAI\\TP CAI\\TP CAI.csproj",
         "projectName": "TP CAI",
-        "projectPath": "C:\\Users\\agust\\Downloads\\FACULTAD\\2024\\cai\\prueba-main\\prueba-main\\TP CAI\\TP CAI\\TP CAI.csproj",
+        "projectPath": "C:\\Users\\agust\\Downloads\\FACULTAD\\2024\\cai\\lauti sabado\\prueba-main - Copy\\prueba-main - Copy\\prueba-main\\TP CAI\\TP CAI\\TP CAI.csproj",
         "packagesPath": "C:\\Users\\agust\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\agust\\Downloads\\FACULTAD\\2024\\cai\\prueba-main\\prueba-main\\TP CAI\\TP CAI\\obj\\",
+        "outputPath": "C:\\Users\\agust\\Downloads\\FACULTAD\\2024\\cai\\lauti sabado\\prueba-main - Copy\\prueba-main - Copy\\prueba-main\\TP CAI\\TP CAI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\agust\\AppData\\Roaming\\NuGet\\NuGet.Config",

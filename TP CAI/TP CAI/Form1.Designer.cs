@@ -64,7 +64,9 @@
             cmbTipoUsuario = new ComboBox();
             btnConfirmar = new ePOSOne.btnProduct.Button_WOC();
             lblconfirma = new Label();
+            pictureBox2 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -378,7 +380,7 @@
             btnConfirmar.FlatAppearance.BorderSize = 0;
             btnConfirmar.FlatStyle = FlatStyle.Flat;
             btnConfirmar.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnConfirmar.Location = new Point(351, 418);
+            btnConfirmar.Location = new Point(351, 433);
             btnConfirmar.Name = "btnConfirmar";
             btnConfirmar.OnHoverBorderColor = Color.Gray;
             btnConfirmar.OnHoverButtonColor = Color.FromArgb(255, 192, 192);
@@ -399,6 +401,16 @@
             lblconfirma.Name = "lblconfirma";
             lblconfirma.Size = new Size(0, 20);
             lblconfirma.TabIndex = 46;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(-2, -1);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(780, 568);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 47;
+            pictureBox2.TabStop = false;
             // 
             // Form1
             // 
@@ -440,6 +452,7 @@
             Controls.Add(lblApellido);
             Controls.Add(lblNombre);
             Controls.Add(lblTitulo);
+            Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             ForeColor = Color.Red;
             FormBorderStyle = FormBorderStyle.None;
@@ -447,6 +460,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -489,5 +503,6 @@
         private ComboBox cmbTipoUsuario;
         private ePOSOne.btnProduct.Button_WOC btnConfirmar;
         private Label lblconfirma;
+        private PictureBox pictureBox2;
     }
 }

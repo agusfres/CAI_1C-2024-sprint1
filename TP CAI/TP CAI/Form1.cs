@@ -83,7 +83,6 @@ namespace TP_CAI
 
                 Usuario usuario = new Usuario(id, txNombre, txApellido, txDireccion, txTelefono, txEmail, DateTime.Now, datetimeTxFechaNac, DateTime.Now, DateTime.Now, txNombreUsuario, intCmTipoUsuario, intTxDNI, txContraseña);
                 usuarios.Add(usuario);
-                MessageBox.Show(id.ToString());
 
                 LimpiarCampos();
 
