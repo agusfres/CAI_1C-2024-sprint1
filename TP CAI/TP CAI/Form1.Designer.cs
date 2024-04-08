@@ -358,6 +358,9 @@
             cmbTipoUsuario.Name = "cmbTipoUsuario";
             cmbTipoUsuario.Size = new Size(253, 23);
             cmbTipoUsuario.TabIndex = 44;
+            cmbTipoUsuario.Items.Add("1. Vendedor ");
+            cmbTipoUsuario.Items.Add("2. Supervisador ");
+            cmbTipoUsuario.Items.Add("3. Administrador ");
             // 
             // btnConfirmar
             // 
@@ -376,6 +379,7 @@
             btnConfirmar.Text = "Confirmar";
             btnConfirmar.TextColor = Color.White;
             btnConfirmar.UseVisualStyleBackColor = true;
+            btnConfirmar.Click += new EventHandler(btnConfirmar_Click);
             // 
             // Form1
             // 
