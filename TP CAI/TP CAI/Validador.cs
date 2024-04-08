@@ -18,16 +18,16 @@ namespace TP_CAI
         }
 
 
-        public void validarContrasena(string texto, string campo, ref string error)
+        public void validarContraseña(string texto, string campo, ref string error)
         {
             string msgError = "";
             msgError = msgError + validarLongitud(texto, campo, 8, 15);
-            msgError = msgError + validarFormatoContrasena(texto, campo);
+            msgError = msgError + validarFormatoContraseña(texto, campo);
             error = msgError;
         }
 
 
-        private string validarFormatoContrasena(string texto, string campo)
+        private string validarFormatoContraseña(string texto, string campo)
         {
             bool flag1 = validarNumeroContra(texto);
             bool flag2 = validarMayusculaContra(texto);
@@ -36,7 +36,7 @@ namespace TP_CAI
             {
                 return "";
             }
-            return "El campo " + campo + " debe contener al menos una mayúscula y un número ";
+            return "La contraseña debe contener al menos una mayúscula y un número. " + System.Environment.NewLine;
         }
 
 
@@ -82,17 +82,17 @@ namespace TP_CAI
         {
             if (usuario.Contains(nombre) || usuario.Contains(apellido))
             {
-                return "El campo " + campo + " no debe contener nombre y/o apellido ";
+                return "El usuario no debe contener nombre y/o apellido. " + System.Environment.NewLine;
             }
             return "";
         }
 
 
-        private string validarLongitud(string texto, string campo, int min , int max)
+        private string validarLongitud(string texto, string campo, int min, int max)
         {
             if (texto.Length < min || texto.Length > max)
             {
-                return "El campo " + campo + " debe tener entre " + min + " y " + max + ".";
+                return "El campo " + campo + " debe tener entre " + min + " y " + max + " caracteres." + System.Environment.NewLine;
             }
             return "";
         }
@@ -100,15 +100,15 @@ namespace TP_CAI
 
         private string validarVacio(string texto, string campo)
         {
-            if (texto.Length == 0 )
+            if (texto.Length == 0)
             {
-                return "El campo " + campo + " no debe estar vacío. ";
+                return "El campo " + campo + " no debe estar vacío. " + System.Environment.NewLine;
             }
             return "";
         }
 
 
-        public void validarTextoUno(string texto, string campo , ref string error)
+        public void validarTextoUno(string texto, string campo, ref string error)
         {
             string msgError = "";
             msgError = msgError + validarLongitud(texto, campo, 1, 50);
@@ -129,7 +129,7 @@ namespace TP_CAI
                 }
                 else
                 {
-                    msgError = msgError + "El campo " + campo + " debe ser una dirección de email.";
+                    msgError = msgError + "El campo " + campo + " debe ser una dirección de email." + System.Environment.NewLine;
                 }
             }
 
@@ -146,11 +146,20 @@ namespace TP_CAI
         }
 
 
+        public void validarTelefono(string texto, string campo, ref string error)
+        {
+            string msgError = "";
+            msgError = msgError + validarLongitud(texto, campo, 8, 10);
+            msgError = msgError + validarFormatoNumero(texto, campo);
+            error = msgError;
+        }
+
+
         private string validarFormatoNumero(string texto, string campo)
         {
             if (!int.TryParse(texto, out int numero))
             {
-                return "El campo " + campo + " debe contener únicamente números.";
+                return "El campo " + campo + " debe contener únicamente números." + System.Environment.NewLine;
             }
             return "";
         }
@@ -160,7 +169,7 @@ namespace TP_CAI
         {
             string msgError = "";
             msgError = msgError + validarVacio(texto, campo);
-            msgError = msgError + validarFormatoFecha(texto, campo,ref salida);
+            msgError = msgError + validarFormatoFecha(texto, campo, ref salida);
             error = msgError;
         }
 
@@ -169,24 +178,24 @@ namespace TP_CAI
         {
             if (!DateTime.TryParseExact(texto, "dd/MM/yyyy", null, System.Globalization.DateTimeStyles.None, out salida))
             {
-                return "El campo " + campo + " debe cumplir el formato DD/MM/AAAA.";
+                return "El campo " + campo + " debe cumplir el formato DD/MM/AAAA." + System.Environment.NewLine;
             }
             else if (salida > DateTime.Today || salida < new DateTime(1924, 1, 1))
             {
-                return "El campo " + campo + " debe ser una fecha válida.";
-             }
-            return "" ;
+                return "El campo " + campo + " debe ser una fecha válida." + System.Environment.NewLine;
+            }
+            return "";
         }
 
 
         public void validarTipoUsuario(string texto, string campo, ref string error)
         {
             string msgError = "";
-            List<string> opciones = new List<string>() {"1. Vendedor ", "2. Supervisor ", "3. Vendedor "};
+            List<string> opciones = new List<string>() { "1. Vendedor ", "2. Supervisor ", "3. Vendedor " };
             msgError = msgError + validarVacio(texto, campo);
             if (!opciones.Contains(texto))
             {
-                msgError = msgError + "El campo " + campo + " debe ser alguna de las opciones indicadas, no escribir";
+                msgError = msgError + "El campo " + campo + " debe ser alguna de las opciones indicadas, no escribir." + System.Environment.NewLine;
             }
             error = msgError;
         }

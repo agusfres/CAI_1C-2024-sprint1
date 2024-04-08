@@ -17,15 +17,15 @@ namespace TP_CAI
         string email;
         DateTime fechaAlta;
         DateTime fechaNac;
-        DateTime fechaBaja;
-        DateTime fechaUltimaAct;
+        DateTime? fechaBaja;
+        DateTime? fechaUltimaAct;
         string nombreUsuario;
         int tipoUsuario;
         int DNI;
         string contraseña;
 
 
-        public Usuario(int id, string nombre, string apellido, string direccion, string telefono, string email, DateTime fechaAlta, DateTime fechaNac, DateTime fechaBaja, DateTime fechaUltimaAct, string nombreUsuario, int tipoUsuario, int DNI, string contraseña)
+        public Usuario(int id, string nombre, string apellido, string direccion, string telefono, string email, DateTime fechaAlta, DateTime fechaNac, DateTime? fechaBaja, DateTime? fechaUltimaAct, string nombreUsuario, int tipoUsuario, int DNI, string contraseña)
         {
             this.id = id;
             this.nombre = nombre;
@@ -41,6 +41,12 @@ namespace TP_CAI
             this.tipoUsuario = tipoUsuario;
             this.DNI = DNI;
             this.contraseña = contraseña;
+        }
+
+
+        public int GetId()
+        {
+            return this.id;
         }
     }
 }

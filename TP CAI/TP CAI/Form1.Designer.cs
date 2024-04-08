@@ -63,147 +63,148 @@
             txtContraseña = new TextBox();
             cmbTipoUsuario = new ComboBox();
             btnConfirmar = new ePOSOne.btnProduct.Button_WOC();
+            lblconfirma = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(-2, 491);
+            pictureBox1.Location = new Point(-2, 525);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(633, 69);
+            pictureBox1.Size = new Size(780, 35);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
             // lblTitulo
             // 
             lblTitulo.AutoSize = true;
-            lblTitulo.Font = new Font("Inter Light", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lblTitulo.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             lblTitulo.ForeColor = Color.DimGray;
-            lblTitulo.Location = new Point(78, 18);
+            lblTitulo.Location = new Point(145, 9);
             lblTitulo.Name = "lblTitulo";
-            lblTitulo.Size = new Size(417, 33);
+            lblTitulo.Size = new Size(433, 31);
             lblTitulo.TabIndex = 1;
             lblTitulo.Text = "AGREGAR UN NUEVO USUARIO";
             // 
             // lblNombre
             // 
             lblNombre.AutoSize = true;
-            lblNombre.Font = new Font("Inter", 11.249999F, FontStyle.Regular, GraphicsUnit.Point);
+            lblNombre.Font = new Font("Microsoft Sans Serif", 11.249999F, FontStyle.Regular, GraphicsUnit.Point);
             lblNombre.ForeColor = Color.DimGray;
-            lblNombre.Location = new Point(46, 70);
+            lblNombre.Location = new Point(46, 46);
             lblNombre.Name = "lblNombre";
-            lblNombre.Size = new Size(66, 19);
+            lblNombre.Size = new Size(62, 18);
             lblNombre.TabIndex = 3;
             lblNombre.Text = "Nombre";
             // 
             // lblApellido
             // 
             lblApellido.AutoSize = true;
-            lblApellido.Font = new Font("Inter", 11.249999F, FontStyle.Regular, GraphicsUnit.Point);
+            lblApellido.Font = new Font("Microsoft Sans Serif", 11.249999F, FontStyle.Regular, GraphicsUnit.Point);
             lblApellido.ForeColor = Color.DimGray;
-            lblApellido.Location = new Point(325, 70);
+            lblApellido.Location = new Point(386, 46);
             lblApellido.Name = "lblApellido";
-            lblApellido.Size = new Size(67, 19);
+            lblApellido.Size = new Size(59, 18);
             lblApellido.TabIndex = 4;
             lblApellido.Text = "Apellido";
             // 
             // lblDNI
             // 
             lblDNI.AutoSize = true;
-            lblDNI.Font = new Font("Inter", 11.249999F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDNI.Font = new Font("Microsoft Sans Serif", 11.249999F, FontStyle.Regular, GraphicsUnit.Point);
             lblDNI.ForeColor = Color.DimGray;
-            lblDNI.Location = new Point(46, 140);
+            lblDNI.Location = new Point(46, 120);
             lblDNI.Name = "lblDNI";
-            lblDNI.Size = new Size(35, 19);
+            lblDNI.Size = new Size(33, 18);
             lblDNI.TabIndex = 5;
             lblDNI.Text = "DNI";
             // 
             // lblFecha
             // 
             lblFecha.AutoSize = true;
-            lblFecha.Font = new Font("Inter", 11.249999F, FontStyle.Regular, GraphicsUnit.Point);
+            lblFecha.Font = new Font("Microsoft Sans Serif", 11.249999F, FontStyle.Regular, GraphicsUnit.Point);
             lblFecha.ForeColor = Color.DimGray;
-            lblFecha.Location = new Point(325, 140);
+            lblFecha.Location = new Point(386, 120);
             lblFecha.Name = "lblFecha";
-            lblFecha.Size = new Size(155, 19);
+            lblFecha.Size = new Size(145, 18);
             lblFecha.TabIndex = 6;
             lblFecha.Text = "Fecha de nacimiento";
             // 
             // lblEmail
             // 
             lblEmail.AutoSize = true;
-            lblEmail.Font = new Font("Inter", 11.249999F, FontStyle.Regular, GraphicsUnit.Point);
+            lblEmail.Font = new Font("Microsoft Sans Serif", 11.249999F, FontStyle.Regular, GraphicsUnit.Point);
             lblEmail.ForeColor = Color.DimGray;
-            lblEmail.Location = new Point(46, 211);
+            lblEmail.Location = new Point(46, 200);
             lblEmail.Name = "lblEmail";
-            lblEmail.Size = new Size(47, 19);
+            lblEmail.Size = new Size(45, 18);
             lblEmail.TabIndex = 7;
             lblEmail.Text = "Email";
             // 
             // lblTelefono
             // 
             lblTelefono.AutoSize = true;
-            lblTelefono.Font = new Font("Inter", 11.249999F, FontStyle.Regular, GraphicsUnit.Point);
+            lblTelefono.Font = new Font("Microsoft Sans Serif", 11.249999F, FontStyle.Regular, GraphicsUnit.Point);
             lblTelefono.ForeColor = Color.DimGray;
-            lblTelefono.Location = new Point(325, 211);
+            lblTelefono.Location = new Point(386, 200);
             lblTelefono.Name = "lblTelefono";
-            lblTelefono.Size = new Size(72, 19);
+            lblTelefono.Size = new Size(66, 18);
             lblTelefono.TabIndex = 8;
             lblTelefono.Text = "Teléfono";
             // 
             // lblDireccion
             // 
             lblDireccion.AutoSize = true;
-            lblDireccion.Font = new Font("Inter", 11.249999F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDireccion.Font = new Font("Microsoft Sans Serif", 11.249999F, FontStyle.Regular, GraphicsUnit.Point);
             lblDireccion.ForeColor = Color.DimGray;
-            lblDireccion.Location = new Point(44, 280);
+            lblDireccion.Location = new Point(44, 276);
             lblDireccion.Name = "lblDireccion";
-            lblDireccion.Size = new Size(77, 19);
+            lblDireccion.Size = new Size(71, 18);
             lblDireccion.TabIndex = 9;
             lblDireccion.Text = "Dirección";
             // 
             // lblUsuario
             // 
             lblUsuario.AutoSize = true;
-            lblUsuario.Font = new Font("Inter", 11.249999F, FontStyle.Regular, GraphicsUnit.Point);
+            lblUsuario.Font = new Font("Microsoft Sans Serif", 11.249999F, FontStyle.Regular, GraphicsUnit.Point);
             lblUsuario.ForeColor = Color.DimGray;
-            lblUsuario.Location = new Point(48, 352);
+            lblUsuario.Location = new Point(48, 343);
             lblUsuario.Name = "lblUsuario";
-            lblUsuario.Size = new Size(64, 19);
+            lblUsuario.Size = new Size(60, 18);
             lblUsuario.TabIndex = 10;
             lblUsuario.Text = "Usuario";
             // 
             // lblContraseña
             // 
             lblContraseña.AutoSize = true;
-            lblContraseña.Font = new Font("Inter", 11.249999F, FontStyle.Regular, GraphicsUnit.Point);
+            lblContraseña.Font = new Font("Microsoft Sans Serif", 11.249999F, FontStyle.Regular, GraphicsUnit.Point);
             lblContraseña.ForeColor = Color.DimGray;
-            lblContraseña.Location = new Point(325, 352);
+            lblContraseña.Location = new Point(386, 343);
             lblContraseña.Name = "lblContraseña";
-            lblContraseña.Size = new Size(91, 19);
+            lblContraseña.Size = new Size(85, 18);
             lblContraseña.TabIndex = 11;
             lblContraseña.Text = "Contraseña";
             // 
             // lblTipoUsuario
             // 
             lblTipoUsuario.AutoSize = true;
-            lblTipoUsuario.Font = new Font("Inter", 11.249999F, FontStyle.Regular, GraphicsUnit.Point);
+            lblTipoUsuario.Font = new Font("Microsoft Sans Serif", 11.249999F, FontStyle.Regular, GraphicsUnit.Point);
             lblTipoUsuario.ForeColor = Color.DimGray;
-            lblTipoUsuario.Location = new Point(44, 422);
+            lblTipoUsuario.Location = new Point(42, 433);
             lblTipoUsuario.Name = "lblTipoUsuario";
-            lblTipoUsuario.Size = new Size(175, 19);
+            lblTipoUsuario.Size = new Size(163, 18);
             lblTipoUsuario.TabIndex = 12;
             lblTipoUsuario.Text = "Tipo de usuario/acceso";
             // 
             // linkLabelVolver
             // 
             linkLabelVolver.AutoSize = true;
-            linkLabelVolver.Font = new Font("Inter", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            linkLabelVolver.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             linkLabelVolver.LinkColor = Color.Black;
             linkLabelVolver.Location = new Point(12, 9);
             linkLabelVolver.Name = "linkLabelVolver";
-            linkLabelVolver.Size = new Size(42, 15);
+            linkLabelVolver.Size = new Size(40, 15);
             linkLabelVolver.TabIndex = 13;
             linkLabelVolver.TabStop = true;
             linkLabelVolver.Text = "Volver";
@@ -211,7 +212,8 @@
             // lblErrorNombre
             // 
             lblErrorNombre.AutoSize = true;
-            lblErrorNombre.Location = new Point(51, 118);
+            lblErrorNombre.ForeColor = Color.Red;
+            lblErrorNombre.Location = new Point(46, 94);
             lblErrorNombre.Name = "lblErrorNombre";
             lblErrorNombre.Size = new Size(0, 15);
             lblErrorNombre.TabIndex = 25;
@@ -219,7 +221,8 @@
             // lblErrorApellido
             // 
             lblErrorApellido.AutoSize = true;
-            lblErrorApellido.Location = new Point(331, 118);
+            lblErrorApellido.ForeColor = Color.Red;
+            lblErrorApellido.Location = new Point(386, 94);
             lblErrorApellido.Name = "lblErrorApellido";
             lblErrorApellido.Size = new Size(0, 15);
             lblErrorApellido.TabIndex = 26;
@@ -227,7 +230,8 @@
             // lblErrorDNI
             // 
             lblErrorDNI.AutoSize = true;
-            lblErrorDNI.Location = new Point(51, 188);
+            lblErrorDNI.ForeColor = Color.Red;
+            lblErrorDNI.Location = new Point(45, 168);
             lblErrorDNI.Name = "lblErrorDNI";
             lblErrorDNI.Size = new Size(0, 15);
             lblErrorDNI.TabIndex = 27;
@@ -235,7 +239,8 @@
             // lblErrorFecha
             // 
             lblErrorFecha.AutoSize = true;
-            lblErrorFecha.Location = new Point(331, 188);
+            lblErrorFecha.ForeColor = Color.Red;
+            lblErrorFecha.Location = new Point(386, 168);
             lblErrorFecha.Name = "lblErrorFecha";
             lblErrorFecha.Size = new Size(0, 15);
             lblErrorFecha.TabIndex = 28;
@@ -243,7 +248,8 @@
             // lblErrorEmail
             // 
             lblErrorEmail.AutoSize = true;
-            lblErrorEmail.Location = new Point(51, 259);
+            lblErrorEmail.ForeColor = Color.Red;
+            lblErrorEmail.Location = new Point(46, 248);
             lblErrorEmail.Name = "lblErrorEmail";
             lblErrorEmail.Size = new Size(0, 15);
             lblErrorEmail.TabIndex = 29;
@@ -251,7 +257,8 @@
             // lblErrorTelefono
             // 
             lblErrorTelefono.AutoSize = true;
-            lblErrorTelefono.Location = new Point(332, 259);
+            lblErrorTelefono.ForeColor = Color.Red;
+            lblErrorTelefono.Location = new Point(386, 248);
             lblErrorTelefono.Name = "lblErrorTelefono";
             lblErrorTelefono.Size = new Size(0, 15);
             lblErrorTelefono.TabIndex = 30;
@@ -259,7 +266,8 @@
             // lblErrorDireccion
             // 
             lblErrorDireccion.AutoSize = true;
-            lblErrorDireccion.Location = new Point(53, 328);
+            lblErrorDireccion.ForeColor = Color.Red;
+            lblErrorDireccion.Location = new Point(47, 324);
             lblErrorDireccion.Name = "lblErrorDireccion";
             lblErrorDireccion.Size = new Size(0, 15);
             lblErrorDireccion.TabIndex = 31;
@@ -267,7 +275,8 @@
             // lblErrorUsuario
             // 
             lblErrorUsuario.AutoSize = true;
-            lblErrorUsuario.Location = new Point(54, 400);
+            lblErrorUsuario.ForeColor = Color.Red;
+            lblErrorUsuario.Location = new Point(46, 391);
             lblErrorUsuario.Name = "lblErrorUsuario";
             lblErrorUsuario.Size = new Size(0, 15);
             lblErrorUsuario.TabIndex = 32;
@@ -275,7 +284,8 @@
             // lblErrorContraseña
             // 
             lblErrorContraseña.AutoSize = true;
-            lblErrorContraseña.Location = new Point(330, 400);
+            lblErrorContraseña.ForeColor = Color.Red;
+            lblErrorContraseña.Location = new Point(386, 391);
             lblErrorContraseña.Name = "lblErrorContraseña";
             lblErrorContraseña.Size = new Size(0, 15);
             lblErrorContraseña.TabIndex = 33;
@@ -283,70 +293,71 @@
             // lblErrorTipoUsuario
             // 
             lblErrorTipoUsuario.AutoSize = true;
-            lblErrorTipoUsuario.Location = new Point(50, 468);
+            lblErrorTipoUsuario.ForeColor = Color.Red;
+            lblErrorTipoUsuario.Location = new Point(46, 481);
             lblErrorTipoUsuario.Name = "lblErrorTipoUsuario";
             lblErrorTipoUsuario.Size = new Size(0, 15);
             lblErrorTipoUsuario.TabIndex = 34;
             // 
             // txtNombre
             // 
-            txtNombre.Location = new Point(46, 92);
+            txtNombre.Location = new Point(46, 68);
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(253, 23);
             txtNombre.TabIndex = 35;
             // 
             // txtApellido
             // 
-            txtApellido.Location = new Point(325, 92);
+            txtApellido.Location = new Point(386, 68);
             txtApellido.Name = "txtApellido";
             txtApellido.Size = new Size(253, 23);
             txtApellido.TabIndex = 36;
             // 
             // txtDNI
             // 
-            txtDNI.Location = new Point(46, 162);
+            txtDNI.Location = new Point(46, 142);
             txtDNI.Name = "txtDNI";
             txtDNI.Size = new Size(253, 23);
             txtDNI.TabIndex = 37;
             // 
             // txtFechaNac
             // 
-            txtFechaNac.Location = new Point(325, 162);
+            txtFechaNac.Location = new Point(386, 142);
             txtFechaNac.Name = "txtFechaNac";
             txtFechaNac.Size = new Size(253, 23);
             txtFechaNac.TabIndex = 38;
             // 
             // txtEmail
             // 
-            txtEmail.Location = new Point(46, 233);
+            txtEmail.Location = new Point(46, 222);
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(253, 23);
             txtEmail.TabIndex = 39;
             // 
             // txtTelefono
             // 
-            txtTelefono.Location = new Point(325, 233);
+            txtTelefono.Location = new Point(386, 222);
             txtTelefono.Name = "txtTelefono";
             txtTelefono.Size = new Size(253, 23);
             txtTelefono.TabIndex = 40;
             // 
             // txtDireccion
             // 
-            txtDireccion.Location = new Point(46, 302);
+            txtDireccion.Location = new Point(46, 298);
             txtDireccion.Name = "txtDireccion";
-            txtDireccion.Size = new Size(532, 23);
+            txtDireccion.Size = new Size(593, 23);
             txtDireccion.TabIndex = 41;
             // 
             // txtUsuario
             // 
-            txtUsuario.Location = new Point(46, 374);
+            txtUsuario.Location = new Point(46, 365);
             txtUsuario.Name = "txtUsuario";
             txtUsuario.Size = new Size(253, 23);
             txtUsuario.TabIndex = 42;
             // 
             // txtContraseña
             // 
-            txtContraseña.Location = new Point(325, 374);
+            txtContraseña.Location = new Point(386, 365);
             txtContraseña.Name = "txtContraseña";
             txtContraseña.Size = new Size(253, 23);
             txtContraseña.TabIndex = 43;
@@ -354,13 +365,11 @@
             // cmbTipoUsuario
             // 
             cmbTipoUsuario.FormattingEnabled = true;
-            cmbTipoUsuario.Location = new Point(46, 444);
+            cmbTipoUsuario.Items.AddRange(new object[] { "1. Vendedor ", "2. Supervisor ", "3. Administrador " });
+            cmbTipoUsuario.Location = new Point(46, 455);
             cmbTipoUsuario.Name = "cmbTipoUsuario";
             cmbTipoUsuario.Size = new Size(253, 23);
             cmbTipoUsuario.TabIndex = 44;
-            cmbTipoUsuario.Items.Add("1. Vendedor ");
-            cmbTipoUsuario.Items.Add("2. Supervisador ");
-            cmbTipoUsuario.Items.Add("3. Administrador ");
             // 
             // btnConfirmar
             // 
@@ -368,8 +377,8 @@
             btnConfirmar.ButtonColor = Color.Tomato;
             btnConfirmar.FlatAppearance.BorderSize = 0;
             btnConfirmar.FlatStyle = FlatStyle.Flat;
-            btnConfirmar.Font = new Font("Inter SemiBold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnConfirmar.Location = new Point(325, 422);
+            btnConfirmar.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnConfirmar.Location = new Point(351, 418);
             btnConfirmar.Name = "btnConfirmar";
             btnConfirmar.OnHoverBorderColor = Color.Gray;
             btnConfirmar.OnHoverButtonColor = Color.FromArgb(255, 192, 192);
@@ -379,14 +388,25 @@
             btnConfirmar.Text = "Confirmar";
             btnConfirmar.TextColor = Color.White;
             btnConfirmar.UseVisualStyleBackColor = true;
-            btnConfirmar.Click += new EventHandler(btnConfirmar_Click);
+            btnConfirmar.Click += btnConfirmar_Click;
+            // 
+            // lblconfirma
+            // 
+            lblconfirma.AutoSize = true;
+            lblconfirma.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblconfirma.ForeColor = Color.LimeGreen;
+            lblconfirma.Location = new Point(522, 452);
+            lblconfirma.Name = "lblconfirma";
+            lblconfirma.Size = new Size(0, 20);
+            lblconfirma.TabIndex = 46;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(224, 224, 224);
-            ClientSize = new Size(631, 557);
+            ClientSize = new Size(776, 557);
+            Controls.Add(lblconfirma);
             Controls.Add(btnConfirmar);
             Controls.Add(cmbTipoUsuario);
             Controls.Add(txtContraseña);
@@ -421,6 +441,7 @@
             Controls.Add(lblNombre);
             Controls.Add(lblTitulo);
             Controls.Add(pictureBox1);
+            ForeColor = Color.Red;
             FormBorderStyle = FormBorderStyle.None;
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
@@ -467,5 +488,6 @@
         private TextBox txtContraseña;
         private ComboBox cmbTipoUsuario;
         private ePOSOne.btnProduct.Button_WOC btnConfirmar;
+        private Label lblconfirma;
     }
 }

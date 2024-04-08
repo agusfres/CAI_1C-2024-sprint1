@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lauta\\OneDrive\\Escritorio\\prueba-main\\prueba-main\\TP CAI\\TP CAI\\TP CAI.csproj": {}
+    "C:\\Users\\agust\\Downloads\\FACULTAD\\2024\\cai\\prueba-main\\prueba-main\\TP CAI\\TP CAI\\TP CAI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lauta\\OneDrive\\Escritorio\\prueba-main\\prueba-main\\TP CAI\\TP CAI\\TP CAI.csproj": {
+    "C:\\Users\\agust\\Downloads\\FACULTAD\\2024\\cai\\prueba-main\\prueba-main\\TP CAI\\TP CAI\\TP CAI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lauta\\OneDrive\\Escritorio\\prueba-main\\prueba-main\\TP CAI\\TP CAI\\TP CAI.csproj",
+        "projectUniqueName": "C:\\Users\\agust\\Downloads\\FACULTAD\\2024\\cai\\prueba-main\\prueba-main\\TP CAI\\TP CAI\\TP CAI.csproj",
         "projectName": "TP CAI",
-        "projectPath": "C:\\Users\\lauta\\OneDrive\\Escritorio\\prueba-main\\prueba-main\\TP CAI\\TP CAI\\TP CAI.csproj",
-        "packagesPath": "C:\\Users\\lauta\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lauta\\OneDrive\\Escritorio\\prueba-main\\prueba-main\\TP CAI\\TP CAI\\obj\\",
+        "projectPath": "C:\\Users\\agust\\Downloads\\FACULTAD\\2024\\cai\\prueba-main\\prueba-main\\TP CAI\\TP CAI\\TP CAI.csproj",
+        "packagesPath": "C:\\Users\\agust\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\agust\\Downloads\\FACULTAD\\2024\\cai\\prueba-main\\prueba-main\\TP CAI\\TP CAI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lauta\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\agust\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -63,7 +63,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
