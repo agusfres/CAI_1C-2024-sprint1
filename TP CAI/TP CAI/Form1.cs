@@ -13,13 +13,10 @@ namespace TP_CAI
 {
     public partial class Form1 : Form
     {
-
         public Form1()
         {
             InitializeComponent();
-
         }
-
 
 
         private void btnConfirmar_Click(object sender, EventArgs e)
@@ -35,6 +32,7 @@ namespace TP_CAI
             string txNombreUsuario = txtUsuario.Text;
             string txTelefono = txtTelefono.Text;
             string cmTipoUsuario = cmbTipoUsuario.Text;
+
             string errorNombre = "";
             string errorApellido = "";
             string errorEmail = "";
@@ -44,9 +42,8 @@ namespace TP_CAI
             string errorDNI = "";
             string errorUsuario = "";
             string errorTelefono = "";
+            string errorTipoUsuario = "";
             string acumuladorErrores = "";
-
-
 
             Validador validadorCampos = new Validador();
             validadorCampos.validarTextoUno(txNombre, "Nombre",ref errorNombre);
@@ -58,6 +55,7 @@ namespace TP_CAI
             validadorCampos.validarDNI(txDNI, "DNI", ref errorDNI);
             validadorCampos.validarNombreUsuario(txNombreUsuario, txNombre, txApellido, "Usuario", ref errorUsuario);
             validadorCampos.validarTextoUno(txTelefono, "Teléfono", ref errorTelefono);
+            validadorCampos.validarTipoUsuario(cmTipoUsuario, "Tipo de usuario", ref errorTipoUsuario);
 
             lblErrorNombre.Text = errorNombre;
             lblErrorApellido.Text = errorApellido;
@@ -68,10 +66,19 @@ namespace TP_CAI
             lblErrorDNI.Text = errorDNI;
             lblErrorUsuario.Text = errorUsuario;
             lblErrorTelefono.Text = errorTelefono;
+            lblErrorTipoUsuario.Text = errorTipoUsuario;
 
+            acumuladorErrores = errorApellido + errorContrasena + errorFecha + errorDireccion + errorDNI + errorUsuario + errorTelefono + errorNombre + errorEmail + errorTipoUsuario;
+
+            if (string.IsNullOrEmpty(acumuladorErrores))
+            {
+                Transformador transformador = new Transformador();
+                int intCmTipoUsuario = transformador.transformarStringInt(cmTipoUsuario);
+                DateTime datetimeTxFechaNac = transformador.transformarStringDatetime(txFechaNac);
+                int intTxDNI = transformador.transformarStringInt(txDNI);
+
+                Usuario usuario = new Usuario(1, txNombre, txApellido, txDireccion, txTelefono, txEmail, DateTime.Now, datetimeTxFechaNac, DateTime.Now, DateTime.Now, txNombreUsuario, intCmTipoUsuario, intTxDNI, txContrasena);
+            }
         }
-
-
-
     }
 }

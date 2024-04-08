@@ -12,17 +12,16 @@ namespace TP_CAI
         public void validarNombreUsuario(string usuario, string nombre, string apellido, string campo, ref string error)
         {
             string msgError = "";
-            msgError = msgError + validarLongitud(usuario, campo,8,15);
+            msgError = msgError + validarLongitud(usuario, campo, 8, 15);
             msgError = msgError + validarUsuario(usuario, nombre, apellido, campo);
             error = msgError;
-
         }
 
 
         public void validarContrasena(string texto, string campo, ref string error)
         {
             string msgError = "";
-            msgError = msgError + validarLongitud(texto, campo,8,15);
+            msgError = msgError + validarLongitud(texto, campo, 8, 15);
             msgError = msgError + validarFormatoContrasena(texto, campo);
             error = msgError;
         }
@@ -32,7 +31,6 @@ namespace TP_CAI
         {
             bool flag1 = validarNumeroContra(texto);
             bool flag2 = validarMayusculaContra(texto);
-
 
             if (flag1 == true && flag2 == true)
             {
@@ -92,12 +90,13 @@ namespace TP_CAI
 
         private string validarLongitud(string texto, string campo, int min , int max)
         {
-            if (texto.Length <= min && texto.Length >= max)
+            if (texto.Length < min || texto.Length > max)
             {
                 return "El campo " + campo + " debe tener entre " + min + " y " + max + ".";
             }
             return "";
         }
+
 
         private string validarVacio(string texto, string campo)
         {
@@ -109,25 +108,24 @@ namespace TP_CAI
         }
 
 
-
-
         public void validarTextoUno(string texto, string campo , ref string error)
         {
             string msgError = "";
-            msgError = msgError + validarLongitud(texto, campo,1,50);
+            msgError = msgError + validarLongitud(texto, campo, 1, 50);
             error = msgError;
         }
+
 
         public void validarTextoDos(string texto, string campo, ref string error)
         {
             string msgError = "";
-            msgError = msgError + validarLongitud(texto, campo,1,255);
+            msgError = msgError + validarLongitud(texto, campo, 1, 255);
 
             if (campo == "Email")
             {
                 if (texto.Contains("@"))
                 {
-                    msgError = msgError;
+                    msgError = msgError + "";
                 }
                 else
                 {
@@ -138,10 +136,11 @@ namespace TP_CAI
             error = msgError;
         }
 
+
         public void validarDNI(string texto, string campo, ref string error)
         {
             string msgError = "";
-            msgError = msgError + validarLongitud(texto, campo,1,8);
+            msgError = msgError + validarLongitud(texto, campo, 1, 8);
             msgError = msgError + validarFormatoNumero(texto, campo);
             error = msgError;
         }
@@ -157,33 +156,43 @@ namespace TP_CAI
         }
 
 
-        public void validarFecha(string texto, string campo, ref string error)
+        public void validarFecha(string texto, string campo, ref string error, ref DateTime salida)
         {
             string msgError = "";
             msgError = msgError + validarVacio(texto, campo);
-            msgError = msgError + validarFormatoFecha(texto, campo);
+            msgError = msgError + validarFormatoFecha(texto, campo,ref salida);
             error = msgError;
         }
 
 
-        private string validarFormatoFecha(string texto, string campo)
+        private string validarFormatoFecha(string texto, string campo, ref DateTime salida)
         {
-
-            if (!DateTime.TryParseExact(texto, "dd/MM/yyyy", null, System.Globalization.DateTimeStyles.None, out DateTime fecha))
+            if (!DateTime.TryParseExact(texto, "dd/MM/yyyy", null, System.Globalization.DateTimeStyles.None, out salida))
             {
                 return "El campo " + campo + " debe cumplir el formato DD/MM/AAAA.";
             }
-            else if (fecha > DateTime.Today || fecha < new DateTime(1924, 1, 1))
+            else if (salida > DateTime.Today || salida < new DateTime(1924, 1, 1))
             {
                 return "El campo " + campo + " debe ser una fecha válida.";
              }
-            return "";
+            return "" ;
         }
 
 
-
+        public void validarTipoUsuario(string texto, string campo, ref string error)
+        {
+            string msgError = "";
+            List<string> opciones = new List<string>() {"1. Vendedor ", "2. Supervisor ", "3. Vendedor "};
+            msgError = msgError + validarVacio(texto, campo);
+            if (!opciones.Contains(texto))
+            {
+                msgError = msgError + "El campo " + campo + " debe ser alguna de las opciones indicadas, no escribir";
+            }
+            error = msgError;
+        }
     }
 }
+
 
 
 
