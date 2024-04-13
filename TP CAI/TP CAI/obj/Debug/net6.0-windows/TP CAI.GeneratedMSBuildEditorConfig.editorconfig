@@ -14,4 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = 
-build_property.ProjectDir = C:\Users\catac\Pictures\Cata\Facultad\CAI\FINAL SPRINT 1 CON IMAGEN\TP CAI\TP CAI\
+build_property.ProjectDir = C:\Users\agust\Downloads\FACULTAD\2024\cai\form sprint2 navegacion\TP CAI\TP CAI\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

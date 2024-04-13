@@ -202,9 +202,27 @@ namespace TP_CAI
             {
                 return "El campo " + campo + " debe ser una fecha válida." + System.Environment.NewLine;
             }
+            else if (!EsMayorDeEdad(salida))
+            {
+                return "Debe ser mayor de 18 años para registrarse." + System.Environment.NewLine;
+            }
             return "";
         }
 
+        public bool EsMayorDeEdad(DateTime fechaNacimiento)
+        {
+            // Calcular la edad en años
+            int edad = DateTime.Today.Year - fechaNacimiento.Year;
+
+            // Restar un año si aún no ha pasado el cumpleaños de este año
+            if (fechaNacimiento.Date > DateTime.Today.AddYears(-edad))
+            {
+                edad--;
+            }
+
+            // Verificar si la edad es mayor o igual a 18 años
+            return edad >= 18;
+        }
 
         public void validarTipoUsuario(string texto, string campo, ref string error)
         {

@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\catac\\.nuget\\packages\\": {}
+    "C:\\Users\\agust\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\catac\\Pictures\\Cata\\Facultad\\CAI\\FINAL SPRINT 1 CON IMAGEN\\TP CAI\\TP CAI\\TP CAI.csproj",
+      "projectUniqueName": "C:\\Users\\agust\\Downloads\\FACULTAD\\2024\\cai\\form sprint2 navegacion\\TP CAI\\TP CAI\\TP CAI.csproj",
       "projectName": "TP CAI",
-      "projectPath": "C:\\Users\\catac\\Pictures\\Cata\\Facultad\\CAI\\FINAL SPRINT 1 CON IMAGEN\\TP CAI\\TP CAI\\TP CAI.csproj",
-      "packagesPath": "C:\\Users\\catac\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\catac\\Pictures\\Cata\\Facultad\\CAI\\FINAL SPRINT 1 CON IMAGEN\\TP CAI\\TP CAI\\obj\\",
+      "projectPath": "C:\\Users\\agust\\Downloads\\FACULTAD\\2024\\cai\\form sprint2 navegacion\\TP CAI\\TP CAI\\TP CAI.csproj",
+      "packagesPath": "C:\\Users\\agust\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\agust\\Downloads\\FACULTAD\\2024\\cai\\form sprint2 navegacion\\TP CAI\\TP CAI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\catac\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\agust\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -40,6 +40,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -64,7 +69,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

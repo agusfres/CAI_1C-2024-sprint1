@@ -16,16 +16,19 @@ namespace TP_CAI
         string telefono;
         string email;
         DateTime fechaAlta;
-        DateTime fechaNac;
+        DateTime fechaNacimiento;
         DateTime? fechaBaja;
         DateTime? fechaUltimaAct;
         string nombreUsuario;
         int tipoUsuario;
-        int DNI;
+        int dni;
         string contraseña;
+        string host;
 
 
-        public Usuario(int id, string nombre, string apellido, string direccion, string telefono, string email, DateTime fechaAlta, DateTime fechaNac, DateTime? fechaBaja, DateTime? fechaUltimaAct, string nombreUsuario, int tipoUsuario, int DNI, string contraseña)
+
+
+        public Usuario(int id, string nombre, string apellido, string direccion, string telefono, string email, DateTime fechaAlta, DateTime fechaNacimiento, DateTime? fechaBaja, DateTime? fechaUltimaAct, string nombreUsuario, int tipoUsuario, int dni, string contraseña, string host)
         {
             this.id = id;
             this.nombre = nombre;
@@ -34,13 +37,14 @@ namespace TP_CAI
             this.telefono = telefono;
             this.email = email;
             this.fechaAlta = fechaAlta;
-            this.fechaNac = fechaNac;
+            this.fechaNacimiento = fechaNacimiento;
             this.fechaBaja = fechaBaja;
             this.fechaUltimaAct = fechaUltimaAct;
             this.nombreUsuario = nombreUsuario;
             this.tipoUsuario = tipoUsuario;
-            this.DNI = DNI;
+            this.dni = dni;
             this.contraseña = contraseña;
+            this.host = host;
         }
 
 
