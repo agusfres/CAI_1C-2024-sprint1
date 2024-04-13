@@ -83,7 +83,7 @@
             lblTitulo.AutoSize = true;
             lblTitulo.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             lblTitulo.ForeColor = Color.DimGray;
-            lblTitulo.Location = new Point(145, 9);
+            lblTitulo.Location = new Point(149, 9);
             lblTitulo.Name = "lblTitulo";
             lblTitulo.Size = new Size(433, 31);
             lblTitulo.TabIndex = 1;
@@ -201,12 +201,13 @@
             // 
             // linkLabelVolver
             // 
+            linkLabelVolver.ActiveLinkColor = Color.Black;
             linkLabelVolver.AutoSize = true;
-            linkLabelVolver.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            linkLabelVolver.Font = new Font("Inter", 9F, FontStyle.Regular, GraphicsUnit.Point);
             linkLabelVolver.LinkColor = Color.Black;
             linkLabelVolver.Location = new Point(12, 9);
             linkLabelVolver.Name = "linkLabelVolver";
-            linkLabelVolver.Size = new Size(40, 15);
+            linkLabelVolver.Size = new Size(42, 15);
             linkLabelVolver.TabIndex = 13;
             linkLabelVolver.TabStop = true;
             linkLabelVolver.Text = "Volver";
@@ -379,7 +380,7 @@
             btnConfirmar.ButtonColor = Color.Tomato;
             btnConfirmar.FlatAppearance.BorderSize = 0;
             btnConfirmar.FlatStyle = FlatStyle.Flat;
-            btnConfirmar.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnConfirmar.Font = new Font("Inter Medium", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnConfirmar.Location = new Point(351, 433);
             btnConfirmar.Name = "btnConfirmar";
             btnConfirmar.OnHoverBorderColor = Color.Gray;
@@ -405,7 +406,7 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(-2, -1);
+            pictureBox2.Location = new Point(-2, -8);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(780, 568);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;

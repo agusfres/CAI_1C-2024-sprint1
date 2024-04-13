@@ -49,7 +49,7 @@ namespace TP_CAI
             string acumuladorErrores = "";
 
             Validador validadorCampos = new Validador();
-            validadorCampos.validarTextoUno(txNombre, "Nombre",ref errorNombre);
+            validadorCampos.validarTextoUno(txNombre, "Nombre", ref errorNombre);
             validadorCampos.validarContraseña(txContraseña, "Contraseña", ref errorContraseña);
             validadorCampos.validarTextoUno(txApellido, "Apellido", ref errorApellido);
             validadorCampos.validarTextoDos(txEmail, "Email", ref errorEmail);
