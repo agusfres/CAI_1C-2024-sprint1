@@ -1,0 +1,9 @@
+C:\Users\Cata\source\repos\TP CAI\Persistencia\bin\Debug\Persistencia.dll
+C:\Users\Cata\source\repos\TP CAI\Persistencia\bin\Debug\Persistencia.pdb
+C:\Users\Cata\source\repos\TP CAI\Persistencia\bin\Debug\Datos.dll
+C:\Users\Cata\source\repos\TP CAI\Persistencia\bin\Debug\Datos.pdb
+C:\Users\Cata\source\repos\TP CAI\Persistencia\obj\Debug\Persistencia.csproj.AssemblyReference.cache
+C:\Users\Cata\source\repos\TP CAI\Persistencia\obj\Debug\Persistencia.csproj.CoreCompileInputs.cache
+C:\Users\Cata\source\repos\TP CAI\Persistencia\obj\Debug\Persiste.7F7D6998.Up2Date
+C:\Users\Cata\source\repos\TP CAI\Persistencia\obj\Debug\Persistencia.dll
+C:\Users\Cata\source\repos\TP CAI\Persistencia\obj\Debug\Persistencia.pdb

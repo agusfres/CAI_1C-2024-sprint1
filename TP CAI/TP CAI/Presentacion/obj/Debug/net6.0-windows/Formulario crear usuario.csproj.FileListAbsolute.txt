@@ -1,0 +1,7 @@
+C:\Users\catac\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP_CAI.Form1.resources
+C:\Users\catac\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\Properties.Resources.resources
+C:\Users\catac\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\Formulario crear usuario.csproj.GenerateResource.cache
+C:\Users\catac\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\Formulario crear usuario.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\catac\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\Formulario crear usuario.AssemblyInfoInputs.cache
+C:\Users\catac\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\Formulario crear usuario.AssemblyInfo.cs
+C:\Users\catac\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\Formulario crear usuario.csproj.CoreCompileInputs.cache

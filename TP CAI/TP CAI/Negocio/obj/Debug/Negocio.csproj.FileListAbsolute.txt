@@ -1,0 +1,11 @@
+C:\Users\Cata\source\repos\TP CAI\Presentacion\bin\Debug\Presentacion.dll
+C:\Users\Cata\source\repos\TP CAI\Presentacion\bin\Debug\Presentacion.pdb
+C:\Users\Cata\source\repos\TP CAI\Presentacion\bin\Debug\Datos.dll
+C:\Users\Cata\source\repos\TP CAI\Presentacion\bin\Debug\Persistencia.dll
+C:\Users\Cata\source\repos\TP CAI\Presentacion\bin\Debug\Datos.pdb
+C:\Users\Cata\source\repos\TP CAI\Presentacion\bin\Debug\Persistencia.pdb
+C:\Users\Cata\source\repos\TP CAI\Presentacion\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\Users\Cata\source\repos\TP CAI\Presentacion\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Cata\source\repos\TP CAI\Presentacion\obj\Debug\Negocio.csproj.Up2Date
+C:\Users\Cata\source\repos\TP CAI\Presentacion\obj\Debug\Presentacion.dll
+C:\Users\Cata\source\repos\TP CAI\Presentacion\obj\Debug\Presentacion.pdb

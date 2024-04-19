@@ -1,0 +1,171 @@
+C:\Users\catac\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP_CAI.Form1.resources
+C:\Users\catac\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.csproj.GenerateResource.cache
+C:\Users\catac\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\catac\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.AssemblyInfoInputs.cache
+C:\Users\catac\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.AssemblyInfo.cs
+C:\Users\catac\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.csproj.CoreCompileInputs.cache
+C:\Users\catac\source\repos\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.exe
+C:\Users\catac\source\repos\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.deps.json
+C:\Users\catac\source\repos\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.runtimeconfig.json
+C:\Users\catac\source\repos\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.dll
+C:\Users\catac\source\repos\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.pdb
+C:\Users\catac\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.dll
+C:\Users\catac\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\refint\TP CAI.dll
+C:\Users\catac\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.pdb
+C:\Users\catac\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.genruntimeconfig.cache
+C:\Users\catac\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\ref\TP CAI.dll
+C:\Users\catac\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\Properties.Resources.resources
+C:\Users\Cata\source\repos\prueba-main\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.exe
+C:\Users\Cata\source\repos\prueba-main\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.deps.json
+C:\Users\Cata\source\repos\prueba-main\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.runtimeconfig.json
+C:\Users\Cata\source\repos\prueba-main\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.dll
+C:\Users\Cata\source\repos\prueba-main\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.pdb
+C:\Users\Cata\source\repos\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP_CAI.Form1.resources
+C:\Users\Cata\source\repos\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\Properties.Resources.resources
+C:\Users\Cata\source\repos\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.csproj.GenerateResource.cache
+C:\Users\Cata\source\repos\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cata\source\repos\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.AssemblyInfoInputs.cache
+C:\Users\Cata\source\repos\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.AssemblyInfo.cs
+C:\Users\Cata\source\repos\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.csproj.CoreCompileInputs.cache
+C:\Users\Cata\source\repos\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.dll
+C:\Users\Cata\source\repos\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\refint\TP CAI.dll
+C:\Users\Cata\source\repos\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.pdb
+C:\Users\Cata\source\repos\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.genruntimeconfig.cache
+C:\Users\Cata\source\repos\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\ref\TP CAI.dll
+C:\Users\lauta\OneDrive\Escritorio\prueba-main\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP_CAI.Form1.resources
+C:\Users\lauta\OneDrive\Escritorio\prueba-main\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\Properties.Resources.resources
+C:\Users\lauta\OneDrive\Escritorio\prueba-main\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.csproj.GenerateResource.cache
+C:\Users\lauta\OneDrive\Escritorio\prueba-main\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lauta\OneDrive\Escritorio\prueba-main\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.AssemblyInfoInputs.cache
+C:\Users\lauta\OneDrive\Escritorio\prueba-main\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.AssemblyInfo.cs
+C:\Users\lauta\OneDrive\Escritorio\prueba-main\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.csproj.CoreCompileInputs.cache
+C:\Users\lauta\OneDrive\Escritorio\prueba-main\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.dll
+C:\Users\lauta\OneDrive\Escritorio\prueba-main\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\refint\TP CAI.dll
+C:\Users\lauta\OneDrive\Escritorio\prueba-main\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.pdb
+C:\Users\lauta\OneDrive\Escritorio\prueba-main\prueba-main\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.exe
+C:\Users\lauta\OneDrive\Escritorio\prueba-main\prueba-main\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.deps.json
+C:\Users\lauta\OneDrive\Escritorio\prueba-main\prueba-main\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.runtimeconfig.json
+C:\Users\lauta\OneDrive\Escritorio\prueba-main\prueba-main\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.dll
+C:\Users\lauta\OneDrive\Escritorio\prueba-main\prueba-main\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.pdb
+C:\Users\lauta\OneDrive\Escritorio\prueba-main\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.genruntimeconfig.cache
+C:\Users\lauta\OneDrive\Escritorio\prueba-main\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\ref\TP CAI.dll
+C:\Users\agust\Downloads\FACULTAD\2024\cai\prueba-main\prueba-main\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.exe
+C:\Users\agust\Downloads\FACULTAD\2024\cai\prueba-main\prueba-main\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.deps.json
+C:\Users\agust\Downloads\FACULTAD\2024\cai\prueba-main\prueba-main\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.runtimeconfig.json
+C:\Users\agust\Downloads\FACULTAD\2024\cai\prueba-main\prueba-main\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.dll
+C:\Users\agust\Downloads\FACULTAD\2024\cai\prueba-main\prueba-main\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.pdb
+C:\Users\agust\Downloads\FACULTAD\2024\cai\prueba-main\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP_CAI.Form1.resources
+C:\Users\agust\Downloads\FACULTAD\2024\cai\prueba-main\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\Properties.Resources.resources
+C:\Users\agust\Downloads\FACULTAD\2024\cai\prueba-main\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.csproj.GenerateResource.cache
+C:\Users\agust\Downloads\FACULTAD\2024\cai\prueba-main\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\agust\Downloads\FACULTAD\2024\cai\prueba-main\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.AssemblyInfoInputs.cache
+C:\Users\agust\Downloads\FACULTAD\2024\cai\prueba-main\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.AssemblyInfo.cs
+C:\Users\agust\Downloads\FACULTAD\2024\cai\prueba-main\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.csproj.CoreCompileInputs.cache
+C:\Users\agust\Downloads\FACULTAD\2024\cai\prueba-main\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.dll
+C:\Users\agust\Downloads\FACULTAD\2024\cai\prueba-main\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\refint\TP CAI.dll
+C:\Users\agust\Downloads\FACULTAD\2024\cai\prueba-main\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.pdb
+C:\Users\agust\Downloads\FACULTAD\2024\cai\prueba-main\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.genruntimeconfig.cache
+C:\Users\agust\Downloads\FACULTAD\2024\cai\prueba-main\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\ref\TP CAI.dll
+C:\Users\lauta\OneDrive\Escritorio\prueba-main - Copy\prueba-main - Copy\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP_CAI.Form1.resources
+C:\Users\lauta\OneDrive\Escritorio\prueba-main - Copy\prueba-main - Copy\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\Properties.Resources.resources
+C:\Users\lauta\OneDrive\Escritorio\prueba-main - Copy\prueba-main - Copy\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.csproj.GenerateResource.cache
+C:\Users\lauta\OneDrive\Escritorio\prueba-main - Copy\prueba-main - Copy\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lauta\OneDrive\Escritorio\prueba-main - Copy\prueba-main - Copy\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.AssemblyInfoInputs.cache
+C:\Users\lauta\OneDrive\Escritorio\prueba-main - Copy\prueba-main - Copy\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.AssemblyInfo.cs
+C:\Users\lauta\OneDrive\Escritorio\prueba-main - Copy\prueba-main - Copy\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.csproj.CoreCompileInputs.cache
+C:\Users\lauta\OneDrive\Escritorio\prueba-main - Copy\prueba-main - Copy\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.dll
+C:\Users\lauta\OneDrive\Escritorio\prueba-main - Copy\prueba-main - Copy\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\refint\TP CAI.dll
+C:\Users\lauta\OneDrive\Escritorio\prueba-main - Copy\prueba-main - Copy\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.pdb
+C:\Users\lauta\OneDrive\Escritorio\prueba-main - Copy\prueba-main - Copy\prueba-main\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.exe
+C:\Users\lauta\OneDrive\Escritorio\prueba-main - Copy\prueba-main - Copy\prueba-main\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.deps.json
+C:\Users\lauta\OneDrive\Escritorio\prueba-main - Copy\prueba-main - Copy\prueba-main\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.runtimeconfig.json
+C:\Users\lauta\OneDrive\Escritorio\prueba-main - Copy\prueba-main - Copy\prueba-main\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.dll
+C:\Users\lauta\OneDrive\Escritorio\prueba-main - Copy\prueba-main - Copy\prueba-main\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.pdb
+C:\Users\lauta\OneDrive\Escritorio\prueba-main - Copy\prueba-main - Copy\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.genruntimeconfig.cache
+C:\Users\lauta\OneDrive\Escritorio\prueba-main - Copy\prueba-main - Copy\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\ref\TP CAI.dll
+C:\Users\agust\Downloads\FACULTAD\2024\cai\lauti sabado\prueba-main - Copy\prueba-main - Copy\prueba-main\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.exe
+C:\Users\agust\Downloads\FACULTAD\2024\cai\lauti sabado\prueba-main - Copy\prueba-main - Copy\prueba-main\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.deps.json
+C:\Users\agust\Downloads\FACULTAD\2024\cai\lauti sabado\prueba-main - Copy\prueba-main - Copy\prueba-main\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.runtimeconfig.json
+C:\Users\agust\Downloads\FACULTAD\2024\cai\lauti sabado\prueba-main - Copy\prueba-main - Copy\prueba-main\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.dll
+C:\Users\agust\Downloads\FACULTAD\2024\cai\lauti sabado\prueba-main - Copy\prueba-main - Copy\prueba-main\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.pdb
+C:\Users\agust\Downloads\FACULTAD\2024\cai\lauti sabado\prueba-main - Copy\prueba-main - Copy\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP_CAI.Form1.resources
+C:\Users\agust\Downloads\FACULTAD\2024\cai\lauti sabado\prueba-main - Copy\prueba-main - Copy\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\Properties.Resources.resources
+C:\Users\agust\Downloads\FACULTAD\2024\cai\lauti sabado\prueba-main - Copy\prueba-main - Copy\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.csproj.GenerateResource.cache
+C:\Users\agust\Downloads\FACULTAD\2024\cai\lauti sabado\prueba-main - Copy\prueba-main - Copy\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\agust\Downloads\FACULTAD\2024\cai\lauti sabado\prueba-main - Copy\prueba-main - Copy\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.AssemblyInfoInputs.cache
+C:\Users\agust\Downloads\FACULTAD\2024\cai\lauti sabado\prueba-main - Copy\prueba-main - Copy\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.AssemblyInfo.cs
+C:\Users\agust\Downloads\FACULTAD\2024\cai\lauti sabado\prueba-main - Copy\prueba-main - Copy\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.csproj.CoreCompileInputs.cache
+C:\Users\agust\Downloads\FACULTAD\2024\cai\lauti sabado\prueba-main - Copy\prueba-main - Copy\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.dll
+C:\Users\agust\Downloads\FACULTAD\2024\cai\lauti sabado\prueba-main - Copy\prueba-main - Copy\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\refint\TP CAI.dll
+C:\Users\agust\Downloads\FACULTAD\2024\cai\lauti sabado\prueba-main - Copy\prueba-main - Copy\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.pdb
+C:\Users\agust\Downloads\FACULTAD\2024\cai\lauti sabado\prueba-main - Copy\prueba-main - Copy\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.genruntimeconfig.cache
+C:\Users\agust\Downloads\FACULTAD\2024\cai\lauti sabado\prueba-main - Copy\prueba-main - Copy\prueba-main\TP CAI\TP CAI\obj\Debug\net6.0-windows\ref\TP CAI.dll
+C:\Users\catac\Pictures\Cata\Facultad\CAI\FINAL SPRINT 1 CON IMAGEN\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.dll
+C:\Users\catac\Pictures\Cata\Facultad\CAI\FINAL SPRINT 1 CON IMAGEN\TP CAI\TP CAI\obj\Debug\net6.0-windows\refint\TP CAI.dll
+C:\Users\catac\Pictures\Cata\Facultad\CAI\FINAL SPRINT 1 CON IMAGEN\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.pdb
+C:\Users\catac\Pictures\Cata\Facultad\CAI\FINAL SPRINT 1 CON IMAGEN\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.exe
+C:\Users\catac\Pictures\Cata\Facultad\CAI\FINAL SPRINT 1 CON IMAGEN\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.deps.json
+C:\Users\catac\Pictures\Cata\Facultad\CAI\FINAL SPRINT 1 CON IMAGEN\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.runtimeconfig.json
+C:\Users\catac\Pictures\Cata\Facultad\CAI\FINAL SPRINT 1 CON IMAGEN\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.dll
+C:\Users\catac\Pictures\Cata\Facultad\CAI\FINAL SPRINT 1 CON IMAGEN\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.pdb
+C:\Users\catac\Pictures\Cata\Facultad\CAI\FINAL SPRINT 1 CON IMAGEN\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP_CAI.Form1.resources
+C:\Users\catac\Pictures\Cata\Facultad\CAI\FINAL SPRINT 1 CON IMAGEN\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP_CAI.Form2.resources
+C:\Users\catac\Pictures\Cata\Facultad\CAI\FINAL SPRINT 1 CON IMAGEN\TP CAI\TP CAI\obj\Debug\net6.0-windows\Properties.Resources.resources
+C:\Users\catac\Pictures\Cata\Facultad\CAI\FINAL SPRINT 1 CON IMAGEN\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.csproj.GenerateResource.cache
+C:\Users\catac\Pictures\Cata\Facultad\CAI\FINAL SPRINT 1 CON IMAGEN\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\catac\Pictures\Cata\Facultad\CAI\FINAL SPRINT 1 CON IMAGEN\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.AssemblyInfoInputs.cache
+C:\Users\catac\Pictures\Cata\Facultad\CAI\FINAL SPRINT 1 CON IMAGEN\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.AssemblyInfo.cs
+C:\Users\catac\Pictures\Cata\Facultad\CAI\FINAL SPRINT 1 CON IMAGEN\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.csproj.CoreCompileInputs.cache
+C:\Users\catac\Pictures\Cata\Facultad\CAI\FINAL SPRINT 1 CON IMAGEN\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.genruntimeconfig.cache
+C:\Users\catac\Pictures\Cata\Facultad\CAI\FINAL SPRINT 1 CON IMAGEN\TP CAI\TP CAI\obj\Debug\net6.0-windows\ref\TP CAI.dll
+C:\Users\catac\Pictures\Cata\Facultad\CAI\FINAL SPRINT 1 CON IMAGEN\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP_CAI.Form3.resources
+C:\Users\agust\Downloads\FACULTAD\2024\cai\FINAL SPRINT 1 CON IMAGEN\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.exe
+C:\Users\agust\Downloads\FACULTAD\2024\cai\FINAL SPRINT 1 CON IMAGEN\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.deps.json
+C:\Users\agust\Downloads\FACULTAD\2024\cai\FINAL SPRINT 1 CON IMAGEN\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.runtimeconfig.json
+C:\Users\agust\Downloads\FACULTAD\2024\cai\FINAL SPRINT 1 CON IMAGEN\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.dll
+C:\Users\agust\Downloads\FACULTAD\2024\cai\FINAL SPRINT 1 CON IMAGEN\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.pdb
+C:\Users\agust\Downloads\FACULTAD\2024\cai\FINAL SPRINT 1 CON IMAGEN\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP_CAI.Form1.resources
+C:\Users\agust\Downloads\FACULTAD\2024\cai\FINAL SPRINT 1 CON IMAGEN\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP_CAI.Form2.resources
+C:\Users\agust\Downloads\FACULTAD\2024\cai\FINAL SPRINT 1 CON IMAGEN\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP_CAI.Form3.resources
+C:\Users\agust\Downloads\FACULTAD\2024\cai\FINAL SPRINT 1 CON IMAGEN\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP_CAI.Form4.resources
+C:\Users\agust\Downloads\FACULTAD\2024\cai\FINAL SPRINT 1 CON IMAGEN\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP_CAI.Form5.resources
+C:\Users\agust\Downloads\FACULTAD\2024\cai\FINAL SPRINT 1 CON IMAGEN\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP_CAI.Form6.resources
+C:\Users\agust\Downloads\FACULTAD\2024\cai\FINAL SPRINT 1 CON IMAGEN\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP_CAI.Form7.resources
+C:\Users\agust\Downloads\FACULTAD\2024\cai\FINAL SPRINT 1 CON IMAGEN\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP_CAI.Form8.resources
+C:\Users\agust\Downloads\FACULTAD\2024\cai\FINAL SPRINT 1 CON IMAGEN\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP_CAI.Form9.resources
+C:\Users\agust\Downloads\FACULTAD\2024\cai\FINAL SPRINT 1 CON IMAGEN\TP CAI\TP CAI\obj\Debug\net6.0-windows\Properties.Resources.resources
+C:\Users\agust\Downloads\FACULTAD\2024\cai\FINAL SPRINT 1 CON IMAGEN\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.csproj.GenerateResource.cache
+C:\Users\agust\Downloads\FACULTAD\2024\cai\FINAL SPRINT 1 CON IMAGEN\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\agust\Downloads\FACULTAD\2024\cai\FINAL SPRINT 1 CON IMAGEN\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.AssemblyInfoInputs.cache
+C:\Users\agust\Downloads\FACULTAD\2024\cai\FINAL SPRINT 1 CON IMAGEN\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.AssemblyInfo.cs
+C:\Users\agust\Downloads\FACULTAD\2024\cai\FINAL SPRINT 1 CON IMAGEN\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.csproj.CoreCompileInputs.cache
+C:\Users\agust\Downloads\FACULTAD\2024\cai\FINAL SPRINT 1 CON IMAGEN\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.dll
+C:\Users\agust\Downloads\FACULTAD\2024\cai\FINAL SPRINT 1 CON IMAGEN\TP CAI\TP CAI\obj\Debug\net6.0-windows\refint\TP CAI.dll
+C:\Users\agust\Downloads\FACULTAD\2024\cai\FINAL SPRINT 1 CON IMAGEN\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.pdb
+C:\Users\agust\Downloads\FACULTAD\2024\cai\FINAL SPRINT 1 CON IMAGEN\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.genruntimeconfig.cache
+C:\Users\agust\Downloads\FACULTAD\2024\cai\FINAL SPRINT 1 CON IMAGEN\TP CAI\TP CAI\obj\Debug\net6.0-windows\ref\TP CAI.dll
+C:\Users\Cata\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.dll
+C:\Users\Cata\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\refint\TP CAI.dll
+C:\Users\Cata\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.pdb
+C:\Users\Cata\source\repos\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.exe
+C:\Users\Cata\source\repos\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.deps.json
+C:\Users\Cata\source\repos\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.runtimeconfig.json
+C:\Users\Cata\source\repos\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.dll
+C:\Users\Cata\source\repos\TP CAI\TP CAI\bin\Debug\net6.0-windows\TP CAI.pdb
+C:\Users\Cata\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP_CAI.admin_agregar_form.resources
+C:\Users\Cata\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP_CAI.admin_baja_form.resources
+C:\Users\Cata\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP_CAI.admin_edit_form.resources
+C:\Users\Cata\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP_CAI.admin_gestion_form.resources
+C:\Users\Cata\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP_CAI.admin_menu_form.resources
+C:\Users\Cata\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP_CAI.cambiocontra_form.resources
+C:\Users\Cata\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP_CAI.iniciarsesion_form.resources
+C:\Users\Cata\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\Properties.Resources.resources
+C:\Users\Cata\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP_CAI.supervidor_menu_form.resources
+C:\Users\Cata\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP_CAI.vendedor_menu_form.resources
+C:\Users\Cata\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.csproj.GenerateResource.cache
+C:\Users\Cata\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cata\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.AssemblyInfoInputs.cache
+C:\Users\Cata\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.AssemblyInfo.cs
+C:\Users\Cata\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.csproj.CoreCompileInputs.cache
+C:\Users\Cata\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\TP CAI.genruntimeconfig.cache
+C:\Users\Cata\source\repos\TP CAI\TP CAI\obj\Debug\net6.0-windows\ref\TP CAI.dll
