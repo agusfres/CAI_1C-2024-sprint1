@@ -120,5 +120,44 @@ namespace Persistencia
                 Console.WriteLine($"Exception: {ex.Message}");
             }
         }
+
+        public static string Login(Login login)
+        {
+            var jsonRequest = JsonConvert.SerializeObject(login);
+
+            HttpResponseMessage response = WebHelper.Post("Usuario/Login", jsonRequest);
+
+            if (!response.IsSuccessStatusCode)
+            {
+                throw new Exception("Verifique los datos ingresados");
+            }
+
+            var reader = new StreamReader(response.Content.ReadAsStreamAsync().Result);
+            string respuesta = reader.ReadToEnd();
+
+            return respuesta;
+        }
+        public static string CambiarContraseña(string nombreUsuario, string contraseña, string contraseñaNueva)
+        {
+            Dictionary<String, String> map = new Dictionary<String, String>();
+            map.Add("nombreUsuario", nombreUsuario);
+            map.Add("contraseña", contraseña);
+            map.Add("contraseñaNueva", contraseñaNueva);
+
+            var jsonRequest = JsonConvert.SerializeObject(map);
+
+            HttpResponseMessage response = WebHelper.Patch("Usuario/CambiarContraseña", jsonRequest);
+
+            if (!response.IsSuccessStatusCode)
+            {
+                throw new Exception("Verifique los datos ingresados");
+            }
+
+            var reader = new StreamReader(response.Content.ReadAsStreamAsync().Result);
+            string respuesta = reader.ReadToEnd();
+
+            return respuesta;
+        }
+
     }
 }

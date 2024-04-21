@@ -44,11 +44,11 @@
             this.lblCambiaTuContraseñaTitulo.AutoSize = true;
             this.lblCambiaTuContraseñaTitulo.Font = new System.Drawing.Font("Inter", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCambiaTuContraseñaTitulo.ForeColor = System.Drawing.Color.DimGray;
-            this.lblCambiaTuContraseñaTitulo.Location = new System.Drawing.Point(97, 30);
+            this.lblCambiaTuContraseñaTitulo.Location = new System.Drawing.Point(53, 30);
             this.lblCambiaTuContraseñaTitulo.Name = "lblCambiaTuContraseñaTitulo";
-            this.lblCambiaTuContraseñaTitulo.Size = new System.Drawing.Size(357, 33);
+            this.lblCambiaTuContraseñaTitulo.Size = new System.Drawing.Size(468, 33);
             this.lblCambiaTuContraseñaTitulo.TabIndex = 1;
-            this.lblCambiaTuContraseñaTitulo.Text = "CAMBIA TU CONTRASEÑA";
+            this.lblCambiaTuContraseñaTitulo.Text = "DEBES CAMBIAR TU CONTRASEÑA";
             // 
             // linkLabelVolver
             // 

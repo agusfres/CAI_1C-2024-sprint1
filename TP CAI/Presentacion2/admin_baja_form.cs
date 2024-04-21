@@ -24,21 +24,21 @@ namespace Presentacion2
         private void btnBuscarUsuario_Click_1(object sender, EventArgs e)
         {
             
-            string txDNI = txtDNI.Text;
+            string txUsuarioId = txtDNI.Text;
             string msg = "";
 
-            if (string.IsNullOrEmpty(txDNI))
+            if (string.IsNullOrEmpty(txUsuarioId))
             {
-                lblErrorDNI.Text = "Ingrese un DNI";
+                lblErrorDNI.Text = "Ingrese un Id de usuario";
             }
-            else if (int.TryParse(txDNI, out int dni))
+            else if (int.TryParse(txUsuarioId, out int dni))
             {
                 NegocioUsuario negocio = new NegocioUsuario();
                 msg = negocio.BuscarDni(dni, usuarios);
 
                 if (msg == "ERROR")
                 {
-                    lblErrorDNI.Text = "Ingrese un DNI existente.";
+                    lblErrorDNI.Text = "Ingrese un Id existente.";
                 }
                 else
                 {
@@ -55,12 +55,11 @@ namespace Presentacion2
 
         private void btnEliminarUsuario_Click_1(object sender, EventArgs e)
         {
-            // Cambiar txDNI por txIdUsuario, ya que se necesita el Guid del id usuario para eliminar o borrar
-            string txDNI = txtDNI.Text;
+            string txUsuarioId = txtDNI.Text;
             NegocioUsuario negocioUsuario = new NegocioUsuario();
             Operacion operacion = new Operacion();
 
-            if (Guid.TryParse(txDNI, out Guid idUsuario))
+            if (Guid.TryParse(txUsuarioId, out Guid idUsuario))
             {
                 negocioUsuario.BorrarUsuario(idUsuario);
             }

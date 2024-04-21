@@ -71,9 +71,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(170, 115);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(265, 15);
+            this.label1.Size = new System.Drawing.Size(293, 15);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Ingrese el DNI del usuarion que desea eliminar";
+            this.label1.Text = "Ingrese el Id Usuario del usuario que desea eliminar";
             // 
             // txtDNI
             // 

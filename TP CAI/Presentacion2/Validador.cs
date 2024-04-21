@@ -22,6 +22,7 @@ namespace Presentacion2
             string msgError = "";
             msgError = msgError + validarLongitud(texto, campo, 8, 15);
             msgError = msgError + validarFormatoContraseña(texto, campo);
+            msgError = msgError + validarContraseñaDefinitiva(texto);
             error = msgError;
         }
 
@@ -56,7 +57,23 @@ namespace Presentacion2
             }
             return flag1;
         }
+        private string validarContraseñaDefinitiva(string texto)
+        {
+            if (texto == "CAI20232")
+            {
+                return "Su contraseña debe ser diferente";
+            }
+            return "";
+        }
 
+        public string validarContraseñaDefinitivaLogin(string texto)
+        {
+            if (texto != "CAI20232")
+            {
+                return "Debe cambiar su contraseña";
+            }
+            return "";
+        }
 
         private bool validarMayusculaContra(string texto)
         {
@@ -97,7 +114,7 @@ namespace Presentacion2
         }
 
 
-        private string validarVacio(string texto, string campo)
+        public string validarVacio(string texto, string campo)
         {
             if (texto.Length == 0)
             {

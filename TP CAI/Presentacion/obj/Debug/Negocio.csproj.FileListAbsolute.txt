@@ -54,3 +54,29 @@ C:\Users\lauta\OneDrive\Escritorio\TP CAI hasta 20.04\TP CAI nuevos forms sin er
 C:\Users\lauta\OneDrive\Escritorio\TP CAI hasta 20.04\TP CAI nuevos forms sin errores\TP CAI nuevos forms\TP CAI\TP CAI\Presentacion\obj\Debug\Negocio.csproj.Up2Date
 C:\Users\lauta\OneDrive\Escritorio\TP CAI hasta 20.04\TP CAI nuevos forms sin errores\TP CAI nuevos forms\TP CAI\TP CAI\Presentacion\obj\Debug\Presentacion.dll
 C:\Users\lauta\OneDrive\Escritorio\TP CAI hasta 20.04\TP CAI nuevos forms sin errores\TP CAI nuevos forms\TP CAI\TP CAI\Presentacion\obj\Debug\Presentacion.pdb
+C:\Users\catac\Pictures\Cata\Facultad\CAI\TP CAI hasta 21.04\TP CAI hasta 21.04\TP CAI nuevos forms sin errores\TP CAI nuevos forms\TP CAI\TP CAI\Presentacion\bin\Debug\Presentacion.dll
+C:\Users\catac\Pictures\Cata\Facultad\CAI\TP CAI hasta 21.04\TP CAI hasta 21.04\TP CAI nuevos forms sin errores\TP CAI nuevos forms\TP CAI\TP CAI\Presentacion\bin\Debug\Presentacion.pdb
+C:\Users\catac\Pictures\Cata\Facultad\CAI\TP CAI hasta 21.04\TP CAI hasta 21.04\TP CAI nuevos forms sin errores\TP CAI nuevos forms\TP CAI\TP CAI\Presentacion\bin\Debug\Datos.dll
+C:\Users\catac\Pictures\Cata\Facultad\CAI\TP CAI hasta 21.04\TP CAI hasta 21.04\TP CAI nuevos forms sin errores\TP CAI nuevos forms\TP CAI\TP CAI\Presentacion\bin\Debug\Persistencia.dll
+C:\Users\catac\Pictures\Cata\Facultad\CAI\TP CAI hasta 21.04\TP CAI hasta 21.04\TP CAI nuevos forms sin errores\TP CAI nuevos forms\TP CAI\TP CAI\Presentacion\bin\Debug\Newtonsoft.Json.dll
+C:\Users\catac\Pictures\Cata\Facultad\CAI\TP CAI hasta 21.04\TP CAI hasta 21.04\TP CAI nuevos forms sin errores\TP CAI nuevos forms\TP CAI\TP CAI\Presentacion\bin\Debug\Datos.pdb
+C:\Users\catac\Pictures\Cata\Facultad\CAI\TP CAI hasta 21.04\TP CAI hasta 21.04\TP CAI nuevos forms sin errores\TP CAI nuevos forms\TP CAI\TP CAI\Presentacion\bin\Debug\Persistencia.pdb
+C:\Users\catac\Pictures\Cata\Facultad\CAI\TP CAI hasta 21.04\TP CAI hasta 21.04\TP CAI nuevos forms sin errores\TP CAI nuevos forms\TP CAI\TP CAI\Presentacion\bin\Debug\Newtonsoft.Json.xml
+C:\Users\catac\Pictures\Cata\Facultad\CAI\TP CAI hasta 21.04\TP CAI hasta 21.04\TP CAI nuevos forms sin errores\TP CAI nuevos forms\TP CAI\TP CAI\Presentacion\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\Users\catac\Pictures\Cata\Facultad\CAI\TP CAI hasta 21.04\TP CAI hasta 21.04\TP CAI nuevos forms sin errores\TP CAI nuevos forms\TP CAI\TP CAI\Presentacion\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\catac\Pictures\Cata\Facultad\CAI\TP CAI hasta 21.04\TP CAI hasta 21.04\TP CAI nuevos forms sin errores\TP CAI nuevos forms\TP CAI\TP CAI\Presentacion\obj\Debug\Negocio.csproj.CopyComplete
+C:\Users\catac\Pictures\Cata\Facultad\CAI\TP CAI hasta 21.04\TP CAI hasta 21.04\TP CAI nuevos forms sin errores\TP CAI nuevos forms\TP CAI\TP CAI\Presentacion\obj\Debug\Presentacion.dll
+C:\Users\catac\Pictures\Cata\Facultad\CAI\TP CAI hasta 21.04\TP CAI hasta 21.04\TP CAI nuevos forms sin errores\TP CAI nuevos forms\TP CAI\TP CAI\Presentacion\obj\Debug\Presentacion.pdb
+C:\Users\lauta\OneDrive\Escritorio\TP CAI hasta DOMINGO\TP CAI hasta 21.04\TP CAI hasta 21.04\TP CAI nuevos forms sin errores\TP CAI nuevos forms\TP CAI\TP CAI\Presentacion\bin\Debug\Presentacion.dll
+C:\Users\lauta\OneDrive\Escritorio\TP CAI hasta DOMINGO\TP CAI hasta 21.04\TP CAI hasta 21.04\TP CAI nuevos forms sin errores\TP CAI nuevos forms\TP CAI\TP CAI\Presentacion\bin\Debug\Presentacion.pdb
+C:\Users\lauta\OneDrive\Escritorio\TP CAI hasta DOMINGO\TP CAI hasta 21.04\TP CAI hasta 21.04\TP CAI nuevos forms sin errores\TP CAI nuevos forms\TP CAI\TP CAI\Presentacion\bin\Debug\Datos.dll
+C:\Users\lauta\OneDrive\Escritorio\TP CAI hasta DOMINGO\TP CAI hasta 21.04\TP CAI hasta 21.04\TP CAI nuevos forms sin errores\TP CAI nuevos forms\TP CAI\TP CAI\Presentacion\bin\Debug\Persistencia.dll
+C:\Users\lauta\OneDrive\Escritorio\TP CAI hasta DOMINGO\TP CAI hasta 21.04\TP CAI hasta 21.04\TP CAI nuevos forms sin errores\TP CAI nuevos forms\TP CAI\TP CAI\Presentacion\bin\Debug\Newtonsoft.Json.dll
+C:\Users\lauta\OneDrive\Escritorio\TP CAI hasta DOMINGO\TP CAI hasta 21.04\TP CAI hasta 21.04\TP CAI nuevos forms sin errores\TP CAI nuevos forms\TP CAI\TP CAI\Presentacion\bin\Debug\Datos.pdb
+C:\Users\lauta\OneDrive\Escritorio\TP CAI hasta DOMINGO\TP CAI hasta 21.04\TP CAI hasta 21.04\TP CAI nuevos forms sin errores\TP CAI nuevos forms\TP CAI\TP CAI\Presentacion\bin\Debug\Persistencia.pdb
+C:\Users\lauta\OneDrive\Escritorio\TP CAI hasta DOMINGO\TP CAI hasta 21.04\TP CAI hasta 21.04\TP CAI nuevos forms sin errores\TP CAI nuevos forms\TP CAI\TP CAI\Presentacion\bin\Debug\Newtonsoft.Json.xml
+C:\Users\lauta\OneDrive\Escritorio\TP CAI hasta DOMINGO\TP CAI hasta 21.04\TP CAI hasta 21.04\TP CAI nuevos forms sin errores\TP CAI nuevos forms\TP CAI\TP CAI\Presentacion\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\Users\lauta\OneDrive\Escritorio\TP CAI hasta DOMINGO\TP CAI hasta 21.04\TP CAI hasta 21.04\TP CAI nuevos forms sin errores\TP CAI nuevos forms\TP CAI\TP CAI\Presentacion\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\lauta\OneDrive\Escritorio\TP CAI hasta DOMINGO\TP CAI hasta 21.04\TP CAI hasta 21.04\TP CAI nuevos forms sin errores\TP CAI nuevos forms\TP CAI\TP CAI\Presentacion\obj\Debug\Negocio.csproj.Up2Date
+C:\Users\lauta\OneDrive\Escritorio\TP CAI hasta DOMINGO\TP CAI hasta 21.04\TP CAI hasta 21.04\TP CAI nuevos forms sin errores\TP CAI nuevos forms\TP CAI\TP CAI\Presentacion\obj\Debug\Presentacion.dll
+C:\Users\lauta\OneDrive\Escritorio\TP CAI hasta DOMINGO\TP CAI hasta 21.04\TP CAI hasta 21.04\TP CAI nuevos forms sin errores\TP CAI nuevos forms\TP CAI\TP CAI\Presentacion\obj\Debug\Presentacion.pdb
