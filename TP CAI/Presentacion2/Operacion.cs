@@ -31,22 +31,6 @@ namespace Presentacion2
         }
 
 
-        public int asignarId(List<Usuario> usuarios)
-        {
-            int nuevoId = 1;
-            List<int> idExistentes = new List<int>();
-            foreach (Usuario usuario in usuarios)
-            {
-                idExistentes.Add(usuario.Id);
-            }
-            while (idExistentes.Contains(nuevoId))
-            {
-                nuevoId++;
-            }
-            return nuevoId;
-        }
-
-
     }
 }
 

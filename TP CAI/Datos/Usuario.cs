@@ -8,7 +8,7 @@ namespace Datos
 {
     public class Usuario
     {
-        int id;
+        Guid id;
         string nombre;
         string apellido;
         string direccion;
@@ -24,7 +24,7 @@ namespace Datos
         string contraseña;
         string host;
 
-        public Usuario(int id, string nombre, string apellido, string direccion, string telefono, string email, DateTime fechaAlta, DateTime fechaNacimiento, DateTime? fechaBaja, DateTime? fechaUltimaAct, string nombreUsuario, int tipoUsuario, int dni, string contraseña, string host)
+        public Usuario(Guid id, string nombre, string apellido, string direccion, string telefono, string email, DateTime fechaAlta, DateTime fechaNacimiento, DateTime? fechaBaja, DateTime? fechaUltimaAct, string nombreUsuario, int tipoUsuario, int dni, string contraseña, string host)
         {
             this.id = id;
             this.nombre = nombre;
@@ -43,7 +43,7 @@ namespace Datos
             this.host = host;
         }
 
-        public int Id { get => id; set => id = value; }
+        public Guid Id { get => id; set => id = value; }
         public string Nombre { get => nombre; set => nombre = value; }
         public string Apellido { get => apellido; set => apellido = value; }
         public string Direccion { get => direccion; set => direccion = value; }

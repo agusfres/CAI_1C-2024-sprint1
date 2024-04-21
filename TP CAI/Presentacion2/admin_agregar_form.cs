@@ -77,15 +77,15 @@ namespace Presentacion2
             {
 
                 Operacion operacion = new Operacion();
-                int id = operacion.asignarId(usuarios);
+
                 string host = "grupo 5";
                 int intCmTipoUsuario = operacion.transformarStringInt(cmTipoUsuario);
                 DateTime datetimeTxFechaNac = operacion.transformarStringDatetime(txFechaNac);
                 int intTxDNI = operacion.transformarStringInt(txDNI);
 
-                NegocioUsuario negocio = new NegocioUsuario();
-                negocio.Alta(id, txNombre, txApellido, txDireccion, txTelefono, txEmail, DateTime.Now, datetimeTxFechaNac, DateTime.Now, DateTime.Now, txNombreUsuario, intCmTipoUsuario, intTxDNI, txContraseña, host, usuarios);
-
+                NegocioUsuario negocioUsuario = new NegocioUsuario();
+                negocioUsuario.Alta(txNombre, txApellido, txDireccion, txTelefono, txEmail, DateTime.Now, datetimeTxFechaNac, DateTime.Now, DateTime.Now, txNombreUsuario, intCmTipoUsuario, intTxDNI, txContraseña, host);
+               
                 LimpiarCampos();
 
                 lblconfirma.Text = "Usuario cargado con éxito ";

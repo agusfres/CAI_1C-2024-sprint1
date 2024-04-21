@@ -15,8 +15,6 @@ namespace Presentacion2
     public partial class admin_baja_form : Form
     {
         List<Usuario> usuarios = new List<Usuario>();
-        Usuario usuario = new Usuario (1, "Catalina", "Alvarez", "Salta 2300", "11525252", "ccc@ffff", DateTime.Now, DateTime.Now, null, null, "cataac", 1, 43571365, "ABR", "WER");
-
         public admin_baja_form()
         {
             InitializeComponent();
@@ -25,7 +23,6 @@ namespace Presentacion2
         private void btnBuscarUsuario_Click_1(object sender, EventArgs e)
         {
             
-            usuarios.Add(usuario);
             string txDNI = txtDNI.Text;
             string msg = "";
 
