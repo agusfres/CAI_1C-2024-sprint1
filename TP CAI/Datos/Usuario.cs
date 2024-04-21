@@ -8,47 +8,55 @@ namespace Datos
 {
     public class Usuario
     {
-        public int id { get; set; }
-        public string nombre { get; set; }
-        public string apellido { get; set; }
-        public string direccion { get; set; }
-        public string telefono { get; set; }
-        public string email { get; set; }
-        public DateTime fechaAlta { get; set; }
-        public DateTime fechaNacimiento { get; set; }
-        public DateTime? fechaBaja { get; set; }
-        public DateTime? fechaUltimaAct { get; set; }
-        public string nombreUsuario { get; set; }
-        public int tipoUsuario { get; set; }
-        public int dni { get; set; }
-        public string contraseña { get; set; }
-        public string host { get; set; }
+        int id;
+        string nombre;
+        string apellido;
+        string direccion;
+        string telefono;
+        string email;
+        DateTime fechaAlta;
+        DateTime fechaNacimiento;
+        DateTime? fechaBaja;
+        DateTime? fechaUltimaAct;
+        string nombreUsuario;
+        int tipoUsuario;
+        string dni;
+        string contraseña;
+        string host;
 
-
-
-        public Usuario(int Id, string Nombre, string Apellido, string Direccion, string Telefono, string Email, DateTime FechaAlta, DateTime FechaNacimiento, DateTime? FechaBaja, DateTime? FechaUltimaAct, string NombreUsuario, int TipoUsuario, int Dni, string Contraseña, string Host)
+        public Usuario(int id, string nombre, string apellido, string direccion, string telefono, string email, DateTime fechaAlta, DateTime fechaNacimiento, DateTime? fechaBaja, DateTime? fechaUltimaAct, string nombreUsuario, int tipoUsuario, string dni, string contraseña, string host)
         {
-            id = Id;
-            nombre = Nombre;
-            apellido = Apellido;
-            direccion = Direccion;
-            telefono = Telefono;
-            email = Email;
-            fechaAlta = FechaAlta;
-            fechaNacimiento = FechaNacimiento;
-            fechaBaja = FechaBaja;
-            fechaUltimaAct = FechaUltimaAct;
-            nombreUsuario = NombreUsuario;
-            tipoUsuario = TipoUsuario;
-            dni = Dni;
-            contraseña = Contraseña;
-            host = Host;
+            this.id = id;
+            this.nombre = nombre;
+            this.apellido = apellido;
+            this.direccion = direccion;
+            this.telefono = telefono;
+            this.email = email;
+            this.fechaAlta = fechaAlta;
+            this.fechaNacimiento = fechaNacimiento;
+            this.fechaBaja = fechaBaja;
+            this.fechaUltimaAct = fechaUltimaAct;
+            this.nombreUsuario = nombreUsuario;
+            this.tipoUsuario = tipoUsuario;
+            this.dni = dni;
+            this.contraseña = contraseña;
+            this.host = host;
         }
 
-
-        public int GetId()
-        {
-            return this.id;
-        }
+        public int Id { get => id; set => id = value; }
+        public string Nombre { get => nombre; set => nombre = value; }
+        public string Apellido { get => apellido; set => apellido = value; }
+        public string Direccion { get => direccion; set => direccion = value; }
+        public string Telefono { get => telefono; set => telefono = value; }
+        public string Email { get => email; set => email = value; }
+        public DateTime FechaAlta { get => fechaAlta; set => fechaAlta = value; }
+        public DateTime FechaNacimiento { get => fechaNacimiento; set => fechaNacimiento = value; }
+        public DateTime? FechaBaja { get => fechaBaja; set => fechaBaja = value; }
+        public DateTime? FechaUltimaAct { get => fechaUltimaAct; set => fechaUltimaAct = value; }
+        public string NombreUsuario { get => nombreUsuario; set => nombreUsuario = value; }
+        public int TipoUsuario { get => tipoUsuario; set => tipoUsuario = value; }
+        public string Dni { get => dni; set => dni = value; }
+        public string Contraseña { get => contraseña; set => contraseña = value; }
+        public string Host { get => host; set => host = value; }
     }
 }
