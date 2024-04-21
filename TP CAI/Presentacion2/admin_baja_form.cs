@@ -12,6 +12,7 @@ using Negocio;
 
 namespace Presentacion2
 {
+
     public partial class admin_baja_form : Form
     {
         List<Usuario> usuarios = new List<Usuario>();
@@ -54,16 +55,18 @@ namespace Presentacion2
 
         private void btnEliminarUsuario_Click_1(object sender, EventArgs e)
         {
+            // Cambiar txDNI por txIdUsuario, ya que se necesita el Guid del id usuario para eliminar o borrar
             string txDNI = txtDNI.Text;
             NegocioUsuario negocioUsuario = new NegocioUsuario();
+            Operacion operacion = new Operacion();
 
-            if (int.TryParse(txDNI, out int dni))
+            if (Guid.TryParse(txDNI, out Guid idUsuario))
             {
-                negocioUsuario.Delete(dni, usuarios);
+                negocioUsuario.BorrarUsuario(idUsuario);
             }
             else
             {
-                lblErrorEliminar.Text = "Debes seleccionar el usuario a eliminar";
+                lblErrorEliminar.Text = "Debes indicar el id / Guid del usuario a eliminar";
             }
 
         }

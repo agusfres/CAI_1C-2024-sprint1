@@ -9,7 +9,7 @@ namespace Presentacion2
 {
     internal class Operacion
     {
-        public int transformarStringInt(string texto)
+        public int TransformarStringInt(string texto)
         {
             int salida;
             if (int.TryParse(texto, out salida))
@@ -20,7 +20,7 @@ namespace Presentacion2
         }
 
 
-        public DateTime transformarStringDatetime(string texto)
+        public DateTime TransformarStringDatetime(string texto)
         {
             DateTime salida;
             if (DateTime.TryParseExact(texto, "dd/MM/yyyy", null, System.Globalization.DateTimeStyles.None, out salida))
@@ -30,7 +30,15 @@ namespace Presentacion2
             return DateTime.Now;
         }
 
-
+        public Guid TransformarStringGuid(string texto)
+        {
+            Guid salida;
+            if (Guid.TryParse(texto, out salida))
+            {
+                return salida;
+            }
+            return Guid.Empty;
+        }
     }
 }
 

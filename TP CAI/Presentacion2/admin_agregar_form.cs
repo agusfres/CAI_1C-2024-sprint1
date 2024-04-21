@@ -14,13 +14,10 @@ namespace Presentacion2
 {
     public partial class admin_agregar_form : Form
     {
-        List<Usuario> usuarios = new List<Usuario>();
-
         public admin_agregar_form()
         {
             InitializeComponent();
         }
-    
 
         private async void btnConfirmar_Click_1(object sender, EventArgs e)
         {
@@ -75,25 +72,26 @@ namespace Presentacion2
 
             if (string.IsNullOrEmpty(acumuladorErrores))
             {
-
                 Operacion operacion = new Operacion();
 
-                string host = "grupo 5";
-                int intCmTipoUsuario = operacion.transformarStringInt(cmTipoUsuario);
-                DateTime datetimeTxFechaNac = operacion.transformarStringDatetime(txFechaNac);
-                int intTxDNI = operacion.transformarStringInt(txDNI);
+                int intCmTipoUsuario = operacion.TransformarStringInt(cmTipoUsuario);
+                DateTime datetimeTxFechaNac = operacion.TransformarStringDatetime(txFechaNac);
+                int intTxDNI = operacion.TransformarStringInt(txDNI);
 
                 NegocioUsuario negocioUsuario = new NegocioUsuario();
-                negocioUsuario.Alta(txNombre, txApellido, txDireccion, txTelefono, txEmail, DateTime.Now, datetimeTxFechaNac, DateTime.Now, DateTime.Now, txNombreUsuario, intCmTipoUsuario, intTxDNI, txContraseña, host);
-               
+
+                // Indicamos host 1 temporariamente porque con el Host 5 no funciona, devuelve error 409
+                int host = 1;
+                negocioUsuario.AgregarUsuario(txNombre, txApellido, txDireccion, txTelefono, txEmail, DateTime.Now, datetimeTxFechaNac, null, null, txNombreUsuario, intCmTipoUsuario, intTxDNI, txContraseña, host);
+
                 LimpiarCampos();
 
-                lblconfirma.Text = "Usuario cargado con éxito ";
+                lblconfirma.Text = "Usuario cargado con éxito";
                 await Task.Delay(5000);
                 lblconfirma.Text = "";
             }
-            
         }
+
         private void LimpiarCampos()
         {
             txtNombre.Clear();

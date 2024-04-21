@@ -22,3 +22,9 @@ C:\Users\agusc\source\repos\TP CAI nuevos forms sin errores\TP CAI nuevos forms\
 C:\Users\agusc\source\repos\TP CAI nuevos forms sin errores\TP CAI nuevos forms\TP CAI\TP CAI\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
 C:\Users\agusc\source\repos\TP CAI nuevos forms sin errores\TP CAI nuevos forms\TP CAI\TP CAI\Datos\obj\Debug\Datos.dll
 C:\Users\agusc\source\repos\TP CAI nuevos forms sin errores\TP CAI nuevos forms\TP CAI\TP CAI\Datos\obj\Debug\Datos.pdb
+C:\Users\lauta\OneDrive\Escritorio\TP CAI hasta 20.04\TP CAI nuevos forms sin errores\TP CAI nuevos forms\TP CAI\TP CAI\Datos\bin\Debug\Datos.dll
+C:\Users\lauta\OneDrive\Escritorio\TP CAI hasta 20.04\TP CAI nuevos forms sin errores\TP CAI nuevos forms\TP CAI\TP CAI\Datos\bin\Debug\Datos.pdb
+C:\Users\lauta\OneDrive\Escritorio\TP CAI hasta 20.04\TP CAI nuevos forms sin errores\TP CAI nuevos forms\TP CAI\TP CAI\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\Users\lauta\OneDrive\Escritorio\TP CAI hasta 20.04\TP CAI nuevos forms sin errores\TP CAI nuevos forms\TP CAI\TP CAI\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\lauta\OneDrive\Escritorio\TP CAI hasta 20.04\TP CAI nuevos forms sin errores\TP CAI nuevos forms\TP CAI\TP CAI\Datos\obj\Debug\Datos.dll
+C:\Users\lauta\OneDrive\Escritorio\TP CAI hasta 20.04\TP CAI nuevos forms sin errores\TP CAI nuevos forms\TP CAI\TP CAI\Datos\obj\Debug\Datos.pdb

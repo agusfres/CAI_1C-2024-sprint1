@@ -13,18 +13,18 @@ namespace Persistencia
 {
     public class UsuarioService
     {
-        public List<Usuario> TraerUsuariosActivos()
+        public List<Usuario> TraerUsuariosActivos(Guid idAdministrador)
         {
-            String path = "/api/Usuario/TraerUsuariosActivos";
-            List<Usuario> usuarios = new List<Usuario>();
+            String path = "/api/Usuario/TraerUsuariosActivos?id=" + idAdministrador;
+            List<Usuario> listaUsuarios = new List<Usuario>();
             try
             {
                 HttpResponseMessage response = WebHelper.Get(path);
                 if (response.IsSuccessStatusCode)
                 {
                     var contentStream = response.Content.ReadAsStringAsync().Result;
-                    List<Usuario> listadoClientes = JsonConvert.DeserializeObject<List<Usuario>>(contentStream);
-                    return listadoClientes;
+                    listaUsuarios = JsonConvert.DeserializeObject<List<Usuario>>(contentStream);
+                    return listaUsuarios;
                 }
                 else
                 {
@@ -35,7 +35,7 @@ namespace Persistencia
             {
                 Console.WriteLine($"Exception: {ex.Message}");
             }
-            return usuarios;
+            return listaUsuarios;
 
         }
 
@@ -96,13 +96,15 @@ namespace Persistencia
             }
         }
 
-        public void BorrarUsuario(Guid idUsuario)
+        public void BorrarUsuario(BajaUsuario bajaUsuario)
         {
-            String path = "/api/Usuario/BajaUsuario?id=" + idUsuario;
+            String path = "/api/Usuario/BajaUsuario";
+
+            var jsonRequest = JsonConvert.SerializeObject(bajaUsuario);
 
             try
             {
-                HttpResponseMessage response = WebHelper.Delete(path);
+                HttpResponseMessage response = WebHelper.DeleteWithBody(path, jsonRequest);
                 if (response.IsSuccessStatusCode)
                 {
                     var reader = new StreamReader(response.Content.ReadAsStreamAsync().Result);

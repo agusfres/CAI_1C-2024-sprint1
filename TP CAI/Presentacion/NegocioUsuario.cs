@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using Datos;
@@ -11,22 +12,23 @@ namespace Negocio
     public class NegocioUsuario
     {
         private UsuarioService usuarioService = new UsuarioService();
-        private String idAdministrador = "70b37dc1-8fde-4840-be47-9ababd0ee7e5";
+        private List<Usuario> listaUsuarios = new List<Usuario>();
+        private Guid idAdministrador = Guid.Parse("70b37dc1-8fde-4840-be47-9ababd0ee7e5");
 
-        public void Alta(string nombre, string apellido, string direccion, string telefono, string email, DateTime fechaAlta, DateTime fechaNacimiento, DateTime? fechaBaja, DateTime? fechaUltimaAct, string nombreUsuario, int tipoUsuario, int dni, string contraseña, string host)
-        {
-            TransformarStringAGuid tab = new TransformarStringAGuid();
-            Guid idAdministradorModificado = tab.TransformarStringGuid(idAdministrador);
-
-            AltaUsuario altaUsuario = new AltaUsuario(idAdministradorModificado, nombre, apellido, direccion, telefono, email, fechaAlta, fechaNacimiento, fechaBaja, fechaUltimaAct, nombreUsuario, tipoUsuario, dni, contraseña, host);
+        public void AgregarUsuario(string nombre, string apellido, string direccion, string telefono, string email, DateTime fechaAlta, DateTime fechaNacimiento, DateTime? fechaBaja, DateTime? fechaUltimaAct, string nombreUsuario, int tipoUsuario, int dni, string contraseña, int host)
+        {            
+            AltaUsuario altaUsuario = new AltaUsuario(idAdministrador, host, nombre, apellido, dni, direccion, telefono, email, fechaNacimiento, nombreUsuario, contraseña);
             usuarioService.AgregarUsuario(altaUsuario);
 
+            // Temporariamente guardamos una lista de usuarios localmente, solamente para guardar sus datos de fechaAlta, fechaBaja, fechaUltimaAct y tipoUsuario que no se postean en la api
+            Usuario usuario = new Usuario(idAdministrador, nombre, apellido, direccion, telefono, email, fechaAlta, fechaNacimiento, fechaBaja, fechaUltimaAct, nombreUsuario, tipoUsuario, dni, contraseña, host);
+            
+            listaUsuarios.Add(usuario);
         }
 
-        public string BuscarDni(int dni, List<Usuario> usuarios)
+        public string BuscarDni(int dni, List<Usuario> listaUsuarios)
         {
-
-            Usuario usuario = usuarios.Find(a => a.Dni == dni);
+            Usuario usuario = listaUsuarios.Find(a => a.Dni == dni);
             if (usuario == null)
             {
                 return  "ERROR";
@@ -36,43 +38,34 @@ namespace Negocio
                 return  usuario.Nombre + Environment.NewLine + usuario.Apellido;
             }
         }
-        public void Delete(int dni, List<Usuario> usuarios)
-        {
-            Usuario usuario = usuarios.Find(a => a.Dni == dni);
-            usuario.FechaBaja = DateTime.Now;
-        }
 
-        
 
-        public void modificarUsuario(Guid idUsuario, string direccion, string telefono, string email)
+        public void ModificarUsuario(Guid idUsuario, string direccion, string telefono, string email)
         {
             usuarioService.ModificarUsuario(idUsuario, direccion, telefono, email);
 
         }
 
-        public List<Usuario> listarUsuarios()
+
+        public List<Usuario> ListarUsuarios()
         {
-            return usuarioService.TraerUsuariosActivos();
+            return usuarioService.TraerUsuariosActivos(idAdministrador);
         }
 
-        public void borrarUsuario(Guid idUsuario)
-        {
-            usuarioService.BorrarUsuario(idUsuario);
-        }
-    }
 
-    public class TransformarStringAGuid
-    {
-        public Guid TransformarStringGuid(string texto)
+        public void BorrarUsuario(Guid idUsuario)
         {
-            Guid salida;
-            if (Guid.TryParse(texto, out salida))
+            BajaUsuario bajaUsuario = new BajaUsuario(idUsuario, idAdministrador);
+            usuarioService.BorrarUsuario(bajaUsuario);
+            if (listaUsuarios.Count > 0)
             {
-                return salida;
+                Usuario usuario = listaUsuarios.Find(a => a.IdUsuario == idUsuario);
+                if (usuario != null)
+                {
+                    usuario.FechaBaja = DateTime.Now;
+                }
             }
-            return Guid.Empty;
         }
-
     }
 }
 
