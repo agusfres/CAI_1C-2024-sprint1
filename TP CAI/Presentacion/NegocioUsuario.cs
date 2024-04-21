@@ -15,7 +15,7 @@ namespace Negocio
             Usuario usuario = new Usuario( id, nombre, apellido, direccion, telefono, email,  fechaAlta, fechaNacimiento, fechaBaja, fechaUltimaAct, nombreUsuario, tipoUsuario, dni, contraseña, host);
             usuarios.Add(usuario);
         }
-        public string BuscarDni(string dni, List<Usuario> usuarios)
+        public string BuscarDni(int dni, List<Usuario> usuarios)
         {
 
             Usuario usuario = usuarios.Find(a => a.Dni == dni);
@@ -28,7 +28,7 @@ namespace Negocio
                 return  usuario.Nombre + Environment.NewLine + usuario.Apellido;
             }
         }
-        public void Delete(string dni, List<Usuario> usuarios)
+        public void Delete(int dni, List<Usuario> usuarios)
         {
             Usuario usuario = usuarios.Find(a => a.Dni == dni);
             usuario.FechaBaja = DateTime.Now;

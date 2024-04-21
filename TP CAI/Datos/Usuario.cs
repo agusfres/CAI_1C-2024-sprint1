@@ -20,11 +20,11 @@ namespace Datos
         DateTime? fechaUltimaAct;
         string nombreUsuario;
         int tipoUsuario;
-        string dni;
+        int dni;
         string contraseña;
         string host;
 
-        public Usuario(int id, string nombre, string apellido, string direccion, string telefono, string email, DateTime fechaAlta, DateTime fechaNacimiento, DateTime? fechaBaja, DateTime? fechaUltimaAct, string nombreUsuario, int tipoUsuario, string dni, string contraseña, string host)
+        public Usuario(int id, string nombre, string apellido, string direccion, string telefono, string email, DateTime fechaAlta, DateTime fechaNacimiento, DateTime? fechaBaja, DateTime? fechaUltimaAct, string nombreUsuario, int tipoUsuario, int dni, string contraseña, string host)
         {
             this.id = id;
             this.nombre = nombre;
@@ -55,7 +55,7 @@ namespace Datos
         public DateTime? FechaUltimaAct { get => fechaUltimaAct; set => fechaUltimaAct = value; }
         public string NombreUsuario { get => nombreUsuario; set => nombreUsuario = value; }
         public int TipoUsuario { get => tipoUsuario; set => tipoUsuario = value; }
-        public string Dni { get => dni; set => dni = value; }
+        public int Dni { get => dni; set => dni = value; }
         public string Contraseña { get => contraseña; set => contraseña = value; }
         public string Host { get => host; set => host = value; }
     }

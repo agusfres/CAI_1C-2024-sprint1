@@ -1,66 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net6.0-windows7.0": {
-      "Datos/1.0.0": {
-        "type": "project",
-        "compile": {
-          "bin/placeholder/Datos.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Datos.dll": {}
-        }
-      },
-      "Negocio/1.0.0": {
-        "type": "project",
-        "dependencies": {
-          "Datos": "1.0.0",
-          "Persistencia": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Negocio.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Negocio.dll": {}
-        }
-      },
-      "Persistencia/1.0.0": {
-        "type": "project",
-        "dependencies": {
-          "Datos": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Persistencia.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Persistencia.dll": {}
-        }
-      }
-    }
+    "net6.0-windows7.0": {}
   },
-  "libraries": {
-    "Datos/1.0.0": {
-      "type": "project",
-      "path": "../Datos/Datos.csproj",
-      "msbuildProject": "../Datos/Datos.csproj"
-    },
-    "Negocio/1.0.0": {
-      "type": "project",
-      "path": "../Presentacion/Negocio.csproj",
-      "msbuildProject": "../Presentacion/Negocio.csproj"
-    },
-    "Persistencia/1.0.0": {
-      "type": "project",
-      "path": "../Persistencia/Persistencia.csproj",
-      "msbuildProject": "../Persistencia/Persistencia.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net6.0-windows7.0": [
-      "Datos >= 1.0.0",
-      "Negocio >= 1.0.0",
-      "Persistencia >= 1.0.0"
-    ]
+    "net6.0-windows7.0": []
   },
   "packageFolders": {
     "C:\\Users\\catac\\.nuget\\packages\\": {}
@@ -68,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\catac\\Pictures\\Cata\\Facultad\\CAI\\TP CAI\\TP CAI\\TP CAI\\TP CAI\\Presentacion.csproj",
+      "projectUniqueName": "C:\\Users\\catac\\Pictures\\Cata\\Facultad\\CAI\\TP CAI nuevos forms\\TP CAI nuevos forms\\TP CAI\\TP CAI\\TP CAI\\Presentacion.csproj",
       "projectName": "Presentacion",
-      "projectPath": "C:\\Users\\catac\\Pictures\\Cata\\Facultad\\CAI\\TP CAI\\TP CAI\\TP CAI\\TP CAI\\Presentacion.csproj",
+      "projectPath": "C:\\Users\\catac\\Pictures\\Cata\\Facultad\\CAI\\TP CAI nuevos forms\\TP CAI nuevos forms\\TP CAI\\TP CAI\\TP CAI\\Presentacion.csproj",
       "packagesPath": "C:\\Users\\catac\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\catac\\Pictures\\Cata\\Facultad\\CAI\\TP CAI\\TP CAI\\TP CAI\\TP CAI\\obj\\",
+      "outputPath": "C:\\Users\\catac\\Pictures\\Cata\\Facultad\\CAI\\TP CAI nuevos forms\\TP CAI nuevos forms\\TP CAI\\TP CAI\\TP CAI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\catac\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -88,17 +33,7 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
-          "projectReferences": {
-            "C:\\Users\\catac\\Pictures\\Cata\\Facultad\\CAI\\TP CAI\\TP CAI\\TP CAI\\Datos\\Datos.csproj": {
-              "projectPath": "C:\\Users\\catac\\Pictures\\Cata\\Facultad\\CAI\\TP CAI\\TP CAI\\TP CAI\\Datos\\Datos.csproj"
-            },
-            "C:\\Users\\catac\\Pictures\\Cata\\Facultad\\CAI\\TP CAI\\TP CAI\\TP CAI\\Persistencia\\Persistencia.csproj": {
-              "projectPath": "C:\\Users\\catac\\Pictures\\Cata\\Facultad\\CAI\\TP CAI\\TP CAI\\TP CAI\\Persistencia\\Persistencia.csproj"
-            },
-            "C:\\Users\\catac\\Pictures\\Cata\\Facultad\\CAI\\TP CAI\\TP CAI\\TP CAI\\Presentacion\\Negocio.csproj": {
-              "projectPath": "C:\\Users\\catac\\Pictures\\Cata\\Facultad\\CAI\\TP CAI\\TP CAI\\TP CAI\\Presentacion\\Negocio.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
