@@ -1,32 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\catac\\Pictures\\Cata\\Facultad\\CAI\\TP CAI nuevos forms\\TP CAI nuevos forms\\TP CAI\\TP CAI\\TP CAI\\Presentacion.csproj": {}
+    "/Users/lreche/Documents/GitHub/CAI_1C-2024-sprint1/TP CAI/TP CAI/Presentacion.csproj": {}
   },
   "projects": {
-    "C:\\Users\\catac\\Pictures\\Cata\\Facultad\\CAI\\TP CAI nuevos forms\\TP CAI nuevos forms\\TP CAI\\TP CAI\\TP CAI\\Presentacion.csproj": {
+    "/Users/lreche/Documents/GitHub/CAI_1C-2024-sprint1/TP CAI/TP CAI/Presentacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\catac\\Pictures\\Cata\\Facultad\\CAI\\TP CAI nuevos forms\\TP CAI nuevos forms\\TP CAI\\TP CAI\\TP CAI\\Presentacion.csproj",
+        "projectUniqueName": "/Users/lreche/Documents/GitHub/CAI_1C-2024-sprint1/TP CAI/TP CAI/Presentacion.csproj",
         "projectName": "Presentacion",
-        "projectPath": "C:\\Users\\catac\\Pictures\\Cata\\Facultad\\CAI\\TP CAI nuevos forms\\TP CAI nuevos forms\\TP CAI\\TP CAI\\TP CAI\\Presentacion.csproj",
-        "packagesPath": "C:\\Users\\catac\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\catac\\Pictures\\Cata\\Facultad\\CAI\\TP CAI nuevos forms\\TP CAI nuevos forms\\TP CAI\\TP CAI\\TP CAI\\obj\\",
+        "projectPath": "/Users/lreche/Documents/GitHub/CAI_1C-2024-sprint1/TP CAI/TP CAI/Presentacion.csproj",
+        "packagesPath": "/Users/lreche/.nuget/packages/",
+        "outputPath": "/Users/lreche/Documents/GitHub/CAI_1C-2024-sprint1/TP CAI/TP CAI/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\catac\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/lreche/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net6.0-windows"
+          "net472"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0-windows7.0": {
-            "targetAlias": "net6.0-windows",
+          "net472": {
+            "targetAlias": "net472",
             "projectReferences": {}
           }
         },
@@ -37,28 +35,17 @@
         }
       },
       "frameworks": {
-        "net6.0-windows7.0": {
-          "targetAlias": "net6.0-windows",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            },
-            "Microsoft.WindowsDesktop.App.WindowsForms": {
-              "privateAssets": "none"
+        "net472": {
+          "targetAlias": "net472",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, )",
+              "autoReferenced": true
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.201/RuntimeIdentifierGraph.json"
         }
       }
     }
