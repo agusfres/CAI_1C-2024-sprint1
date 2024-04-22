@@ -56,6 +56,8 @@ namespace Presentacion2
                 {
                     listaUsuario.ModificarContraseña(nombreUsuarioActual, txtContraseñaNueva.Text);
 
+                    listaUsuario.ModificarEstado(nombreUsuarioActual, "ACTIVO");
+
                     lblCambioContraseñaExitosa.Text = "Contraseña modificada con éxito" + System.Environment.NewLine;
                     await Task.Delay(4000);
 

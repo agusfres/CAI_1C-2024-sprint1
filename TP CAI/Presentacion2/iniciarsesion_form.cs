@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Drawing.Text;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,6 +17,9 @@ namespace Presentacion2
 {
     public partial class iniciarsesion_form : Form
     {
+        List<Usuario> listaUsuarios = new List<Usuario>();
+
+
         public iniciarsesion_form()
         {
             InitializeComponent();
@@ -30,17 +34,24 @@ namespace Presentacion2
             lblUsuarioError.Text = "";
             lblContraseñaError.Text = "";
 
-            if (validador.ValidarVacio(usuario, "Usuario") != "")
+
+            if ((validador.ValidarVacio(usuario, "Usuario") != "") || (validador.ValidarVacio(contraseña, "Contraseña") != ""))
             {
-                lblUsuarioError.Text = "Debe ingresar un nombre de usuario";
+                // QUEDA PENDIENTE RESOLVER LOS 3 INTENTOS RESTANTES
+                //intentosRestantes -= 1;
+                //lblIntentosRestantes.Text = "Te quedan " + intentosRestantes + " intentos antes que se inactive tu usuario";
+
+                if (validador.ValidarVacio(usuario, "Usuario") != "")
+                {
+                    lblUsuarioError.Text = "Debe ingresar un nombre de usuario";
+                }
+                if (validador.ValidarVacio(contraseña, "Contraseña") != "")
+                {
+                    lblContraseñaError.Text = "Debe ingresar una contraseña";
+                }
             }
-            if (validador.ValidarVacio(contraseña, "Contraseña") != "")
+            if (lblUsuarioError.Text == "" && lblContraseñaError.Text == "")
             {
-                lblContraseñaError.Text = "Debe ingresar una contraseña";
-            }
-            if (lblUsuarioError.Text == "" && lblContraseñaError.Text == "") 
-            {
-                List<Usuario> listaUsuarios = new List<Usuario>();
                 UsuarioService usuarioservice = new UsuarioService();
                 listaUsuarios = usuarioservice.TraerUsuariosActivos(Guid.Parse("70b37dc1-8fde-4840-be47-9ababd0ee7e5"));
                 if (validador.ValidarContraseñaDefinitivaLogin(contraseña) == "")

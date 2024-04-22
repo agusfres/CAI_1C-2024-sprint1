@@ -37,6 +37,7 @@
             this.lblUsuario = new System.Windows.Forms.Label();
             this.lblContraseña = new System.Windows.Forms.Label();
             this.btnIngresar = new ePOSOne.btnProduct.Button_WOC();
+            this.lblIntentosRestantes = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblIniciarSesionTitulo
@@ -138,11 +139,20 @@
             this.btnIngresar.UseVisualStyleBackColor = true;
             this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click_1);
             // 
+            // lblIntentosRestantes
+            // 
+            this.lblIntentosRestantes.AutoSize = true;
+            this.lblIntentosRestantes.Location = new System.Drawing.Point(260, 360);
+            this.lblIntentosRestantes.Name = "lblIntentosRestantes";
+            this.lblIntentosRestantes.Size = new System.Drawing.Size(0, 13);
+            this.lblIntentosRestantes.TabIndex = 38;
+            // 
             // iniciarsesion_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(556, 398);
+            this.Controls.Add(this.lblIntentosRestantes);
             this.Controls.Add(this.lblContraseña);
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.lblContraseñaError);
@@ -154,6 +164,7 @@
             this.Controls.Add(this.lblIniciarSesionTitulo);
             this.Name = "iniciarsesion_form";
             this.Text = "Form2";
+            this.Activated += new System.EventHandler(this.iniciarsesion_form_Activated);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -170,5 +181,6 @@
         private System.Windows.Forms.Label lblContraseñaError;
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.Label lblContraseña;
+        private System.Windows.Forms.Label lblIntentosRestantes;
     }
 }

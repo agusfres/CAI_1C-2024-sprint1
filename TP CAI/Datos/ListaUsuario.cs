@@ -60,5 +60,19 @@ namespace Datos
             usuario.Contraseña = contraseña;
             usuario.FechaUltimaAct = DateTime.Now;
         }
+
+
+        public void ModificarEstado(string nombreUsuario, string estado)
+        {
+            Usuario usuario = BuscarUsuario(nombreUsuario);
+            usuario.Estado = estado;
+        }
+
+
+        public void ModificarEstado(Guid id, string estado)
+        {
+            Usuario usuario = BuscarUsuario(id);
+            usuario.Estado = estado;
+        }
     }
 }

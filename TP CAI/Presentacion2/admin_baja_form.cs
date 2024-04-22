@@ -16,6 +16,7 @@ namespace Presentacion2
     public partial class admin_baja_form : Form
     {
         List<Usuario> usuarios = new List<Usuario>();
+
         public admin_baja_form()
         {
             InitializeComponent();
@@ -24,7 +25,7 @@ namespace Presentacion2
 
         private void btnBuscarUsuario_Click_1(object sender, EventArgs e)
         {
-            string txUsuarioId = txtDNI.Text;
+            string txUsuarioId = txtIdUsuario.Text;
             string msg = "";
 
             if (string.IsNullOrEmpty(txUsuarioId))
@@ -55,13 +56,14 @@ namespace Presentacion2
 
         private void btnEliminarUsuario_Click_1(object sender, EventArgs e)
         {
-            string txUsuarioId = txtDNI.Text;
+            string txIdUsuario = txtIdUsuario.Text;
             NegocioUsuario negocioUsuario = new NegocioUsuario();
-            Operacion operacion = new Operacion();
+            ListaUsuario listaUsuario = new ListaUsuario();
 
-            if (Guid.TryParse(txUsuarioId, out Guid idUsuario))
+            if (Guid.TryParse(txIdUsuario, out Guid idUsuario))
             {
                 negocioUsuario.BorrarUsuario(idUsuario);
+                listaUsuario.ModificarEstado(Guid.Parse(txIdUsuario), "INACTIVO");
             }
             else
             {

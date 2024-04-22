@@ -31,7 +31,7 @@
             this.linkLabelVolver = new System.Windows.Forms.LinkLabel();
             this.lblGestionUsuariosTitulo = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtDNI = new System.Windows.Forms.TextBox();
+            this.txtIdUsuario = new System.Windows.Forms.TextBox();
             this.lblErrorDNI = new System.Windows.Forms.Label();
             this.listBoxUsuario = new System.Windows.Forms.ListBox();
             this.lblErrorEliminar = new System.Windows.Forms.Label();
@@ -57,11 +57,11 @@
             // lblGestionUsuariosTitulo
             // 
             this.lblGestionUsuariosTitulo.AutoSize = true;
-            this.lblGestionUsuariosTitulo.Font = new System.Drawing.Font("Inter", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGestionUsuariosTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGestionUsuariosTitulo.ForeColor = System.Drawing.Color.DimGray;
             this.lblGestionUsuariosTitulo.Location = new System.Drawing.Point(216, 27);
             this.lblGestionUsuariosTitulo.Name = "lblGestionUsuariosTitulo";
-            this.lblGestionUsuariosTitulo.Size = new System.Drawing.Size(212, 33);
+            this.lblGestionUsuariosTitulo.Size = new System.Drawing.Size(214, 31);
             this.lblGestionUsuariosTitulo.TabIndex = 5;
             this.lblGestionUsuariosTitulo.Text = "BAJA USUARIO";
             // 
@@ -75,12 +75,12 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Ingrese el Id Usuario del usuario que desea eliminar";
             // 
-            // txtDNI
+            // txtIdUsuario
             // 
-            this.txtDNI.Location = new System.Drawing.Point(169, 143);
-            this.txtDNI.Name = "txtDNI";
-            this.txtDNI.Size = new System.Drawing.Size(302, 20);
-            this.txtDNI.TabIndex = 7;
+            this.txtIdUsuario.Location = new System.Drawing.Point(169, 143);
+            this.txtIdUsuario.Name = "txtIdUsuario";
+            this.txtIdUsuario.Size = new System.Drawing.Size(302, 20);
+            this.txtIdUsuario.TabIndex = 7;
             // 
             // lblErrorDNI
             // 
@@ -115,7 +115,7 @@
             this.btnEliminarUsuario.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnEliminarUsuario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnEliminarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminarUsuario.Font = new System.Drawing.Font("Inter", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminarUsuario.ForeColor = System.Drawing.Color.Transparent;
             this.btnEliminarUsuario.Location = new System.Drawing.Point(169, 363);
             this.btnEliminarUsuario.Name = "btnEliminarUsuario";
@@ -136,7 +136,7 @@
             this.btnBuscarUsuario.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnBuscarUsuario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnBuscarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarUsuario.Font = new System.Drawing.Font("Inter", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscarUsuario.ForeColor = System.Drawing.Color.Transparent;
             this.btnBuscarUsuario.Location = new System.Drawing.Point(169, 198);
             this.btnBuscarUsuario.Name = "btnBuscarUsuario";
@@ -160,7 +160,7 @@
             this.Controls.Add(this.listBoxUsuario);
             this.Controls.Add(this.btnBuscarUsuario);
             this.Controls.Add(this.lblErrorDNI);
-            this.Controls.Add(this.txtDNI);
+            this.Controls.Add(this.txtIdUsuario);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblGestionUsuariosTitulo);
             this.Controls.Add(this.linkLabelVolver);
@@ -177,7 +177,7 @@
         private System.Windows.Forms.LinkLabel linkLabelVolver;
         private System.Windows.Forms.Label lblGestionUsuariosTitulo;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtDNI;
+        private System.Windows.Forms.TextBox txtIdUsuario;
         private System.Windows.Forms.Label lblErrorDNI;
         private ePOSOne.btnProduct.Button_WOC btnBuscarUsuario;
         private System.Windows.Forms.ListBox listBoxUsuario;
