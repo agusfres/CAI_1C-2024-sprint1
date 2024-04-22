@@ -24,6 +24,19 @@ namespace Datos
         }
 
 
+        public Usuario BuscarUsuario(string nombreUsuario)
+        {
+            foreach (Usuario usuario in listaUsuariosLocal)
+            {
+                if (usuario.NombreUsuario == nombreUsuario)
+                {
+                    return usuario;
+                }
+            }
+            return null;
+        }
+
+
         public void AgregarUsuario(Usuario usuario)
         {
             listaUsuariosLocal.Add(usuario);
@@ -38,6 +51,14 @@ namespace Datos
                 usuario.FechaBaja = DateTime.Now;
                 usuario.Estado = "INACTIVO";
             }
+        }
+
+
+        public void ModificarContraseña(string nombreUsuario, string contraseña)
+        {
+            Usuario usuario = BuscarUsuario(nombreUsuario);
+            usuario.Contraseña = contraseña;
+            usuario.FechaUltimaAct = DateTime.Now;
         }
     }
 }

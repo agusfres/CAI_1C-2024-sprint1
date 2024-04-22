@@ -179,7 +179,7 @@ namespace Presentacion2
         public void ValidarDNI(string texto, string campo, ref string error)
         {
             string msgError = "";
-            msgError = msgError + ValidarLongitud(texto, campo, 1, 8);
+            msgError = msgError + ValidarLongitud(texto, campo, 6, 9);
             msgError = msgError + ValidarFormatoNumero(texto, campo);
             error = msgError;
         }
@@ -196,7 +196,7 @@ namespace Presentacion2
 
         private string ValidarFormatoNumero(string texto, string campo)
         {
-            if (!int.TryParse(texto, out int numero))
+            if (!long.TryParse(texto, out _))
             {
                 return "El campo " + campo + " debe contener únicamente números." + System.Environment.NewLine;
             }

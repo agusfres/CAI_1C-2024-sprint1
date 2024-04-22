@@ -40,3 +40,9 @@ C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Datos\obj\D
 C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
 C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Datos\obj\Debug\Datos.dll
 C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Datos\obj\Debug\Datos.pdb
+C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (1)\CAI_1C-2024-sprint1-main\TP CAI\Datos\bin\Debug\Datos.dll
+C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (1)\CAI_1C-2024-sprint1-main\TP CAI\Datos\bin\Debug\Datos.pdb
+C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (1)\CAI_1C-2024-sprint1-main\TP CAI\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (1)\CAI_1C-2024-sprint1-main\TP CAI\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (1)\CAI_1C-2024-sprint1-main\TP CAI\Datos\obj\Debug\Datos.dll
+C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (1)\CAI_1C-2024-sprint1-main\TP CAI\Datos\obj\Debug\Datos.pdb

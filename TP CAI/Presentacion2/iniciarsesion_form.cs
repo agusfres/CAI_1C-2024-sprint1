@@ -52,7 +52,7 @@ namespace Presentacion2
                 else
                 {
                     this.Hide();
-                    cambiocontra_form cambiocontra_Form = new cambiocontra_form();
+                    cambiocontra_form cambiocontra_Form = new cambiocontra_form(usuario);
                     cambiocontra_Form.Show();
                 }
             }
@@ -62,7 +62,7 @@ namespace Presentacion2
         private void LinklabelOlvidasteContraseña_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            cambiocontra_form cambiocontra_Form = new cambiocontra_form();
+            cambiocontra_form cambiocontra_Form = new cambiocontra_form(null);
             cambiocontra_Form.Show();
         }
     }

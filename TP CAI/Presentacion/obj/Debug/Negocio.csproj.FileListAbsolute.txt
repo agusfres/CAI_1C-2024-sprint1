@@ -84,3 +84,5 @@ C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacio
 C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion\obj\Debug\Presentacion.pdb
 C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main\CAI_1C-2024-sprint1-main\TP CAI\Presentacion\obj\Debug\Presentacion.dll
 C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main\CAI_1C-2024-sprint1-main\TP CAI\Presentacion\obj\Debug\Presentacion.pdb
+C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (1)\CAI_1C-2024-sprint1-main\TP CAI\Presentacion\obj\Debug\Presentacion.dll
+C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (1)\CAI_1C-2024-sprint1-main\TP CAI\Presentacion\obj\Debug\Presentacion.pdb

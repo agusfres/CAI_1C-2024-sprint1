@@ -112,8 +112,8 @@ namespace Presentacion2
         private void linkLabelVolver_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            admin_gestion_form form5 = new admin_gestion_form();
-            form5.Show();
+            admin_gestion_form admin_gestion = new admin_gestion_form();
+            admin_gestion.Show();
         }
     }
 }
