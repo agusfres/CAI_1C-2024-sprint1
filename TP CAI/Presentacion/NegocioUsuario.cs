@@ -32,17 +32,35 @@ namespace Negocio
         }
 
 
-        public string BuscarDni(int dni, List<Usuario> listaUsuarios)
+        public Usuario BuscarUsuario(Guid id, List<Usuario> listaUsuarios)
         {
-            Usuario usuario = listaUsuarios.Find(a => a.Dni == dni);
-            if (usuario == null)
+            if (listaUsuarios != null)
             {
-                return "ERROR";
+                foreach (Usuario usuario in listaUsuarios)
+                {
+                    if (usuario.IdUsuario == id)
+                    {
+                        return usuario;
+                    }
+                }
             }
-            else
+            return null;
+        }
+
+
+        public Usuario BuscarUsuario(string nombreUsuario, List<Usuario> listaUsuarios)
+        {
+            if (listaUsuarios != null)
             {
-                return usuario.Nombre + Environment.NewLine + usuario.Apellido;
+                foreach (Usuario usuario in listaUsuarios)
+                {
+                    if (usuario.NombreUsuario == nombreUsuario)
+                    {
+                        return usuario;
+                    }
+                }
             }
+            return null;
         }
 
 
@@ -52,7 +70,7 @@ namespace Negocio
         }
 
 
-        public List<Usuario> ListarUsuariosApi()
+        public List<Usuario> TraeUsuariosActivos()
         {
             return usuarioService.TraerUsuariosActivos(idAdministrador);
         }

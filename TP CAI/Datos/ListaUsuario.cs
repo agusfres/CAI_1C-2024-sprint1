@@ -8,14 +8,14 @@ namespace Datos
 {
     public class ListaUsuario
     {
-        private List<Usuario> listaUsuariosLocal;
+        private List<Usuario> listaUsuarios;
 
 
         public Usuario BuscarUsuario(Guid id)
         {
-            if (listaUsuariosLocal != null)
+            if (listaUsuarios != null)
             {
-                foreach (Usuario usuario in listaUsuariosLocal)
+                foreach (Usuario usuario in listaUsuarios)
                 {
                     if (usuario.IdUsuario == id)
                     {
@@ -29,9 +29,9 @@ namespace Datos
 
         public Usuario BuscarUsuario(string nombreUsuario)
         {
-            if (listaUsuariosLocal != null)
+            if (listaUsuarios != null)
             {
-                foreach (Usuario usuario in listaUsuariosLocal)
+                foreach (Usuario usuario in listaUsuarios)
                 {
                     if (usuario.NombreUsuario == nombreUsuario)
                     {
@@ -45,7 +45,7 @@ namespace Datos
 
         public void AgregarUsuario(Usuario usuario)
         {
-            listaUsuariosLocal.Add(usuario);
+            listaUsuarios.Add(usuario);
         }
 
 

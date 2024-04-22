@@ -31,7 +31,9 @@ namespace Presentacion2
         {
             string nombreUsuarioActual = txtUsuario.Text;
             string contraseñaActual = txtContraseña.Text;
+            NegocioUsuario negocioUsuario = new NegocioUsuario();
             Validador validador = new Validador();
+            List<Usuario> listaUsuarios;
             lblUsuarioError.Text = "";
             lblContraseñaError.Text = "";
 
@@ -58,12 +60,30 @@ namespace Presentacion2
                 {
                     string idUsuario = UsuarioService.Login(login);
 
-                    
                     if (idUsuario.GetType() == typeof(string))
                     {
+                        listaUsuarios = negocioUsuario.TraeUsuariosActivos();
+
+                        Usuario usuario = negocioUsuario.BuscarUsuario(nombreUsuarioActual, listaUsuarios);
+
+                        // Los usuarios en la api se guardan todos con tipo usuario 0, asi que hardcodeamos forzando a que sea 3
+                        int tipoUsuario = 3; // La linea real deberia ser usuario.TipoUsuario
                         this.Hide();
-                        admin_menu_form admin_Menu_form = new admin_menu_form();
-                        admin_Menu_form.Show();
+                        if (tipoUsuario == 3)
+                        {
+                            admin_menu_form admin_menu = new admin_menu_form();
+                            admin_menu.Show();
+                        }
+                        else if (tipoUsuario == 2)
+                        {
+                            supervisor_menu_form supervisor_menu = new supervisor_menu_form();
+                            supervisor_menu.Show();
+                        }
+                        else
+                        {
+                            vendedor_menu_form vendedor_menu = new vendedor_menu_form();
+                            vendedor_menu.Show();
+                        }
                     }
                 }
                 catch (Exception ex)
