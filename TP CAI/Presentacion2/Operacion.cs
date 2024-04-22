@@ -12,8 +12,7 @@ namespace Presentacion2
     {
         public int TransformarStringInt(string texto)
         {
-            int salida;
-            if (int.TryParse(texto, out salida))
+            if (int.TryParse(texto, out int salida))
             {
                 return salida;
             }
@@ -28,16 +27,6 @@ namespace Presentacion2
                 return salida;
             }
             return DateTime.Now;
-        }
-
-
-        public Guid TransformarStringGuid(string texto)
-        {
-            if (Guid.TryParse(texto, out Guid salida))
-            {
-                return salida;
-            }
-            return Guid.Empty;
         }
     }
 }

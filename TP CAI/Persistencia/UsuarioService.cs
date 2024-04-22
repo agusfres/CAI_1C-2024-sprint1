@@ -16,7 +16,7 @@ namespace Persistencia
     {
         public List<Usuario> TraerUsuariosActivos(Guid idAdministrador)
         {
-            String path = "/api/Usuario/TraerUsuariosActivos?id=" + idAdministrador;
+            string path = "/api/Usuario/TraerUsuariosActivos?id=" + idAdministrador;
             List<Usuario> listaUsuarios = new List<Usuario>();
             try
             {
@@ -40,9 +40,9 @@ namespace Persistencia
         }
 
 
-        public void ModificarUsuario(Guid idUsuario, String direccion, String telefono, String email)
+        public void ModificarUsuario(Guid idUsuario, string direccion, string telefono, string email)
         {
-            String path = "/api/Usuario/PatchUsuario";
+            string path = "/api/Usuario/PatchUsuario";
             Dictionary<string, string> map = new Dictionary<string, string>();
             map.Add("id", idUsuario.ToString());
             map.Add("direccion", direccion);
@@ -73,7 +73,7 @@ namespace Persistencia
 
         public void AgregarUsuario(AltaUsuario altaUsuario)
         {
-            String path = "/api/Usuario/AgregarUsuario";
+            string path = "/api/Usuario/AgregarUsuario";
 
             var jsonRequest = JsonConvert.SerializeObject(altaUsuario);
 
@@ -101,7 +101,7 @@ namespace Persistencia
 
         public void BorrarUsuario(BajaUsuario bajaUsuario)
         {
-            String path = "/api/Usuario/BajaUsuario";
+            string path = "/api/Usuario/BajaUsuario";
 
             var jsonRequest = JsonConvert.SerializeObject(bajaUsuario);
 
@@ -145,7 +145,7 @@ namespace Persistencia
 
         public static string CambiarContraseña(string nombreUsuario, string contraseña, string contraseñaNueva)
         {
-            Dictionary<String, String> map = new Dictionary<String, String>();
+            Dictionary<string, string> map = new Dictionary<string, string>();
             map.Add("nombreUsuario", nombreUsuario);
             map.Add("contraseña", contraseña);
             map.Add("contraseñaNueva", contraseñaNueva);

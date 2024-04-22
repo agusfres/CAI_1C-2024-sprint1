@@ -82,3 +82,14 @@ C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Persistenci
 C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Persistencia\obj\Debug\Persiste.7F7D6998.Up2Date
 C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Persistencia\obj\Debug\Persistencia.dll
 C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Persistencia\obj\Debug\Persistencia.pdb
+C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main\CAI_1C-2024-sprint1-main\TP CAI\Persistencia\bin\Debug\Persistencia.dll
+C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main\CAI_1C-2024-sprint1-main\TP CAI\Persistencia\bin\Debug\Persistencia.pdb
+C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main\CAI_1C-2024-sprint1-main\TP CAI\Persistencia\bin\Debug\Datos.dll
+C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main\CAI_1C-2024-sprint1-main\TP CAI\Persistencia\bin\Debug\Newtonsoft.Json.dll
+C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main\CAI_1C-2024-sprint1-main\TP CAI\Persistencia\bin\Debug\Datos.pdb
+C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main\CAI_1C-2024-sprint1-main\TP CAI\Persistencia\bin\Debug\Newtonsoft.Json.xml
+C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main\CAI_1C-2024-sprint1-main\TP CAI\Persistencia\obj\Debug\Persistencia.csproj.AssemblyReference.cache
+C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main\CAI_1C-2024-sprint1-main\TP CAI\Persistencia\obj\Debug\Persistencia.csproj.CoreCompileInputs.cache
+C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main\CAI_1C-2024-sprint1-main\TP CAI\Persistencia\obj\Debug\Persiste.7F7D6998.Up2Date
+C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main\CAI_1C-2024-sprint1-main\TP CAI\Persistencia\obj\Debug\Persistencia.dll
+C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main\CAI_1C-2024-sprint1-main\TP CAI\Persistencia\obj\Debug\Persistencia.pdb

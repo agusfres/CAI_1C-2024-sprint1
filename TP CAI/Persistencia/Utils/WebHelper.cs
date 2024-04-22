@@ -11,7 +11,7 @@ namespace Persistencia.Utils
     internal class WebHelper
     {
         static HttpClient httpClient = new HttpClient();
-        static String rutaBase = "https://cai-tp.azurewebsites.net";
+        static string rutaBase = "https://cai-tp.azurewebsites.net";
 
 
         public static HttpResponseMessage Get(string url)

@@ -82,3 +82,5 @@ C:\Users\lauta\OneDrive\Escritorio\TP CAI hasta DOMINGO\TP CAI hasta 21.04\TP CA
 C:\Users\lauta\OneDrive\Escritorio\TP CAI hasta DOMINGO\TP CAI hasta 21.04\TP CAI hasta 21.04\TP CAI nuevos forms sin errores\TP CAI nuevos forms\TP CAI\TP CAI\Presentacion\obj\Debug\Presentacion.pdb
 C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion\obj\Debug\Presentacion.dll
 C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion\obj\Debug\Presentacion.pdb
+C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main\CAI_1C-2024-sprint1-main\TP CAI\Presentacion\obj\Debug\Presentacion.dll
+C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main\CAI_1C-2024-sprint1-main\TP CAI\Presentacion\obj\Debug\Presentacion.pdb
