@@ -77,14 +77,16 @@ namespace Presentacion2
             {
                 Operacion operacion = new Operacion();
 
-                int intCmTipoUsuario = operacion.TransformarStringInt(cmTipoUsuario.Substring(0,1));
+                int intCmTipoUsuario = operacion.ObtenerTipoUsuario(cmTipoUsuario);
 
                 DateTime datetimeTxFechaNac = operacion.TransformarStringDatetime(txFechaNac);
                 int intTxDNI = operacion.TransformarStringInt(txDNI);
 
                 NegocioUsuario negocioUsuario = new NegocioUsuario();
 
+                //negocioUsuario.AgregarUsuario(txNombre, txApellido, txDireccion, txTelefono, txEmail, datetimeTxFechaNac, txNombreUsuario, '1', intTxDNI, txContraseña);
                 negocioUsuario.AgregarUsuario(txNombre, txApellido, txDireccion, txTelefono, txEmail, datetimeTxFechaNac, txNombreUsuario, intCmTipoUsuario, intTxDNI, txContraseña);
+
                 LimpiarCampos();
 
                 lblconfirma.Text = "Usuario cargado con éxito";

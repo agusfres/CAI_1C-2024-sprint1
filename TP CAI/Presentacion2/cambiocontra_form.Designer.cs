@@ -72,7 +72,7 @@
             // 
             this.txtContraseñaVieja.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContraseñaVieja.ForeColor = System.Drawing.Color.Gray;
-            this.txtContraseñaVieja.Location = new System.Drawing.Point(153, 156);
+            this.txtContraseñaVieja.Location = new System.Drawing.Point(153, 173);
             this.txtContraseñaVieja.Name = "txtContraseñaVieja";
             this.txtContraseñaVieja.Size = new System.Drawing.Size(253, 21);
             this.txtContraseñaVieja.TabIndex = 3;
@@ -136,7 +136,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(153, 137);
+            this.label1.Location = new System.Drawing.Point(153, 154);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(144, 13);
             this.label1.TabIndex = 38;
@@ -154,7 +154,7 @@
             // lblErrorContraseñaVieja
             // 
             this.lblErrorContraseñaVieja.AutoSize = true;
-            this.lblErrorContraseñaVieja.Location = new System.Drawing.Point(153, 209);
+            this.lblErrorContraseñaVieja.Location = new System.Drawing.Point(153, 197);
             this.lblErrorContraseñaVieja.Name = "lblErrorContraseñaVieja";
             this.lblErrorContraseñaVieja.Size = new System.Drawing.Size(0, 13);
             this.lblErrorContraseñaVieja.TabIndex = 40;

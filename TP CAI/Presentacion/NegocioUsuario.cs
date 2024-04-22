@@ -37,11 +37,11 @@ namespace Negocio
             Usuario usuario = listaUsuarios.Find(a => a.Dni == dni);
             if (usuario == null)
             {
-                return  "ERROR";
+                return "ERROR";
             }
             else
             {
-                return  usuario.Nombre + Environment.NewLine + usuario.Apellido;
+                return usuario.Nombre + Environment.NewLine + usuario.Apellido;
             }
         }
 
@@ -66,4 +66,3 @@ namespace Negocio
         }
     }
 }
-

@@ -28,6 +28,28 @@ namespace Presentacion2
             }
             return DateTime.Now;
         }
+
+
+        public int ObtenerTipoUsuario(string texto)
+        {
+            Dictionary<char, int> tipoUsuarioMapping = new Dictionary<char, int>
+            {
+                {'1', 1},
+                {'2', 2},
+                {'3', 3}
+            };
+            char primerCaracter = texto.FirstOrDefault();
+
+            if (tipoUsuarioMapping.ContainsKey(primerCaracter))
+            {
+                return tipoUsuarioMapping[primerCaracter];
+            }
+            else
+            {
+                return -1;
+            }
+        }
+
     }
 }
 

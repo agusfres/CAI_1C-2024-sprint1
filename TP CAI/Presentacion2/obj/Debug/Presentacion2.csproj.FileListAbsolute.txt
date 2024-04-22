@@ -187,3 +187,15 @@ C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (1)\CAI_1C-2024-spri
 C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (1)\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.csproj.CoreCompileInputs.cache
 C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (1)\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.exe
 C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (1)\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.pdb
+C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (2)\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.csproj.AssemblyReference.cache
+C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (2)\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.admin_agregar_form.resources
+C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (2)\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.iniciarsesion_form.resources
+C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (2)\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.cambiocontra_form.resources
+C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (2)\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.admin_menu_form.resources
+C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (2)\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.admin_gestion_form.resources
+C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (2)\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.admin_baja_form.resources
+C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (2)\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.admin_edit_form.resources
+C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (2)\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.vendedor_menu_form.resources
+C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (2)\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.supervisor_menu_form.resources
+C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (2)\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.csproj.GenerateResource.cache
+C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (2)\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.csproj.CoreCompileInputs.cache
