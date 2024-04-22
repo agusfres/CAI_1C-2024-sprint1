@@ -40,10 +40,7 @@ namespace Presentacion2
 
             if ((validador.ValidarVacio(nombreUsuarioActual, "Usuario") != "") || (validador.ValidarVacio(contraseñaActual, "Contraseña") != ""))
             {
-                // QUEDA PENDIENTE RESOLVER LOS 3 INTENTOS RESTANTES
-                //intentosRestantes -= 1;
-                //lblIntentosRestantes.Text = "Te quedan " + intentosRestantes + " intentos antes que se inactive tu usuario";
-
+              
                 if (validador.ValidarVacio(nombreUsuarioActual, "Usuario") != "")
                 {
                     lblUsuarioError.Text = "Debe ingresar un nombre de usuario";

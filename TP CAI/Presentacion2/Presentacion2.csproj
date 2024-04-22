@@ -48,6 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="admin_gestionproveedor_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_gestionproveedor_form.Designer.cs">
+      <DependentUpon>admin_gestionproveedor_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Button_WOC.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -56,6 +62,29 @@
     </Compile>
     <Compile Include="admin_agregar_form.Designer.cs">
       <DependentUpon>admin_agregar_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_agregarproveedor_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_agregarproveedor_form.Designer.cs">
+      <DependentUpon>admin_agregarproveedor_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_bajaproveedor_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_bajaproveedor_form.Designer.cs">
+      <DependentUpon>admin_bajaproveedor_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_edit_proveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_edit_proveedor.Designer.cs">
+      <DependentUpon>admin_edit_proveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Validador.cs" />
     <Compile Include="Program.cs" />
@@ -89,12 +118,6 @@
     <Compile Include="admin_baja_form.Designer.cs">
       <DependentUpon>admin_baja_form.cs</DependentUpon>
     </Compile>
-    <Compile Include="admin_edit_form.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="admin_edit_form.Designer.cs">
-      <DependentUpon>admin_edit_form.cs</DependentUpon>
-    </Compile>
     <Compile Include="Operacion.cs" />
     <Compile Include="vendedor_menu_form.cs">
       <SubType>Form</SubType>
@@ -111,8 +134,20 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="admin_agregarproveedor_form.resx">
+      <DependentUpon>admin_agregarproveedor_form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="admin_agregar_form.resx">
       <DependentUpon>admin_agregar_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_edit_proveedor.resx">
+      <DependentUpon>admin_edit_proveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_gestionproveedor_form.resx">
+      <DependentUpon>admin_gestionproveedor_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_bajaproveedor_form.resx">
+      <DependentUpon>admin_bajaproveedor_form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="iniciarsesion_form.resx">
       <DependentUpon>iniciarsesion_form.cs</DependentUpon>
@@ -129,8 +164,9 @@
     <EmbeddedResource Include="admin_baja_form.resx">
       <DependentUpon>admin_baja_form.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="admin_edit_form.resx">
-      <DependentUpon>admin_edit_form.cs</DependentUpon>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="vendedor_menu_form.resx">
       <DependentUpon>vendedor_menu_form.cs</DependentUpon>
@@ -152,6 +188,9 @@
       <Project>{4d4d43b4-c908-49fe-b2c8-68e34efe8114}</Project>
       <Name>Negocio</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Project.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

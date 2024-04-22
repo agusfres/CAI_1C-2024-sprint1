@@ -34,6 +34,8 @@
             this.btnReporteProductos = new ePOSOne.btnProduct.Button_WOC();
             this.btnReporteStock = new ePOSOne.btnProduct.Button_WOC();
             this.linkLabelVolver = new System.Windows.Forms.LinkLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnGestionarProductos
@@ -43,7 +45,7 @@
             this.btnGestionarProductos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnGestionarProductos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnGestionarProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGestionarProductos.Font = new System.Drawing.Font("Inter", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGestionarProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGestionarProductos.ForeColor = System.Drawing.Color.White;
             this.btnGestionarProductos.Location = new System.Drawing.Point(116, 87);
             this.btnGestionarProductos.Name = "btnGestionarProductos";
@@ -63,7 +65,7 @@
             this.btnDevolucion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnDevolucion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnDevolucion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDevolucion.Font = new System.Drawing.Font("Inter", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDevolucion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDevolucion.ForeColor = System.Drawing.Color.White;
             this.btnDevolucion.Location = new System.Drawing.Point(116, 134);
             this.btnDevolucion.Name = "btnDevolucion";
@@ -83,7 +85,7 @@
             this.btnReporteVentas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnReporteVentas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnReporteVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReporteVentas.Font = new System.Drawing.Font("Inter", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReporteVentas.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReporteVentas.ForeColor = System.Drawing.Color.White;
             this.btnReporteVentas.Location = new System.Drawing.Point(116, 181);
             this.btnReporteVentas.Name = "btnReporteVentas";
@@ -103,7 +105,7 @@
             this.btnReporteProductos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnReporteProductos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnReporteProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReporteProductos.Font = new System.Drawing.Font("Inter", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReporteProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReporteProductos.ForeColor = System.Drawing.Color.White;
             this.btnReporteProductos.Location = new System.Drawing.Point(116, 228);
             this.btnReporteProductos.Name = "btnReporteProductos";
@@ -123,7 +125,7 @@
             this.btnReporteStock.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnReporteStock.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnReporteStock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReporteStock.Font = new System.Drawing.Font("Inter", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReporteStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReporteStock.ForeColor = System.Drawing.Color.White;
             this.btnReporteStock.Location = new System.Drawing.Point(116, 275);
             this.btnReporteStock.Name = "btnReporteStock";
@@ -150,19 +152,30 @@
             this.linkLabelVolver.TabStop = true;
             this.linkLabelVolver.Text = "Cerrar sesión";
             // 
-            // Form9
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(157, 354);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 42;
+            this.pictureBox1.TabStop = false;
+            // 
+            // supervisor_menu_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(559, 415);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.linkLabelVolver);
             this.Controls.Add(this.btnReporteStock);
             this.Controls.Add(this.btnReporteProductos);
             this.Controls.Add(this.btnReporteVentas);
             this.Controls.Add(this.btnDevolucion);
             this.Controls.Add(this.btnGestionarProductos);
-            this.Name = "Form9";
+            this.Name = "supervisor_menu_form";
             this.Text = "Form9";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -176,5 +189,6 @@
         private ePOSOne.btnProduct.Button_WOC btnReporteProductos;
         private ePOSOne.btnProduct.Button_WOC btnReporteStock;
         private System.Windows.Forms.LinkLabel linkLabelVolver;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

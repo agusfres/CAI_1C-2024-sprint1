@@ -27,13 +27,6 @@ namespace Presentacion2
         }
 
 
-        private void btnModificarUsuario_Click_1(object sender, EventArgs e)
-        {
-            this.Hide();
-            admin_edit_form form7 = new admin_edit_form();
-            form7.Show();
-        }
-
 
         private void btnBajaUsuario_Click_1(object sender, EventArgs e)
         {

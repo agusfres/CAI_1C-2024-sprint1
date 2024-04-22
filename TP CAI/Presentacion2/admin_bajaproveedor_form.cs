@@ -8,22 +8,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
 namespace Presentacion2
 {
-    public partial class admin_edit_form : Form
+    public partial class admin_bajaproveedor_form : Form
     {
-        public admin_edit_form()
+        public admin_bajaproveedor_form()
         {
             InitializeComponent();
         }
 
-
-        private void linkLabelVolver_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        private void linkLabelVolver_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            admin_gestion_form form5 = new admin_gestion_form();
-            form5.Show();
+            admin_gestionproveedor_form admin_Gestionproveedor_Form = new admin_gestionproveedor_form();
+            this.Show();
         }
     }
 }

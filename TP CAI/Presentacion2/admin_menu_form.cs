@@ -33,5 +33,12 @@ namespace Presentacion2
             iniciarsesion_form form2 = new iniciarsesion_form();
             form2.Show();
         }
+
+        private void btnGestionarProveedores_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+           admin_gestionproveedor_form Admin_gestionproveedor_form = new admin_gestionproveedor_form();
+            Admin_gestionproveedor_form.Show();
+        }
     }
 }

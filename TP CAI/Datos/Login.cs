@@ -13,6 +13,7 @@ namespace Datos
         private string contraseña;
 
 
+
         public Login(string nombreUsuario, string contraseña)
         {
             this.nombreUsuario = nombreUsuario;
@@ -22,5 +23,6 @@ namespace Datos
 
         public string NombreUsuario { get => nombreUsuario; set => nombreUsuario = value; }
         public string Contraseña { get => contraseña; set => contraseña = value; }
+
     }
 }

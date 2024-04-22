@@ -42,36 +42,6 @@ namespace Persistencia
         }
 
 
-        public void ModificarUsuario(Guid idUsuario, string direccion, string telefono, string email)
-        {
-            string path = "/api/Usuario/PatchUsuario";
-            Dictionary<string, string> map = new Dictionary<string, string>();
-            map.Add("id", idUsuario.ToString());
-            map.Add("direccion", direccion);
-            map.Add("telefono", telefono);
-            map.Add("email", email);
-
-            var jsonRequest = JsonConvert.SerializeObject(map);
-
-            try
-            {
-                HttpResponseMessage response = WebHelper.Patch(path, jsonRequest);
-                if (response.IsSuccessStatusCode)
-                {
-                    var reader = new StreamReader(response.Content.ReadAsStreamAsync().Result);
-                    string respuesta = reader.ReadToEnd();
-                }
-                else
-                {
-                    Console.WriteLine($"Error: {response.StatusCode} - {response.ReasonPhrase}");
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Exception: {ex.Message}");
-            }
-        }
-
 
         public void AgregarUsuario(AltaUsuario altaUsuario)
         {

@@ -64,10 +64,7 @@ namespace Negocio
         }
 
 
-        public void ModificarUsuario(Guid idUsuario, string direccion, string telefono, string email)
-        {
-            usuarioService.ModificarUsuario(idUsuario, direccion, telefono, email);
-        }
+
 
 
         public List<Usuario> TraeUsuariosActivos()
