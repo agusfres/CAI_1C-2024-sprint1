@@ -10,9 +10,9 @@ using System.Windows.Forms;
 using Datos;
 using Negocio;
 
+
 namespace Presentacion2
 {
-
     public partial class admin_baja_form : Form
     {
         List<Usuario> usuarios = new List<Usuario>();
@@ -21,9 +21,9 @@ namespace Presentacion2
             InitializeComponent();
         }
 
+
         private void btnBuscarUsuario_Click_1(object sender, EventArgs e)
         {
-            
             string txUsuarioId = txtDNI.Text;
             string msg = "";
 
@@ -44,7 +44,6 @@ namespace Presentacion2
                 {
                     listBoxUsuario.Text = msg;
                 }
-
             }
             else
             {
@@ -52,6 +51,7 @@ namespace Presentacion2
             }
             
         }
+
 
         private void btnEliminarUsuario_Click_1(object sender, EventArgs e)
         {
@@ -67,8 +67,8 @@ namespace Presentacion2
             {
                 lblErrorEliminar.Text = "Debes indicar el id / Guid del usuario a eliminar";
             }
-
         }
+
 
         private void linkLabelVolver_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {

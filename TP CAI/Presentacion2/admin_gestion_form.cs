@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Presentacion2
 {
     public partial class admin_gestion_form : Form
@@ -16,12 +17,15 @@ namespace Presentacion2
         {
             InitializeComponent();
         }
+
+
         private void btnAgregarCrearUsuario_Click_1(object sender, EventArgs e)
         {
             this.Hide();
             admin_agregar_form form1 = new admin_agregar_form();
             form1.Show();
         }
+
 
         private void btnModificarUsuario_Click_1(object sender, EventArgs e)
         {
@@ -30,12 +34,14 @@ namespace Presentacion2
             form7.Show();
         }
 
+
         private void btnBajaUsuario_Click_1(object sender, EventArgs e)
         {
             this.Hide();
             admin_baja_form form6 = new admin_baja_form();
             form6.Show();
         }
+
 
         private void linkLabelVolver_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {

@@ -7,24 +7,30 @@ using System.Threading.Tasks;
 using Datos;
 using Persistencia;
 
+
 namespace Negocio
 {
     public class NegocioUsuario
     {
         private UsuarioService usuarioService = new UsuarioService();
-        private List<Usuario> listaUsuarios = new List<Usuario>();
         private Guid idAdministrador = Guid.Parse("70b37dc1-8fde-4840-be47-9ababd0ee7e5");
+        private ListaUsuario listaUsuarios = new ListaUsuario();
 
-        public void AgregarUsuario(string nombre, string apellido, string direccion, string telefono, string email, DateTime fechaAlta, DateTime fechaNacimiento, DateTime? fechaBaja, DateTime? fechaUltimaAct, string nombreUsuario, int tipoUsuario, int dni, string contraseña, int host)
-        {            
+
+        public void AgregarUsuario(string nombre, string apellido, string direccion, string telefono, string email, DateTime fechaNacimiento, string nombreUsuario, int tipoUsuario, int dni, string contraseña)
+        {
+            // Ponemos host como 1 ya que al usar 5 la api da error 409
+            int host = 1;
+
             AltaUsuario altaUsuario = new AltaUsuario(idAdministrador, host, nombre, apellido, dni, direccion, telefono, email, fechaNacimiento, nombreUsuario, contraseña);
             usuarioService.AgregarUsuario(altaUsuario);
 
             // Temporariamente guardamos una lista de usuarios localmente, solamente para guardar sus datos de fechaAlta, fechaBaja, fechaUltimaAct y tipoUsuario que no se postean en la api
-            Usuario usuario = new Usuario(idAdministrador, nombre, apellido, direccion, telefono, email, fechaAlta, fechaNacimiento, fechaBaja, fechaUltimaAct, nombreUsuario, tipoUsuario, dni, contraseña, host);
-            
-            listaUsuarios.Add(usuario);
+            Usuario usuario = new Usuario(idAdministrador, nombre, apellido, direccion, telefono, email, DateTime.Now, fechaNacimiento, null, null, nombreUsuario, tipoUsuario, dni, contraseña, host, "INACTIVO");
+
+            listaUsuarios.AgregarUsuario(usuario);
         }
+
 
         public string BuscarDni(int dni, List<Usuario> listaUsuarios)
         {
@@ -43,11 +49,10 @@ namespace Negocio
         public void ModificarUsuario(Guid idUsuario, string direccion, string telefono, string email)
         {
             usuarioService.ModificarUsuario(idUsuario, direccion, telefono, email);
-
         }
 
 
-        public List<Usuario> ListarUsuarios()
+        public List<Usuario> ListarUsuariosApi()
         {
             return usuarioService.TraerUsuariosActivos(idAdministrador);
         }
@@ -57,14 +62,7 @@ namespace Negocio
         {
             BajaUsuario bajaUsuario = new BajaUsuario(idUsuario, idAdministrador);
             usuarioService.BorrarUsuario(bajaUsuario);
-            if (listaUsuarios.Count > 0)
-            {
-                Usuario usuario = listaUsuarios.Find(a => a.IdUsuario == idUsuario);
-                if (usuario != null)
-                {
-                    usuario.FechaBaja = DateTime.Now;
-                }
-            }
+            listaUsuarios.BajaUsuario(bajaUsuario.Id);
         }
     }
 }

@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Datos;
 
+
 namespace Persistencia
 {
     public class UsuarioService
@@ -36,8 +37,8 @@ namespace Persistencia
                 Console.WriteLine($"Exception: {ex.Message}");
             }
             return listaUsuarios;
-
         }
+
 
         public void ModificarUsuario(Guid idUsuario, String direccion, String telefono, String email)
         {
@@ -69,6 +70,7 @@ namespace Persistencia
             }
         }
 
+
         public void AgregarUsuario(AltaUsuario altaUsuario)
         {
             String path = "/api/Usuario/AgregarUsuario";
@@ -96,6 +98,7 @@ namespace Persistencia
             }
         }
 
+
         public void BorrarUsuario(BajaUsuario bajaUsuario)
         {
             String path = "/api/Usuario/BajaUsuario";
@@ -121,6 +124,7 @@ namespace Persistencia
             }
         }
 
+
         public static string Login(Login login)
         {
             var jsonRequest = JsonConvert.SerializeObject(login);
@@ -137,6 +141,8 @@ namespace Persistencia
 
             return respuesta;
         }
+
+
         public static string CambiarContraseña(string nombreUsuario, string contraseña, string contraseñaNueva)
         {
             Dictionary<String, String> map = new Dictionary<String, String>();
@@ -158,6 +164,5 @@ namespace Persistencia
 
             return respuesta;
         }
-
     }
 }

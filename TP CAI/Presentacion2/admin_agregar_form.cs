@@ -4,11 +4,14 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Datos;
 using Negocio;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+
 
 namespace Presentacion2
 {
@@ -18,6 +21,7 @@ namespace Presentacion2
         {
             InitializeComponent();
         }
+
 
         private async void btnConfirmar_Click_1(object sender, EventArgs e)
         {
@@ -42,20 +46,19 @@ namespace Presentacion2
             string errorDNI = "";
             string errorUsuario = "";
             string errorTelefono = "";
-            string errorTipoUsuario = "";
-            string acumuladorErrores = "";
+            string errorTipoUsuario = "";;
 
             Validador validadorCampos = new Validador();
-            validadorCampos.validarTextoUno(txNombre, "Nombre", ref errorNombre);
-            validadorCampos.validarContraseña(txContraseña, "Contraseña", ref errorContraseña);
-            validadorCampos.validarTextoUno(txApellido, "Apellido", ref errorApellido);
-            validadorCampos.validarTextoDos(txEmail, "Email", ref errorEmail);
-            validadorCampos.validarTextoDos(txDireccion, "Dirección", ref errorDireccion);
-            validadorCampos.validarFecha(txFechaNac, "Fecha", ref errorFecha, ref salidaFecha);
-            validadorCampos.validarDNI(txDNI, "DNI", ref errorDNI);
-            validadorCampos.validarNombreUsuario(txNombreUsuario, txNombre, txApellido, "Usuario", ref errorUsuario);
-            validadorCampos.validarTelefono(txTelefono, "Teléfono", ref errorTelefono);
-            validadorCampos.validarTipoUsuario(cmTipoUsuario, "Tipo de usuario", ref errorTipoUsuario);
+            validadorCampos.ValidarTextoUno(txNombre, "Nombre", ref errorNombre);
+            validadorCampos.ValidarContraseña(txContraseña, "Contraseña", ref errorContraseña);
+            validadorCampos.ValidarTextoUno(txApellido, "Apellido", ref errorApellido);
+            validadorCampos.ValidarTextoDos(txEmail, "Email", ref errorEmail);
+            validadorCampos.ValidarTextoDos(txDireccion, "Dirección", ref errorDireccion);
+            validadorCampos.ValidarFecha(txFechaNac, "Fecha", ref errorFecha, ref salidaFecha);
+            validadorCampos.ValidarDNI(txDNI, "DNI", ref errorDNI);
+            validadorCampos.ValidarNombreUsuario(txNombreUsuario, txNombre, txApellido, "Usuario", ref errorUsuario);
+            validadorCampos.ValidarTelefono(txTelefono, "Teléfono", ref errorTelefono);
+            validadorCampos.ValidarTipoUsuario(cmTipoUsuario, "Tipo de usuario", ref errorTipoUsuario);
 
             lblErrorNombre.Text = errorNombre;
             lblErrorApellido.Text = errorApellido;
@@ -68,22 +71,20 @@ namespace Presentacion2
             lblErrorTelefono.Text = errorTelefono;
             lblErrorTipoUsuario.Text = errorTipoUsuario;
 
-            acumuladorErrores = errorApellido + errorContraseña + errorFecha + errorDireccion + errorDNI + errorUsuario + errorTelefono + errorNombre + errorEmail + errorTipoUsuario;
+            string acumuladorErrores = errorApellido + errorContraseña + errorFecha + errorDireccion + errorDNI + errorUsuario + errorTelefono + errorNombre + errorEmail + errorTipoUsuario;
 
             if (string.IsNullOrEmpty(acumuladorErrores))
             {
                 Operacion operacion = new Operacion();
 
-                int intCmTipoUsuario = operacion.TransformarStringInt(cmTipoUsuario);
+                int intCmTipoUsuario = operacion.TransformarStringInt(cmTipoUsuario.Substring(0,1));
+
                 DateTime datetimeTxFechaNac = operacion.TransformarStringDatetime(txFechaNac);
                 int intTxDNI = operacion.TransformarStringInt(txDNI);
 
                 NegocioUsuario negocioUsuario = new NegocioUsuario();
 
-                // Indicamos host 1 temporariamente porque con el Host 5 no funciona, devuelve error 409
-                int host = 1;
-                negocioUsuario.AgregarUsuario(txNombre, txApellido, txDireccion, txTelefono, txEmail, DateTime.Now, datetimeTxFechaNac, null, null, txNombreUsuario, intCmTipoUsuario, intTxDNI, txContraseña, host);
-
+                negocioUsuario.AgregarUsuario(txNombre, txApellido, txDireccion, txTelefono, txEmail, datetimeTxFechaNac, txNombreUsuario, intCmTipoUsuario, intTxDNI, txContraseña);
                 LimpiarCampos();
 
                 lblconfirma.Text = "Usuario cargado con éxito";
@@ -91,6 +92,7 @@ namespace Presentacion2
                 lblconfirma.Text = "";
             }
         }
+
 
         private void LimpiarCampos()
         {
@@ -105,6 +107,7 @@ namespace Presentacion2
             txtTelefono.Clear();
             cmbTipoUsuario.SelectedIndex = -1;
         }
+
 
         private void linkLabelVolver_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {

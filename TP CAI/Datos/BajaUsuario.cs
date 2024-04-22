@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Datos
 {
     public class BajaUsuario
@@ -16,6 +17,7 @@ namespace Datos
             this.id = id;
             this.idUsuario = idUsuario;
         }
+
 
         public Guid Id { get => id; set => id = value; }
         public Guid IdUsuario { get => idUsuario; set => idUsuario = value; }

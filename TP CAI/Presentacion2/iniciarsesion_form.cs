@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using Datos;
 using Persistencia;
 
+
 namespace Presentacion2
 {
     public partial class iniciarsesion_form : Form
@@ -19,6 +20,8 @@ namespace Presentacion2
         {
             InitializeComponent();
         }
+
+
         private void btnIngresar_Click_1(object sender, EventArgs e)
         {
             string usuario = txtUsuario.Text;
@@ -27,11 +30,11 @@ namespace Presentacion2
             lblUsuarioError.Text = "";
             lblContraseñaError.Text = "";
 
-            if (validador.validarVacio(usuario, "Usuario") != "")
+            if (validador.ValidarVacio(usuario, "Usuario") != "")
             {
                 lblUsuarioError.Text = "Debe ingresar un nombre de usuario";
             }
-            if (validador.validarVacio(contraseña, "Contraseña") != "")
+            if (validador.ValidarVacio(contraseña, "Contraseña") != "")
             {
                 lblContraseñaError.Text = "Debe ingresar una contraseña";
             }
@@ -40,7 +43,7 @@ namespace Presentacion2
                 List<Usuario> listaUsuarios = new List<Usuario>();
                 UsuarioService usuarioservice = new UsuarioService();
                 listaUsuarios = usuarioservice.TraerUsuariosActivos(Guid.Parse("70b37dc1-8fde-4840-be47-9ababd0ee7e5"));
-                if (validador.validarContraseñaDefinitivaLogin(contraseña) == "")
+                if (validador.ValidarContraseñaDefinitivaLogin(contraseña) == "")
                 {
                     this.Hide();
                     admin_menu_form admin_Menu_form = new admin_menu_form();
@@ -58,14 +61,9 @@ namespace Presentacion2
 
         private void LinklabelOlvidasteContraseña_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            
             this.Hide();
             cambiocontra_form cambiocontra_Form = new cambiocontra_form();
             cambiocontra_Form.Show();
-           
         }
-
-
-
     }
 }

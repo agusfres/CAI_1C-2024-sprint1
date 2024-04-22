@@ -5,12 +5,15 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Persistencia.Utils
 {
     internal class WebHelper
     {
         static HttpClient httpClient = new HttpClient();
         static String rutaBase = "https://cai-tp.azurewebsites.net";
+
+
         public static HttpResponseMessage Get(string url)
         {
             var uri = rutaBase + url;
@@ -19,6 +22,7 @@ namespace Persistencia.Utils
 
             return response;
         }
+
 
         public static HttpResponseMessage Post(string url, string jsonRequest)
         {
@@ -29,8 +33,9 @@ namespace Persistencia.Utils
             HttpResponseMessage response = httpClient.PostAsync(uri, data).Result;
 
             return response;
-
         }
+
+
         public static HttpResponseMessage Put(string url, string jsonRequest)
         {
             var uri = rutaBase + url;
@@ -40,8 +45,8 @@ namespace Persistencia.Utils
             HttpResponseMessage response = httpClient.PutAsync(uri, data).Result;
 
             return response;
-
         }
+
 
         public static HttpResponseMessage Patch(string path, string jsonRequest)
         {
@@ -59,6 +64,7 @@ namespace Persistencia.Utils
             return response;
         }
 
+
         public static HttpResponseMessage Delete(string url)
         {
             var uri = rutaBase + url;
@@ -67,6 +73,8 @@ namespace Persistencia.Utils
 
             return response;
         }
+
+
         public static HttpResponseMessage DeleteWithBody(string url, string jsonRequest)
         {
             var uri = rutaBase + url;

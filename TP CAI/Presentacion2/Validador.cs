@@ -4,33 +4,34 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Presentacion2
 {
     internal class Validador
     {
-        public void validarNombreUsuario(string usuario, string nombre, string apellido, string campo, ref string error)
+        public void ValidarNombreUsuario(string usuario, string nombre, string apellido, string campo, ref string error)
         {
             string msgError = "";
-            msgError = msgError + validarLongitud(usuario, campo, 8, 15);
-            msgError = msgError + validarUsuario(usuario, nombre, apellido, campo);
+            msgError = msgError + ValidarLongitud(usuario, campo, 8, 15);
+            msgError = msgError + ValidarUsuario(usuario, nombre, apellido);
             error = msgError;
         }
 
 
-        public void validarContraseña(string texto, string campo, ref string error)
+        public void ValidarContraseña(string texto, string campo, ref string error)
         {
             string msgError = "";
-            msgError = msgError + validarLongitud(texto, campo, 8, 15);
-            msgError = msgError + validarFormatoContraseña(texto, campo);
-            msgError = msgError + validarContraseñaDefinitiva(texto);
+            msgError = msgError + ValidarLongitud(texto, campo, 8, 15);
+            msgError = msgError + ValidarFormatoContraseña(texto);
+            msgError = msgError + ValidarContraseñaDefinitiva(texto);
             error = msgError;
         }
 
 
-        private string validarFormatoContraseña(string texto, string campo)
+        private string ValidarFormatoContraseña(string texto)
         {
-            bool flag1 = validarNumeroContra(texto);
-            bool flag2 = validarMayusculaContra(texto);
+            bool flag1 = ValidarNumeroContra(texto);
+            bool flag2 = ValidarMayusculaContra(texto);
 
             if (flag1 == true && flag2 == true)
             {
@@ -40,7 +41,7 @@ namespace Presentacion2
         }
 
 
-        private bool validarNumeroContra(string texto)
+        private bool ValidarNumeroContra(string texto)
         {
             bool flag1 = false;
             foreach (char c in texto)
@@ -57,7 +58,9 @@ namespace Presentacion2
             }
             return flag1;
         }
-        private string validarContraseñaDefinitiva(string texto)
+
+
+        private string ValidarContraseñaDefinitiva(string texto)
         {
             if (texto == "CAI20232")
             {
@@ -66,7 +69,8 @@ namespace Presentacion2
             return "";
         }
 
-        public string validarContraseñaDefinitivaLogin(string texto)
+
+        public string ValidarContraseñaDefinitivaLogin(string texto)
         {
             if (texto != "CAI20232")
             {
@@ -75,7 +79,8 @@ namespace Presentacion2
             return "";
         }
 
-        private bool validarMayusculaContra(string texto)
+
+        private bool ValidarMayusculaContra(string texto)
         {
             bool flag2 = false;
             foreach (char c in texto)
@@ -94,7 +99,7 @@ namespace Presentacion2
         }
 
 
-        private string validarUsuario(string usuario, string nombre, string apellido, string campo)
+        private string ValidarUsuario(string usuario, string nombre, string apellido)
         {
             if (usuario.Contains(nombre) || usuario.Contains(apellido))
             {
@@ -104,7 +109,7 @@ namespace Presentacion2
         }
 
 
-        private string validarLongitud(string texto, string campo, int min, int max)
+        private string ValidarLongitud(string texto, string campo, int min, int max)
         {
             if (texto.Length < min || texto.Length > max)
             {
@@ -114,7 +119,7 @@ namespace Presentacion2
         }
 
 
-        public string validarVacio(string texto, string campo)
+        public string ValidarVacio(string texto, string campo)
         {
             if (texto.Length == 0)
             {
@@ -124,12 +129,12 @@ namespace Presentacion2
         }
 
 
-        public void validarTextoUno(string texto, string campo, ref string error)
+        public void ValidarTextoUno(string texto, string campo, ref string error)
         {
             string msgError = "";
-            msgError = msgError + validarLongitud(texto, campo, 1, 50);
+            msgError = msgError + ValidarLongitud(texto, campo, 1, 50);
 
-            if (contieneNumeros(texto))
+            if (ValidarContieneNumeros(texto))
             {
                 msgError += "El campo " + campo + " no debe contener números." + System.Environment.NewLine;
             }
@@ -137,7 +142,7 @@ namespace Presentacion2
             error = msgError;
         }
 
-        private bool contieneNumeros(string texto)
+        private bool ValidarContieneNumeros(string texto)
         {
             foreach (char c in texto)
             {
@@ -150,10 +155,10 @@ namespace Presentacion2
         }
 
 
-        public void validarTextoDos(string texto, string campo, ref string error)
+        public void ValidarTextoDos(string texto, string campo, ref string error)
         {
             string msgError = "";
-            msgError = msgError + validarLongitud(texto, campo, 1, 255);
+            msgError = msgError + ValidarLongitud(texto, campo, 1, 255);
 
             if (campo == "Email")
             {
@@ -171,25 +176,25 @@ namespace Presentacion2
         }
 
 
-        public void validarDNI(string texto, string campo, ref string error)
+        public void ValidarDNI(string texto, string campo, ref string error)
         {
             string msgError = "";
-            msgError = msgError + validarLongitud(texto, campo, 1, 8);
-            msgError = msgError + validarFormatoNumero(texto, campo);
+            msgError = msgError + ValidarLongitud(texto, campo, 1, 8);
+            msgError = msgError + ValidarFormatoNumero(texto, campo);
             error = msgError;
         }
 
 
-        public void validarTelefono(string texto, string campo, ref string error)
+        public void ValidarTelefono(string texto, string campo, ref string error)
         {
             string msgError = "";
-            msgError = msgError + validarLongitud(texto, campo, 8, 10);
-            msgError = msgError + validarFormatoNumero(texto, campo);
+            msgError = msgError + ValidarLongitud(texto, campo, 8, 10);
+            msgError = msgError + ValidarFormatoNumero(texto, campo);
             error = msgError;
         }
 
 
-        private string validarFormatoNumero(string texto, string campo)
+        private string ValidarFormatoNumero(string texto, string campo)
         {
             if (!int.TryParse(texto, out int numero))
             {
@@ -199,16 +204,16 @@ namespace Presentacion2
         }
 
 
-        public void validarFecha(string texto, string campo, ref string error, ref DateTime salida)
+        public void ValidarFecha(string texto, string campo, ref string error, ref DateTime salida)
         {
             string msgError = "";
-            msgError = msgError + validarVacio(texto, campo);
-            msgError = msgError + validarFormatoFecha(texto, campo, ref salida);
+            msgError = msgError + ValidarVacio(texto, campo);
+            msgError = msgError + ValidarFormatoFecha(texto, campo, ref salida);
             error = msgError;
         }
 
 
-        private string validarFormatoFecha(string texto, string campo, ref DateTime salida)
+        private string ValidarFormatoFecha(string texto, string campo, ref DateTime salida)
         {
             if (!DateTime.TryParseExact(texto, "dd/MM/yyyy", null, System.Globalization.DateTimeStyles.None, out salida))
             {
@@ -218,33 +223,33 @@ namespace Presentacion2
             {
                 return "El campo " + campo + " debe ser una fecha válida." + System.Environment.NewLine;
             }
-            else if (!EsMayorDeEdad(salida))
+            else if (!ValidarEsMayorDeEdad(salida))
             {
                 return "Debe ser mayor de 18 años para registrarse." + System.Environment.NewLine;
             }
             return "";
         }
 
-        public bool EsMayorDeEdad(DateTime fechaNacimiento)
+
+        public bool ValidarEsMayorDeEdad(DateTime fechaNacimiento)
         {
-            // Calcular la edad en años
             int edad = DateTime.Today.Year - fechaNacimiento.Year;
 
-            // Restar un año si aún no ha pasado el cumpleaños de este año
+            // Resta un año si aún no ha pasado el cumpleaños de este año
             if (fechaNacimiento.Date > DateTime.Today.AddYears(-edad))
             {
                 edad--;
             }
 
-            // Verificar si la edad es mayor o igual a 18 años
             return edad >= 18;
         }
 
-        public void validarTipoUsuario(string texto, string campo, ref string error)
+
+        public void ValidarTipoUsuario(string texto, string campo, ref string error)
         {
             string msgError = "";
             List<string> opciones = new List<string>() { "1. Vendedor ", "2. Supervisor ", "3. Administrador " };
-            msgError = msgError + validarVacio(texto, campo);
+            msgError = msgError + ValidarVacio(texto, campo);
             if (!opciones.Contains(texto))
             {
                 msgError = msgError + "El campo " + campo + " debe ser alguna de las opciones indicadas, no escribir." + System.Environment.NewLine;

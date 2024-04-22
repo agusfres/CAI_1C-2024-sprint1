@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Datos
 {
     public class AltaUsuario
@@ -20,6 +21,7 @@ namespace Datos
         string nombreUsuario;
         string contraseña;
 
+
         public AltaUsuario(Guid idUsuario, int host, string nombre, string apellido, int dni, string direccion, string telefono, string email, DateTime fechaNacimiento, string nombreUsuario, string contraseña)
         {
             this.idUsuario = idUsuario;
@@ -34,6 +36,7 @@ namespace Datos
             this.nombreUsuario = nombreUsuario;
             this.contraseña = contraseña;
         }
+
 
         public Guid IdUsuario { get => idUsuario; set => idUsuario = value; }
         public int Host { get => host; set => host = value; }

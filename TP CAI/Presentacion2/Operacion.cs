@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Datos;
 
+
 namespace Presentacion2
 {
     internal class Operacion
@@ -22,18 +23,17 @@ namespace Presentacion2
 
         public DateTime TransformarStringDatetime(string texto)
         {
-            DateTime salida;
-            if (DateTime.TryParseExact(texto, "dd/MM/yyyy", null, System.Globalization.DateTimeStyles.None, out salida))
+            if (DateTime.TryParseExact(texto, "dd/MM/yyyy", null, System.Globalization.DateTimeStyles.None, out DateTime salida))
             {
                 return salida;
             }
             return DateTime.Now;
         }
 
+
         public Guid TransformarStringGuid(string texto)
         {
-            Guid salida;
-            if (Guid.TryParse(texto, out salida))
+            if (Guid.TryParse(texto, out Guid salida))
             {
                 return salida;
             }

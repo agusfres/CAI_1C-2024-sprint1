@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Presentacion2
 {
     public partial class admin_menu_form : Form
@@ -17,12 +18,14 @@ namespace Presentacion2
             InitializeComponent();
         }
 
+
         private void btnGestionarUsuarios_Click_1(object sender, EventArgs e)
         {
             this.Hide();
             admin_gestion_form form5 = new admin_gestion_form();
             form5.Show();
         }
+
 
         private void linkLabelCerrarSesion_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {

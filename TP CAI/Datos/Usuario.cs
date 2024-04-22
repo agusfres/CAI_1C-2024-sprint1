@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Datos
 {
     public class Usuario
@@ -23,8 +24,9 @@ namespace Datos
         int dni;
         string contraseña;
         int host;
+        string estado;
 
-        public Usuario(Guid idUsuario, string nombre, string apellido, string direccion, string telefono, string email, DateTime fechaAlta, DateTime fechaNacimiento, DateTime? fechaBaja, DateTime? fechaUltimaAct, string nombreUsuario, int tipoUsuario, int dni, string contraseña, int host)
+        public Usuario(Guid idUsuario, string nombre, string apellido, string direccion, string telefono, string email, DateTime fechaAlta, DateTime fechaNacimiento, DateTime? fechaBaja, DateTime? fechaUltimaAct, string nombreUsuario, int tipoUsuario, int dni, string contraseña, int host, string estado)
         {
             this.idUsuario = idUsuario;
             this.nombre = nombre;
@@ -41,7 +43,9 @@ namespace Datos
             this.dni = dni;
             this.contraseña = contraseña;
             this.host = host;
+            this.estado = estado;
         }
+
 
         public Guid IdUsuario { get => idUsuario; set => idUsuario = value; }
         public string Nombre { get => nombre; set => nombre = value; }
@@ -58,5 +62,6 @@ namespace Datos
         public int Dni { get => dni; set => dni = value; }
         public string Contraseña { get => contraseña; set => contraseña = value; }
         public int Host { get => host; set => host = value; }
+        public string Estado { get => estado; set => estado = value; }
     }
 }
