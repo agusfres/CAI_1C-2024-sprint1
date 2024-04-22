@@ -8,16 +8,19 @@ namespace Datos
 {
     public class ListaUsuario
     {
-        private List<Usuario> listaUsuariosLocal = new List<Usuario>();
+        private List<Usuario> listaUsuariosLocal;
 
 
         public Usuario BuscarUsuario(Guid id)
         {
-            foreach (Usuario usuario in listaUsuariosLocal)
+            if (listaUsuariosLocal != null)
             {
-                if (usuario.IdUsuario == id)
+                foreach (Usuario usuario in listaUsuariosLocal)
                 {
-                    return usuario;
+                    if (usuario.IdUsuario == id)
+                    {
+                        return usuario;
+                    }
                 }
             }
             return null;
@@ -26,11 +29,14 @@ namespace Datos
 
         public Usuario BuscarUsuario(string nombreUsuario)
         {
-            foreach (Usuario usuario in listaUsuariosLocal)
+            if (listaUsuariosLocal != null)
             {
-                if (usuario.NombreUsuario == nombreUsuario)
+                foreach (Usuario usuario in listaUsuariosLocal)
                 {
-                    return usuario;
+                    if (usuario.NombreUsuario == nombreUsuario)
+                    {
+                        return usuario;
+                    }
                 }
             }
             return null;

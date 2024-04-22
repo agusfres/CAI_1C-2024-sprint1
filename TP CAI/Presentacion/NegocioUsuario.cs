@@ -62,7 +62,6 @@ namespace Negocio
         {
             BajaUsuario bajaUsuario = new BajaUsuario(idUsuario, idAdministrador);
             usuarioService.BorrarUsuario(bajaUsuario);
-            listaUsuarios.BajaUsuario(bajaUsuario.Id);
         }
     }
 }

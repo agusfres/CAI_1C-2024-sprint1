@@ -9,11 +9,18 @@ namespace Datos
 {
     public class Login
     {
-        private string _nombreUsuario;
-        private string _contraseña;
+        private string nombreUsuario;
+        private string contraseña;
 
 
-        public string NombreUsuario { get => _nombreUsuario; set => _nombreUsuario = value; }
-        public string Contraseña { get => _contraseña; set => _contraseña = value; }
+        public Login(string nombreUsuario, string contraseña)
+        {
+            this.nombreUsuario = nombreUsuario;
+            this.contraseña = contraseña;
+        }
+
+
+        public string NombreUsuario { get => nombreUsuario; set => nombreUsuario = value; }
+        public string Contraseña { get => contraseña; set => contraseña = value; }
     }
 }

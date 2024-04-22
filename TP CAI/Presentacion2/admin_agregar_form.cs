@@ -46,7 +46,7 @@ namespace Presentacion2
             string errorDNI = "";
             string errorUsuario = "";
             string errorTelefono = "";
-            string errorTipoUsuario = "";;
+            string errorTipoUsuario = ""; ;
 
             Validador validadorCampos = new Validador();
             validadorCampos.ValidarTextoUno(txNombre, "Nombre", ref errorNombre);
@@ -84,7 +84,6 @@ namespace Presentacion2
 
                 NegocioUsuario negocioUsuario = new NegocioUsuario();
 
-                //negocioUsuario.AgregarUsuario(txNombre, txApellido, txDireccion, txTelefono, txEmail, datetimeTxFechaNac, txNombreUsuario, '1', intTxDNI, txContraseña);
                 negocioUsuario.AgregarUsuario(txNombre, txApellido, txDireccion, txTelefono, txEmail, datetimeTxFechaNac, txNombreUsuario, intCmTipoUsuario, intTxDNI, txContraseña);
 
                 LimpiarCampos();
@@ -119,4 +118,3 @@ namespace Presentacion2
         }
     }
 }
-

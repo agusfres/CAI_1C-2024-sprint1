@@ -32,12 +32,13 @@
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.LinklabelOlvidasteContraseña = new System.Windows.Forms.LinkLabel();
+            this.btnIngresar = new ePOSOne.btnProduct.Button_WOC();
             this.lblUsuarioError = new System.Windows.Forms.Label();
             this.lblContraseñaError = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.lblContraseña = new System.Windows.Forms.Label();
-            this.btnIngresar = new ePOSOne.btnProduct.Button_WOC();
-            this.lblIntentosRestantes = new System.Windows.Forms.Label();
+            this.lblMensajeInicioSesion = new System.Windows.Forms.Label();
+            this.lblErroresRestantes = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblIniciarSesionTitulo
@@ -55,7 +56,7 @@
             // 
             this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.ForeColor = System.Drawing.Color.Gray;
-            this.txtUsuario.Location = new System.Drawing.Point(152, 153);
+            this.txtUsuario.Location = new System.Drawing.Point(152, 149);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(253, 21);
             this.txtUsuario.TabIndex = 1;
@@ -64,7 +65,7 @@
             // 
             this.txtContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContraseña.ForeColor = System.Drawing.Color.Gray;
-            this.txtContraseña.Location = new System.Drawing.Point(152, 218);
+            this.txtContraseña.Location = new System.Drawing.Point(152, 229);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(253, 21);
             this.txtContraseña.TabIndex = 2;
@@ -81,42 +82,6 @@
             this.LinklabelOlvidasteContraseña.TabStop = true;
             this.LinklabelOlvidasteContraseña.Text = "Cambia tu contraseña";
             this.LinklabelOlvidasteContraseña.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinklabelOlvidasteContraseña_LinkClicked_1);
-            // 
-            // lblUsuarioError
-            // 
-            this.lblUsuarioError.AutoSize = true;
-            this.lblUsuarioError.Location = new System.Drawing.Point(149, 177);
-            this.lblUsuarioError.Name = "lblUsuarioError";
-            this.lblUsuarioError.Size = new System.Drawing.Size(0, 13);
-            this.lblUsuarioError.TabIndex = 34;
-            // 
-            // lblContraseñaError
-            // 
-            this.lblContraseñaError.AutoSize = true;
-            this.lblContraseñaError.Location = new System.Drawing.Point(149, 243);
-            this.lblContraseñaError.Name = "lblContraseñaError";
-            this.lblContraseñaError.Size = new System.Drawing.Size(0, 13);
-            this.lblContraseñaError.TabIndex = 35;
-            // 
-            // lblUsuario
-            // 
-            this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Location = new System.Drawing.Point(149, 137);
-            this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(43, 13);
-            this.lblUsuario.TabIndex = 36;
-            this.lblUsuario.Text = "Usuario";
-            // 
-            // lblContraseña
-            // 
-            this.lblContraseña.AutoSize = true;
-            this.lblContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContraseña.Location = new System.Drawing.Point(149, 202);
-            this.lblContraseña.Name = "lblContraseña";
-            this.lblContraseña.Size = new System.Drawing.Size(61, 13);
-            this.lblContraseña.TabIndex = 37;
-            this.lblContraseña.Text = "Contraseña";
             // 
             // btnIngresar
             // 
@@ -137,22 +102,67 @@
             this.btnIngresar.Text = "Ingresar";
             this.btnIngresar.TextColor = System.Drawing.Color.White;
             this.btnIngresar.UseVisualStyleBackColor = true;
-            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click_1);
+            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
-            // lblIntentosRestantes
+            // lblUsuarioError
             // 
-            this.lblIntentosRestantes.AutoSize = true;
-            this.lblIntentosRestantes.Location = new System.Drawing.Point(260, 360);
-            this.lblIntentosRestantes.Name = "lblIntentosRestantes";
-            this.lblIntentosRestantes.Size = new System.Drawing.Size(0, 13);
-            this.lblIntentosRestantes.TabIndex = 38;
+            this.lblUsuarioError.AutoSize = true;
+            this.lblUsuarioError.Location = new System.Drawing.Point(152, 181);
+            this.lblUsuarioError.Name = "lblUsuarioError";
+            this.lblUsuarioError.Size = new System.Drawing.Size(0, 13);
+            this.lblUsuarioError.TabIndex = 34;
+            // 
+            // lblContraseñaError
+            // 
+            this.lblContraseñaError.AutoSize = true;
+            this.lblContraseñaError.Location = new System.Drawing.Point(152, 254);
+            this.lblContraseñaError.Name = "lblContraseñaError";
+            this.lblContraseñaError.Size = new System.Drawing.Size(0, 13);
+            this.lblContraseñaError.TabIndex = 35;
+            // 
+            // lblUsuario
+            // 
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.Location = new System.Drawing.Point(152, 133);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(43, 13);
+            this.lblUsuario.TabIndex = 36;
+            this.lblUsuario.Text = "Usuario";
+            // 
+            // lblContraseña
+            // 
+            this.lblContraseña.AutoSize = true;
+            this.lblContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContraseña.Location = new System.Drawing.Point(152, 212);
+            this.lblContraseña.Name = "lblContraseña";
+            this.lblContraseña.Size = new System.Drawing.Size(61, 13);
+            this.lblContraseña.TabIndex = 37;
+            this.lblContraseña.Text = "Contraseña";
+            // 
+            // lblMensajeInicioSesion
+            // 
+            this.lblMensajeInicioSesion.AutoSize = true;
+            this.lblMensajeInicioSesion.Location = new System.Drawing.Point(260, 360);
+            this.lblMensajeInicioSesion.Name = "lblMensajeInicioSesion";
+            this.lblMensajeInicioSesion.Size = new System.Drawing.Size(0, 13);
+            this.lblMensajeInicioSesion.TabIndex = 38;
+            // 
+            // lblErroresRestantes
+            // 
+            this.lblErroresRestantes.AutoSize = true;
+            this.lblErroresRestantes.Location = new System.Drawing.Point(260, 376);
+            this.lblErroresRestantes.Name = "lblErroresRestantes";
+            this.lblErroresRestantes.Size = new System.Drawing.Size(0, 13);
+            this.lblErroresRestantes.TabIndex = 39;
             // 
             // iniciarsesion_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(556, 398);
-            this.Controls.Add(this.lblIntentosRestantes);
+            this.Controls.Add(this.lblErroresRestantes);
+            this.Controls.Add(this.lblMensajeInicioSesion);
             this.Controls.Add(this.lblContraseña);
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.lblContraseñaError);
@@ -164,6 +174,7 @@
             this.Controls.Add(this.lblIniciarSesionTitulo);
             this.Name = "iniciarsesion_form";
             this.Text = "Form2";
+            this.Activated += new System.EventHandler(this.iniciarsesion_form_Activated);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -180,6 +191,7 @@
         private System.Windows.Forms.Label lblContraseñaError;
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.Label lblContraseña;
-        private System.Windows.Forms.Label lblIntentosRestantes;
+        private System.Windows.Forms.Label lblMensajeInicioSesion;
+        private System.Windows.Forms.Label lblErroresRestantes;
     }
 }

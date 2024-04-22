@@ -32,11 +32,9 @@
             this.lblGestionUsuariosTitulo = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtIdUsuario = new System.Windows.Forms.TextBox();
-            this.lblErrorDNI = new System.Windows.Forms.Label();
-            this.listBoxUsuario = new System.Windows.Forms.ListBox();
             this.lblErrorEliminar = new System.Windows.Forms.Label();
             this.btnEliminarUsuario = new ePOSOne.btnProduct.Button_WOC();
-            this.btnBuscarUsuario = new ePOSOne.btnProduct.Button_WOC();
+            this.lblUsuarioEliminadoExitosamente = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // linkLabelVolver
@@ -69,7 +67,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(170, 115);
+            this.label1.Location = new System.Drawing.Point(170, 225);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(293, 15);
             this.label1.TabIndex = 6;
@@ -77,36 +75,19 @@
             // 
             // txtIdUsuario
             // 
-            this.txtIdUsuario.Location = new System.Drawing.Point(169, 143);
+            this.txtIdUsuario.Location = new System.Drawing.Point(169, 253);
             this.txtIdUsuario.Name = "txtIdUsuario";
             this.txtIdUsuario.Size = new System.Drawing.Size(302, 20);
             this.txtIdUsuario.TabIndex = 7;
-            // 
-            // lblErrorDNI
-            // 
-            this.lblErrorDNI.AutoSize = true;
-            this.lblErrorDNI.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblErrorDNI.Location = new System.Drawing.Point(169, 168);
-            this.lblErrorDNI.Name = "lblErrorDNI";
-            this.lblErrorDNI.Size = new System.Drawing.Size(0, 15);
-            this.lblErrorDNI.TabIndex = 8;
-            // 
-            // listBoxUsuario
-            // 
-            this.listBoxUsuario.FormattingEnabled = true;
-            this.listBoxUsuario.Location = new System.Drawing.Point(170, 239);
-            this.listBoxUsuario.Name = "listBoxUsuario";
-            this.listBoxUsuario.Size = new System.Drawing.Size(302, 95);
-            this.listBoxUsuario.TabIndex = 34;
             // 
             // lblErrorEliminar
             // 
             this.lblErrorEliminar.AutoSize = true;
             this.lblErrorEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblErrorEliminar.Location = new System.Drawing.Point(170, 336);
+            this.lblErrorEliminar.Location = new System.Drawing.Point(169, 278);
             this.lblErrorEliminar.Name = "lblErrorEliminar";
             this.lblErrorEliminar.Size = new System.Drawing.Size(0, 15);
-            this.lblErrorEliminar.TabIndex = 35;
+            this.lblErrorEliminar.TabIndex = 8;
             // 
             // btnEliminarUsuario
             // 
@@ -127,39 +108,24 @@
             this.btnEliminarUsuario.Text = "Eliminar Usuario";
             this.btnEliminarUsuario.TextColor = System.Drawing.Color.White;
             this.btnEliminarUsuario.UseVisualStyleBackColor = true;
-            this.btnEliminarUsuario.Click += new System.EventHandler(this.btnEliminarUsuario_Click_1);
+            this.btnEliminarUsuario.Click += new System.EventHandler(this.btnEliminarUsuario_Click);
             // 
-            // btnBuscarUsuario
+            // lblUsuarioEliminadoExitosamente
             // 
-            this.btnBuscarUsuario.BorderColor = System.Drawing.Color.Transparent;
-            this.btnBuscarUsuario.ButtonColor = System.Drawing.Color.Salmon;
-            this.btnBuscarUsuario.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnBuscarUsuario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnBuscarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarUsuario.ForeColor = System.Drawing.Color.Transparent;
-            this.btnBuscarUsuario.Location = new System.Drawing.Point(169, 198);
-            this.btnBuscarUsuario.Name = "btnBuscarUsuario";
-            this.btnBuscarUsuario.OnHoverBorderColor = System.Drawing.Color.Salmon;
-            this.btnBuscarUsuario.OnHoverButtonColor = System.Drawing.Color.Salmon;
-            this.btnBuscarUsuario.OnHoverTextColor = System.Drawing.Color.Gray;
-            this.btnBuscarUsuario.Size = new System.Drawing.Size(302, 38);
-            this.btnBuscarUsuario.TabIndex = 33;
-            this.btnBuscarUsuario.Text = "Buscar Usuario";
-            this.btnBuscarUsuario.TextColor = System.Drawing.Color.White;
-            this.btnBuscarUsuario.UseVisualStyleBackColor = true;
-            this.btnBuscarUsuario.Click += new System.EventHandler(this.btnBuscarUsuario_Click_1);
+            this.lblUsuarioEliminadoExitosamente.AutoSize = true;
+            this.lblUsuarioEliminadoExitosamente.Location = new System.Drawing.Point(395, 414);
+            this.lblUsuarioEliminadoExitosamente.Name = "lblUsuarioEliminadoExitosamente";
+            this.lblUsuarioEliminadoExitosamente.Size = new System.Drawing.Size(0, 13);
+            this.lblUsuarioEliminadoExitosamente.TabIndex = 37;
             // 
             // admin_baja_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(649, 450);
+            this.Controls.Add(this.lblUsuarioEliminadoExitosamente);
             this.Controls.Add(this.btnEliminarUsuario);
             this.Controls.Add(this.lblErrorEliminar);
-            this.Controls.Add(this.listBoxUsuario);
-            this.Controls.Add(this.btnBuscarUsuario);
-            this.Controls.Add(this.lblErrorDNI);
             this.Controls.Add(this.txtIdUsuario);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblGestionUsuariosTitulo);
@@ -178,10 +144,8 @@
         private System.Windows.Forms.Label lblGestionUsuariosTitulo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtIdUsuario;
-        private System.Windows.Forms.Label lblErrorDNI;
-        private ePOSOne.btnProduct.Button_WOC btnBuscarUsuario;
-        private System.Windows.Forms.ListBox listBoxUsuario;
         private System.Windows.Forms.Label lblErrorEliminar;
         private ePOSOne.btnProduct.Button_WOC btnEliminarUsuario;
+        private System.Windows.Forms.Label lblUsuarioEliminadoExitosamente;
     }
 }

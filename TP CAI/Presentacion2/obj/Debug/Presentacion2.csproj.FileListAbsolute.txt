@@ -134,68 +134,28 @@ C:\Users\lauta\OneDrive\Escritorio\TP CAI hasta DOMINGO\TP CAI hasta 21.04\TP CA
 C:\Users\lauta\OneDrive\Escritorio\TP CAI hasta DOMINGO\TP CAI hasta 21.04\TP CAI hasta 21.04\TP CAI nuevos forms sin errores\TP CAI nuevos forms\TP CAI\TP CAI\Presentacion2\bin\Debug\Presentacion.pdb
 C:\Users\lauta\OneDrive\Escritorio\TP CAI hasta DOMINGO\TP CAI hasta 21.04\TP CAI hasta 21.04\TP CAI nuevos forms sin errores\TP CAI nuevos forms\TP CAI\TP CAI\Presentacion2\bin\Debug\Newtonsoft.Json.xml
 C:\Users\lauta\OneDrive\Escritorio\TP CAI hasta DOMINGO\TP CAI hasta 21.04\TP CAI hasta 21.04\TP CAI nuevos forms sin errores\TP CAI nuevos forms\TP CAI\TP CAI\Presentacion2\obj\Debug\Presenta.689EE05C.Up2Date
-C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\bin\Debug\Presentacion2.exe
-C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\bin\Debug\Presentacion2.pdb
-C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\bin\Debug\Datos.dll
-C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\bin\Debug\Persistencia.dll
-C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\bin\Debug\Presentacion.dll
-C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\bin\Debug\Newtonsoft.Json.dll
-C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\bin\Debug\Datos.pdb
-C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\bin\Debug\Persistencia.pdb
-C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\bin\Debug\Presentacion.pdb
-C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\bin\Debug\Newtonsoft.Json.xml
-C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.csproj.AssemblyReference.cache
-C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.admin_agregar_form.resources
-C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.iniciarsesion_form.resources
-C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.cambiocontra_form.resources
-C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.admin_menu_form.resources
-C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.admin_gestion_form.resources
-C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.admin_baja_form.resources
-C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.admin_edit_form.resources
-C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.vendedor_menu_form.resources
-C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.supervisor_menu_form.resources
-C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.csproj.GenerateResource.cache
-C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.csproj.CoreCompileInputs.cache
-C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presenta.689EE05C.Up2Date
-C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.exe
-C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.pdb
-C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.csproj.AssemblyReference.cache
-C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.admin_agregar_form.resources
-C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.iniciarsesion_form.resources
-C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.cambiocontra_form.resources
-C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.admin_menu_form.resources
-C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.admin_gestion_form.resources
-C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.admin_baja_form.resources
-C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.admin_edit_form.resources
-C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.vendedor_menu_form.resources
-C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.supervisor_menu_form.resources
-C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.csproj.GenerateResource.cache
-C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.csproj.CoreCompileInputs.cache
-C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.exe
-C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.pdb
-C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (1)\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.csproj.AssemblyReference.cache
-C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (1)\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.admin_agregar_form.resources
-C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (1)\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.iniciarsesion_form.resources
-C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (1)\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.cambiocontra_form.resources
-C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (1)\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.admin_menu_form.resources
-C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (1)\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.admin_gestion_form.resources
-C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (1)\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.admin_baja_form.resources
-C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (1)\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.admin_edit_form.resources
-C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (1)\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.vendedor_menu_form.resources
-C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (1)\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.supervisor_menu_form.resources
-C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (1)\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.csproj.GenerateResource.cache
-C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (1)\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.csproj.CoreCompileInputs.cache
-C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (1)\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.exe
-C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (1)\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.pdb
-C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (2)\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.csproj.AssemblyReference.cache
-C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (2)\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.admin_agregar_form.resources
-C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (2)\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.iniciarsesion_form.resources
-C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (2)\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.cambiocontra_form.resources
-C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (2)\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.admin_menu_form.resources
-C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (2)\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.admin_gestion_form.resources
-C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (2)\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.admin_baja_form.resources
-C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (2)\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.admin_edit_form.resources
-C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (2)\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.vendedor_menu_form.resources
-C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (2)\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.supervisor_menu_form.resources
-C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (2)\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.csproj.GenerateResource.cache
-C:\Users\lauta\OneDrive\Escritorio\CAI_1C-2024-sprint1-main (2)\CAI_1C-2024-sprint1-main\TP CAI\Presentacion2\obj\Debug\Presentacion2.csproj.CoreCompileInputs.cache
+C:\Users\lauta\OneDrive\Escritorio\TP CAI\TP CAI\Presentacion2\bin\Debug\Presentacion2.exe
+C:\Users\lauta\OneDrive\Escritorio\TP CAI\TP CAI\Presentacion2\bin\Debug\Presentacion2.pdb
+C:\Users\lauta\OneDrive\Escritorio\TP CAI\TP CAI\Presentacion2\bin\Debug\Datos.dll
+C:\Users\lauta\OneDrive\Escritorio\TP CAI\TP CAI\Presentacion2\bin\Debug\Persistencia.dll
+C:\Users\lauta\OneDrive\Escritorio\TP CAI\TP CAI\Presentacion2\bin\Debug\Presentacion.dll
+C:\Users\lauta\OneDrive\Escritorio\TP CAI\TP CAI\Presentacion2\bin\Debug\Newtonsoft.Json.dll
+C:\Users\lauta\OneDrive\Escritorio\TP CAI\TP CAI\Presentacion2\bin\Debug\Datos.pdb
+C:\Users\lauta\OneDrive\Escritorio\TP CAI\TP CAI\Presentacion2\bin\Debug\Persistencia.pdb
+C:\Users\lauta\OneDrive\Escritorio\TP CAI\TP CAI\Presentacion2\bin\Debug\Presentacion.pdb
+C:\Users\lauta\OneDrive\Escritorio\TP CAI\TP CAI\Presentacion2\bin\Debug\Newtonsoft.Json.xml
+C:\Users\lauta\OneDrive\Escritorio\TP CAI\TP CAI\Presentacion2\obj\Debug\Presentacion2.csproj.AssemblyReference.cache
+C:\Users\lauta\OneDrive\Escritorio\TP CAI\TP CAI\Presentacion2\obj\Debug\Presentacion2.admin_agregar_form.resources
+C:\Users\lauta\OneDrive\Escritorio\TP CAI\TP CAI\Presentacion2\obj\Debug\Presentacion2.iniciarsesion_form.resources
+C:\Users\lauta\OneDrive\Escritorio\TP CAI\TP CAI\Presentacion2\obj\Debug\Presentacion2.cambiocontra_form.resources
+C:\Users\lauta\OneDrive\Escritorio\TP CAI\TP CAI\Presentacion2\obj\Debug\Presentacion2.admin_menu_form.resources
+C:\Users\lauta\OneDrive\Escritorio\TP CAI\TP CAI\Presentacion2\obj\Debug\Presentacion2.admin_gestion_form.resources
+C:\Users\lauta\OneDrive\Escritorio\TP CAI\TP CAI\Presentacion2\obj\Debug\Presentacion2.admin_baja_form.resources
+C:\Users\lauta\OneDrive\Escritorio\TP CAI\TP CAI\Presentacion2\obj\Debug\Presentacion2.admin_edit_form.resources
+C:\Users\lauta\OneDrive\Escritorio\TP CAI\TP CAI\Presentacion2\obj\Debug\Presentacion2.vendedor_menu_form.resources
+C:\Users\lauta\OneDrive\Escritorio\TP CAI\TP CAI\Presentacion2\obj\Debug\Presentacion2.supervisor_menu_form.resources
+C:\Users\lauta\OneDrive\Escritorio\TP CAI\TP CAI\Presentacion2\obj\Debug\Presentacion2.csproj.GenerateResource.cache
+C:\Users\lauta\OneDrive\Escritorio\TP CAI\TP CAI\Presentacion2\obj\Debug\Presentacion2.csproj.CoreCompileInputs.cache
+C:\Users\lauta\OneDrive\Escritorio\TP CAI\TP CAI\Presentacion2\obj\Debug\Presenta.689EE05C.Up2Date
+C:\Users\lauta\OneDrive\Escritorio\TP CAI\TP CAI\Presentacion2\obj\Debug\Presentacion2.exe
+C:\Users\lauta\OneDrive\Escritorio\TP CAI\TP CAI\Presentacion2\obj\Debug\Presentacion2.pdb

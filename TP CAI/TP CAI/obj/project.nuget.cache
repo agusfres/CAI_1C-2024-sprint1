@@ -1,11 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QxuslrZD53akociVOWaWqwRG3EJHC9lP7801/Cpaavq2zY+lvED3gCdvY4u2micCjlCufeGCPfjGU/MuyUjgNw==",
+  "dgSpecHash": "6X/5h3gRGKXcgS0ocrJNtzaIcasoS9HaUpXrPHIzvdu2hAfxgRjMvRmVsVAa02vSQhkfg6nyZZMjIxJgsjqBcA==",
   "success": true,
-  "projectFilePath": "/Users/lreche/Documents/GitHub/CAI_1C-2024-sprint1/TP CAI/TP CAI/Presentacion.csproj",
-  "expectedPackageFiles": [
-    "/Users/lreche/.nuget/packages/microsoft.netframework.referenceassemblies/1.0.3/microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
-    "/Users/lreche/.nuget/packages/microsoft.netframework.referenceassemblies.net472/1.0.3/microsoft.netframework.referenceassemblies.net472.1.0.3.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\catac\\Pictures\\Cata\\Facultad\\CAI\\TP CAI nuevos forms\\TP CAI nuevos forms\\TP CAI\\TP CAI\\TP CAI\\Presentacion.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

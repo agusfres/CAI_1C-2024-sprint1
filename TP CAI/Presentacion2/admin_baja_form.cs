@@ -15,59 +15,33 @@ namespace Presentacion2
 {
     public partial class admin_baja_form : Form
     {
-        List<Usuario> usuarios = new List<Usuario>();
-
         public admin_baja_form()
         {
             InitializeComponent();
         }
 
 
-        private void btnBuscarUsuario_Click_1(object sender, EventArgs e)
-        {
-            string txUsuarioId = txtIdUsuario.Text;
-            string msg = "";
-
-            if (string.IsNullOrEmpty(txUsuarioId))
-            {
-                lblErrorDNI.Text = "Ingrese un Id de usuario";
-            }
-            else if (int.TryParse(txUsuarioId, out int dni))
-            {
-                NegocioUsuario negocio = new NegocioUsuario();
-                msg = negocio.BuscarDni(dni, usuarios);
-
-                if (msg == "ERROR")
-                {
-                    lblErrorDNI.Text = "Ingrese un Id existente.";
-                }
-                else
-                {
-                    listBoxUsuario.Text = msg;
-                }
-            }
-            else
-            {
-                lblErrorDNI.Text = "Ingrese un dato válido";
-            }
-            
-        }
-
-
-        private void btnEliminarUsuario_Click_1(object sender, EventArgs e)
+        private void btnEliminarUsuario_Click(object sender, EventArgs e)
         {
             string txIdUsuario = txtIdUsuario.Text;
             NegocioUsuario negocioUsuario = new NegocioUsuario();
-            ListaUsuario listaUsuario = new ListaUsuario();
 
             if (Guid.TryParse(txIdUsuario, out Guid idUsuario))
             {
-                negocioUsuario.BorrarUsuario(idUsuario);
-                listaUsuario.ModificarEstado(Guid.Parse(txIdUsuario), "INACTIVO");
+                try
+                {
+                    negocioUsuario.BorrarUsuario(idUsuario);
+
+                    lblUsuarioEliminadoExitosamente.Text = "Usuario eliminado exitosamente";
+                }
+                catch (Exception ex)
+                {
+                    lblErrorEliminar.Text = ex.Message;
+                }
             }
             else
             {
-                lblErrorEliminar.Text = "Debes indicar el id / Guid del usuario a eliminar";
+                lblErrorEliminar.Text = "Debes indicar el ID/Guid válido del usuario a eliminar";
             }
         }
 

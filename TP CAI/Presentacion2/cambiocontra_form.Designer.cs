@@ -33,12 +33,9 @@
             this.txtContraseñaVieja = new System.Windows.Forms.TextBox();
             this.txtContraseñaNueva = new System.Windows.Forms.TextBox();
             this.btnCambiar = new ePOSOne.btnProduct.Button_WOC();
-            this.lblErrorVieja = new System.Windows.Forms.Label();
-            this.lblErrorNueva = new System.Windows.Forms.Label();
-            this.lblErrorConfirmacion = new System.Windows.Forms.Label();
+            this.lblErrorContraseñaVieja = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.lblErrorContraseñaVieja = new System.Windows.Forms.Label();
             this.lblCambioContraseñaExitosa = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -72,7 +69,7 @@
             // 
             this.txtContraseñaVieja.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContraseñaVieja.ForeColor = System.Drawing.Color.Gray;
-            this.txtContraseñaVieja.Location = new System.Drawing.Point(153, 173);
+            this.txtContraseñaVieja.Location = new System.Drawing.Point(162, 184);
             this.txtContraseñaVieja.Name = "txtContraseñaVieja";
             this.txtContraseñaVieja.Size = new System.Drawing.Size(253, 21);
             this.txtContraseñaVieja.TabIndex = 3;
@@ -81,7 +78,7 @@
             // 
             this.txtContraseñaNueva.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContraseñaNueva.ForeColor = System.Drawing.Color.Gray;
-            this.txtContraseñaNueva.Location = new System.Drawing.Point(153, 263);
+            this.txtContraseñaNueva.Location = new System.Drawing.Point(162, 265);
             this.txtContraseñaNueva.Name = "txtContraseñaNueva";
             this.txtContraseñaNueva.ReadOnly = true;
             this.txtContraseñaNueva.Size = new System.Drawing.Size(253, 21);
@@ -109,64 +106,39 @@
             this.btnCambiar.UseVisualStyleBackColor = true;
             this.btnCambiar.Click += new System.EventHandler(this.btnCambiar_Click);
             // 
-            // lblErrorVieja
+            // lblErrorContraseñaVieja
             // 
-            this.lblErrorVieja.AutoSize = true;
-            this.lblErrorVieja.Location = new System.Drawing.Point(153, 245);
-            this.lblErrorVieja.Name = "lblErrorVieja";
-            this.lblErrorVieja.Size = new System.Drawing.Size(0, 13);
-            this.lblErrorVieja.TabIndex = 35;
-            // 
-            // lblErrorNueva
-            // 
-            this.lblErrorNueva.AutoSize = true;
-            this.lblErrorNueva.Location = new System.Drawing.Point(162, 263);
-            this.lblErrorNueva.Name = "lblErrorNueva";
-            this.lblErrorNueva.Size = new System.Drawing.Size(0, 13);
-            this.lblErrorNueva.TabIndex = 36;
-            // 
-            // lblErrorConfirmacion
-            // 
-            this.lblErrorConfirmacion.AutoSize = true;
-            this.lblErrorConfirmacion.Location = new System.Drawing.Point(162, 297);
-            this.lblErrorConfirmacion.Name = "lblErrorConfirmacion";
-            this.lblErrorConfirmacion.Size = new System.Drawing.Size(0, 13);
-            this.lblErrorConfirmacion.TabIndex = 37;
+            this.lblErrorContraseñaVieja.AutoSize = true;
+            this.lblErrorContraseñaVieja.Location = new System.Drawing.Point(162, 209);
+            this.lblErrorContraseñaVieja.Name = "lblErrorContraseñaVieja";
+            this.lblErrorContraseñaVieja.Size = new System.Drawing.Size(0, 13);
+            this.lblErrorContraseñaVieja.TabIndex = 35;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(153, 154);
+            this.label1.Location = new System.Drawing.Point(162, 165);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(144, 13);
-            this.label1.TabIndex = 38;
+            this.label1.TabIndex = 36;
             this.label1.Text = "Ingrese su contraseña actual";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(153, 245);
+            this.label2.Location = new System.Drawing.Point(162, 249);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 13);
-            this.label2.TabIndex = 39;
-            this.label2.Text = "Nueva contraseña";
-            // 
-            // lblErrorContraseñaVieja
-            // 
-            this.lblErrorContraseñaVieja.AutoSize = true;
-            this.lblErrorContraseñaVieja.Location = new System.Drawing.Point(153, 197);
-            this.lblErrorContraseñaVieja.Name = "lblErrorContraseñaVieja";
-            this.lblErrorContraseñaVieja.Size = new System.Drawing.Size(0, 13);
-            this.lblErrorContraseñaVieja.TabIndex = 40;
+            this.label2.Size = new System.Drawing.Size(135, 13);
+            this.label2.TabIndex = 37;
+            this.label2.Text = "Su nueva contraseña será:";
             // 
             // lblCambioContraseñaExitosa
             // 
             this.lblCambioContraseñaExitosa.AutoSize = true;
-            this.lblCambioContraseñaExitosa.ForeColor = System.Drawing.Color.Black;
-            this.lblCambioContraseñaExitosa.Location = new System.Drawing.Point(370, 378);
+            this.lblCambioContraseñaExitosa.Location = new System.Drawing.Point(353, 374);
             this.lblCambioContraseñaExitosa.Name = "lblCambioContraseñaExitosa";
             this.lblCambioContraseñaExitosa.Size = new System.Drawing.Size(0, 13);
-            this.lblCambioContraseñaExitosa.TabIndex = 41;
+            this.lblCambioContraseñaExitosa.TabIndex = 38;
             // 
             // cambiocontra_form
             // 
@@ -174,12 +146,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(559, 415);
             this.Controls.Add(this.lblCambioContraseñaExitosa);
-            this.Controls.Add(this.lblErrorContraseñaVieja);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.lblErrorConfirmacion);
-            this.Controls.Add(this.lblErrorNueva);
-            this.Controls.Add(this.lblErrorVieja);
+            this.Controls.Add(this.lblErrorContraseñaVieja);
             this.Controls.Add(this.btnCambiar);
             this.Controls.Add(this.txtContraseñaNueva);
             this.Controls.Add(this.txtContraseñaVieja);
@@ -199,12 +168,9 @@
         private System.Windows.Forms.TextBox txtContraseñaVieja;
         private System.Windows.Forms.TextBox txtContraseñaNueva;
         private ePOSOne.btnProduct.Button_WOC btnCambiar;
-        private System.Windows.Forms.Label lblErrorVieja;
-        private System.Windows.Forms.Label lblErrorNueva;
-        private System.Windows.Forms.Label lblErrorConfirmacion;
+        private System.Windows.Forms.Label lblErrorContraseñaVieja;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label lblErrorContraseñaVieja;
         private System.Windows.Forms.Label lblCambioContraseñaExitosa;
     }
 }

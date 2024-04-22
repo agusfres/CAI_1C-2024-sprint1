@@ -16,12 +16,14 @@ namespace Presentacion2
     public partial class cambiocontra_form : Form
     {
         string nombreUsuarioActual;
+        string contraseñaActual;
 
 
-        public cambiocontra_form(string nombreUsuarioActual)
+        public cambiocontra_form(string nombreUsuarioActual, string contraseñaActual)
         {
             InitializeComponent();
             this.nombreUsuarioActual = nombreUsuarioActual;
+            this.contraseñaActual = contraseñaActual;
         }
 
 
@@ -32,8 +34,7 @@ namespace Presentacion2
             form2.Show();
         }
 
-
-        private async void btnCambiar_Click(object sender, EventArgs e)
+        private void btnCambiar_Click(object sender, EventArgs e)
         {
             ListaUsuario listaUsuario = new ListaUsuario();
             lblErrorContraseñaVieja.Text = "";
@@ -41,45 +42,53 @@ namespace Presentacion2
 
             if (contraseñaVieja == "")
             {
-                lblErrorContraseñaVieja.Text = "Debe indicar la contraseña actual" + System.Environment.NewLine;
+                lblErrorContraseñaVieja.Text = "Debes indicar la contraseña actual" + System.Environment.NewLine;
             }
-
-            Usuario usuarioEncontrado = listaUsuario.BuscarUsuario(nombreUsuarioActual);
-            
-            if (usuarioEncontrado != null)
+            else
             {
-                if (usuarioEncontrado.Contraseña != contraseñaVieja)
+                Usuario usuarioEncontrado = listaUsuario.BuscarUsuario(nombreUsuarioActual);
+
+                if (usuarioEncontrado != null)
                 {
-                    lblErrorContraseñaVieja.Text = "La contraseña indicada no corresponde a la contraseña actual" + System.Environment.NewLine;
-                }
-                else
-                {
-                    listaUsuario.ModificarContraseña(nombreUsuarioActual, txtContraseñaNueva.Text);
-
-                    listaUsuario.ModificarEstado(nombreUsuarioActual, "ACTIVO");
-
-                    lblCambioContraseñaExitosa.Text = "Contraseña modificada con éxito" + System.Environment.NewLine;
-                    await Task.Delay(4000);
-
-                    int tipoUsuario = usuarioEncontrado.TipoUsuario;
-                    if (tipoUsuario == 1)
+                    if (usuarioEncontrado.Contraseña != contraseñaVieja)
                     {
-                        this.Hide();
-                        vendedor_menu_form vendedor_menu = new vendedor_menu_form();
-                        vendedor_menu.Show();
-                    }
-                    else if (tipoUsuario == 2)
-                    {
-                        this.Hide();
-                        supervisor_menu_form supervisor_menu = new supervisor_menu_form();
-                        supervisor_menu.Show();
+                        lblErrorContraseñaVieja.Text = "La contraseña indicada no corresponde a la contraseña actual" + System.Environment.NewLine;
                     }
                     else
                     {
-                        this.Hide();
-                        admin_menu_form admin_menu = new admin_menu_form();
-                        admin_menu.Show();
+                        listaUsuario.ModificarContraseña(nombreUsuarioActual, txtContraseñaNueva.Text);
+
+                        listaUsuario.ModificarEstado(nombreUsuarioActual, "ACTIVO");
+
+                        lblCambioContraseñaExitosa.Text = "Contraseña modificada con éxito" + System.Environment.NewLine;
+
+                        int tipoUsuario = usuarioEncontrado.TipoUsuario;
+                        if (tipoUsuario == 1)
+                        {
+                            this.Hide();
+                            vendedor_menu_form vendedor_menu = new vendedor_menu_form();
+                            vendedor_menu.Show();
+                        }
+                        else if (tipoUsuario == 2)
+                        {
+                            this.Hide();
+                            supervisor_menu_form supervisor_menu = new supervisor_menu_form();
+                            supervisor_menu.Show();
+                        }
+                        else
+                        {
+                            this.Hide();
+                            admin_menu_form admin_menu = new admin_menu_form();
+                            admin_menu.Show();
+                        }
                     }
+                }
+                else
+                {
+                    // El usuario no está en la base local asi que le damos permiso de administrador
+                    this.Hide();
+                    admin_menu_form admin_menu = new admin_menu_form();
+                    admin_menu.Show();
                 }
             }
         }

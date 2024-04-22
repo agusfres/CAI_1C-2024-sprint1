@@ -8,6 +8,8 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using Datos;
+using System.Net;
+using System.Security.Policy;
 
 
 namespace Persistencia
@@ -115,12 +117,12 @@ namespace Persistencia
                 }
                 else
                 {
-                    Console.WriteLine($"Error: {response.StatusCode} - {response.ReasonPhrase}");
+                    throw new Exception($"Error: {response.StatusCode} - {response.ReasonPhrase}");
                 }
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Exception: {ex.Message}");
+                throw new Exception($"Exception: {ex.Message}");
             }
         }
 
@@ -129,8 +131,12 @@ namespace Persistencia
         {
             var jsonRequest = JsonConvert.SerializeObject(login);
 
-            HttpResponseMessage response = WebHelper.Post("Usuario/Login", jsonRequest);
+            HttpResponseMessage response = WebHelper.Post("/api/Usuario/Login", jsonRequest);
 
+            if (response.StatusCode == HttpStatusCode.Conflict) // Valida error 409
+            {
+                throw new Exception("Usuario o contraseña incorrectos");
+            }
             if (!response.IsSuccessStatusCode)
             {
                 throw new Exception("Verifique los datos ingresados");
