@@ -1,18 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\lauta\\OneDrive\\Escritorio\\CAI_1C-2024-sprint1-main (2)\\CAI_1C-2024-sprint1-main\\TP CAI\\",
+  "WorkspaceRootPath": "C:\\Users\\lauta\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6B9E809C-9635-42CF-920E-0FE31234C213}|Presentacion2\\Presentacion2.csproj|c:\\users\\lauta\\onedrive\\escritorio\\cai_1c-2024-sprint1-main (2)\\cai_1c-2024-sprint1-main\\tp cai\\presentacion2\\admin_agregar_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6B9E809C-9635-42CF-920E-0FE31234C213}|Presentacion2\\Presentacion2.csproj|c:\\users\\lauta\\onedrive\\documentos\\github\\cai_1c-2024-sprint1\\tp cai\\presentacion2\\presentacion2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6B9E809C-9635-42CF-920E-0FE31234C213}|Presentacion2\\Presentacion2.csproj|solutionrelative:presentacion2\\presentacion2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F098A7A-D70C-4301-B4EA-D34BA17289DB}|Negocio2\\Negocio2.csproj|c:\\users\\lauta\\onedrive\\documentos\\github\\cai_1c-2024-sprint1\\tp cai\\negocio2\\negociousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F098A7A-D70C-4301-B4EA-D34BA17289DB}|Negocio2\\Negocio2.csproj|solutionrelative:negocio2\\negociousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B9E809C-9635-42CF-920E-0FE31234C213}|Presentacion2\\Presentacion2.csproj|c:\\users\\lauta\\onedrive\\documentos\\github\\cai_1c-2024-sprint1\\tp cai\\presentacion2\\admin_agregar_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6B9E809C-9635-42CF-920E-0FE31234C213}|Presentacion2\\Presentacion2.csproj|solutionrelative:presentacion2\\admin_agregar_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6B9E809C-9635-42CF-920E-0FE31234C213}|Presentacion2\\Presentacion2.csproj|c:\\users\\lauta\\onedrive\\escritorio\\cai_1c-2024-sprint1-main (2)\\cai_1c-2024-sprint1-main\\tp cai\\presentacion2\\operacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6B9E809C-9635-42CF-920E-0FE31234C213}|Presentacion2\\Presentacion2.csproj|C:\\Users\\lauta\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\presentacion2\\operacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6B9E809C-9635-42CF-920E-0FE31234C213}|Presentacion2\\Presentacion2.csproj|solutionrelative:presentacion2\\operacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D4D43B4-C908-49FE-B2C8-68E34EFE8114}|Presentacion\\Negocio.csproj|c:\\users\\lauta\\onedrive\\escritorio\\cai_1c-2024-sprint1-main (2)\\cai_1c-2024-sprint1-main\\tp cai\\presentacion\\negociousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D4D43B4-C908-49FE-B2C8-68E34EFE8114}|Presentacion\\Negocio.csproj|solutionrelative:presentacion\\negociousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lauta\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\presentacion\\negociousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:presentacion\\negociousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,19 +30,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Operacion.cs",
-              "DocumentMoniker": "C:\\Users\\lauta\\OneDrive\\Escritorio\\CAI_1C-2024-sprint1-main (2)\\CAI_1C-2024-sprint1-main\\TP CAI\\Presentacion2\\Operacion.cs",
-              "RelativeDocumentMoniker": "Presentacion2\\Operacion.cs",
-              "ToolTip": "C:\\Users\\lauta\\OneDrive\\Escritorio\\CAI_1C-2024-sprint1-main (2)\\CAI_1C-2024-sprint1-main\\TP CAI\\Presentacion2\\Operacion.cs",
-              "RelativeToolTip": "Presentacion2\\Operacion.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAYwDAAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T05:22:12.545Z",
+              "DocumentIndex": 0,
+              "Title": "Presentacion2",
+              "DocumentMoniker": "C:\\Users\\lauta\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion2\\Presentacion2.csproj",
+              "RelativeDocumentMoniker": "Presentacion2\\Presentacion2.csproj",
+              "ToolTip": "C:\\Users\\lauta\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion2\\Presentacion2.csproj",
+              "RelativeToolTip": "Presentacion2\\Presentacion2.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-22T06:37:50.508Z",
               "EditorCaption": ""
             },
             {
@@ -47,11 +55,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "NegocioUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\lauta\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\Negocio2\\NegocioUsuario.cs",
+              "RelativeDocumentMoniker": "Negocio2\\NegocioUsuario.cs",
+              "ToolTip": "C:\\Users\\lauta\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\Negocio2\\NegocioUsuario.cs",
+              "RelativeToolTip": "Negocio2\\NegocioUsuario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T06:34:59.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Operacion.cs",
+              "DocumentMoniker": "C:\\Users\\lauta\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion2\\Operacion.cs",
+              "RelativeDocumentMoniker": "Presentacion2\\Operacion.cs",
+              "ToolTip": "C:\\Users\\lauta\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion2\\Operacion.cs",
+              "RelativeToolTip": "Presentacion2\\Operacion.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAYwDAAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T05:22:12.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "admin_agregar_form.cs",
-              "DocumentMoniker": "C:\\Users\\lauta\\OneDrive\\Escritorio\\CAI_1C-2024-sprint1-main (2)\\CAI_1C-2024-sprint1-main\\TP CAI\\Presentacion2\\admin_agregar_form.cs",
+              "DocumentMoniker": "C:\\Users\\lauta\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion2\\admin_agregar_form.cs",
               "RelativeDocumentMoniker": "Presentacion2\\admin_agregar_form.cs",
-              "ToolTip": "C:\\Users\\lauta\\OneDrive\\Escritorio\\CAI_1C-2024-sprint1-main (2)\\CAI_1C-2024-sprint1-main\\TP CAI\\Presentacion2\\admin_agregar_form.cs",
+              "ToolTip": "C:\\Users\\lauta\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion2\\admin_agregar_form.cs",
               "RelativeToolTip": "Presentacion2\\admin_agregar_form.cs",
               "ViewState": "AQIAADkAAAAAAAAAAAAcwE8AAABRAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -60,11 +94,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "NegocioUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\lauta\\OneDrive\\Escritorio\\CAI_1C-2024-sprint1-main (2)\\CAI_1C-2024-sprint1-main\\TP CAI\\Presentacion\\NegocioUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\lauta\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion\\NegocioUsuario.cs",
               "RelativeDocumentMoniker": "Presentacion\\NegocioUsuario.cs",
-              "ToolTip": "C:\\Users\\lauta\\OneDrive\\Escritorio\\CAI_1C-2024-sprint1-main (2)\\CAI_1C-2024-sprint1-main\\TP CAI\\Presentacion\\NegocioUsuario.cs",
+              "ToolTip": "C:\\Users\\lauta\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion\\NegocioUsuario.cs",
               "RelativeToolTip": "Presentacion\\NegocioUsuario.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

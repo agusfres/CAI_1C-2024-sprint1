@@ -37,6 +37,9 @@
   <PropertyGroup />
   <PropertyGroup />
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -141,10 +144,14 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\Datos\Datos.csproj">
       <Project>{d785466a-9765-483c-b6fa-3779406be546}</Project>
       <Name>Datos</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Negocio2\Negocio2.csproj" />
     <ProjectReference Include="..\Persistencia\Persistencia.csproj">
       <Project>{75d739f2-5534-466a-ae90-62f438787cd6}</Project>
       <Name>Persistencia</Name>
