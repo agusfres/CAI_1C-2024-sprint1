@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "tZZgGwVfDwLLoQpIK65kI0fqGR2Yovrf3+Oj6h8IiUmr/2G6aOPhzN9JXDY1jwqRUtuGi66u8Er1oQtlntBzOA==",
+  "dgSpecHash": "DnvDArj5xRITR3yjCFKDJUIIxQjIYNw213l8YSyLRyS1iPURrIvBByKgHjrnxpoVMEi0Pus0W9Z2xOS5oEyS/A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Cata\\source\\repos\\TP CAI\\TP CAI\\Presentacion.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/lreche/Documents/GitHub/CAI_1C-2024-sprint1/TP CAI/Presentacion/Presentacion.csproj",
+  "expectedPackageFiles": [
+    "/Users/lreche/.nuget/packages/microsoft.netframework.referenceassemblies/1.0.3/microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "/Users/lreche/.nuget/packages/microsoft.netframework.referenceassemblies.net472/1.0.3/microsoft.netframework.referenceassemblies.net472.1.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
