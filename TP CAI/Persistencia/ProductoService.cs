@@ -1,5 +1,4 @@
-﻿using Datos;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using Persistencia.Utils;
 using System;
 using System.Collections.Generic;
@@ -8,16 +7,21 @@ using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using Datos;
+using System.Net;
+using System.Security.Policy;
+using Datos;
+
 
 namespace Persistencia
 {
-    public class ProveedorService
+    public class ProductoService
     {
-        public void AgregarProveedor(AltaProveedor altaProveedor)
+        public void AgregarProducto(AltaProducto altaProducto)
         {
-            string path = "/api/Proveedor/AgregarProveedor";
+            string path = "/api/Producto/AgregarProducto";
 
-            var jsonRequest = JsonConvert.SerializeObject(altaProveedor);
+            var jsonRequest = JsonConvert.SerializeObject(altaProducto);
 
             try
             {
@@ -41,11 +45,11 @@ namespace Persistencia
         }
 
 
-        public void BajaProveedor(BajaProductoProveedor bajaProveedor)
+        public void BajaProducto(BajaProductoProveedor bajaProducto)
         {
-            string path = "/api/Proveedor/BajaProveedor";
+            string path = "/api/Producto/BajaProducto";
 
-            var jsonRequest = JsonConvert.SerializeObject(bajaProveedor);
+            var jsonRequest = JsonConvert.SerializeObject(bajaProducto);
 
             try
             {
@@ -67,11 +71,11 @@ namespace Persistencia
         }
 
 
-        public void ModificarProveedor(ModificarProveedor modificarProveedor)
+        public void ModificarProducto(ModificarProducto modificarProducto)
         {
-            string path = "/api/Proveedor/ModificarProveedor";
+            string path = "/api/Producto/ModificarProducto";
 
-            var jsonRequest = JsonConvert.SerializeObject(modificarProveedor);
+            var jsonRequest = JsonConvert.SerializeObject(modificarProducto);
 
             try
             {

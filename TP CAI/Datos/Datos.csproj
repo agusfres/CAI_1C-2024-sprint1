@@ -42,8 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AltaUsuario.cs" />
-    <Compile Include="BajaProveedor.cs" />
     <Compile Include="BajaUsuario.cs" />
+    <Compile Include="AltaProducto.cs" />
+    <Compile Include="BajaProductoProveedor.cs" />
+    <Compile Include="ModificarProveedor.cs" />
+    <Compile Include="ModificarProducto.cs" />
     <Compile Include="ListaUsuario.cs" />
     <Compile Include="Login.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
