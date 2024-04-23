@@ -176,7 +176,6 @@ C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacio
 C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.admin_menu_form.resources
 C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.admin_gestion_form.resources
 C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.admin_baja_form.resources
-C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.admin_edit_form.resources
 C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.vendedor_menu_form.resources
 C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.supervisor_menu_form.resources
 C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.csproj.GenerateResource.cache
@@ -213,3 +212,8 @@ C:\Users\agust\Downloads\FACULTAD\2024\cai\TPCAI\CAI_1C-2024-sprint1\TP CAI\Pres
 C:\Users\agust\Downloads\FACULTAD\2024\cai\TPCAI\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.admin_gestionproveedor_form.resources
 C:\Users\agust\Downloads\FACULTAD\2024\cai\TPCAI\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.admin_bajaproveedor_form.resources
 C:\Users\agust\Downloads\FACULTAD\2024\cai\TPCAI\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.Properties.Resources.resources
+C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.admin_agregarproveedor_form.resources
+C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.admin_edit_proveedor.resources
+C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.admin_gestionproveedor_form.resources
+C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.admin_bajaproveedor_form.resources
+C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.Properties.Resources.resources

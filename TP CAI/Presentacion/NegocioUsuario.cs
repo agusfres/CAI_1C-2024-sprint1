@@ -64,9 +64,6 @@ namespace Negocio
         }
 
 
-
-
-
         public List<Usuario> TraeUsuariosActivos()
         {
             return usuarioService.TraerUsuariosActivos(idAdministrador);

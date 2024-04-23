@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Datos
 {
     public class ListaUsuario
     {
-        private List<Usuario> listaUsuarios;
+        private List<Usuario> listaUsuarios = new List<Usuario>();
 
 
         public Usuario BuscarUsuario(Guid id)

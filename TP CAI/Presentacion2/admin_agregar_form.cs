@@ -23,9 +23,10 @@ namespace Presentacion2
         }
 
 
-        private async void btnConfirmar_Click_1(object sender, EventArgs e)
+        private void btnConfirmar_Click_1(object sender, EventArgs e)
         {
-            DateTime salidaFecha = DateTime.Now;
+            Validador validadorCampos = new Validador();
+
             string txNombre = txtNombre.Text;
             string txApellido = txtApellido.Text;
             string txContraseña = txtContraseña.Text;
@@ -37,28 +38,16 @@ namespace Presentacion2
             string txTelefono = txtTelefono.Text;
             string cmTipoUsuario = cmbTipoUsuario.Text;
 
-            string errorNombre = "";
-            string errorApellido = "";
-            string errorEmail = "";
-            string errorDireccion = "";
-            string errorContraseña = "";
-            string errorFecha = "";
-            string errorDNI = "";
-            string errorUsuario = "";
-            string errorTelefono = "";
-            string errorTipoUsuario = ""; ;
-
-            Validador validadorCampos = new Validador();
-            validadorCampos.ValidarTextoUno(txNombre, "Nombre", ref errorNombre);
-            validadorCampos.ValidarContraseña(txContraseña, "Contraseña", ref errorContraseña);
-            validadorCampos.ValidarTextoUno(txApellido, "Apellido", ref errorApellido);
-            validadorCampos.ValidarTextoDos(txEmail, "Email", ref errorEmail);
-            validadorCampos.ValidarTextoDos(txDireccion, "Dirección", ref errorDireccion);
-            validadorCampos.ValidarFecha(txFechaNac, "Fecha", ref errorFecha, ref salidaFecha);
-            validadorCampos.ValidarDNI(txDNI, "DNI", ref errorDNI);
-            validadorCampos.ValidarNombreUsuario(txNombreUsuario, txNombre, txApellido, "Usuario", ref errorUsuario);
-            validadorCampos.ValidarTelefono(txTelefono, "Teléfono", ref errorTelefono);
-            validadorCampos.ValidarTipoUsuario(cmTipoUsuario, "Tipo de usuario", ref errorTipoUsuario);
+            string errorNombre = validadorCampos.ValidarNombre(txNombre, "Nombre");
+            string errorApellido = validadorCampos.ValidarNombre(txApellido, "Apellido");
+            string errorDireccion = validadorCampos.ValidarDireccion(txDireccion, "Dirección");
+            string errorTelefono = validadorCampos.ValidarTelefono(txTelefono, "Teléfono");
+            string errorEmail = validadorCampos.ValidarEmail(txEmail, "Email");
+            string errorFecha = validadorCampos.ValidarFecha(txFechaNac, "Fecha");
+            string errorUsuario = validadorCampos.ValidarNombreUsuario(txNombreUsuario, txNombre, txApellido, "Usuario");
+            string errorTipoUsuario = validadorCampos.ValidarTipoUsuario(cmTipoUsuario, "Tipo de usuario");
+            string errorDNI = validadorCampos.ValidarDNI(txDNI, "DNI");
+            string errorContraseña = validadorCampos.ValidarContraseña(txContraseña);
 
             lblErrorNombre.Text = errorNombre;
             lblErrorApellido.Text = errorApellido;
@@ -76,21 +65,14 @@ namespace Presentacion2
             if (string.IsNullOrEmpty(acumuladorErrores))
             {
                 Operacion operacion = new Operacion();
-
-                int intCmTipoUsuario = operacion.ObtenerTipoUsuario(cmTipoUsuario);
-
                 DateTime datetimeTxFechaNac = operacion.TransformarStringDatetime(txFechaNac);
+                int intCmTipoUsuario = operacion.ObtenerTipoUsuario(cmTipoUsuario);
                 int intTxDNI = operacion.TransformarStringInt(txDNI);
 
                 NegocioUsuario negocioUsuario = new NegocioUsuario();
-
                 negocioUsuario.AgregarUsuario(txNombre, txApellido, txDireccion, txTelefono, txEmail, datetimeTxFechaNac, txNombreUsuario, intCmTipoUsuario, intTxDNI, txContraseña);
 
-                LimpiarCampos();
-
-                lblconfirma.Text = "Usuario cargado con éxito";
-                await Task.Delay(5000);
-                lblconfirma.Text = "";
+                Congrats();
             }
         }
 
@@ -107,6 +89,15 @@ namespace Presentacion2
             txtUsuario.Clear();
             txtTelefono.Clear();
             cmbTipoUsuario.SelectedIndex = -1;
+        }
+
+
+        private async void Congrats()
+        {
+            LimpiarCampos();
+            lblconfirma.Text = "Usuario cargado con éxito";
+            await Task.Delay(5000);
+            lblconfirma.Text = "";
         }
 
 
