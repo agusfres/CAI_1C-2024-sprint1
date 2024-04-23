@@ -53,6 +53,10 @@ namespace Persistencia
 
             if (response.StatusCode == HttpStatusCode.NotFound) // Valida error 404
             {
+                throw new Exception("Usuario no encontrado");
+            }
+            if (response.StatusCode == HttpStatusCode.NotFound) // Valida error 403
+            {
                 throw new Exception("No tienes permiso para realizar esta acción");
             }
             if (response.StatusCode == HttpStatusCode.Conflict) // Valida error 409
@@ -76,22 +80,23 @@ namespace Persistencia
 
             var jsonRequest = JsonConvert.SerializeObject(bajaUsuario);
 
-            try
+            HttpResponseMessage response = WebHelper.DeleteWithBody(path, jsonRequest);
+
+            if (response.StatusCode == HttpStatusCode.NotFound) // Valida error 404
             {
-                HttpResponseMessage response = WebHelper.DeleteWithBody(path, jsonRequest);
-                if (response.IsSuccessStatusCode)
-                {
-                    var reader = new StreamReader(response.Content.ReadAsStreamAsync().Result);
-                    string respuesta = reader.ReadToEnd();
-                }
-                else
-                {
-                    throw new Exception($"Error: {response.StatusCode} - {response.ReasonPhrase}");
-                }
+                throw new Exception("Usuario no encontrado");
             }
-            catch (Exception ex)
+            if (response.StatusCode == HttpStatusCode.NotFound) // Valida error 403
             {
-                throw new Exception(ex.Message);
+                throw new Exception("No tienes permiso para realizar esta acción");
+            }
+            if (response.StatusCode == HttpStatusCode.Conflict) // Valida error 400
+            {
+                throw new Exception("Ingrese un Guid / id válido");
+            }
+            if (!response.IsSuccessStatusCode) // Valida errores que no sean de la familia del 200
+            {
+                throw new Exception("Hubo un error, intente nuevamente en unos segundos");
             }
         }
 
@@ -108,7 +113,7 @@ namespace Persistencia
             }
             if (!response.IsSuccessStatusCode) // Valida errores que no sean de la familia del 200
             {
-                throw new Exception("Verifique los datos ingresados");
+                throw new Exception("Verifique los datos ingresados e intente nuevamente");
             }
 
             var reader = new StreamReader(response.Content.ReadAsStreamAsync().Result);
@@ -131,7 +136,7 @@ namespace Persistencia
 
             if (!response.IsSuccessStatusCode)
             {
-                throw new Exception("Verifique los datos ingresados");
+                throw new Exception("Verifique los datos ingresados e intente nuevamente");
             }
 
             var reader = new StreamReader(response.Content.ReadAsStreamAsync().Result);

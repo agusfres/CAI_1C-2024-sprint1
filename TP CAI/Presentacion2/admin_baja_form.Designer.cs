@@ -34,7 +34,7 @@
             this.txtIdUsuario = new System.Windows.Forms.TextBox();
             this.lblErrorEliminar = new System.Windows.Forms.Label();
             this.btnEliminarUsuario = new ePOSOne.btnProduct.Button_WOC();
-            this.lblUsuarioEliminadoExitosamente = new System.Windows.Forms.Label();
+            this.lblMensajeEliminar = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // linkLabelVolver
@@ -110,20 +110,20 @@
             this.btnEliminarUsuario.UseVisualStyleBackColor = true;
             this.btnEliminarUsuario.Click += new System.EventHandler(this.btnEliminarUsuario_Click);
             // 
-            // lblUsuarioEliminadoExitosamente
+            // lblMensajeEliminar
             // 
-            this.lblUsuarioEliminadoExitosamente.AutoSize = true;
-            this.lblUsuarioEliminadoExitosamente.Location = new System.Drawing.Point(395, 414);
-            this.lblUsuarioEliminadoExitosamente.Name = "lblUsuarioEliminadoExitosamente";
-            this.lblUsuarioEliminadoExitosamente.Size = new System.Drawing.Size(0, 13);
-            this.lblUsuarioEliminadoExitosamente.TabIndex = 37;
+            this.lblMensajeEliminar.AutoSize = true;
+            this.lblMensajeEliminar.Location = new System.Drawing.Point(395, 414);
+            this.lblMensajeEliminar.Name = "lblMensajeEliminar";
+            this.lblMensajeEliminar.Size = new System.Drawing.Size(0, 13);
+            this.lblMensajeEliminar.TabIndex = 37;
             // 
             // admin_baja_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(649, 450);
-            this.Controls.Add(this.lblUsuarioEliminadoExitosamente);
+            this.Controls.Add(this.lblMensajeEliminar);
             this.Controls.Add(this.btnEliminarUsuario);
             this.Controls.Add(this.lblErrorEliminar);
             this.Controls.Add(this.txtIdUsuario);
@@ -146,6 +146,6 @@
         private System.Windows.Forms.TextBox txtIdUsuario;
         private System.Windows.Forms.Label lblErrorEliminar;
         private ePOSOne.btnProduct.Button_WOC btnEliminarUsuario;
-        private System.Windows.Forms.Label lblUsuarioEliminadoExitosamente;
+        private System.Windows.Forms.Label lblMensajeEliminar;
     }
 }

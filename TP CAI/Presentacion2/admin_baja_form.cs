@@ -30,9 +30,10 @@ namespace Presentacion2
             {
                 try
                 {
-                    negocioUsuario.BorrarUsuario(idUsuario);
+                    negocioUsuario.BorrarUsuario(Guid.Parse(txIdUsuario));
 
-                    lblUsuarioEliminadoExitosamente.Text = "Usuario eliminado exitosamente";
+                    LimpiarCampos();
+                    Congrats();
                 }
                 catch (Exception ex)
                 {
@@ -51,6 +52,21 @@ namespace Presentacion2
             this.Hide();
             admin_gestion_form form5 = new admin_gestion_form();
             form5.Show();
+        }
+
+
+        private void LimpiarCampos()
+        {
+            lblErrorEliminar.Text = "";
+            txtIdUsuario.Clear();
+        }
+
+
+        private async void Congrats()
+        {
+            lblMensajeEliminar.Text = "Usuario eliminado con éxito";
+            await Task.Delay(5000);
+            lblMensajeEliminar.Text = "";
         }
     }
 }
