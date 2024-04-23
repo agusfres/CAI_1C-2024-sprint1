@@ -61,7 +61,7 @@
             this.cmbTipoUsuario = new System.Windows.Forms.ComboBox();
             this.lblErrorTipoUsuario = new System.Windows.Forms.Label();
             this.btnConfirmar = new ePOSOne.btnProduct.Button_WOC();
-            this.lblconfirma = new System.Windows.Forms.Label();
+            this.lblMensajeAgregar = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblTitulo
@@ -377,20 +377,20 @@
             this.btnConfirmar.UseVisualStyleBackColor = true;
             this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click_1);
             // 
-            // lblconfirma
+            // lblMensajeAgregar
             // 
-            this.lblconfirma.AutoSize = true;
-            this.lblconfirma.Location = new System.Drawing.Point(387, 479);
-            this.lblconfirma.Name = "lblconfirma";
-            this.lblconfirma.Size = new System.Drawing.Size(0, 13);
-            this.lblconfirma.TabIndex = 33;
+            this.lblMensajeAgregar.AutoSize = true;
+            this.lblMensajeAgregar.Location = new System.Drawing.Point(387, 479);
+            this.lblMensajeAgregar.Name = "lblMensajeAgregar";
+            this.lblMensajeAgregar.Size = new System.Drawing.Size(0, 13);
+            this.lblMensajeAgregar.TabIndex = 33;
             // 
             // admin_agregar_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(760, 518);
-            this.Controls.Add(this.lblconfirma);
+            this.Controls.Add(this.lblMensajeAgregar);
             this.Controls.Add(this.btnConfirmar);
             this.Controls.Add(this.lblErrorTipoUsuario);
             this.Controls.Add(this.cmbTipoUsuario);
@@ -466,6 +466,6 @@
         private System.Windows.Forms.ComboBox cmbTipoUsuario;
         private System.Windows.Forms.Label lblErrorTipoUsuario;
         private ePOSOne.btnProduct.Button_WOC btnConfirmar;
-        private System.Windows.Forms.Label lblconfirma;
+        private System.Windows.Forms.Label lblMensajeAgregar;
     }
 }

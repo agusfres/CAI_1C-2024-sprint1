@@ -36,7 +36,7 @@ namespace Persistencia
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Exception: {ex.Message}");
+                throw new Exception(ex.Message);
             }
             return listaUsuarios;
         }
@@ -49,24 +49,23 @@ namespace Persistencia
 
             var jsonRequest = JsonConvert.SerializeObject(altaUsuario);
 
-            try
+            HttpResponseMessage response = WebHelper.Post(path, jsonRequest);
+
+            if (response.StatusCode == HttpStatusCode.NotFound) // Valida error 404
             {
-                HttpResponseMessage response = WebHelper.Post(path, jsonRequest);
-                if (response.IsSuccessStatusCode)
-                {
-                    var reader = new StreamReader(response.Content.ReadAsStreamAsync().Result);
-                    string respuesta = reader.ReadToEnd();
-                }
-                else
-                {
-                    var reader = new StreamReader(response.Content.ReadAsStreamAsync().Result);
-                    string respuesta = reader.ReadToEnd();
-                    Console.WriteLine($"Error: {response.StatusCode} - {response.ReasonPhrase}");
-                }
+                throw new Exception("No tienes permiso para realizar esta acción");
             }
-            catch (Exception ex)
+            if (response.StatusCode == HttpStatusCode.Conflict) // Valida error 409
             {
-                Console.WriteLine($"Exception: {ex.Message}");
+                throw new Exception("El nombre de usuario no puede contener el nombre o apellido");
+            }
+            if (response.StatusCode == HttpStatusCode.InternalServerError) // Valida error 500
+            {
+                throw new Exception("El usuario ya existe, intente con otro");
+            }
+            if (!response.IsSuccessStatusCode) // Valida errores que no sean de la familia del 200
+            {
+                throw new Exception("Hubo un error, intente nuevamente en unos segundos");
             }
         }
 
@@ -92,7 +91,7 @@ namespace Persistencia
             }
             catch (Exception ex)
             {
-                throw new Exception($"Exception: {ex.Message}");
+                throw new Exception(ex.Message);
             }
         }
 
@@ -107,7 +106,7 @@ namespace Persistencia
             {
                 throw new Exception("Usuario o contraseña incorrectos");
             }
-            if (!response.IsSuccessStatusCode)
+            if (!response.IsSuccessStatusCode) // Valida errores que no sean de la familia del 200
             {
                 throw new Exception("Verifique los datos ingresados");
             }

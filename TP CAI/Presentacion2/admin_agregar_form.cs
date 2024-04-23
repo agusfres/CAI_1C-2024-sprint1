@@ -4,12 +4,14 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Datos;
 using Negocio;
+using Persistencia;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 
@@ -70,9 +72,17 @@ namespace Presentacion2
                 int intTxDNI = operacion.TransformarStringInt(txDNI);
 
                 NegocioUsuario negocioUsuario = new NegocioUsuario();
-                negocioUsuario.AgregarUsuario(txNombre, txApellido, txDireccion, txTelefono, txEmail, datetimeTxFechaNac, txNombreUsuario, intCmTipoUsuario, intTxDNI, txContraseña);
+                try
+                {
+                    negocioUsuario.AgregarUsuario(txNombre, txApellido, txDireccion, txTelefono, txEmail, datetimeTxFechaNac, txNombreUsuario, intCmTipoUsuario, intTxDNI, txContraseña);
 
-                Congrats();
+                    LimpiarCampos();
+                    Congrats();
+                }
+                catch (Exception ex)
+                {
+                    lblMensajeAgregar.Text = ex.Message;
+                }
             }
         }
 
@@ -94,10 +104,9 @@ namespace Presentacion2
 
         private async void Congrats()
         {
-            LimpiarCampos();
-            lblconfirma.Text = "Usuario cargado con éxito";
+            lblMensajeAgregar.Text = "Usuario cargado con éxito";
             await Task.Delay(5000);
-            lblconfirma.Text = "";
+            lblMensajeAgregar.Text = "";
         }
 
 

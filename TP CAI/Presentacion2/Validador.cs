@@ -71,6 +71,10 @@ namespace Presentacion2
             {
                 msgError += "El campo " + campo + " no debe contener caracteres especiales." + System.Environment.NewLine;
             }
+            if (ValidarContieneCaracteresEspeciales(texto))
+            {
+                msgError += "El campo " + campo + " no debe contener caracteres especiales." + System.Environment.NewLine;
+            }
 
             return msgError;
         }
@@ -206,6 +210,10 @@ namespace Presentacion2
 
         private string ValidarUsuario(string usuario, string nombre, string apellido)
         {
+            usuario = usuario.ToLower();
+            nombre = nombre.ToLower();
+            apellido = apellido.ToLower();
+
             if (usuario.Contains(nombre) || usuario.Contains(apellido))
             {
                 return "El usuario no debe contener nombre y/o apellido. " + System.Environment.NewLine;
