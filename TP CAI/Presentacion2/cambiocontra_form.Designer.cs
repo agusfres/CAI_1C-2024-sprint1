@@ -30,7 +30,7 @@
         {
             this.lblCambiaTuContraseñaTitulo = new System.Windows.Forms.Label();
             this.linkLabelVolver = new System.Windows.Forms.LinkLabel();
-            this.txtContraseñaVieja = new System.Windows.Forms.TextBox();
+            this.txtContraseñaActual = new System.Windows.Forms.TextBox();
             this.txtContraseñaNueva = new System.Windows.Forms.TextBox();
             this.btnCambiar = new ePOSOne.btnProduct.Button_WOC();
             this.lblErrorContraseñaVieja = new System.Windows.Forms.Label();
@@ -65,14 +65,14 @@
             this.linkLabelVolver.Text = "Volver";
             this.linkLabelVolver.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelVolver_LinkClicked_1);
             // 
-            // txtContraseñaVieja
+            // txtContraseñaActual
             // 
-            this.txtContraseñaVieja.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContraseñaVieja.ForeColor = System.Drawing.Color.Gray;
-            this.txtContraseñaVieja.Location = new System.Drawing.Point(162, 184);
-            this.txtContraseñaVieja.Name = "txtContraseñaVieja";
-            this.txtContraseñaVieja.Size = new System.Drawing.Size(253, 21);
-            this.txtContraseñaVieja.TabIndex = 3;
+            this.txtContraseñaActual.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContraseñaActual.ForeColor = System.Drawing.Color.Gray;
+            this.txtContraseñaActual.Location = new System.Drawing.Point(162, 184);
+            this.txtContraseñaActual.Name = "txtContraseñaActual";
+            this.txtContraseñaActual.Size = new System.Drawing.Size(253, 21);
+            this.txtContraseñaActual.TabIndex = 3;
             // 
             // txtContraseñaNueva
             // 
@@ -151,7 +151,7 @@
             this.Controls.Add(this.lblErrorContraseñaVieja);
             this.Controls.Add(this.btnCambiar);
             this.Controls.Add(this.txtContraseñaNueva);
-            this.Controls.Add(this.txtContraseñaVieja);
+            this.Controls.Add(this.txtContraseñaActual);
             this.Controls.Add(this.linkLabelVolver);
             this.Controls.Add(this.lblCambiaTuContraseñaTitulo);
             this.Name = "cambiocontra_form";
@@ -165,7 +165,7 @@
 
         private System.Windows.Forms.Label lblCambiaTuContraseñaTitulo;
         private System.Windows.Forms.LinkLabel linkLabelVolver;
-        private System.Windows.Forms.TextBox txtContraseñaVieja;
+        private System.Windows.Forms.TextBox txtContraseñaActual;
         private System.Windows.Forms.TextBox txtContraseñaNueva;
         private ePOSOne.btnProduct.Button_WOC btnCambiar;
         private System.Windows.Forms.Label lblErrorContraseñaVieja;

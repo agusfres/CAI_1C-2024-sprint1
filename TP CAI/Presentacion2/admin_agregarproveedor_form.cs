@@ -23,10 +23,5 @@ namespace Presentacion2
             admin_gestionproveedor_form admin_Gestionproveedor_Form = new admin_gestionproveedor_form();
             this.Show();
         }
-
-        private void lblFecha_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -24,9 +24,8 @@ namespace Datos
         int dni;
         string contraseña;
         int host;
-        string estado;
 
-        public Usuario(Guid idUsuario, string nombre, string apellido, string direccion, string telefono, string email, DateTime fechaAlta, DateTime fechaNacimiento, DateTime? fechaBaja, DateTime? fechaUltimaAct, string nombreUsuario, int tipoUsuario, int dni, string contraseña, int host, string estado)
+        public Usuario(Guid idUsuario, string nombre, string apellido, string direccion, string telefono, string email, DateTime fechaAlta, DateTime fechaNacimiento, DateTime? fechaBaja, DateTime? fechaUltimaAct, string nombreUsuario, int tipoUsuario, int dni, string contraseña, int host)
         {
             this.idUsuario = idUsuario;
             this.nombre = nombre;
@@ -43,7 +42,6 @@ namespace Datos
             this.dni = dni;
             this.contraseña = contraseña;
             this.host = host;
-            this.estado = estado;
         }
 
 
@@ -62,6 +60,5 @@ namespace Datos
         public int Dni { get => dni; set => dni = value; }
         public string Contraseña { get => contraseña; set => contraseña = value; }
         public int Host { get => host; set => host = value; }
-        public string Estado { get => estado; set => estado = value; }
     }
 }

@@ -21,6 +21,8 @@ namespace Presentacion2
 {
     public partial class iniciarsesion_form : Form
     {
+        Validador validador = new Validador();
+        NegocioUsuario negocioUsuario = new NegocioUsuario();
         int erroresRestantes = 3;
 
 
@@ -34,8 +36,6 @@ namespace Presentacion2
         {
             string nombreUsuarioActual = txtUsuario.Text;
             string contraseñaActual = txtContraseña.Text;
-            NegocioUsuario negocioUsuario = new NegocioUsuario();
-            Validador validador = new Validador();
             List<Usuario> listaUsuarios;
             lblUsuarioError.Text = "";
             lblContraseñaError.Text = "";
@@ -43,7 +43,6 @@ namespace Presentacion2
 
             if ((validador.ValidarVacio(nombreUsuarioActual, "Usuario") != "") || (validador.ValidarVacio(contraseñaActual, "Contraseña") != ""))
             {
-              
                 if (validador.ValidarVacio(nombreUsuarioActual, "Usuario") != "")
                 {
                     lblUsuarioError.Text = "Debe ingresar un nombre de usuario";
@@ -62,11 +61,11 @@ namespace Presentacion2
 
                     listaUsuarios = negocioUsuario.TraeUsuariosActivos();
 
-                    Usuario usuario = negocioUsuario.BuscarUsuario(nombreUsuarioActual, listaUsuarios);
+                    Usuario usuario = negocioUsuario.BuscarUsuario(nombreUsuarioActual);
 
+                    this.Hide();
                     // Los usuarios en la api se guardan todos con tipo usuario 0, asi que hardcodeamos forzando a que sea 3
                     int tipoUsuario = 3; // La linea real deberia ser usuario.TipoUsuario
-                    this.Hide();
                     if (tipoUsuario == 3)
                     {
                         admin_menu_form admin_menu = new admin_menu_form();
@@ -109,16 +108,18 @@ namespace Presentacion2
 
         private void LinklabelOlvidasteContraseña_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            this.Hide();
-            cambiocontra_form cambiocontra_Form = new cambiocontra_form(null, null);
-            cambiocontra_Form.Show();
-        }
 
-        private void iniciarsesion_form_Activated(object sender, EventArgs e)
-        {
-            List<Usuario> listaUsuariosLocal = new List<Usuario>();
-            Usuario usuarioInicio = new Usuario(Guid.Parse("70b37dc1-8fde-4840-be47-9ababd0ee7e5"), "Grupo 5", "Grupo 5", "Grupo 5", "55555555", "grupo@5.com", DateTime.Now, DateTime.Parse("01/01/2000"), null, null, "grupo5", 3, 55555555, "grupo5", 5, "ACTIVO");
-            listaUsuariosLocal.Add(usuarioInicio);
+            Usuario usuario = negocioUsuario.BuscarUsuario(txtUsuario.Text);
+            if (usuario == null)
+            {
+                lblMensajeInicioSesion.Text = "Debe ingresar un nombre de usuario existente";
+            }
+            else
+            {
+                this.Hide();
+                cambiocontra_form cambiocontra_Form = new cambiocontra_form(usuario.NombreUsuario);
+                cambiocontra_Form.Show();
+            }
         }
 
 

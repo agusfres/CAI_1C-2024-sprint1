@@ -47,7 +47,6 @@
     <Compile Include="BajaProductoProveedor.cs" />
     <Compile Include="ModificarProveedor.cs" />
     <Compile Include="ModificarProducto.cs" />
-    <Compile Include="ListaUsuario.cs" />
     <Compile Include="Login.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AltaProveedor.cs" />

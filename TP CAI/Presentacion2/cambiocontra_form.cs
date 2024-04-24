@@ -1,5 +1,6 @@
 ﻿using Datos;
 using Negocio;
+using Presentacion2;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,14 +17,74 @@ namespace Presentacion2
     public partial class cambiocontra_form : Form
     {
         string nombreUsuarioActual;
-        string contraseñaActual;
 
 
-        public cambiocontra_form(string nombreUsuarioActual, string contraseñaActual)
+        public cambiocontra_form(string nombreUsuarioActual)
         {
             InitializeComponent();
             this.nombreUsuarioActual = nombreUsuarioActual;
-            this.contraseñaActual = contraseñaActual;
+        }
+
+
+        private void btnCambiar_Click(object sender, EventArgs e)
+        {
+            Validador validador = new Validador();
+            NegocioUsuario negocioUsuario = new NegocioUsuario();
+
+            lblErrorContraseñaVieja.Text = "";
+            string contraseñaActual = txtContraseñaActual.Text;
+
+            lblErrorContraseñaVieja.Text = validador.ValidarContraseña(contraseñaActual);
+
+            if (lblErrorContraseñaVieja.Text == "")
+            {
+                try
+                {
+                    negocioUsuario.CambiarContraseña(nombreUsuarioActual, contraseñaActual, txtContraseñaNueva.Text);
+                    lblCambioContraseñaExitosa.Text = "Se cambió la contraseña exitosamente";
+                    LimpiarCampos();
+                    Congrats();
+
+                    Usuario usuario = negocioUsuario.BuscarUsuario(nombreUsuarioActual);
+                    
+                    this.Hide();
+                    int tipoUsuario = usuario.TipoUsuario;
+                    if (tipoUsuario == 3)
+                    {
+                        admin_menu_form admin_menu = new admin_menu_form();
+                        admin_menu.Show();
+                    }
+                    else if (tipoUsuario == 2)
+                    {
+                        this.Hide();
+                        supervisor_menu_form supervisor_menu = new supervisor_menu_form();
+                        supervisor_menu.Show();
+                    }
+                    else // El web service los guarda como 0 a todos
+                    {
+                        vendedor_menu_form vendedor_menu = new vendedor_menu_form();
+                        vendedor_menu.Show();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    lblCambioContraseñaExitosa.Text = ex.Message;
+                }
+            }
+        }
+
+
+        private void LimpiarCampos()
+        {
+            lblErrorContraseñaVieja.Text = "";
+        }
+
+
+        private async void Congrats()
+        {
+            lblCambioContraseñaExitosa.Text = "Contraseña modificada exitosamente";
+            await Task.Delay(5000);
+            lblCambioContraseñaExitosa.Text = "";
         }
 
 
@@ -32,65 +93,6 @@ namespace Presentacion2
             this.Hide();
             iniciarsesion_form form2 = new iniciarsesion_form();
             form2.Show();
-        }
-
-        private void btnCambiar_Click(object sender, EventArgs e)
-        {
-            ListaUsuario listaUsuario = new ListaUsuario();
-            lblErrorContraseñaVieja.Text = "";
-            string contraseñaVieja = txtContraseñaVieja.Text;
-
-            if (contraseñaVieja == "")
-            {
-                lblErrorContraseñaVieja.Text = "Debes indicar la contraseña actual" + System.Environment.NewLine;
-            }
-            else
-            {
-                Usuario usuarioEncontrado = listaUsuario.BuscarUsuario(nombreUsuarioActual);
-
-                if (usuarioEncontrado != null)
-                {
-                    if (usuarioEncontrado.Contraseña != contraseñaVieja)
-                    {
-                        lblErrorContraseñaVieja.Text = "La contraseña indicada no corresponde a la contraseña actual" + System.Environment.NewLine;
-                    }
-                    else
-                    {
-                        listaUsuario.ModificarContraseña(nombreUsuarioActual, txtContraseñaNueva.Text);
-
-                        listaUsuario.ModificarEstado(nombreUsuarioActual, "ACTIVO");
-
-                        lblCambioContraseñaExitosa.Text = "Contraseña modificada con éxito" + System.Environment.NewLine;
-
-                        int tipoUsuario = usuarioEncontrado.TipoUsuario;
-                        if (tipoUsuario == 1)
-                        {
-                            this.Hide();
-                            vendedor_menu_form vendedor_menu = new vendedor_menu_form();
-                            vendedor_menu.Show();
-                        }
-                        else if (tipoUsuario == 2)
-                        {
-                            this.Hide();
-                            supervisor_menu_form supervisor_menu = new supervisor_menu_form();
-                            supervisor_menu.Show();
-                        }
-                        else
-                        {
-                            this.Hide();
-                            admin_menu_form admin_menu = new admin_menu_form();
-                            admin_menu.Show();
-                        }
-                    }
-                }
-                else
-                {
-                    // El usuario no está en la base local asi que le damos permiso de administrador
-                    this.Hide();
-                    admin_menu_form admin_menu = new admin_menu_form();
-                    admin_menu.Show();
-                }
-            }
         }
     }
 }

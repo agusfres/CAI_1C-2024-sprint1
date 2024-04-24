@@ -19,25 +19,17 @@ namespace Persistencia
         public List<Usuario> TraerUsuariosActivos(Guid idAdministrador)
         {
             string path = "/api/Usuario/TraerUsuariosActivos?id=" + idAdministrador;
+            
             List<Usuario> listaUsuarios = new List<Usuario>();
-            try
+            
+            HttpResponseMessage response = WebHelper.Get(path);
+                
+            if (response.IsSuccessStatusCode)
             {
-                HttpResponseMessage response = WebHelper.Get(path);
-                if (response.IsSuccessStatusCode)
-                {
-                    var contentStream = response.Content.ReadAsStringAsync().Result;
-                    listaUsuarios = JsonConvert.DeserializeObject<List<Usuario>>(contentStream);
-                    return listaUsuarios;
-                }
-                else
-                {
-                    Console.WriteLine($"Error: {response.StatusCode} - {response.ReasonPhrase}");
-                }
+                var contentStream = response.Content.ReadAsStringAsync().Result;
+                listaUsuarios = JsonConvert.DeserializeObject<List<Usuario>>(contentStream);
             }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
+
             return listaUsuarios;
         }
 
@@ -103,9 +95,11 @@ namespace Persistencia
 
         public static string Login(Login login)
         {
+            string path = "/api/Usuario/Login";
+
             var jsonRequest = JsonConvert.SerializeObject(login);
 
-            HttpResponseMessage response = WebHelper.Post("/api/Usuario/Login", jsonRequest);
+            HttpResponseMessage response = WebHelper.Post(path, jsonRequest);
 
             if (response.StatusCode == HttpStatusCode.Conflict) // Valida error 409
             {
@@ -123,26 +117,33 @@ namespace Persistencia
         }
 
 
-        public static string CambiarContraseña(string nombreUsuario, string contraseña, string contraseñaNueva)
+        public static void CambiarContraseña(string nombreUsuario, string contraseña, string contraseñaNueva)
         {
-            Dictionary<string, string> map = new Dictionary<string, string>();
-            map.Add("nombreUsuario", nombreUsuario);
-            map.Add("contraseña", contraseña);
-            map.Add("contraseñaNueva", contraseñaNueva);
+            string path = "/api/Usuario/CambiarContraseña";
+
+            Dictionary<string, string> map = new Dictionary<string, string>
+            {
+                { "nombreUsuario", nombreUsuario },
+                { "contraseña", contraseña },
+                { "contraseñaNueva", contraseñaNueva }
+            };
 
             var jsonRequest = JsonConvert.SerializeObject(map);
 
-            HttpResponseMessage response = WebHelper.Patch("Usuario/CambiarContraseña", jsonRequest);
+            HttpResponseMessage response = WebHelper.Patch(path, jsonRequest);
 
+            if (response.StatusCode == HttpStatusCode.InternalServerError) // Valida error 500
+            {
+                throw new Exception("La contraseña no puede ser igual a la anterior");
+            }
+            if (response.StatusCode == HttpStatusCode.Conflict) // Valida error 409
+            {
+                throw new Exception("La contraseña es incorrecta");
+            }
             if (!response.IsSuccessStatusCode)
             {
                 throw new Exception("Verifique los datos ingresados e intente nuevamente");
             }
-
-            var reader = new StreamReader(response.Content.ReadAsStreamAsync().Result);
-            string respuesta = reader.ReadToEnd();
-
-            return respuesta;
         }
     }
 }

@@ -184,6 +184,8 @@ namespace Presentacion2
             bool contieneNumero = false;
             bool contieneMayuscula = false;
 
+            msgError += ValidarVacio(contraseña, "contraseña");
+
             foreach (char c in contraseña)
             {
                 if (char.IsDigit(c))

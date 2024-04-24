@@ -174,10 +174,8 @@
             this.Controls.Add(this.lblIniciarSesionTitulo);
             this.Name = "iniciarsesion_form";
             this.Text = "Form2";
-            this.Activated += new System.EventHandler(this.iniciarsesion_form_Activated);
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion

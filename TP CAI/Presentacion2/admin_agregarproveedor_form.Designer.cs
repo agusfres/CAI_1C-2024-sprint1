@@ -101,7 +101,6 @@
             this.lblFecha.Size = new System.Drawing.Size(45, 18);
             this.lblFecha.TabIndex = 45;
             this.lblFecha.Text = "Email";
-            this.lblFecha.Click += new System.EventHandler(this.lblFecha_Click);
             // 
             // lblErrorDNI
             // 

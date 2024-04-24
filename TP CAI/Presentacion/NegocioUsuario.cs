@@ -14,42 +14,21 @@ namespace Negocio
     {
         private UsuarioService usuarioService = new UsuarioService();
         private Guid idAdministrador = Guid.Parse("70b37dc1-8fde-4840-be47-9ababd0ee7e5");
-        private ListaUsuario listaUsuarios = new ListaUsuario();
 
 
         public void AgregarUsuario(string nombre, string apellido, string direccion, string telefono, string email, DateTime fechaNacimiento, string nombreUsuario, int tipoUsuario, int dni, string contraseña)
         {
-            // Ponemos host como 1 ya que al usar 5 la api da error 409
+            // Ponemos host como 1 ya que al usar 5 el web service da error 409 porqu solo permite un enum de 1, 2 o 3
             int host = 1;
-
             AltaUsuario altaUsuario = new AltaUsuario(idAdministrador, host, nombre, apellido, dni, direccion, telefono, email, fechaNacimiento, nombreUsuario, contraseña);
             usuarioService.AgregarUsuario(altaUsuario);
-
-            // Temporariamente guardamos una lista de usuarios localmente, solamente para guardar sus datos de fechaAlta, fechaBaja, fechaUltimaAct y tipoUsuario que no se postean en la api
-            Usuario usuario = new Usuario(idAdministrador, nombre, apellido, direccion, telefono, email, DateTime.Now, fechaNacimiento, null, null, nombreUsuario, tipoUsuario, dni, contraseña, host, "INACTIVO");
-
-            listaUsuarios.AgregarUsuario(usuario);
         }
 
 
-        public Usuario BuscarUsuario(Guid id, List<Usuario> listaUsuarios)
+        public Usuario BuscarUsuario(string nombreUsuario)
         {
-            if (listaUsuarios != null)
-            {
-                foreach (Usuario usuario in listaUsuarios)
-                {
-                    if (usuario.IdUsuario == id)
-                    {
-                        return usuario;
-                    }
-                }
-            }
-            return null;
-        }
+            List<Usuario> listaUsuarios = TraeUsuariosActivos();
 
-
-        public Usuario BuscarUsuario(string nombreUsuario, List<Usuario> listaUsuarios)
-        {
             if (listaUsuarios != null)
             {
                 foreach (Usuario usuario in listaUsuarios)
@@ -74,6 +53,12 @@ namespace Negocio
         {
             BajaUsuario bajaUsuario = new BajaUsuario(idUsuario, idAdministrador);
             usuarioService.BorrarUsuario(bajaUsuario);
+        }
+
+
+        public void CambiarContraseña(string nombreUsuarioActual, string contraseñaActual, string contraseñaNueva)
+        {
+            UsuarioService.CambiarContraseña(nombreUsuarioActual, contraseñaActual, contraseñaNueva);
         }
     }
 }
