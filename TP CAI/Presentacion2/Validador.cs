@@ -103,6 +103,18 @@ namespace Presentacion2
         }
 
 
+        public string ValidarCuit(string cuit, string campo)
+        {
+            string msgError = "";
+            if (cuit.Length != 11)
+            {
+                msgError += "El campo CUIT debe tener 11 dígitos." + System.Environment.NewLine;
+            }
+            msgError += ValidarFormatoNumero(cuit, campo);
+            return msgError;
+        }
+
+
         public string ValidarEmail(string texto, string campo)
         {
             string msgError = "";

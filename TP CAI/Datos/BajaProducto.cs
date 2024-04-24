@@ -7,14 +7,13 @@ using System.Threading.Tasks;
 
 namespace Datos
 {
-    public class BajaProductoProveedor
+    public class BajaProducto
     {
-        //Usamos la misma clase para producto y proveedor porque son idénticas en cuanto a lo que tienen y hacen
         Guid id;
         Guid idUsuario;
 
 
-        public BajaProductoProveedor(Guid id, Guid idUsuario)
+        public BajaProducto(Guid id, Guid idUsuario)
         {
             this.id = id;
             this.idUsuario = idUsuario;

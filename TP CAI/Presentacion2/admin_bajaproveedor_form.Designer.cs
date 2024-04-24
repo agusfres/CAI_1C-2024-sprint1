@@ -28,58 +28,59 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblUsuarioEliminadoExitosamente = new System.Windows.Forms.Label();
-            this.btnEliminarUsuario = new ePOSOne.btnProduct.Button_WOC();
-            this.lblErrorEliminar = new System.Windows.Forms.Label();
-            this.txtIdUsuario = new System.Windows.Forms.TextBox();
+            this.lblMensajeEliminar = new System.Windows.Forms.Label();
+            this.btnEliminarProveedor = new ePOSOne.btnProduct.Button_WOC();
+            this.lblErrorId = new System.Windows.Forms.Label();
+            this.txtId = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lblGestionUsuariosTitulo = new System.Windows.Forms.Label();
             this.linkLabelVolver = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
-            // lblUsuarioEliminadoExitosamente
+            // lblMensajeEliminar
             // 
-            this.lblUsuarioEliminadoExitosamente.AutoSize = true;
-            this.lblUsuarioEliminadoExitosamente.Location = new System.Drawing.Point(422, 417);
-            this.lblUsuarioEliminadoExitosamente.Name = "lblUsuarioEliminadoExitosamente";
-            this.lblUsuarioEliminadoExitosamente.Size = new System.Drawing.Size(0, 13);
-            this.lblUsuarioEliminadoExitosamente.TabIndex = 44;
+            this.lblMensajeEliminar.AutoSize = true;
+            this.lblMensajeEliminar.Location = new System.Drawing.Point(422, 417);
+            this.lblMensajeEliminar.Name = "lblMensajeEliminar";
+            this.lblMensajeEliminar.Size = new System.Drawing.Size(0, 13);
+            this.lblMensajeEliminar.TabIndex = 44;
             // 
-            // btnEliminarUsuario
+            // btnEliminarProveedor
             // 
-            this.btnEliminarUsuario.BorderColor = System.Drawing.Color.Transparent;
-            this.btnEliminarUsuario.ButtonColor = System.Drawing.Color.Salmon;
-            this.btnEliminarUsuario.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnEliminarUsuario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnEliminarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminarUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminarUsuario.ForeColor = System.Drawing.Color.Transparent;
-            this.btnEliminarUsuario.Location = new System.Drawing.Point(196, 366);
-            this.btnEliminarUsuario.Name = "btnEliminarUsuario";
-            this.btnEliminarUsuario.OnHoverBorderColor = System.Drawing.Color.Salmon;
-            this.btnEliminarUsuario.OnHoverButtonColor = System.Drawing.Color.Salmon;
-            this.btnEliminarUsuario.OnHoverTextColor = System.Drawing.Color.Gray;
-            this.btnEliminarUsuario.Size = new System.Drawing.Size(302, 38);
-            this.btnEliminarUsuario.TabIndex = 43;
-            this.btnEliminarUsuario.Text = "Eliminar Proveedor";
-            this.btnEliminarUsuario.TextColor = System.Drawing.Color.White;
-            this.btnEliminarUsuario.UseVisualStyleBackColor = true;
+            this.btnEliminarProveedor.BorderColor = System.Drawing.Color.Transparent;
+            this.btnEliminarProveedor.ButtonColor = System.Drawing.Color.Salmon;
+            this.btnEliminarProveedor.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnEliminarProveedor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnEliminarProveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminarProveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarProveedor.ForeColor = System.Drawing.Color.Transparent;
+            this.btnEliminarProveedor.Location = new System.Drawing.Point(196, 366);
+            this.btnEliminarProveedor.Name = "btnEliminarProveedor";
+            this.btnEliminarProveedor.OnHoverBorderColor = System.Drawing.Color.Salmon;
+            this.btnEliminarProveedor.OnHoverButtonColor = System.Drawing.Color.Salmon;
+            this.btnEliminarProveedor.OnHoverTextColor = System.Drawing.Color.Gray;
+            this.btnEliminarProveedor.Size = new System.Drawing.Size(302, 38);
+            this.btnEliminarProveedor.TabIndex = 43;
+            this.btnEliminarProveedor.Text = "Eliminar Proveedor";
+            this.btnEliminarProveedor.TextColor = System.Drawing.Color.White;
+            this.btnEliminarProveedor.UseVisualStyleBackColor = true;
+            this.btnEliminarProveedor.Click += new System.EventHandler(this.btnEliminarProveedor_Click);
             // 
-            // lblErrorEliminar
+            // lblErrorId
             // 
-            this.lblErrorEliminar.AutoSize = true;
-            this.lblErrorEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblErrorEliminar.Location = new System.Drawing.Point(196, 281);
-            this.lblErrorEliminar.Name = "lblErrorEliminar";
-            this.lblErrorEliminar.Size = new System.Drawing.Size(0, 15);
-            this.lblErrorEliminar.TabIndex = 42;
+            this.lblErrorId.AutoSize = true;
+            this.lblErrorId.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblErrorId.Location = new System.Drawing.Point(196, 281);
+            this.lblErrorId.Name = "lblErrorId";
+            this.lblErrorId.Size = new System.Drawing.Size(0, 15);
+            this.lblErrorId.TabIndex = 42;
             // 
-            // txtIdUsuario
+            // txtId
             // 
-            this.txtIdUsuario.Location = new System.Drawing.Point(196, 256);
-            this.txtIdUsuario.Name = "txtIdUsuario";
-            this.txtIdUsuario.Size = new System.Drawing.Size(302, 20);
-            this.txtIdUsuario.TabIndex = 41;
+            this.txtId.Location = new System.Drawing.Point(196, 256);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(302, 20);
+            this.txtId.TabIndex = 41;
             // 
             // label1
             // 
@@ -122,10 +123,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(680, 450);
-            this.Controls.Add(this.lblUsuarioEliminadoExitosamente);
-            this.Controls.Add(this.btnEliminarUsuario);
-            this.Controls.Add(this.lblErrorEliminar);
-            this.Controls.Add(this.txtIdUsuario);
+            this.Controls.Add(this.lblMensajeEliminar);
+            this.Controls.Add(this.btnEliminarProveedor);
+            this.Controls.Add(this.lblErrorId);
+            this.Controls.Add(this.txtId);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblGestionUsuariosTitulo);
             this.Controls.Add(this.linkLabelVolver);
@@ -138,10 +139,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblUsuarioEliminadoExitosamente;
-        private ePOSOne.btnProduct.Button_WOC btnEliminarUsuario;
-        private System.Windows.Forms.Label lblErrorEliminar;
-        private System.Windows.Forms.TextBox txtIdUsuario;
+        private System.Windows.Forms.Label lblMensajeEliminar;
+        private ePOSOne.btnProduct.Button_WOC btnEliminarProveedor;
+        private System.Windows.Forms.Label lblErrorId;
+        private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblGestionUsuariosTitulo;
         private System.Windows.Forms.LinkLabel linkLabelVolver;

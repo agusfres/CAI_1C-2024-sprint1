@@ -28,13 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblconfirma = new System.Windows.Forms.Label();
-            this.btnConfirmar = new ePOSOne.btnProduct.Button_WOC();
-            this.lblErrorFecha = new System.Windows.Forms.Label();
-            this.txtFechaNac = new System.Windows.Forms.TextBox();
+            this.lblErrorEmail = new System.Windows.Forms.Label();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.lblFecha = new System.Windows.Forms.Label();
-            this.lblErrorDNI = new System.Windows.Forms.Label();
-            this.txtDNI = new System.Windows.Forms.TextBox();
+            this.lblErrorCuit = new System.Windows.Forms.Label();
+            this.txtCuit = new System.Windows.Forms.TextBox();
             this.lblDNI = new System.Windows.Forms.Label();
             this.lblErrorApellido = new System.Windows.Forms.Label();
             this.txtApellido = new System.Windows.Forms.TextBox();
@@ -44,52 +42,25 @@
             this.lblNombre = new System.Windows.Forms.Label();
             this.linkLabelVolver = new System.Windows.Forms.LinkLabel();
             this.lblTitulo = new System.Windows.Forms.Label();
+            this.lblMensaje = new System.Windows.Forms.Label();
+            this.btnConfirmar = new ePOSOne.btnProduct.Button_WOC();
             this.SuspendLayout();
             // 
-            // lblconfirma
+            // lblErrorEmail
             // 
-            this.lblconfirma.AutoSize = true;
-            this.lblconfirma.ForeColor = System.Drawing.Color.LimeGreen;
-            this.lblconfirma.Location = new System.Drawing.Point(276, 305);
-            this.lblconfirma.Name = "lblconfirma";
-            this.lblconfirma.Size = new System.Drawing.Size(0, 13);
-            this.lblconfirma.TabIndex = 67;
+            this.lblErrorEmail.AutoSize = true;
+            this.lblErrorEmail.ForeColor = System.Drawing.Color.Red;
+            this.lblErrorEmail.Location = new System.Drawing.Point(423, 198);
+            this.lblErrorEmail.Name = "lblErrorEmail";
+            this.lblErrorEmail.Size = new System.Drawing.Size(0, 13);
+            this.lblErrorEmail.TabIndex = 47;
             // 
-            // btnConfirmar
+            // txtEmail
             // 
-            this.btnConfirmar.BorderColor = System.Drawing.Color.Transparent;
-            this.btnConfirmar.ButtonColor = System.Drawing.Color.Salmon;
-            this.btnConfirmar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnConfirmar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnConfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConfirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfirmar.ForeColor = System.Drawing.Color.Transparent;
-            this.btnConfirmar.Location = new System.Drawing.Point(275, 241);
-            this.btnConfirmar.Name = "btnConfirmar";
-            this.btnConfirmar.OnHoverBorderColor = System.Drawing.Color.Salmon;
-            this.btnConfirmar.OnHoverButtonColor = System.Drawing.Color.Salmon;
-            this.btnConfirmar.OnHoverTextColor = System.Drawing.Color.Gray;
-            this.btnConfirmar.Size = new System.Drawing.Size(145, 61);
-            this.btnConfirmar.TabIndex = 66;
-            this.btnConfirmar.Text = "Confirmar";
-            this.btnConfirmar.TextColor = System.Drawing.Color.White;
-            this.btnConfirmar.UseVisualStyleBackColor = true;
-            // 
-            // lblErrorFecha
-            // 
-            this.lblErrorFecha.AutoSize = true;
-            this.lblErrorFecha.ForeColor = System.Drawing.Color.Red;
-            this.lblErrorFecha.Location = new System.Drawing.Point(423, 198);
-            this.lblErrorFecha.Name = "lblErrorFecha";
-            this.lblErrorFecha.Size = new System.Drawing.Size(0, 13);
-            this.lblErrorFecha.TabIndex = 47;
-            // 
-            // txtFechaNac
-            // 
-            this.txtFechaNac.Location = new System.Drawing.Point(424, 172);
-            this.txtFechaNac.Name = "txtFechaNac";
-            this.txtFechaNac.Size = new System.Drawing.Size(253, 20);
-            this.txtFechaNac.TabIndex = 46;
+            this.txtEmail.Location = new System.Drawing.Point(424, 172);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(253, 20);
+            this.txtEmail.TabIndex = 46;
             // 
             // lblFecha
             // 
@@ -102,21 +73,21 @@
             this.lblFecha.TabIndex = 45;
             this.lblFecha.Text = "Email";
             // 
-            // lblErrorDNI
+            // lblErrorCuit
             // 
-            this.lblErrorDNI.AutoSize = true;
-            this.lblErrorDNI.ForeColor = System.Drawing.Color.Red;
-            this.lblErrorDNI.Location = new System.Drawing.Point(83, 198);
-            this.lblErrorDNI.Name = "lblErrorDNI";
-            this.lblErrorDNI.Size = new System.Drawing.Size(0, 13);
-            this.lblErrorDNI.TabIndex = 44;
+            this.lblErrorCuit.AutoSize = true;
+            this.lblErrorCuit.ForeColor = System.Drawing.Color.Red;
+            this.lblErrorCuit.Location = new System.Drawing.Point(83, 198);
+            this.lblErrorCuit.Name = "lblErrorCuit";
+            this.lblErrorCuit.Size = new System.Drawing.Size(0, 13);
+            this.lblErrorCuit.TabIndex = 44;
             // 
-            // txtDNI
+            // txtCuit
             // 
-            this.txtDNI.Location = new System.Drawing.Point(84, 172);
-            this.txtDNI.Name = "txtDNI";
-            this.txtDNI.Size = new System.Drawing.Size(253, 20);
-            this.txtDNI.TabIndex = 43;
+            this.txtCuit.Location = new System.Drawing.Point(84, 172);
+            this.txtCuit.Name = "txtCuit";
+            this.txtCuit.Size = new System.Drawing.Size(253, 20);
+            this.txtCuit.TabIndex = 43;
             // 
             // lblDNI
             // 
@@ -209,18 +180,48 @@
             this.lblTitulo.TabIndex = 34;
             this.lblTitulo.Text = "AGREGAR UN NUEVO PROVEEDOR";
             // 
+            // lblMensaje
+            // 
+            this.lblMensaje.AutoSize = true;
+            this.lblMensaje.ForeColor = System.Drawing.Color.Black;
+            this.lblMensaje.Location = new System.Drawing.Point(374, 321);
+            this.lblMensaje.Name = "lblMensaje";
+            this.lblMensaje.Size = new System.Drawing.Size(0, 13);
+            this.lblMensaje.TabIndex = 68;
+            // 
+            // btnConfirmar
+            // 
+            this.btnConfirmar.BorderColor = System.Drawing.Color.Transparent;
+            this.btnConfirmar.ButtonColor = System.Drawing.Color.Salmon;
+            this.btnConfirmar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnConfirmar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnConfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConfirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfirmar.ForeColor = System.Drawing.Color.Transparent;
+            this.btnConfirmar.Location = new System.Drawing.Point(275, 241);
+            this.btnConfirmar.Name = "btnConfirmar";
+            this.btnConfirmar.OnHoverBorderColor = System.Drawing.Color.Salmon;
+            this.btnConfirmar.OnHoverButtonColor = System.Drawing.Color.Salmon;
+            this.btnConfirmar.OnHoverTextColor = System.Drawing.Color.Gray;
+            this.btnConfirmar.Size = new System.Drawing.Size(145, 61);
+            this.btnConfirmar.TabIndex = 66;
+            this.btnConfirmar.Text = "Confirmar";
+            this.btnConfirmar.TextColor = System.Drawing.Color.White;
+            this.btnConfirmar.UseVisualStyleBackColor = true;
+            this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
+            // 
             // admin_agregarproveedor_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(751, 378);
-            this.Controls.Add(this.lblconfirma);
+            this.Controls.Add(this.lblMensaje);
             this.Controls.Add(this.btnConfirmar);
-            this.Controls.Add(this.lblErrorFecha);
-            this.Controls.Add(this.txtFechaNac);
+            this.Controls.Add(this.lblErrorEmail);
+            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.lblFecha);
-            this.Controls.Add(this.lblErrorDNI);
-            this.Controls.Add(this.txtDNI);
+            this.Controls.Add(this.lblErrorCuit);
+            this.Controls.Add(this.txtCuit);
             this.Controls.Add(this.lblDNI);
             this.Controls.Add(this.lblErrorApellido);
             this.Controls.Add(this.txtApellido);
@@ -239,14 +240,12 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblconfirma;
         private ePOSOne.btnProduct.Button_WOC btnConfirmar;
-        private System.Windows.Forms.Label lblErrorFecha;
-        private System.Windows.Forms.TextBox txtFechaNac;
+        private System.Windows.Forms.Label lblErrorEmail;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label lblFecha;
-        private System.Windows.Forms.Label lblErrorDNI;
-        private System.Windows.Forms.TextBox txtDNI;
+        private System.Windows.Forms.Label lblErrorCuit;
+        private System.Windows.Forms.TextBox txtCuit;
         private System.Windows.Forms.Label lblDNI;
         private System.Windows.Forms.Label lblErrorApellido;
         private System.Windows.Forms.TextBox txtApellido;
@@ -256,5 +255,6 @@
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.LinkLabel linkLabelVolver;
         private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.Label lblMensaje;
     }
 }

@@ -45,7 +45,7 @@ namespace Persistencia
         }
 
 
-        public void BajaProducto(BajaProductoProveedor bajaProducto)
+        public void BajaProducto(BajaProducto bajaProducto)
         {
             string path = "/api/Producto/BajaProducto";
 

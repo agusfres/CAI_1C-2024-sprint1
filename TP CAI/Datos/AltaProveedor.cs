@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Datos
 {
     public class AltaProveedor
@@ -23,6 +24,7 @@ namespace Datos
             this.email = email;
             this.cuit = cuit;
         }
+
 
         public Guid IdUsuario { get => idUsuario; set => idUsuario = value; }
         public string Nombre { get => nombre; set => nombre = value; }

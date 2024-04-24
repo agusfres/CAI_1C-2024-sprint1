@@ -30,7 +30,7 @@ namespace Presentacion2
             {
                 try
                 {
-                    negocioUsuario.BorrarUsuario(Guid.Parse(txIdUsuario));
+                    negocioUsuario.BorrarUsuario(idUsuario);
 
                     LimpiarCampos();
                     Congrats();
