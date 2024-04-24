@@ -39,11 +39,14 @@
             this.lblContraseña = new System.Windows.Forms.Label();
             this.lblMensajeInicioSesion = new System.Windows.Forms.Label();
             this.lblErroresRestantes = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblIniciarSesionTitulo
             // 
             this.lblIniciarSesionTitulo.AutoSize = true;
+            this.lblIniciarSesionTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lblIniciarSesionTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIniciarSesionTitulo.ForeColor = System.Drawing.Color.DimGray;
             this.lblIniciarSesionTitulo.Location = new System.Drawing.Point(152, 9);
@@ -73,9 +76,10 @@
             // LinklabelOlvidasteContraseña
             // 
             this.LinklabelOlvidasteContraseña.AutoSize = true;
+            this.LinklabelOlvidasteContraseña.BackColor = System.Drawing.Color.White;
             this.LinklabelOlvidasteContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LinklabelOlvidasteContraseña.LinkColor = System.Drawing.Color.Gray;
-            this.LinklabelOlvidasteContraseña.Location = new System.Drawing.Point(257, 272);
+            this.LinklabelOlvidasteContraseña.Location = new System.Drawing.Point(357, 280);
             this.LinklabelOlvidasteContraseña.Name = "LinklabelOlvidasteContraseña";
             this.LinklabelOlvidasteContraseña.Size = new System.Drawing.Size(110, 13);
             this.LinklabelOlvidasteContraseña.TabIndex = 3;
@@ -85,6 +89,7 @@
             // 
             // btnIngresar
             // 
+            this.btnIngresar.BackColor = System.Drawing.Color.White;
             this.btnIngresar.BorderColor = System.Drawing.Color.Transparent;
             this.btnIngresar.ButtonColor = System.Drawing.Color.Salmon;
             this.btnIngresar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -92,7 +97,7 @@
             this.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIngresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIngresar.ForeColor = System.Drawing.Color.Transparent;
-            this.btnIngresar.Location = new System.Drawing.Point(158, 312);
+            this.btnIngresar.Location = new System.Drawing.Point(158, 318);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.OnHoverBorderColor = System.Drawing.Color.Salmon;
             this.btnIngresar.OnHoverButtonColor = System.Drawing.Color.Salmon;
@@ -101,13 +106,14 @@
             this.btnIngresar.TabIndex = 33;
             this.btnIngresar.Text = "Ingresar";
             this.btnIngresar.TextColor = System.Drawing.Color.White;
-            this.btnIngresar.UseVisualStyleBackColor = true;
+            this.btnIngresar.UseVisualStyleBackColor = false;
             this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
             // lblUsuarioError
             // 
             this.lblUsuarioError.AutoSize = true;
-            this.lblUsuarioError.Location = new System.Drawing.Point(152, 181);
+            this.lblUsuarioError.ForeColor = System.Drawing.Color.Red;
+            this.lblUsuarioError.Location = new System.Drawing.Point(152, 177);
             this.lblUsuarioError.Name = "lblUsuarioError";
             this.lblUsuarioError.Size = new System.Drawing.Size(0, 13);
             this.lblUsuarioError.TabIndex = 34;
@@ -115,7 +121,7 @@
             // lblContraseñaError
             // 
             this.lblContraseñaError.AutoSize = true;
-            this.lblContraseñaError.Location = new System.Drawing.Point(152, 254);
+            this.lblContraseñaError.Location = new System.Drawing.Point(152, 256);
             this.lblContraseñaError.Name = "lblContraseñaError";
             this.lblContraseñaError.Size = new System.Drawing.Size(0, 13);
             this.lblContraseñaError.TabIndex = 35;
@@ -123,6 +129,7 @@
             // lblUsuario
             // 
             this.lblUsuario.AutoSize = true;
+            this.lblUsuario.BackColor = System.Drawing.Color.White;
             this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsuario.Location = new System.Drawing.Point(152, 133);
             this.lblUsuario.Name = "lblUsuario";
@@ -133,6 +140,7 @@
             // lblContraseña
             // 
             this.lblContraseña.AutoSize = true;
+            this.lblContraseña.BackColor = System.Drawing.Color.White;
             this.lblContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblContraseña.Location = new System.Drawing.Point(152, 212);
             this.lblContraseña.Name = "lblContraseña";
@@ -143,7 +151,7 @@
             // lblMensajeInicioSesion
             // 
             this.lblMensajeInicioSesion.AutoSize = true;
-            this.lblMensajeInicioSesion.Location = new System.Drawing.Point(260, 360);
+            this.lblMensajeInicioSesion.Location = new System.Drawing.Point(173, 280);
             this.lblMensajeInicioSesion.Name = "lblMensajeInicioSesion";
             this.lblMensajeInicioSesion.Size = new System.Drawing.Size(0, 13);
             this.lblMensajeInicioSesion.TabIndex = 38;
@@ -151,10 +159,21 @@
             // lblErroresRestantes
             // 
             this.lblErroresRestantes.AutoSize = true;
-            this.lblErroresRestantes.Location = new System.Drawing.Point(260, 376);
+            this.lblErroresRestantes.ForeColor = System.Drawing.Color.Red;
+            this.lblErroresRestantes.Location = new System.Drawing.Point(173, 296);
             this.lblErroresRestantes.Name = "lblErroresRestantes";
             this.lblErroresRestantes.Size = new System.Drawing.Size(0, 13);
             this.lblErroresRestantes.TabIndex = 39;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Presentacion2.Properties.Resources.New_Project__2___1_;
+            this.pictureBox1.Location = new System.Drawing.Point(2, -81);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(555, 487);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 40;
+            this.pictureBox1.TabStop = false;
             // 
             // iniciarsesion_form
             // 
@@ -172,10 +191,13 @@
             this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.lblIniciarSesionTitulo);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "iniciarsesion_form";
             this.Text = "Form2";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion
@@ -191,5 +213,6 @@
         private System.Windows.Forms.Label lblContraseña;
         private System.Windows.Forms.Label lblMensajeInicioSesion;
         private System.Windows.Forms.Label lblErroresRestantes;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

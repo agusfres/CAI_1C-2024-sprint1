@@ -57,7 +57,6 @@ namespace Presentacion2
             return false;
         }
 
-
         public string ValidarNombre(string texto, string campo)
         {
             string msgError = "";

@@ -60,13 +60,16 @@
             this.lblTipoUsuario = new System.Windows.Forms.Label();
             this.cmbTipoUsuario = new System.Windows.Forms.ComboBox();
             this.lblErrorTipoUsuario = new System.Windows.Forms.Label();
-            this.btnConfirmar = new ePOSOne.btnProduct.Button_WOC();
             this.lblMensajeAgregar = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnConfirmar = new ePOSOne.btnProduct.Button_WOC();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
+            this.lblTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.ForeColor = System.Drawing.Color.DimGray;
             this.lblTitulo.Location = new System.Drawing.Point(149, 9);
@@ -79,6 +82,7 @@
             // 
             this.linkLabelVolver.ActiveLinkColor = System.Drawing.Color.Black;
             this.linkLabelVolver.AutoSize = true;
+            this.linkLabelVolver.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.linkLabelVolver.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(74)))), ((int)(((byte)(74)))));
             this.linkLabelVolver.ForeColor = System.Drawing.Color.Red;
             this.linkLabelVolver.LinkColor = System.Drawing.Color.Black;
@@ -93,6 +97,7 @@
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
+            this.lblNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.ForeColor = System.Drawing.Color.DimGray;
             this.lblNombre.Location = new System.Drawing.Point(46, 46);
@@ -111,6 +116,8 @@
             // lblErrorNombre
             // 
             this.lblErrorNombre.AutoSize = true;
+            this.lblErrorNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblErrorNombre.ForeColor = System.Drawing.Color.Red;
             this.lblErrorNombre.Location = new System.Drawing.Point(46, 94);
             this.lblErrorNombre.Name = "lblErrorNombre";
             this.lblErrorNombre.Size = new System.Drawing.Size(0, 13);
@@ -119,6 +126,8 @@
             // lblErrorApellido
             // 
             this.lblErrorApellido.AutoSize = true;
+            this.lblErrorApellido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblErrorApellido.ForeColor = System.Drawing.Color.Red;
             this.lblErrorApellido.Location = new System.Drawing.Point(386, 94);
             this.lblErrorApellido.Name = "lblErrorApellido";
             this.lblErrorApellido.Size = new System.Drawing.Size(0, 13);
@@ -134,6 +143,7 @@
             // lblApellido
             // 
             this.lblApellido.AutoSize = true;
+            this.lblApellido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lblApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblApellido.ForeColor = System.Drawing.Color.DimGray;
             this.lblApellido.Location = new System.Drawing.Point(386, 46);
@@ -145,6 +155,8 @@
             // lblErrorDNI
             // 
             this.lblErrorDNI.AutoSize = true;
+            this.lblErrorDNI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblErrorDNI.ForeColor = System.Drawing.Color.Red;
             this.lblErrorDNI.Location = new System.Drawing.Point(45, 168);
             this.lblErrorDNI.Name = "lblErrorDNI";
             this.lblErrorDNI.Size = new System.Drawing.Size(0, 13);
@@ -160,6 +172,7 @@
             // lblDNI
             // 
             this.lblDNI.AutoSize = true;
+            this.lblDNI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lblDNI.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDNI.ForeColor = System.Drawing.Color.DimGray;
             this.lblDNI.Location = new System.Drawing.Point(46, 120);
@@ -171,6 +184,8 @@
             // lblErrorFecha
             // 
             this.lblErrorFecha.AutoSize = true;
+            this.lblErrorFecha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblErrorFecha.ForeColor = System.Drawing.Color.Red;
             this.lblErrorFecha.Location = new System.Drawing.Point(385, 168);
             this.lblErrorFecha.Name = "lblErrorFecha";
             this.lblErrorFecha.Size = new System.Drawing.Size(0, 13);
@@ -186,6 +201,7 @@
             // lblFecha
             // 
             this.lblFecha.AutoSize = true;
+            this.lblFecha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFecha.ForeColor = System.Drawing.Color.DimGray;
             this.lblFecha.Location = new System.Drawing.Point(386, 120);
@@ -197,6 +213,7 @@
             // lblErrorEmail
             // 
             this.lblErrorEmail.AutoSize = true;
+            this.lblErrorEmail.ForeColor = System.Drawing.Color.Red;
             this.lblErrorEmail.Location = new System.Drawing.Point(46, 248);
             this.lblErrorEmail.Name = "lblErrorEmail";
             this.lblErrorEmail.Size = new System.Drawing.Size(0, 13);
@@ -212,6 +229,7 @@
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
+            this.lblEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmail.ForeColor = System.Drawing.Color.DimGray;
             this.lblEmail.Location = new System.Drawing.Point(46, 200);
@@ -223,6 +241,7 @@
             // lblErrorTelefono
             // 
             this.lblErrorTelefono.AutoSize = true;
+            this.lblErrorTelefono.ForeColor = System.Drawing.Color.Red;
             this.lblErrorTelefono.Location = new System.Drawing.Point(386, 248);
             this.lblErrorTelefono.Name = "lblErrorTelefono";
             this.lblErrorTelefono.Size = new System.Drawing.Size(0, 13);
@@ -238,6 +257,7 @@
             // lblTelefono
             // 
             this.lblTelefono.AutoSize = true;
+            this.lblTelefono.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lblTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTelefono.ForeColor = System.Drawing.Color.DimGray;
             this.lblTelefono.Location = new System.Drawing.Point(386, 200);
@@ -249,6 +269,7 @@
             // lblErrorDireccion
             // 
             this.lblErrorDireccion.AutoSize = true;
+            this.lblErrorDireccion.ForeColor = System.Drawing.Color.Red;
             this.lblErrorDireccion.Location = new System.Drawing.Point(47, 324);
             this.lblErrorDireccion.Name = "lblErrorDireccion";
             this.lblErrorDireccion.Size = new System.Drawing.Size(0, 13);
@@ -264,6 +285,7 @@
             // lblDireccion
             // 
             this.lblDireccion.AutoSize = true;
+            this.lblDireccion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lblDireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDireccion.ForeColor = System.Drawing.Color.DimGray;
             this.lblDireccion.Location = new System.Drawing.Point(44, 276);
@@ -275,6 +297,7 @@
             // lblErrorUsuario
             // 
             this.lblErrorUsuario.AutoSize = true;
+            this.lblErrorUsuario.ForeColor = System.Drawing.Color.Red;
             this.lblErrorUsuario.Location = new System.Drawing.Point(46, 391);
             this.lblErrorUsuario.Name = "lblErrorUsuario";
             this.lblErrorUsuario.Size = new System.Drawing.Size(0, 13);
@@ -290,6 +313,7 @@
             // lblUsuario
             // 
             this.lblUsuario.AutoSize = true;
+            this.lblUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsuario.ForeColor = System.Drawing.Color.DimGray;
             this.lblUsuario.Location = new System.Drawing.Point(48, 343);
@@ -301,6 +325,7 @@
             // lblErrorContraseña
             // 
             this.lblErrorContraseña.AutoSize = true;
+            this.lblErrorContraseña.ForeColor = System.Drawing.Color.Red;
             this.lblErrorContraseña.Location = new System.Drawing.Point(386, 391);
             this.lblErrorContraseña.Name = "lblErrorContraseña";
             this.lblErrorContraseña.Size = new System.Drawing.Size(0, 13);
@@ -316,6 +341,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DimGray;
             this.label2.Location = new System.Drawing.Point(386, 343);
@@ -327,6 +353,7 @@
             // lblTipoUsuario
             // 
             this.lblTipoUsuario.AutoSize = true;
+            this.lblTipoUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lblTipoUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTipoUsuario.ForeColor = System.Drawing.Color.DimGray;
             this.lblTipoUsuario.Location = new System.Drawing.Point(42, 433);
@@ -351,20 +378,41 @@
             // lblErrorTipoUsuario
             // 
             this.lblErrorTipoUsuario.AutoSize = true;
+            this.lblErrorTipoUsuario.ForeColor = System.Drawing.Color.Red;
             this.lblErrorTipoUsuario.Location = new System.Drawing.Point(46, 481);
             this.lblErrorTipoUsuario.Name = "lblErrorTipoUsuario";
             this.lblErrorTipoUsuario.Size = new System.Drawing.Size(0, 13);
             this.lblErrorTipoUsuario.TabIndex = 31;
             // 
+            // lblMensajeAgregar
+            // 
+            this.lblMensajeAgregar.AutoSize = true;
+            this.lblMensajeAgregar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.lblMensajeAgregar.Location = new System.Drawing.Point(387, 479);
+            this.lblMensajeAgregar.Name = "lblMensajeAgregar";
+            this.lblMensajeAgregar.Size = new System.Drawing.Size(0, 13);
+            this.lblMensajeAgregar.TabIndex = 33;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Presentacion2.Properties.Resources.New_Project;
+            this.pictureBox1.Location = new System.Drawing.Point(-6, -5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(773, 557);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 34;
+            this.pictureBox1.TabStop = false;
+            // 
             // btnConfirmar
             // 
+            this.btnConfirmar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnConfirmar.BorderColor = System.Drawing.Color.Transparent;
             this.btnConfirmar.ButtonColor = System.Drawing.Color.Salmon;
             this.btnConfirmar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnConfirmar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnConfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConfirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfirmar.ForeColor = System.Drawing.Color.Transparent;
+            this.btnConfirmar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnConfirmar.Location = new System.Drawing.Point(386, 415);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.OnHoverBorderColor = System.Drawing.Color.Salmon;
@@ -374,22 +422,15 @@
             this.btnConfirmar.TabIndex = 32;
             this.btnConfirmar.Text = "Confirmar";
             this.btnConfirmar.TextColor = System.Drawing.Color.White;
-            this.btnConfirmar.UseVisualStyleBackColor = true;
+            this.btnConfirmar.UseVisualStyleBackColor = false;
             this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click_1);
-            // 
-            // lblMensajeAgregar
-            // 
-            this.lblMensajeAgregar.AutoSize = true;
-            this.lblMensajeAgregar.Location = new System.Drawing.Point(387, 479);
-            this.lblMensajeAgregar.Name = "lblMensajeAgregar";
-            this.lblMensajeAgregar.Size = new System.Drawing.Size(0, 13);
-            this.lblMensajeAgregar.TabIndex = 33;
             // 
             // admin_agregar_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(760, 518);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.ClientSize = new System.Drawing.Size(760, 542);
             this.Controls.Add(this.lblMensajeAgregar);
             this.Controls.Add(this.btnConfirmar);
             this.Controls.Add(this.lblErrorTipoUsuario);
@@ -424,8 +465,10 @@
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.linkLabelVolver);
             this.Controls.Add(this.lblTitulo);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "admin_agregar_form";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -467,5 +510,6 @@
         private System.Windows.Forms.Label lblErrorTipoUsuario;
         private ePOSOne.btnProduct.Button_WOC btnConfirmar;
         private System.Windows.Forms.Label lblMensajeAgregar;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
