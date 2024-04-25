@@ -42,6 +42,7 @@
             // lblMensajeEliminar
             // 
             this.lblMensajeEliminar.AutoSize = true;
+            this.lblMensajeEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lblMensajeEliminar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.lblMensajeEliminar.Location = new System.Drawing.Point(145, 231);
             this.lblMensajeEliminar.Name = "lblMensajeEliminar";
@@ -73,6 +74,7 @@
             // lblErrorId
             // 
             this.lblErrorId.AutoSize = true;
+            this.lblErrorId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lblErrorId.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblErrorId.ForeColor = System.Drawing.Color.Red;
             this.lblErrorId.Location = new System.Drawing.Point(144, 183);
@@ -129,7 +131,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Presentacion2.Properties.Resources.New_Project;
-            this.pictureBox1.Location = new System.Drawing.Point(1, -3);
+            this.pictureBox1.Location = new System.Drawing.Point(-14, -1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(589, 377);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

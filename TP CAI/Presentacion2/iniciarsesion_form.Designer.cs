@@ -32,7 +32,6 @@
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.LinklabelOlvidasteContraseña = new System.Windows.Forms.LinkLabel();
-            this.btnIngresar = new ePOSOne.btnProduct.Button_WOC();
             this.lblUsuarioError = new System.Windows.Forms.Label();
             this.lblContraseñaError = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
@@ -40,6 +39,7 @@
             this.lblMensajeInicioSesion = new System.Windows.Forms.Label();
             this.lblErroresRestantes = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnIngresar = new ePOSOne.btnProduct.Button_WOC();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -87,31 +87,10 @@
             this.LinklabelOlvidasteContraseña.Text = "Cambia tu contraseña";
             this.LinklabelOlvidasteContraseña.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinklabelOlvidasteContraseña_LinkClicked_1);
             // 
-            // btnIngresar
-            // 
-            this.btnIngresar.BackColor = System.Drawing.Color.White;
-            this.btnIngresar.BorderColor = System.Drawing.Color.Transparent;
-            this.btnIngresar.ButtonColor = System.Drawing.Color.Salmon;
-            this.btnIngresar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnIngresar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIngresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIngresar.ForeColor = System.Drawing.Color.Transparent;
-            this.btnIngresar.Location = new System.Drawing.Point(158, 318);
-            this.btnIngresar.Name = "btnIngresar";
-            this.btnIngresar.OnHoverBorderColor = System.Drawing.Color.Salmon;
-            this.btnIngresar.OnHoverButtonColor = System.Drawing.Color.Salmon;
-            this.btnIngresar.OnHoverTextColor = System.Drawing.Color.Gray;
-            this.btnIngresar.Size = new System.Drawing.Size(226, 41);
-            this.btnIngresar.TabIndex = 33;
-            this.btnIngresar.Text = "Ingresar";
-            this.btnIngresar.TextColor = System.Drawing.Color.White;
-            this.btnIngresar.UseVisualStyleBackColor = false;
-            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
-            // 
             // lblUsuarioError
             // 
             this.lblUsuarioError.AutoSize = true;
+            this.lblUsuarioError.BackColor = System.Drawing.Color.White;
             this.lblUsuarioError.ForeColor = System.Drawing.Color.Red;
             this.lblUsuarioError.Location = new System.Drawing.Point(152, 177);
             this.lblUsuarioError.Name = "lblUsuarioError";
@@ -121,6 +100,8 @@
             // lblContraseñaError
             // 
             this.lblContraseñaError.AutoSize = true;
+            this.lblContraseñaError.BackColor = System.Drawing.Color.White;
+            this.lblContraseñaError.ForeColor = System.Drawing.Color.Red;
             this.lblContraseñaError.Location = new System.Drawing.Point(152, 256);
             this.lblContraseñaError.Name = "lblContraseñaError";
             this.lblContraseñaError.Size = new System.Drawing.Size(0, 13);
@@ -151,6 +132,8 @@
             // lblMensajeInicioSesion
             // 
             this.lblMensajeInicioSesion.AutoSize = true;
+            this.lblMensajeInicioSesion.BackColor = System.Drawing.Color.White;
+            this.lblMensajeInicioSesion.ForeColor = System.Drawing.Color.Red;
             this.lblMensajeInicioSesion.Location = new System.Drawing.Point(173, 280);
             this.lblMensajeInicioSesion.Name = "lblMensajeInicioSesion";
             this.lblMensajeInicioSesion.Size = new System.Drawing.Size(0, 13);
@@ -159,6 +142,7 @@
             // lblErroresRestantes
             // 
             this.lblErroresRestantes.AutoSize = true;
+            this.lblErroresRestantes.BackColor = System.Drawing.Color.White;
             this.lblErroresRestantes.ForeColor = System.Drawing.Color.Red;
             this.lblErroresRestantes.Location = new System.Drawing.Point(173, 296);
             this.lblErroresRestantes.Name = "lblErroresRestantes";
@@ -168,12 +152,34 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Presentacion2.Properties.Resources.New_Project__2___1_;
-            this.pictureBox1.Location = new System.Drawing.Point(2, -81);
+            this.pictureBox1.Location = new System.Drawing.Point(3, -75);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(555, 487);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 40;
             this.pictureBox1.TabStop = false;
+            // 
+            // btnIngresar
+            // 
+            this.btnIngresar.BackColor = System.Drawing.Color.White;
+            this.btnIngresar.BorderColor = System.Drawing.Color.Transparent;
+            this.btnIngresar.ButtonColor = System.Drawing.Color.Salmon;
+            this.btnIngresar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnIngresar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIngresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIngresar.ForeColor = System.Drawing.Color.Transparent;
+            this.btnIngresar.Location = new System.Drawing.Point(158, 318);
+            this.btnIngresar.Name = "btnIngresar";
+            this.btnIngresar.OnHoverBorderColor = System.Drawing.Color.Salmon;
+            this.btnIngresar.OnHoverButtonColor = System.Drawing.Color.Salmon;
+            this.btnIngresar.OnHoverTextColor = System.Drawing.Color.Gray;
+            this.btnIngresar.Size = new System.Drawing.Size(226, 41);
+            this.btnIngresar.TabIndex = 33;
+            this.btnIngresar.Text = "Ingresar";
+            this.btnIngresar.TextColor = System.Drawing.Color.White;
+            this.btnIngresar.UseVisualStyleBackColor = false;
+            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
             // iniciarsesion_form
             // 

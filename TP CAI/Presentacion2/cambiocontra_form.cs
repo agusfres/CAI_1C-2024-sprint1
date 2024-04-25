@@ -141,5 +141,10 @@ namespace Presentacion2
                 return -1;
             }
         }
+
+        private void cambiocontra_form_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -117,6 +117,7 @@
             // lblErrorContraseñaVieja
             // 
             this.lblErrorContraseñaVieja.AutoSize = true;
+            this.lblErrorContraseñaVieja.BackColor = System.Drawing.Color.White;
             this.lblErrorContraseñaVieja.ForeColor = System.Drawing.Color.Red;
             this.lblErrorContraseñaVieja.Location = new System.Drawing.Point(162, 209);
             this.lblErrorContraseñaVieja.Name = "lblErrorContraseñaVieja";
@@ -146,7 +147,8 @@
             // lblCambioContraseñaExitosa
             // 
             this.lblCambioContraseñaExitosa.AutoSize = true;
-            this.lblCambioContraseñaExitosa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.lblCambioContraseñaExitosa.BackColor = System.Drawing.Color.White;
+            this.lblCambioContraseñaExitosa.ForeColor = System.Drawing.Color.Black;
             this.lblCambioContraseñaExitosa.Location = new System.Drawing.Point(162, 314);
             this.lblCambioContraseñaExitosa.Name = "lblCambioContraseñaExitosa";
             this.lblCambioContraseñaExitosa.Size = new System.Drawing.Size(0, 13);
@@ -155,9 +157,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Presentacion2.Properties.Resources.New_Project__2___1_;
-            this.pictureBox1.Location = new System.Drawing.Point(-3, -1);
+            this.pictureBox1.Location = new System.Drawing.Point(-26, -4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(565, 423);
+            this.pictureBox1.Size = new System.Drawing.Size(602, 423);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 39;
             this.pictureBox1.TabStop = false;
@@ -179,6 +181,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "cambiocontra_form";
             this.Text = "Form3";
+            this.Load += new System.EventHandler(this.cambiocontra_form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

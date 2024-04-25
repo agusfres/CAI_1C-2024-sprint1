@@ -51,6 +51,7 @@
             // lblErrorEmail
             // 
             this.lblErrorEmail.AutoSize = true;
+            this.lblErrorEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lblErrorEmail.ForeColor = System.Drawing.Color.Red;
             this.lblErrorEmail.Location = new System.Drawing.Point(423, 198);
             this.lblErrorEmail.Name = "lblErrorEmail";
@@ -79,6 +80,7 @@
             // lblErrorCuit
             // 
             this.lblErrorCuit.AutoSize = true;
+            this.lblErrorCuit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lblErrorCuit.ForeColor = System.Drawing.Color.Red;
             this.lblErrorCuit.Location = new System.Drawing.Point(83, 198);
             this.lblErrorCuit.Name = "lblErrorCuit";
@@ -107,6 +109,7 @@
             // lblErrorApellido
             // 
             this.lblErrorApellido.AutoSize = true;
+            this.lblErrorApellido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lblErrorApellido.ForeColor = System.Drawing.Color.Red;
             this.lblErrorApellido.Location = new System.Drawing.Point(424, 124);
             this.lblErrorApellido.Name = "lblErrorApellido";
@@ -135,6 +138,7 @@
             // lblErrorNombre
             // 
             this.lblErrorNombre.AutoSize = true;
+            this.lblErrorNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lblErrorNombre.ForeColor = System.Drawing.Color.Red;
             this.lblErrorNombre.Location = new System.Drawing.Point(84, 124);
             this.lblErrorNombre.Name = "lblErrorNombre";
@@ -191,6 +195,7 @@
             // lblMensaje
             // 
             this.lblMensaje.AutoSize = true;
+            this.lblMensaje.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lblMensaje.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.lblMensaje.Location = new System.Drawing.Point(272, 209);
             this.lblMensaje.Name = "lblMensaje";
@@ -222,7 +227,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Presentacion2.Properties.Resources.New_Project;
-            this.pictureBox1.Location = new System.Drawing.Point(-1, -4);
+            this.pictureBox1.Location = new System.Drawing.Point(-3, -1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(757, 381);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
