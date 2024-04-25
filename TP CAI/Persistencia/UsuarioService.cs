@@ -107,7 +107,7 @@ namespace Persistencia
             }
             if (!response.IsSuccessStatusCode) // Valida errores que no sean de la familia del 200
             {
-                throw new Exception("Verifique los datos ingresados e intente nuevamente");
+                throw new Exception("Verifique los datos ingresados");
             }
 
             var reader = new StreamReader(response.Content.ReadAsStreamAsync().Result);

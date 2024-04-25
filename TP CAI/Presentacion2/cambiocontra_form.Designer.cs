@@ -82,6 +82,7 @@
             // txtContraseñaNueva
             // 
             this.txtContraseñaNueva.BackColor = System.Drawing.Color.White;
+            this.txtContraseñaNueva.Enabled = false;
             this.txtContraseñaNueva.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContraseñaNueva.ForeColor = System.Drawing.Color.Gray;
             this.txtContraseñaNueva.Location = new System.Drawing.Point(162, 265);

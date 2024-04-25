@@ -17,5 +17,10 @@ namespace Presentacion2
         {
             InitializeComponent();
         }
+
+        private void linkLabelVolver_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
     }
 }

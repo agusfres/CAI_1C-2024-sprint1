@@ -79,7 +79,7 @@
             this.LinklabelOlvidasteContraseña.BackColor = System.Drawing.Color.White;
             this.LinklabelOlvidasteContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LinklabelOlvidasteContraseña.LinkColor = System.Drawing.Color.Gray;
-            this.LinklabelOlvidasteContraseña.Location = new System.Drawing.Point(357, 280);
+            this.LinklabelOlvidasteContraseña.Location = new System.Drawing.Point(360, 296);
             this.LinklabelOlvidasteContraseña.Name = "LinklabelOlvidasteContraseña";
             this.LinklabelOlvidasteContraseña.Size = new System.Drawing.Size(110, 13);
             this.LinklabelOlvidasteContraseña.TabIndex = 3;

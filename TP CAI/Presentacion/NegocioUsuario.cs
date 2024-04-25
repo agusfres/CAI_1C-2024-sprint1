@@ -27,7 +27,7 @@ namespace Negocio
 
         public Usuario BuscarUsuario(string nombreUsuario)
         {
-            List<Usuario> listaUsuarios = TraeUsuariosActivos();
+            List<Usuario> listaUsuarios = TraerUsuariosActivos();
 
             if (listaUsuarios != null)
             {
@@ -43,7 +43,7 @@ namespace Negocio
         }
 
 
-        public List<Usuario> TraeUsuariosActivos()
+        public List<Usuario> TraerUsuariosActivos()
         {
             return usuarioService.TraerUsuariosActivos(idAdministrador);
         }

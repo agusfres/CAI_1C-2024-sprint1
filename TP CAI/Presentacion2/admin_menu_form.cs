@@ -29,7 +29,9 @@ namespace Presentacion2
 
         private void linkLabelCerrarSesion_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            this.Close();
+            this.Hide();
+            iniciarsesion_form iniciarSesion = new iniciarsesion_form();
+            iniciarSesion.Show();
         }
 
         private void btnGestionarProveedores_Click(object sender, EventArgs e)

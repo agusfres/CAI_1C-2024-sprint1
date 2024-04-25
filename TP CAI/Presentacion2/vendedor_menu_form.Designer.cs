@@ -46,6 +46,7 @@
             this.linkLabelVolver.TabIndex = 4;
             this.linkLabelVolver.TabStop = true;
             this.linkLabelVolver.Text = "Cerrar sesión";
+            this.linkLabelVolver.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelVolver_LinkClicked);
             // 
             // btnVenta
             // 
@@ -54,7 +55,7 @@
             this.btnVenta.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnVenta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVenta.Font = new System.Drawing.Font("Inter", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVenta.ForeColor = System.Drawing.Color.White;
             this.btnVenta.Location = new System.Drawing.Point(113, 134);
             this.btnVenta.Name = "btnVenta";
@@ -74,7 +75,7 @@
             this.btnReporteVentas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnReporteVentas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnReporteVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReporteVentas.Font = new System.Drawing.Font("Inter", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReporteVentas.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReporteVentas.ForeColor = System.Drawing.Color.White;
             this.btnReporteVentas.Location = new System.Drawing.Point(113, 199);
             this.btnReporteVentas.Name = "btnReporteVentas";
@@ -87,7 +88,7 @@
             this.btnReporteVentas.TextColor = System.Drawing.Color.Gray;
             this.btnReporteVentas.UseVisualStyleBackColor = true;
             // 
-            // Form8
+            // vendedor_menu_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -95,7 +96,7 @@
             this.Controls.Add(this.btnReporteVentas);
             this.Controls.Add(this.btnVenta);
             this.Controls.Add(this.linkLabelVolver);
-            this.Name = "Form8";
+            this.Name = "vendedor_menu_form";
             this.Text = "Form8";
             this.ResumeLayout(false);
             this.PerformLayout();
