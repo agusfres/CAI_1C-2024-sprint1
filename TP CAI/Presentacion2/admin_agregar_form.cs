@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Net;
@@ -13,6 +14,8 @@ using Datos;
 using Negocio;
 using Persistencia;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+
+
 
 
 namespace Presentacion2
@@ -75,7 +78,6 @@ namespace Presentacion2
                 try
                 {
                     negocioUsuario.AgregarUsuario(txNombre, txApellido, txDireccion, txTelefono, txEmail, datetimeTxFechaNac, txNombreUsuario, intCmTipoUsuario, intTxDNI, txContraseña);
-
                     LimpiarCampos();
                     Congrats();
                 }
@@ -116,5 +118,11 @@ namespace Presentacion2
             admin_gestion_form admin_gestion = new admin_gestion_form();
             admin_gestion.Show();
         }
+
+
+
     }
+
+            
+
 }

@@ -104,3 +104,14 @@ C:\Users\agust\Downloads\FACULTAD\2024\cai\TPCAI\CAI_1C-2024-sprint1\TP CAI\Pers
 C:\Users\agust\Downloads\FACULTAD\2024\cai\TPCAI\CAI_1C-2024-sprint1\TP CAI\Persistencia\obj\Debug\Persiste.7F7D6998.Up2Date
 C:\Users\agust\Downloads\FACULTAD\2024\cai\TPCAI\CAI_1C-2024-sprint1\TP CAI\Persistencia\obj\Debug\Persistencia.dll
 C:\Users\agust\Downloads\FACULTAD\2024\cai\TPCAI\CAI_1C-2024-sprint1\TP CAI\Persistencia\obj\Debug\Persistencia.pdb
+C:\Users\catac\Documents\GitHub\CAI_1C-2024-sprint1\TP CAI\Persistencia\bin\Debug\Persistencia.dll
+C:\Users\catac\Documents\GitHub\CAI_1C-2024-sprint1\TP CAI\Persistencia\bin\Debug\Persistencia.pdb
+C:\Users\catac\Documents\GitHub\CAI_1C-2024-sprint1\TP CAI\Persistencia\bin\Debug\Datos.dll
+C:\Users\catac\Documents\GitHub\CAI_1C-2024-sprint1\TP CAI\Persistencia\bin\Debug\Newtonsoft.Json.dll
+C:\Users\catac\Documents\GitHub\CAI_1C-2024-sprint1\TP CAI\Persistencia\bin\Debug\Datos.pdb
+C:\Users\catac\Documents\GitHub\CAI_1C-2024-sprint1\TP CAI\Persistencia\bin\Debug\Newtonsoft.Json.xml
+C:\Users\catac\Documents\GitHub\CAI_1C-2024-sprint1\TP CAI\Persistencia\obj\Debug\Persistencia.csproj.AssemblyReference.cache
+C:\Users\catac\Documents\GitHub\CAI_1C-2024-sprint1\TP CAI\Persistencia\obj\Debug\Persistencia.csproj.CoreCompileInputs.cache
+C:\Users\catac\Documents\GitHub\CAI_1C-2024-sprint1\TP CAI\Persistencia\obj\Debug\Persistencia.csproj.CopyComplete
+C:\Users\catac\Documents\GitHub\CAI_1C-2024-sprint1\TP CAI\Persistencia\obj\Debug\Persistencia.dll
+C:\Users\catac\Documents\GitHub\CAI_1C-2024-sprint1\TP CAI\Persistencia\obj\Debug\Persistencia.pdb

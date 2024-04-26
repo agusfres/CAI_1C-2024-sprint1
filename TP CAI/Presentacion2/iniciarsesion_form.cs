@@ -67,7 +67,7 @@ namespace Presentacion2
 
                     int tipoUsuario = usuario.TipoUsuario;
                     this.Hide();
-                    if (tipoUsuario == 3)
+                    if (tipoUsuario == 0) //CAMBIAR!!!!
                     {
                         admin_menu_form admin_menu = new admin_menu_form();
                         admin_menu.Show();

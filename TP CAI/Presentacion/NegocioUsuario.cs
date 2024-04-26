@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using Datos;
@@ -22,6 +24,9 @@ namespace Negocio
             int host = 1;
             AltaUsuario altaUsuario = new AltaUsuario(idAdministrador, host, nombre, apellido, dni, direccion, telefono, email, fechaNacimiento, nombreUsuario, contraseña);
             usuarioService.AgregarUsuario(altaUsuario);
+            Usuario usuarioAuxiliar = BuscarUsuario(nombreUsuario);
+            Usuario usuario = new Usuario(usuarioAuxiliar.Id, nombre, apellido, direccion, telefono, email, DateTime.Now, fechaNacimiento, null, null, nombreUsuario, tipoUsuario, dni, contraseña, host);
+            GuardarUsuarios(usuario);
         }
 
 
@@ -59,6 +64,17 @@ namespace Negocio
         public void CambiarContraseña(string nombreUsuarioActual, string contraseñaActual, string contraseñaNueva)
         {
             UsuarioService.CambiarContraseña(nombreUsuarioActual, contraseñaActual, contraseñaNueva);
+        }
+
+        private void GuardarUsuarios(Usuario usuario)
+        {
+
+            string docPath = @"\TP CAI\UsuariosLocales.txt";
+            StreamWriter writer = new StreamWriter(docPath);
+
+            writer.WriteLine(usuario.Id + ";" + usuario.Nombre + ";" + usuario.Apellido + ";" + usuario.Direccion + ";" + usuario.Telefono + ";" + usuario.Email + ";" + usuario.FechaAlta + ";" + usuario.FechaNacimiento + ";"  + usuario.FechaBaja + ";" + usuario.FechaUltimaAct + ";" + usuario.NombreUsuario + ";" + usuario.TipoUsuario + ";" + usuario.Dni + ";" + usuario.Contraseña + ";" + usuario.Host);
+
+
         }
     }
 }
