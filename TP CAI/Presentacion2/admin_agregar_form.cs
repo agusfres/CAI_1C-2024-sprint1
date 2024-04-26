@@ -74,11 +74,6 @@ namespace Presentacion2
                 NegocioUsuario negocioUsuario = new NegocioUsuario();
                 try
                 {
-                    // Como el Web Service no guarda Tipo de usuario ni Estado lo agregamos como dígitos en el campo nombreUsuario
-                    // Primer dígito para el Tipo de usuario, que puede ser 1, 2 o 3 (Vendedor, Supervisor, Administrador)
-                    // Segundo dígito para el Estado, que puede ser A o I (Activo o Inactivo)
-                    txNombreUsuario = intCmTipoUsuario + "I" + txNombreUsuario;
-
                     negocioUsuario.AgregarUsuario(txNombre, txApellido, txDireccion, txTelefono, txEmail, datetimeTxFechaNac, txNombreUsuario, intCmTipoUsuario, intTxDNI, txContraseña);
 
                     LimpiarCampos();

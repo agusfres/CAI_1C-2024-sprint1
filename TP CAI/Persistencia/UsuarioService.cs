@@ -93,7 +93,7 @@ namespace Persistencia
         }
 
 
-        public static string Login(Login login)
+        public static void Login(Login login)
         {
             string path = "/api/Usuario/Login";
 
@@ -109,11 +109,6 @@ namespace Persistencia
             {
                 throw new Exception("Verifique los datos ingresados");
             }
-
-            var reader = new StreamReader(response.Content.ReadAsStreamAsync().Result);
-            string respuesta = reader.ReadToEnd();
-
-            return respuesta;
         }
 
 

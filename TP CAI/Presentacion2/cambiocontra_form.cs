@@ -40,18 +40,15 @@ namespace Presentacion2
             {
                 try
                 {
-                    nombreUsuarioActual = FuncionEspecialObtenerNombreUsuario(nombreUsuarioActual);
-
                     negocioUsuario.CambiarContraseña(nombreUsuarioActual, contraseñaActual, txtContraseñaNueva.Text);
                     
-                    lblCambioContraseñaExitosa.Text = "Se cambió la contraseña exitosamente";
                     LimpiarCampos();
                     Congrats();
 
                     Usuario usuario = negocioUsuario.BuscarUsuario(nombreUsuarioActual);
                     
                     this.Hide();
-                    int tipoUsuario = FuncionEspecialObtenerTipoUsuario(nombreUsuarioActual);
+                    int tipoUsuario = usuario.TipoUsuario;
                     if (tipoUsuario == 3)
                     {
                         admin_menu_form admin_menu = new admin_menu_form();
@@ -98,49 +95,6 @@ namespace Presentacion2
             form2.Show();
         }
 
-
-        private string FuncionEspecialObtenerNombreUsuario(string nombreUsuarioActual)
-        {
-            // Como el Web Service no guarda Tipo de usuario ni Estado lo agregamos como dígitos en el campo nombreUsuario
-            // Primer dígito para el Tipo de usuario, que puede ser 1, 2 o 3 (Vendedor, Supervisor, Administrador)
-            // Segundo dígito para el Estado, que puede ser A o I (Activo o Inactivo)
-
-            // Recorremos el listado de usuarios activos, le quitamos los primeros dos dígitos, y si son iguales reemplaza el nombre de usuario
-
-            NegocioUsuario negocioUsuario = new NegocioUsuario();
-            List<Usuario> listaUsuarios = negocioUsuario.TraerUsuariosActivos();
-
-            foreach (Usuario usuario in listaUsuarios)
-            {
-                string nombreUsuarioApi = usuario.NombreUsuario;
-                if (nombreUsuarioApi.Substring(2) == nombreUsuarioActual)
-                {
-                    return nombreUsuarioApi;
-                }
-            }
-
-            return nombreUsuarioActual;
-        }
-
-
-        private int FuncionEspecialObtenerTipoUsuario(string nombreUsuarioActual)
-        {
-            // Como el Web Service no guarda Tipo de usuario ni Estado lo agregamos como dígitos en el campo nombreUsuario
-            // Primer dígito para el Tipo de usuario, que puede ser 1, 2 o 3 (Vendedor, Supervisor, Administrador)
-
-            // Devolvemos el primer dígito de nombreUsuario si es que es un n
-            char auxiliar = nombreUsuarioActual[0];
-            try
-            {
-                return int.Parse(auxiliar.ToString());
-            }
-            catch
-            {
-                MessageBox.Show("Este usuario no se puede usar porque corresponde a una versión antigua del programa, elija otro creado por el Grupo 5");
-                LimpiarCampos();
-                return -1;
-            }
-        }
 
         private void cambiocontra_form_Load(object sender, EventArgs e)
         {

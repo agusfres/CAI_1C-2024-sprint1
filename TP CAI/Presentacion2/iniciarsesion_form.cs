@@ -57,37 +57,31 @@ namespace Presentacion2
             {
                 try
                 {
-                    listaUsuarios = negocioUsuario.TraerUsuariosActivos();
-
-                    nombreUsuarioActual = FuncionEspecialObtenerNombreUsuario(nombreUsuarioActual, listaUsuarios);
-
                     Login login = new Login(nombreUsuarioActual, contraseñaActual);
 
-                    string idUsuario = UsuarioService.Login(login);
+                    listaUsuarios = negocioUsuario.TraerUsuariosActivos();
+
+                    UsuarioService.Login(login);
 
                     Usuario usuario = negocioUsuario.BuscarUsuario(nombreUsuarioActual);
-                    
-                    int tipoUsuario = FuncionEspecialObtenerTipoUsuario(nombreUsuarioActual);
-                    if (tipoUsuario != -1)
+
+                    int tipoUsuario = usuario.TipoUsuario;
+                    this.Hide();
+                    if (tipoUsuario == 3)
                     {
-                        if (tipoUsuario == 3)
-                        {
-                            this.Hide();
-                            admin_menu_form admin_menu = new admin_menu_form();
-                            admin_menu.Show();
-                        }
-                        else if (tipoUsuario == 2)
-                        {
-                            this.Hide();
-                            supervisor_menu_form supervisor_menu = new supervisor_menu_form();
-                            supervisor_menu.Show();
-                        }
-                        else
-                        {
-                            this.Hide();
-                            vendedor_menu_form vendedor_menu = new vendedor_menu_form();
-                            vendedor_menu.Show();
-                        }
+                        admin_menu_form admin_menu = new admin_menu_form();
+                        admin_menu.Show();
+                    }
+                    else if (tipoUsuario == 2)
+                    {
+                        this.Hide();
+                        supervisor_menu_form supervisor_menu = new supervisor_menu_form();
+                        supervisor_menu.Show();
+                    }
+                    else // El web service los guarda como 0 a todos
+                    {
+                        vendedor_menu_form vendedor_menu = new vendedor_menu_form();
+                        vendedor_menu.Show();
                     }
                 }
                 catch (Exception ex)
@@ -143,47 +137,6 @@ namespace Presentacion2
             txtUsuario.Clear();
             txtContraseña.Clear();
             erroresRestantes = 3;
-        }
-
-
-        private string FuncionEspecialObtenerNombreUsuario(string nombreUsuarioActual, List<Usuario> listaUsuarios)
-        {
-            // Como el Web Service no guarda Tipo de usuario ni Estado lo agregamos como dígitos en el campo nombreUsuario
-            // Primer dígito para el Tipo de usuario, que puede ser 1, 2 o 3 (Vendedor, Supervisor, Administrador)
-            // Segundo dígito para el Estado, que puede ser A o I (Activo o Inactivo)
-
-            // Recorremos el listado de usuarios activos, le quitamos los primeros dos dígitos, y si son iguales reemplaza el nombre de usuario
-            
-            foreach (Usuario usuario in listaUsuarios)
-            {
-                string nombreUsuarioApi = usuario.NombreUsuario;
-                if (nombreUsuarioApi.Substring(2) == nombreUsuarioActual)
-                {
-                    return nombreUsuarioApi;
-                }
-            }
-
-            return nombreUsuarioActual;
-        }
-
-
-        private int FuncionEspecialObtenerTipoUsuario(string nombreUsuarioActual)
-        {
-            // Como el Web Service no guarda Tipo de usuario ni Estado lo agregamos como dígitos en el campo nombreUsuario
-            // Primer dígito para el Tipo de usuario, que puede ser 1, 2 o 3 (Vendedor, Supervisor, Administrador)
-
-            // Devolvemos el primer dígito de nombreUsuario si es que es un n
-            char auxiliar = nombreUsuarioActual[0];
-            try
-            {
-                return int.Parse(auxiliar.ToString());
-            }   
-            catch
-            {
-                MessageBox.Show("Este usuario no se puede usar porque corresponde a una versión antigua del programa, elija otro creado por el Grupo 5");
-                LimpiarCampos();
-                return -1;
-            }
         }
     }
 }
