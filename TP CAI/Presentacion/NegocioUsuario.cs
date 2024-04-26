@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Net;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using Datos;
@@ -26,7 +27,7 @@ namespace Negocio
             usuarioService.AgregarUsuario(altaUsuario);
             Usuario usuarioAuxiliar = BuscarUsuario(nombreUsuario);
             Usuario usuario = new Usuario(usuarioAuxiliar.Id, nombre, apellido, direccion, telefono, email, DateTime.Now, fechaNacimiento, null, null, nombreUsuario, tipoUsuario, dni, contraseña, host);
-            GuardarUsuarios(usuario);
+            AgregarUsuarioBaseLocal(usuario);
         }
 
 
@@ -66,15 +67,21 @@ namespace Negocio
             UsuarioService.CambiarContraseña(nombreUsuarioActual, contraseñaActual, contraseñaNueva);
         }
 
-        private void GuardarUsuarios(Usuario usuario)
+
+        private void AgregarUsuarioBaseLocal(Usuario usuario)
         {
+            string docPath = @"C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\UsuariosLocales.txt";
+            StreamWriter writer = new StreamWriter(docPath, true);
 
-            string docPath = @"\TP CAI\UsuariosLocales.txt";
-            StreamWriter writer = new StreamWriter(docPath);
-
-            writer.WriteLine(usuario.Id + ";" + usuario.Nombre + ";" + usuario.Apellido + ";" + usuario.Direccion + ";" + usuario.Telefono + ";" + usuario.Email + ";" + usuario.FechaAlta + ";" + usuario.FechaNacimiento + ";"  + usuario.FechaBaja + ";" + usuario.FechaUltimaAct + ";" + usuario.NombreUsuario + ";" + usuario.TipoUsuario + ";" + usuario.Dni + ";" + usuario.Contraseña + ";" + usuario.Host);
-
-
+            try
+            {
+                writer.WriteLine(usuario.Id + ";" + usuario.Nombre + ";" + usuario.Apellido + ";" + usuario.Direccion + ";" + usuario.Telefono + ";" + usuario.Email + ";" + usuario.FechaAlta + ";" + usuario.FechaNacimiento + ";" + usuario.FechaBaja + ";" + usuario.FechaUltimaAct + ";" + usuario.NombreUsuario + ";" + usuario.TipoUsuario + ";" + usuario.Dni + ";" + usuario.Contraseña + ";" + usuario.Host);
+            }
+            catch
+            {
+                Console.WriteLine("error");
+            }
+            writer.Close();
         }
     }
 }

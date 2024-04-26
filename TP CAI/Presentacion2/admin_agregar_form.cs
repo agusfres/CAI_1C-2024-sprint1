@@ -30,6 +30,17 @@ namespace Presentacion2
 
         private void btnConfirmar_Click_1(object sender, EventArgs e)
         {
+            lblErrorNombre.Text = "";
+            lblErrorApellido.Text = ""; ;
+            lblErrorEmail.Text = "";
+            lblErrorDireccion.Text = "";
+            lblErrorContraseña.Text = "";
+            lblErrorFecha.Text = "";
+            lblErrorDNI.Text = "";
+            lblErrorUsuario.Text = "";
+            lblErrorTelefono.Text = "";
+            lblErrorTipoUsuario.Text = "";
+
             Validador validadorCampos = new Validador();
 
             string txNombre = txtNombre.Text;
@@ -118,11 +129,5 @@ namespace Presentacion2
             admin_gestion_form admin_gestion = new admin_gestion_form();
             admin_gestion.Show();
         }
-
-
-
     }
-
-            
-
 }

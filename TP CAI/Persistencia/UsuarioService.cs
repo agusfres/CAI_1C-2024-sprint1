@@ -47,7 +47,7 @@ namespace Persistencia
             {
                 throw new Exception("Usuario no encontrado");
             }
-            if (response.StatusCode == HttpStatusCode.NotFound) // Valida error 403
+            if (response.StatusCode == HttpStatusCode.Forbidden) // Valida error 403
             {
                 throw new Exception("No tienes permiso para realizar esta acción");
             }
@@ -57,7 +57,7 @@ namespace Persistencia
             }
             if (response.StatusCode == HttpStatusCode.InternalServerError) // Valida error 500
             {
-                throw new Exception("El usuario ya existe, intente con otro");
+                throw new Exception(response.Content.ToString());
             }
             if (!response.IsSuccessStatusCode) // Valida errores que no sean de la familia del 200
             {
@@ -78,7 +78,7 @@ namespace Persistencia
             {
                 throw new Exception("Usuario no encontrado");
             }
-            if (response.StatusCode == HttpStatusCode.NotFound) // Valida error 403
+            if (response.StatusCode == HttpStatusCode.Forbidden) // Valida error 403
             {
                 throw new Exception("No tienes permiso para realizar esta acción");
             }

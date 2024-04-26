@@ -15,6 +15,7 @@ using Negocio;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using System.Net;
 using System.Text.RegularExpressions;
+using System.IO;
 
 
 namespace Presentacion2
@@ -110,7 +111,6 @@ namespace Presentacion2
 
         private void LinklabelOlvidasteContraseña_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
             Usuario usuario = negocioUsuario.BuscarUsuario(txtUsuario.Text);
             if (usuario == null)
             {
