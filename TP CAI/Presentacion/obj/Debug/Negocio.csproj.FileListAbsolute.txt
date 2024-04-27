@@ -128,3 +128,16 @@ C:\Users\catac\Documents\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion\obj\Debu
 C:\Users\catac\Documents\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion\obj\Debug\Negocio.csproj.CopyComplete
 C:\Users\catac\Documents\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion\obj\Debug\Presentacion.dll
 C:\Users\catac\Documents\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion\obj\Debug\Presentacion.pdb
+C:\Users\Cata\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion\bin\Debug\Presentacion.dll
+C:\Users\Cata\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion\bin\Debug\Presentacion.pdb
+C:\Users\Cata\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion\bin\Debug\Datos.dll
+C:\Users\Cata\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion\bin\Debug\Persistencia.dll
+C:\Users\Cata\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Cata\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion\bin\Debug\Datos.pdb
+C:\Users\Cata\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion\bin\Debug\Persistencia.pdb
+C:\Users\Cata\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Cata\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\Users\Cata\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Cata\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion\obj\Debug\Negocio.csproj.Up2Date
+C:\Users\Cata\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion\obj\Debug\Presentacion.dll
+C:\Users\Cata\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion\obj\Debug\Presentacion.pdb
