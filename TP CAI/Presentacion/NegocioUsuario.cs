@@ -27,7 +27,7 @@ namespace Negocio
             AltaUsuario altaUsuario = new AltaUsuario(idAdministrador, host, nombre, apellido, dni, direccion, telefono, email, fechaNacimiento, nombreUsuario, contraseña);
             usuarioService.AgregarUsuario(altaUsuario);
             Usuario usuarioAuxiliar = BuscarUsuario(nombreUsuario);
-            Usuario usuario = new Usuario(usuarioAuxiliar.Id, nombre, apellido, direccion, telefono, email, DateTime.Now, fechaNacimiento, null, null, nombreUsuario, tipoUsuario, dni, contraseña, host,"INACTIVO");
+            Usuario usuario = new Usuario(usuarioAuxiliar.Id, nombre, apellido, direccion, telefono, email, DateTime.Now, fechaNacimiento, null, null, nombreUsuario, tipoUsuario, dni, contraseña, host, "INACTIVO");
             AgregarUsuarioBaseLocal(usuario);
         }
 
@@ -65,8 +65,8 @@ namespace Negocio
 
         public void CambiarContraseña(string nombreUsuarioActual, string contraseñaActual, string contraseñaNueva)
         {
-            ModificarEstadoBaseLocal(nombreUsuarioActual, contraseñaNueva);
             UsuarioService.CambiarContraseña(nombreUsuarioActual, contraseñaActual, contraseñaNueva);
+            ModificarEstadoBaseLocal(nombreUsuarioActual, contraseñaNueva);
         }
 
 
@@ -77,7 +77,8 @@ namespace Negocio
 
             try
             {
-                writer.WriteLine(usuario.Id + "+" + usuario.Nombre + "+" + usuario.Apellido + "+" + usuario.Direccion + "+" + usuario.Telefono + "+" + usuario.Email + "+" + usuario.FechaAlta + "+" + usuario.FechaNacimiento + "+" + usuario.FechaBaja + "+" + usuario.FechaUltimaAct + "+" + usuario.NombreUsuario + "+" + usuario.TipoUsuario + "+" + usuario.Dni + "+" + usuario.Contraseña + "+" + usuario.Host + "+" + usuario.Estado);
+                // +null+null+ es porque fecha de baja y fecha de ultima actualización son null, entonces el sistema directamente no los toma y hay que ponerlos como +null+null+
+                writer.WriteLine(usuario.Id + "+" + usuario.Nombre + "+" + usuario.Apellido + "+" + usuario.Direccion + "+" + usuario.Telefono + "+" + usuario.Email + "+" + usuario.FechaAlta + "+" + usuario.FechaNacimiento + "+null+null+" + usuario.NombreUsuario + "+" + usuario.TipoUsuario + "+" + usuario.Dni + "+" + usuario.Contraseña + "+" + usuario.Host + "+" + usuario.Estado);
             }
             catch
             {
@@ -85,25 +86,29 @@ namespace Negocio
             }
             writer.Close();
         }
-        private void ModificarEstadoBaseLocal(string usuario,string contraseña)
+
+
+        private void ModificarEstadoBaseLocal(string usuario, string contraseña)
         {
             string docPath = @"C:\Users\Cata\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\UsuariosLocales.txt";
             string tempPath = Path.GetTempFileName(); // Ruta temporal para escribir el contenido actualizado
 
-            StreamReader sr = new StreamReader(docPath);
-            StreamWriter sw = new StreamWriter(tempPath);
-            string linea = sr.ReadLine();
-            while (linea != null)
+            StreamReader reader = new StreamReader(docPath);
+            StreamWriter writer = new StreamWriter(tempPath);
+
+            while (!reader.EndOfStream)
             {
+                string linea = reader.ReadLine();
+
                 string[] vector = linea.Split('+');
-                // Si la línea actual no coincide con la línea que deseas eliminar, escríbela en el archivo temporal
+                // Si la línea actual no coincide con la que se quiere modificar la escribe en el temporal tal cual está
                 if (vector[10] != usuario)
                 {
-                    sw.WriteLine(linea);
+                    writer.WriteLine(linea);
                 }
                 else
                 {
-                    try 
+                    try
                     {
                         string id = vector[0];
                         string nombre = vector[1];
@@ -120,22 +125,23 @@ namespace Negocio
                         string dni = vector[12];
                         string host = vector[14];
 
-                        sw.WriteLine(id + '+' + nombre + '+' + apellido + '+' + direccion + '+' + telefono + '+' + email + '+' + fechaAlta + '+' + fechaNacimiento + '+' + fechaBaja + '+' + fechaUltAct + '+' + nombreUsuario + '+' + tipoUsuario + '+' + dni + '+' + contraseña + '+' + host + "+ACTIVO") ;
+                        writer.WriteLine(id + '+' + nombre + '+' + apellido + '+' + direccion + '+' + telefono + '+' + email + '+' + fechaAlta + '+' + fechaNacimiento + '+' + fechaBaja + '+' + fechaUltAct + '+' + nombreUsuario + '+' + tipoUsuario + '+' + dni + '+' + contraseña + '+' + host + "+ACTIVO");
                     }
-                    catch { Console.WriteLine("Pepito");  }
+                    catch
+                    {
+                        continue;
+                    }
                 }
 
             }
-            sr.Close();
-            sw.Close();
+            reader.Close();
+            writer.Close();
 
             // Reemplaza el archivo original con el archivo temporal
             System.IO.File.Delete(docPath);
             System.IO.File.Move(tempPath, docPath);
-
             // Borra el archivo temporal
             System.IO.File.Delete(tempPath);
-
         }
     }
 }
