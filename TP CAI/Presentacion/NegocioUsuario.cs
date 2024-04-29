@@ -5,10 +5,12 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Net;
 using System.Net.Http;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using Datos;
 using Persistencia;
+using static System.Net.Mime.MediaTypeNames;
 using static System.Net.WebRequestMethods;
 
 
@@ -27,7 +29,7 @@ namespace Negocio
             AltaUsuario altaUsuario = new AltaUsuario(idAdministrador, host, nombre, apellido, dni, direccion, telefono, email, fechaNacimiento, nombreUsuario, contraseña);
             usuarioService.AgregarUsuario(altaUsuario);
             Usuario usuarioAuxiliar = BuscarUsuario(nombreUsuario);
-            Usuario usuario = new Usuario(usuarioAuxiliar.Id, nombre, apellido, direccion, telefono, email, DateTime.Now, fechaNacimiento, null, null, nombreUsuario, tipoUsuario, dni, contraseña, host, "INACTIVO");
+            Usuario usuario = new Usuario(usuarioAuxiliar.Id, nombre, apellido, direccion, telefono, email, DateTime.Now, fechaNacimiento, null, null, nombreUsuario, tipoUsuario, dni, contraseña, host,"INACTIVO");
             AgregarUsuarioBaseLocal(usuario);
         }
 
@@ -65,20 +67,22 @@ namespace Negocio
 
         public void CambiarContraseña(string nombreUsuarioActual, string contraseñaActual, string contraseñaNueva)
         {
-            UsuarioService.CambiarContraseña(nombreUsuarioActual, contraseñaActual, contraseñaNueva);
             ModificarEstadoBaseLocal(nombreUsuarioActual, contraseñaNueva);
+            UsuarioService.CambiarContraseña(nombreUsuarioActual, contraseñaActual, contraseñaNueva);
         }
 
 
         private void AgregarUsuarioBaseLocal(Usuario usuario)
         {
-            string docPath = @"C:\Users\Cata\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\UsuariosLocales.txt";
-            StreamWriter writer = new StreamWriter(docPath, true);
+            string docPath = @"C:\Users\USUARIOSISTEMA\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\UsuariosLocales.txt";
+            string nombreUsuarioSistema = Environment.UserName;
+            string docPathAdaptado = docPath.Replace("USUARIOSISTEMA", nombreUsuarioSistema);
+
+            StreamWriter writer = new StreamWriter(docPathAdaptado, true);
 
             try
             {
-                // +null+null+ es porque fecha de baja y fecha de ultima actualización son null, entonces el sistema directamente no los toma y hay que ponerlos como +null+null+
-                writer.WriteLine(usuario.Id + "+" + usuario.Nombre + "+" + usuario.Apellido + "+" + usuario.Direccion + "+" + usuario.Telefono + "+" + usuario.Email + "+" + usuario.FechaAlta + "+" + usuario.FechaNacimiento + "+null+null+" + usuario.NombreUsuario + "+" + usuario.TipoUsuario + "+" + usuario.Dni + "+" + usuario.Contraseña + "+" + usuario.Host + "+" + usuario.Estado);
+                writer.WriteLine(usuario.Id + "+" + usuario.Nombre + "+" + usuario.Apellido + "+" + usuario.Direccion + "+" + usuario.Telefono + "+" + usuario.Email + "+" + usuario.FechaAlta + "+" + usuario.FechaNacimiento + "+" + usuario.FechaBaja + "+" + usuario.FechaUltimaAct + "+" + usuario.NombreUsuario + "+" + usuario.TipoUsuario + "+" + usuario.Dni + "+" + usuario.Contraseña + "+" + usuario.Host + "+" + usuario.Estado);
             }
             catch
             {
@@ -88,27 +92,28 @@ namespace Negocio
         }
 
 
-        private void ModificarEstadoBaseLocal(string usuario, string contraseña)
+        private void ModificarEstadoBaseLocal(string usuario,string contraseña)
         {
-            string docPath = @"C:\Users\Cata\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\UsuariosLocales.txt";
+            string docPath = @"C:\Users\USUARIOSISTEMA\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\UsuariosLocales.txt";
+            string nombreUsuarioSistema = Environment.UserName;
+            string docPathAdaptado = docPath.Replace("USUARIOSISTEMA", nombreUsuarioSistema);
+
             string tempPath = Path.GetTempFileName(); // Ruta temporal para escribir el contenido actualizado
 
-            StreamReader reader = new StreamReader(docPath);
-            StreamWriter writer = new StreamWriter(tempPath);
-
-            while (!reader.EndOfStream)
+            StreamReader sr = new StreamReader(docPathAdaptado);
+            StreamWriter sw = new StreamWriter(tempPath);
+            string linea = sr.ReadLine();
+            while (linea != null)
             {
-                string linea = reader.ReadLine();
-
                 string[] vector = linea.Split('+');
-                // Si la línea actual no coincide con la que se quiere modificar la escribe en el temporal tal cual está
+                // Si la línea actual no coincide con la línea que deseas eliminar, escríbela en el archivo temporal
                 if (vector[10] != usuario)
                 {
-                    writer.WriteLine(linea);
+                    sw.WriteLine(linea);
                 }
                 else
                 {
-                    try
+                    try 
                     {
                         string id = vector[0];
                         string nombre = vector[1];
@@ -125,23 +130,18 @@ namespace Negocio
                         string dni = vector[12];
                         string host = vector[14];
 
-                        writer.WriteLine(id + '+' + nombre + '+' + apellido + '+' + direccion + '+' + telefono + '+' + email + '+' + fechaAlta + '+' + fechaNacimiento + '+' + fechaBaja + '+' + fechaUltAct + '+' + nombreUsuario + '+' + tipoUsuario + '+' + dni + '+' + contraseña + '+' + host + "+ACTIVO");
+                        sw.WriteLine(id + '+' + nombre + '+' + apellido + '+' + direccion + '+' + telefono + '+' + email + '+' + fechaAlta + '+' + fechaNacimiento + '+' + fechaBaja + '+' + fechaUltAct + '+' + nombreUsuario + '+' + tipoUsuario + '+' + dni + '+' + contraseña + '+' + host + "+ACTIVO") ;
                     }
-                    catch
-                    {
-                        continue;
-                    }
+                    catch { Console.WriteLine("Error");  }
                 }
-
             }
-            reader.Close();
-            writer.Close();
-
+            sr.Close();
+            sw.Close();
             // Reemplaza el archivo original con el archivo temporal
-            System.IO.File.Delete(docPath);
-            System.IO.File.Move(tempPath, docPath);
+            System.IO.File.Delete(docPathAdaptado);
+            System.IO.File.Move(tempPath, docPathAdaptado);
             // Borra el archivo temporal
             System.IO.File.Delete(tempPath);
-        }
-    }
+        }
+    }
 }
