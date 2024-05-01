@@ -181,7 +181,6 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "cambiocontra_form";
             this.Text = "Form3";
-            this.Load += new System.EventHandler(this.cambiocontra_form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

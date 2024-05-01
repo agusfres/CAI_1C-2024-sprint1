@@ -102,8 +102,8 @@ namespace Negocio
 
             StreamReader sr = new StreamReader(docPathAdaptado);
             StreamWriter sw = new StreamWriter(tempPath);
-            string linea = sr.ReadLine();
-            while (linea != null)
+            string linea;
+            while ((linea = sr.ReadLine()) != null)
             {
                 string[] vector = linea.Split('+');
                 // Si la línea actual no coincide con la línea que deseas eliminar, escríbela en el archivo temporal
@@ -130,13 +130,14 @@ namespace Negocio
                         string dni = vector[12];
                         string host = vector[14];
 
-                        sw.WriteLine(id + '+' + nombre + '+' + apellido + '+' + direccion + '+' + telefono + '+' + email + '+' + fechaAlta + '+' + fechaNacimiento + '+' + fechaBaja + '+' + fechaUltAct + '+' + nombreUsuario + '+' + tipoUsuario + '+' + dni + '+' + contraseña + '+' + host + "+ACTIVO") ;
+                        sw.WriteLine(id + '+' + nombre + '+' + apellido + '+' + direccion + '+' + telefono + '+' + email + '+' + fechaAlta + '+' + fechaNacimiento + '+' + fechaBaja + '+' + fechaUltAct + '+' + nombreUsuario + '+' + tipoUsuario + '+' + dni + '+' + contraseña + '+' + host + "+ACTIVO");
+
                     }
                     catch { Console.WriteLine("Error");  }
                 }
             }
-            sr.Close();
             sw.Close();
+            sr.Close();
             // Reemplaza el archivo original con el archivo temporal
             System.IO.File.Delete(docPathAdaptado);
             System.IO.File.Move(tempPath, docPathAdaptado);

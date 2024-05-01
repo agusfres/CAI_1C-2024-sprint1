@@ -36,14 +36,12 @@ namespace Presentacion2
             string contraseñaActual = txtContraseñaActual.Text;
 
             lblErrorContraseñaVieja.Text = validador.ValidarContraseña(contraseñaActual);
-
+            
             if (lblErrorContraseñaVieja.Text == "")
             {
                 try
                 {
-                    negocioUsuario.CambiarContraseña(nombreUsuarioActual, contraseñaActual, txtContraseñaNueva.Text);
-                    
-
+                    negocioUsuario.CambiarContraseña(nombreUsuarioActual, contraseñaActual, txtContraseñaNueva.Text);                    
                     LimpiarCampos();
                     Congrats();
 
@@ -51,12 +49,12 @@ namespace Presentacion2
                     
                     this.Hide();
                     int tipoUsuario = usuario.TipoUsuario;
-                    if (tipoUsuario == 3)
+                    if (tipoUsuario == 0)
                     {
                         admin_menu_form admin_menu = new admin_menu_form();
                         admin_menu.Show();
                     }
-                    else if (tipoUsuario == 2)
+                    else if (tipoUsuario == 0)
                     {
                         this.Hide();
                         supervisor_menu_form supervisor_menu = new supervisor_menu_form();
@@ -71,9 +69,9 @@ namespace Presentacion2
                 catch (Exception ex)
                 {
                     lblCambioContraseñaExitosa.Text = ex.Message;
-                }
-            }
-        }
+                } 
+            } 
+        } 
 
 
         private void LimpiarCampos()
@@ -97,10 +95,5 @@ namespace Presentacion2
             form2.Show();
         }
 
-
-        private void cambiocontra_form_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
