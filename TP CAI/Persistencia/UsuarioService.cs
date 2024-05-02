@@ -53,7 +53,7 @@ namespace Persistencia
             }
             if (response.StatusCode == HttpStatusCode.Conflict) // Valida error 409
             {
-                throw new Exception("El nombre de usuario no puede contener el nombre o apellido");
+                throw new Exception($"Error: {response.StatusCode} - {response.ReasonPhrase} - {response.Content}");
             }
             if (response.StatusCode == HttpStatusCode.InternalServerError) // Valida error 500
             {

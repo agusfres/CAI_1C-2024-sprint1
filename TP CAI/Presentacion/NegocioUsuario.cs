@@ -74,7 +74,7 @@ namespace Negocio
 
         private void AgregarUsuarioBaseLocal(Usuario usuario)
         {
-            string docPath = @"C:\Users\USUARIOSISTEMA\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\UsuariosLocales.txt";
+            string docPath = @"C:\Users\USUARIOSISTEMA\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\UsuariosLocales.txt";
             string nombreUsuarioSistema = Environment.UserName;
             string docPathAdaptado = docPath.Replace("USUARIOSISTEMA", nombreUsuarioSistema);
 
@@ -94,7 +94,7 @@ namespace Negocio
 
         private void ModificarEstadoBaseLocal(string usuario,string contraseña)
         {
-            string docPath = @"C:\Users\USUARIOSISTEMA\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\UsuariosLocales.txt";
+            string docPath = @"C:\Users\USUARIOSISTEMA\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\UsuariosLocales.txt";
             string nombreUsuarioSistema = Environment.UserName;
             string docPathAdaptado = docPath.Replace("USUARIOSISTEMA", nombreUsuarioSistema);
 

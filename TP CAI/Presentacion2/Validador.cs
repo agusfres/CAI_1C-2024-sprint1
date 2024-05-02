@@ -239,7 +239,7 @@ namespace Presentacion2
         public string ValidarDNI(string texto, string campo)
         {
             string msgError = "";
-            msgError += ValidarLongitud(texto, campo, 6, 9);
+            msgError += ValidarLongitud(texto, campo, 7, 8);
             msgError += ValidarFormatoNumero(texto, campo);
             return msgError;
         }
