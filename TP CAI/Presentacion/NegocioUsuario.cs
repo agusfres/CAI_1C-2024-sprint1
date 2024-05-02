@@ -68,14 +68,15 @@ namespace Negocio
 
         public void CambiarContraseña(string nombreUsuarioActual, string contraseñaActual, string contraseñaNueva)
         {
-            ModificarEstadoBaseLocal(nombreUsuarioActual, contraseñaNueva);
             UsuarioService.CambiarContraseña(nombreUsuarioActual, contraseñaActual, contraseñaNueva);
+            ModificarContraseñaEstadoBaseLocal(nombreUsuarioActual, contraseñaNueva);
+
         }
 
 
         private void AgregarUsuarioBaseLocal(Usuario usuario)
         {
-            string docPath = @"C:\Users\agusc\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\UsuariosLocales.txt";
+            string docPath = @"C:\Users\USUARIOSISTEMA\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\UsuariosLocales.txt";
             string nombreUsuarioSistema = Environment.UserName;
             string docPathAdaptado = docPath.Replace("USUARIOSISTEMA", nombreUsuarioSistema);
            
@@ -83,7 +84,7 @@ namespace Negocio
 
             try
             {
-                writer.WriteLine(usuario.Id + "+" + usuario.Nombre + "+" + usuario.Apellido + "+" + usuario.Direccion + "+" + usuario.Telefono + "+" + usuario.Email + "+" + usuario.FechaAlta + "+" + usuario.FechaNacimiento + "+" + usuario.FechaBaja + "+" + usuario.FechaUltimaAct + "+" + usuario.NombreUsuario + "+" + usuario.TipoUsuario + "+" + usuario.Dni + "+" + usuario.Contraseña + "+" + usuario.Host + "+" + usuario.Estado);
+                writer.WriteLine(usuario.Id + "+" + usuario.Nombre + "+" + usuario.Apellido + "+" + usuario.Direccion + "+" + usuario.Telefono + "+" + usuario.Email + "+" + usuario.FechaAlta + "+" + usuario.FechaNacimiento + "+null+null+" + usuario.NombreUsuario + "+" + usuario.TipoUsuario + "+" + usuario.Dni + "+" + usuario.Contraseña + "+" + usuario.Host + "+" + usuario.Estado);
             }
             catch
             {
@@ -93,9 +94,9 @@ namespace Negocio
         }
 
 
-        private void ModificarEstadoBaseLocal(string usuario,string contraseña)
+        private void ModificarContraseñaEstadoBaseLocal(string usuario,string contraseña)
         {
-            string docPath = @"C:\Users\agusc\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\UsuariosLocales.txt";
+            string docPath = @"C:\Users\USUARIOSISTEMA\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\UsuariosLocales.txt";
             string nombreUsuarioSistema = Environment.UserName;
             string docPathAdaptado = docPath.Replace("USUARIOSISTEMA", nombreUsuarioSistema);
 
@@ -126,12 +127,11 @@ namespace Negocio
                         string fechaNacimiento = vector[7];
                         string fechaBaja = vector[8];
                         string fechaUltAct = vector[9];
-                        string nombreUsuario = vector[10];
                         string tipoUsuario = vector[11];
                         string dni = vector[12];
                         string host = vector[14];
 
-                        sw.WriteLine(id + '+' + nombre + '+' + apellido + '+' + direccion + '+' + telefono + '+' + email + '+' + fechaAlta + '+' + fechaNacimiento + '+' + fechaBaja + '+' + fechaUltAct + '+' + nombreUsuario + '+' + tipoUsuario + '+' + dni + '+' + contraseña + '+' + host + "+ACTIVO");
+                        sw.WriteLine(id + '+' + nombre + '+' + apellido + '+' + direccion + '+' + telefono + '+' + email + '+' + fechaAlta + '+' + fechaNacimiento + '+' + fechaBaja + '+' + fechaUltAct + '+' + usuario + '+' + tipoUsuario + '+' + dni + '+' + contraseña + '+' + host + "+ACTIVO");
 
                     }
                     catch { Console.WriteLine("Error");  }
@@ -149,7 +149,7 @@ namespace Negocio
 
         public void ModificarEstadoBaseLocal(Guid idUsuario)
         {
-            string docPath = @"C:\Users\agusc\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\UsuariosLocales.txt";
+            string docPath = @"C:\Users\USUARIOSISTEMA\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\UsuariosLocales.txt";
             string nombreUsuarioSistema = Environment.UserName;
             string docPathAdaptado = docPath.Replace("USUARIOSISTEMA", nombreUsuarioSistema);
 

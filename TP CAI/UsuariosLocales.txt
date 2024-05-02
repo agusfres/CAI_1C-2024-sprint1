@@ -1,7 +1,8 @@
-2d524fee-356d-4d34-b550-1b213727e455+Pepito+Gomez+kjsfkssfbk 1234+1524225453+csdcsfs@jejkfb+4/27/2024 3:18:13 PM+10/30/2001 12:00:00 AM+++joseluis+3+45654654+Prueba555!+1+INACTIVO
-b1f93a9c-3e74-4432-bcd2-ffe067c70da4+Pablo+Perez+afjhahfgd 55212+26656645+kvjhsdkjbs@nvdjnd+4/27/2024 3:19:53 PM+10/20/2000 12:00:00 AM+++pabpe1234+1+46546256+Prueba555!+1+INACTIVO
-43017342-1967-4228-b690-e2b7785c61a8+Catalina+Alvarez+faasddsfd 8585+566544564+hsjhfdgah@jsfhjskhj+4/27/2024 3:44:24 PM+5/20/1980 12:00:00 AM+++catprueb+1+44454565+Prueba555!+1+INACTIVO
-43017342-1967-4228-b690-e2b7785c61a8+Catalina+Alvarez+faasddsfd 8585+566544564+hsjhfdgah@jsfhjskhj+4/27/2024 3:44:24 PM+5/20/1980 12:00:00 AM+++Tomavinos+1+44454565+Prueba555!+1+INACTIVO
-43017342-1967-4228-b690-e2b7785c61a8+Peppa+Pig+faasddsfd 8585+566544564+hsjhfdgah@jsfhjskhj+4/27/2024 3:44:24 PM+5/20/1980 12:00:00 AM+++peppapig+1+44454565+Prueba555!+1+ACTIVO
-43017342-1967-4228-b690-e2b7785c61a8+Peppa+Pig+faasddsfd 8585+566544564+hsjhfdgah@jsfhjskhj+4/27/2024 3:44:24 PM+5/20/1980 12:00:00 AM+++peppapighija+1+44454565+Prueba555!+1+ACTIVO
-
+2d524fee-356d-4d34-b550-1b213727e455+Pepito+Gomez+kjsfkssfbk 1234+1524225453+csdcsfs@jejkfb+4/27/2024 3:18:13 PM+10/30/2001 12:00:00 AM+null+null+joseluis+3+45654654+Prueba555!+1+INACTIVO
+b1f93a9c-3e74-4432-bcd2-ffe067c70da4+Pablo+Perez+afjhahfgd 55212+26656645+kvjhsdkjbs@nvdjnd+4/27/2024 3:19:53 PM+10/20/2000 12:00:00 AM+null+null+pabpe1234+1+46546256+Prueba555!+1+INACTIVO
+43017342-1967-4228-b690-e2b7785c61a8+Catalina+Alvarez+faasddsfd 8585+566544564+hsjhfdgah@jsfhjskhj+4/27/2024 3:44:24 PM+5/20/1980 12:00:00 AM+null+null+catprueb+1+44454565+Prueba555!+1+INACTIVO
+43017342-1967-4228-b690-e2b7785c61a8+Catalina+Alvarez+faasddsfd 8585+566544564+hsjhfdgah@jsfhjskhj+4/27/2024 3:44:24 PM+5/20/1980 12:00:00 AM+null+null+Tomavinos+1+44454565+Prueba555!+1+INACTIVO
+43017342-1967-4228-b690-e2b7785c61a8+Peppa+Pig+faasddsfd 8585+566544564+hsjhfdgah@jsfhjskhj+4/27/2024 3:44:24 PM+5/20/1980 12:00:00 AM+null+null+peppapig+1+44454565+Prueba555!+1+ACTIVO
+43017342-1967-4228-b690-e2b7785c61a8+Peppa+Pig+faasddsfd 8585+566544564+hsjhfdgah@jsfhjskhj+4/27/2024 3:44:24 PM+5/20/1980 12:00:00 AM+null+null+peppapighija+1+44454565+Prueba555!+1+ACTIVO
+d51c1ce7-4f06-46ab-9c01-927a0b5afa88+uhfuhewf+jhfkjsdfkds+ahgdfsghhjsdf 4566+12548796+sbhdhds@sjfhkjhsf+5/2/2024 7:43:43 PM+2/28/1999 12:00:00 AM+null+null+peppapigtia+1+45465465+CAI20232+1+ACTIVO
+d51c1ce7-4f06-46ab-9c01-927a0b5afa88+uhfuhewf+jhfkjsdfkds+ahgdfsghhjsdf 4566+12548796+sbhdhds@sjfhkjhsf+5/2/2024 7:43:43 PM+2/28/1999 12:00:00 AM+null+null+peppapigpadre+1+45465465+Prueba555!+1+INACTIVO
