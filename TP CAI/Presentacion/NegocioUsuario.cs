@@ -62,6 +62,7 @@ namespace Negocio
         {
             BajaUsuario bajaUsuario = new BajaUsuario(idUsuario, idAdministrador);
             usuarioService.BorrarUsuario(bajaUsuario);
+            ModificarEstadoBaseLocal(idUsuario);
         }
 
 
@@ -74,10 +75,10 @@ namespace Negocio
 
         private void AgregarUsuarioBaseLocal(Usuario usuario)
         {
-            string docPath = @"C:\Users\USUARIOSISTEMA\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\UsuariosLocales.txt";
+            string docPath = @"C:\Users\agusc\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\UsuariosLocales.txt";
             string nombreUsuarioSistema = Environment.UserName;
             string docPathAdaptado = docPath.Replace("USUARIOSISTEMA", nombreUsuarioSistema);
-
+           
             StreamWriter writer = new StreamWriter(docPathAdaptado, true);
 
             try
@@ -94,7 +95,7 @@ namespace Negocio
 
         private void ModificarEstadoBaseLocal(string usuario,string contraseña)
         {
-            string docPath = @"C:\Users\USUARIOSISTEMA\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\UsuariosLocales.txt";
+            string docPath = @"C:\Users\agusc\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\UsuariosLocales.txt";
             string nombreUsuarioSistema = Environment.UserName;
             string docPathAdaptado = docPath.Replace("USUARIOSISTEMA", nombreUsuarioSistema);
 
@@ -144,5 +145,61 @@ namespace Negocio
             // Borra el archivo temporal
             System.IO.File.Delete(tempPath);
         }
-    }
+
+
+        public void ModificarEstadoBaseLocal(Guid idUsuario)
+        {
+            string docPath = @"C:\Users\agusc\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\UsuariosLocales.txt";
+            string nombreUsuarioSistema = Environment.UserName;
+            string docPathAdaptado = docPath.Replace("USUARIOSISTEMA", nombreUsuarioSistema);
+
+            string tempPath = Path.GetTempFileName(); // Ruta temporal para escribir el contenido actualizado
+
+            StreamReader sr = new StreamReader(docPathAdaptado);
+            StreamWriter sw = new StreamWriter(tempPath);
+            string linea;
+            while ((linea = sr.ReadLine()) != null)
+            {
+                string[] vector = linea.Split('+');
+                // Si la línea actual no coincide con la línea que deseas eliminar, escríbela en el archivo temporal
+                if (vector[0] != idUsuario.ToString())
+                {
+                    sw.WriteLine(linea);
+                }
+                else
+                {
+                    try
+                    {
+                        string id = vector[0];
+                        string nombre = vector[1];
+                        string apellido = vector[2];
+                        string direccion = vector[3];
+                        string telefono = vector[4];
+                        string email = vector[5];
+                        string fechaAlta = vector[6];
+                        string fechaNacimiento = vector[7];
+                        string fechaBaja = vector[8];
+                        string fechaUltAct = vector[9];
+                        string nombreUsuario = vector[10];
+                        string tipoUsuario = vector[11];
+                        string dni = vector[12];
+                        string contraseña = vector[13];
+                        string host = vector[14];
+
+                        sw.WriteLine(id + '+' + nombre + '+' + apellido + '+' + direccion + '+' + telefono + '+' + email + '+' + fechaAlta + '+' + fechaNacimiento + '+' + fechaBaja + '+' + fechaUltAct + '+' + nombreUsuario + '+' + tipoUsuario + '+' + dni + '+' + contraseña + '+' + host + "+INACTIVO");
+
+                    }
+                    catch { Console.WriteLine("Error"); }
+                }
+            }
+            sw.Close();
+            sr.Close();
+            // Reemplaza el archivo original con el archivo temporal
+            System.IO.File.Delete(docPathAdaptado);
+            System.IO.File.Move(tempPath, docPathAdaptado);
+            // Borra el archivo temporal
+            System.IO.File.Delete(tempPath);
+        }
+
+    }
 }

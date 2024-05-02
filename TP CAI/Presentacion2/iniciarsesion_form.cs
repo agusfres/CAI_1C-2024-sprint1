@@ -95,7 +95,17 @@ namespace Presentacion2
                         lblMensajeInicioSesion.Text = "Se inactivará el usuario";
                         lblErroresRestantes.ForeColor = Color.Red;
                         lblErroresRestantes.Text = "Agotaste los 3 intentos";
-                        // Queda pendiente inactivar el usuario
+                        
+                        NegocioUsuario negocio = new NegocioUsuario();
+                        Usuario usuario = negocio.BuscarUsuario(nombreUsuarioActual);
+                        if (usuario != null)
+                        {
+                            negocio.ModificarEstadoBaseLocal(usuario.Id);
+                        }
+                        else
+                        {
+                            lblMensajeInicioSesion.Text = "Debe ingresar un nombre de usuario existente";
+                        }
                         await Task.Delay(3000);
                         LimpiarCampos();
                     }
