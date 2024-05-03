@@ -66,36 +66,41 @@ namespace Presentacion2
 
                     Usuario usuario = negocioUsuario.BuscarUsuarioBaseLocal(nombreUsuarioActual);
 
-                    if (usuario.Contraseña != "CAI20232" && usuario != null)
+                    this.Hide();
+
+                    if (usuario == null)
                     {
-                        this.Hide();
-                        cambiocontra_form cambiocontra_ = new cambiocontra_form(nombreUsuarioActual);
-                        cambiocontra_.Show();
-                        
+                        // El usuario fue creado desde Swagger pero no desde la aplicación, entonces no está en el txt local, y el web service guarda los tipos de usuario como 0 (no existe ese)
+                        admin_menu_form admin_menu = new admin_menu_form();
+                        admin_menu.Show();
                     }
                     else
                     {
-                        int tipoUsuario = usuario.TipoUsuario;
-                        this.Hide();
-                        if (tipoUsuario == 0) //CAMBIAR!!!!
+                        if (usuario.Contraseña != "CAI20232")
                         {
-                            admin_menu_form admin_menu = new admin_menu_form();
-                            admin_menu.Show();
+                            cambiocontra_form cambiocontra_ = new cambiocontra_form(nombreUsuarioActual);
+                            cambiocontra_.Show();
                         }
-                        else if (tipoUsuario == 2)
+                        else
                         {
-                            this.Hide();
-                            supervisor_menu_form supervisor_menu = new supervisor_menu_form();
-                            supervisor_menu.Show();
-                        }
-                        else // El web service los guarda como 0 a todos
-                        {
-                            vendedor_menu_form vendedor_menu = new vendedor_menu_form();
-                            vendedor_menu.Show();
+                            int tipoUsuario = usuario.TipoUsuario;
+                            if (tipoUsuario == 3)
+                            {
+                                admin_menu_form admin_menu = new admin_menu_form();
+                                admin_menu.Show();
+                            }
+                            else if (tipoUsuario == 2)
+                            {
+                                supervisor_menu_form supervisor_menu = new supervisor_menu_form();
+                                supervisor_menu.Show();
+                            }
+                            else
+                            {
+                                vendedor_menu_form vendedor_menu = new vendedor_menu_form();
+                                vendedor_menu.Show();
+                            }
                         }
                     }
-
-
                 }
                 catch (Exception ex)
                 {

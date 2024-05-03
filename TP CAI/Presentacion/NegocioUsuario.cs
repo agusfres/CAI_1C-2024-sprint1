@@ -21,6 +21,7 @@ namespace Negocio
     {
         private UsuarioService usuarioService = new UsuarioService();
         private Guid idAdministrador = Guid.Parse("70b37dc1-8fde-4840-be47-9ababd0ee7e5");
+        string rutaLocal = @"C:\Users\USUARIOSISTEMA\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\UsuariosLocales.txt";
 
 
         public void AgregarUsuario(string nombre, string apellido, string direccion, string telefono, string email, DateTime fechaNacimiento, string nombreUsuario, int tipoUsuario, int dni, string contraseña)
@@ -71,13 +72,12 @@ namespace Negocio
         {
             UsuarioService.CambiarContraseña(nombreUsuarioActual, contraseñaActual, contraseñaNueva);
             ModificarContraseñaEstadoBaseLocal(nombreUsuarioActual, contraseñaNueva);
-
         }
 
 
         private void AgregarUsuarioBaseLocal(Usuario usuario)
         {
-            string docPath = @"C:\Users\USUARIOSISTEMA\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\UsuariosLocales.txt";
+            string docPath = rutaLocal;
             string nombreUsuarioSistema = Environment.UserName;
             string docPathAdaptado = docPath.Replace("USUARIOSISTEMA", nombreUsuarioSistema);
            
@@ -97,10 +97,9 @@ namespace Negocio
 
         private void ModificarContraseñaEstadoBaseLocal(string usuario,string contraseña)
         {
-            string docPath = @"C:\Users\USUARIOSISTEMA\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\UsuariosLocales.txt";
+            string docPath = rutaLocal;
             string nombreUsuarioSistema = Environment.UserName;
             string docPathAdaptado = docPath.Replace("USUARIOSISTEMA", nombreUsuarioSistema);
-
             string tempPath = Path.GetTempFileName(); // Ruta temporal para escribir el contenido actualizado
 
             StreamReader sr = new StreamReader(docPathAdaptado);
@@ -133,7 +132,6 @@ namespace Negocio
                         string host = vector[14];
 
                         sw.WriteLine(id + '+' + nombre + '+' + apellido + '+' + direccion + '+' + telefono + '+' + email + '+' + fechaAlta + '+' + fechaNacimiento + '+' + fechaBaja + '+' + fechaUltAct + '+' + usuario + '+' + tipoUsuario + '+' + dni + '+' + contraseña + '+' + host + "+ACTIVO");
-
                     }
                     catch { Console.WriteLine("Error");  }
                 }
@@ -150,10 +148,9 @@ namespace Negocio
 
         public void ModificarEstadoBaseLocal(Guid idUsuario)
         {
-            string docPath = @"C:\Users\USUARIOSISTEMA\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\UsuariosLocales.txt";
+            string docPath = rutaLocal;
             string nombreUsuarioSistema = Environment.UserName;
             string docPathAdaptado = docPath.Replace("USUARIOSISTEMA", nombreUsuarioSistema);
-
             string tempPath = Path.GetTempFileName(); // Ruta temporal para escribir el contenido actualizado
 
             StreamReader sr = new StreamReader(docPathAdaptado);
@@ -188,7 +185,6 @@ namespace Negocio
                         string host = vector[14];
 
                         sw.WriteLine(id + '+' + nombre + '+' + apellido + '+' + direccion + '+' + telefono + '+' + email + '+' + fechaAlta + '+' + fechaNacimiento + '+' + fechaBaja + '+' + fechaUltAct + '+' + nombreUsuario + '+' + tipoUsuario + '+' + dni + '+' + contraseña + '+' + host + "+INACTIVO");
-
                     }
                     catch { Console.WriteLine("Error"); }
                 }
@@ -204,7 +200,7 @@ namespace Negocio
 
         public Usuario BuscarUsuarioBaseLocal(string nombreUsuario_)
         {
-            string docPath = @"C:\Users\USUARIOSISTEMA\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\UsuariosLocales.txt";
+            string docPath = rutaLocal;
             string nombreUsuarioSistema = Environment.UserName;
             string docPathAdaptado = docPath.Replace("USUARIOSISTEMA", nombreUsuarioSistema);
 
@@ -233,23 +229,25 @@ namespace Negocio
                     string contraseña = vector[13];
                     string host = vector[14];
                     string estado = vector[15];
+
                     Operacion operacion = new Operacion();
                     Guid idTransformado = operacion.TransformarStringGuid(id);
                     DateTime fechaAltaTransformada = operacion.TransformarStringDatetime(fechaAlta);
                     DateTime fechaNacimientoTransformada = operacion.TransformarStringDatetime(fechaNacimiento);
                     DateTime fechaBajaTransformada = operacion.TransformarStringDatetime(fechaBaja);
                     DateTime fechaUltimaActTransformada = operacion.TransformarStringDatetime(fechaUltAct);
+
                     int tipoUsuarioTransformada = operacion.TransformarStringInt(tipoUsuario);
                     int dniTransformada = operacion.TransformarStringInt(dni);
                     int hostTransformada = operacion.TransformarStringInt(host);
-                    Usuario usuario = new Usuario(idTransformado, nombre, apellido, direccion, telefono, email, fechaAltaTransformada, fechaNacimientoTransformada, fechaBajaTransformada, fechaUltimaActTransformada, nombreUsuario, tipoUsuarioTransformada, dniTransformada, contraseña, hostTransformada, estado);
 
+                    Usuario usuario = new Usuario(idTransformado, nombre, apellido, direccion, telefono, email, fechaAltaTransformada, fechaNacimientoTransformada, fechaBajaTransformada, fechaUltimaActTransformada, nombreUsuario, tipoUsuarioTransformada, dniTransformada, contraseña, hostTransformada, estado);
+                    sr.Close();
                     return usuario;
                 }
             }
             sr.Close();
             return null;
-
         }
     }
 }

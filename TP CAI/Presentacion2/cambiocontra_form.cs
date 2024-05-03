@@ -45,22 +45,22 @@ namespace Presentacion2
                     LimpiarCampos();
                     Congrats();
 
-                    Usuario usuario = negocioUsuario.BuscarUsuario(nombreUsuarioActual);
-                    
+                    Usuario usuario = negocioUsuario.BuscarUsuarioBaseLocal(nombreUsuarioActual);
+
                     this.Hide();
+
                     int tipoUsuario = usuario.TipoUsuario;
-                    if (tipoUsuario == 0)
+                    if (tipoUsuario == 3)
                     {
                         admin_menu_form admin_menu = new admin_menu_form();
                         admin_menu.Show();
                     }
-                    else if (tipoUsuario == 0)
+                    else if (tipoUsuario == 2)
                     {
-                        this.Hide();
                         supervisor_menu_form supervisor_menu = new supervisor_menu_form();
                         supervisor_menu.Show();
                     }
-                    else // El web service los guarda como 0 a todos
+                    else
                     {
                         vendedor_menu_form vendedor_menu = new vendedor_menu_form();
                         vendedor_menu.Show();
