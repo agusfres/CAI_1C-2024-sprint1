@@ -49,6 +49,7 @@
     <Compile Include="ProveedorService.cs" />
     <Compile Include="UsuarioService.cs" />
     <Compile Include="Utils\WebHelper.cs" />
+    <Compile Include="VentaService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Datos\Datos.csproj">
