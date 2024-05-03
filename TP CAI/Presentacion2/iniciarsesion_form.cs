@@ -43,6 +43,8 @@ namespace Presentacion2
             lblContraseñaError.Text = "";
 
 
+
+
             if ((validador.ValidarVacio(nombreUsuarioActual, "Usuario") != "") || (validador.ValidarVacio(contraseñaActual, "Contraseña") != ""))
             {
                 if (validador.ValidarVacio(nombreUsuarioActual, "Usuario") != "")
@@ -59,12 +61,15 @@ namespace Presentacion2
                 try
                 {
                     Login login = new Login(nombreUsuarioActual, contraseñaActual);
+                    Operacion operacion = new Operacion();
 
                     listaUsuarios = negocioUsuario.TraerUsuariosActivos();
 
                     UsuarioService.Login(login);
 
                     Usuario usuario = negocioUsuario.BuscarUsuarioBaseLocal(nombreUsuarioActual);
+                    TimeSpan diferencia = (TimeSpan)(DateTime.Now - usuario.FechaUltimaAct);
+                    MessageBox.Show(diferencia.ToString());
 
                     this.Hide();
 
@@ -78,6 +83,12 @@ namespace Presentacion2
                     {
                         if (usuario.Contraseña != "CAI20232")
                         {
+                            cambiocontra_form cambiocontra_ = new cambiocontra_form(nombreUsuarioActual);
+                            cambiocontra_.Show();
+                        }
+                        else if(diferencia.Days >= 30)
+                        {
+                            negocioUsuario.ModificarEstadoBaseLocal(usuario.Id);
                             cambiocontra_form cambiocontra_ = new cambiocontra_form(nombreUsuarioActual);
                             cambiocontra_.Show();
                         }

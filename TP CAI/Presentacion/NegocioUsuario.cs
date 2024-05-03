@@ -126,7 +126,7 @@ namespace Negocio
                         string fechaAlta = vector[6];
                         string fechaNacimiento = vector[7];
                         string fechaBaja = vector[8];
-                        string fechaUltAct = vector[9];
+                        string fechaUltAct = DateTime.Now.ToString();
                         string tipoUsuario = vector[11];
                         string dni = vector[12];
                         string host = vector[14];
