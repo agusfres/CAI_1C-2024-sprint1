@@ -68,7 +68,7 @@
             this.btnVenta.OnHoverTextColor = System.Drawing.Color.Gray;
             this.btnVenta.Size = new System.Drawing.Size(323, 41);
             this.btnVenta.TabIndex = 36;
-            this.btnVenta.Text = "VENTA";
+            this.btnVenta.Text = "REGISTRAR VENTA";
             this.btnVenta.TextColor = System.Drawing.Color.Gray;
             this.btnVenta.UseVisualStyleBackColor = false;
             // 

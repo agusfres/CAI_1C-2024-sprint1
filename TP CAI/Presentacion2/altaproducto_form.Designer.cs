@@ -30,12 +30,8 @@
         {
             this.linkLabelVolver = new System.Windows.Forms.LinkLabel();
             this.lblTitulo = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnConfirmar = new ePOSOne.btnProduct.Button_WOC();
             this.lblErrorContraseña = new System.Windows.Forms.Label();
-            this.lblErrorStock = new System.Windows.Forms.Label();
-            this.txtstock = new System.Windows.Forms.TextBox();
-            this.lblStock = new System.Windows.Forms.Label();
             this.lblErrorprecio = new System.Windows.Forms.Label();
             this.txtprecio = new System.Windows.Forms.TextBox();
             this.lblDNI = new System.Windows.Forms.Label();
@@ -45,6 +41,10 @@
             this.lblNombre = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblStock = new System.Windows.Forms.Label();
+            this.txtstock = new System.Windows.Forms.TextBox();
+            this.lblErrorStock = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,16 +76,6 @@
             this.lblTitulo.TabIndex = 33;
             this.lblTitulo.Text = "AGREGAR UN NUEVO PRODUCTO";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Presentacion2.Properties.Resources.New_Project__4___1_;
-            this.pictureBox1.Location = new System.Drawing.Point(-5, -45);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(679, 411);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 56;
-            this.pictureBox1.TabStop = false;
-            // 
             // btnConfirmar
             // 
             this.btnConfirmar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -115,35 +105,6 @@
             this.lblErrorContraseña.Name = "lblErrorContraseña";
             this.lblErrorContraseña.Size = new System.Drawing.Size(0, 13);
             this.lblErrorContraseña.TabIndex = 83;
-            // 
-            // lblErrorStock
-            // 
-            this.lblErrorStock.AutoSize = true;
-            this.lblErrorStock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.lblErrorStock.ForeColor = System.Drawing.Color.Red;
-            this.lblErrorStock.Location = new System.Drawing.Point(377, 180);
-            this.lblErrorStock.Name = "lblErrorStock";
-            this.lblErrorStock.Size = new System.Drawing.Size(0, 13);
-            this.lblErrorStock.TabIndex = 68;
-            // 
-            // txtstock
-            // 
-            this.txtstock.Location = new System.Drawing.Point(378, 154);
-            this.txtstock.Name = "txtstock";
-            this.txtstock.Size = new System.Drawing.Size(253, 20);
-            this.txtstock.TabIndex = 67;
-            // 
-            // lblStock
-            // 
-            this.lblStock.AutoSize = true;
-            this.lblStock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.lblStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStock.ForeColor = System.Drawing.Color.DimGray;
-            this.lblStock.Location = new System.Drawing.Point(378, 132);
-            this.lblStock.Name = "lblStock";
-            this.lblStock.Size = new System.Drawing.Size(117, 18);
-            this.lblStock.TabIndex = 66;
-            this.lblStock.Text = "Stock disponible";
             // 
             // lblErrorprecio
             // 
@@ -238,6 +199,45 @@
             this.label1.TabIndex = 87;
             this.label1.Text = "ID Categoría";
             // 
+            // lblStock
+            // 
+            this.lblStock.AutoSize = true;
+            this.lblStock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStock.ForeColor = System.Drawing.Color.DimGray;
+            this.lblStock.Location = new System.Drawing.Point(378, 132);
+            this.lblStock.Name = "lblStock";
+            this.lblStock.Size = new System.Drawing.Size(117, 18);
+            this.lblStock.TabIndex = 66;
+            this.lblStock.Text = "Stock disponible";
+            // 
+            // txtstock
+            // 
+            this.txtstock.Location = new System.Drawing.Point(378, 154);
+            this.txtstock.Name = "txtstock";
+            this.txtstock.Size = new System.Drawing.Size(253, 20);
+            this.txtstock.TabIndex = 67;
+            // 
+            // lblErrorStock
+            // 
+            this.lblErrorStock.AutoSize = true;
+            this.lblErrorStock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblErrorStock.ForeColor = System.Drawing.Color.Red;
+            this.lblErrorStock.Location = new System.Drawing.Point(377, 180);
+            this.lblErrorStock.Name = "lblErrorStock";
+            this.lblErrorStock.Size = new System.Drawing.Size(0, 13);
+            this.lblErrorStock.TabIndex = 68;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Presentacion2.Properties.Resources.New_Project__4___1_;
+            this.pictureBox1.Location = new System.Drawing.Point(-5, -45);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(679, 411);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 56;
+            this.pictureBox1.TabStop = false;
+            // 
             // altaproducto_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -275,9 +275,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private ePOSOne.btnProduct.Button_WOC btnConfirmar;
         private System.Windows.Forms.Label lblErrorContraseña;
-        private System.Windows.Forms.Label lblErrorStock;
-        private System.Windows.Forms.TextBox txtstock;
-        private System.Windows.Forms.Label lblStock;
         private System.Windows.Forms.Label lblErrorprecio;
         private System.Windows.Forms.TextBox txtprecio;
         private System.Windows.Forms.Label lblDNI;
@@ -287,5 +284,8 @@
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.ComboBox comboBox1;
         public System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblStock;
+        private System.Windows.Forms.TextBox txtstock;
+        private System.Windows.Forms.Label lblErrorStock;
     }
 }

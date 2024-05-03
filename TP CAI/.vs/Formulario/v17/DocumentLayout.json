@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\agust\\Downloads\\FACULTAD\\2024\\cai\\TPCAI\\CAI_1C-2024-sprint1\\TP CAI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6B9E809C-9635-42CF-920E-0FE31234C213}|Presentacion2\\Presentacion2.csproj|c:\\users\\agust\\downloads\\facultad\\2024\\cai\\tpcai\\cai_1c-2024-sprint1\\tp cai\\presentacion2\\admin_menu_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6B9E809C-9635-42CF-920E-0FE31234C213}|Presentacion2\\Presentacion2.csproj|solutionrelative:presentacion2\\admin_menu_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{6B9E809C-9635-42CF-920E-0FE31234C213}|Presentacion2\\Presentacion2.csproj|c:\\users\\agust\\downloads\\facultad\\2024\\cai\\tpcai\\cai_1c-2024-sprint1\\tp cai\\presentacion2\\supervisor_menu_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B9E809C-9635-42CF-920E-0FE31234C213}|Presentacion2\\Presentacion2.csproj|solutionrelative:presentacion2\\supervisor_menu_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6B9E809C-9635-42CF-920E-0FE31234C213}|Presentacion2\\Presentacion2.csproj|c:\\users\\agust\\downloads\\facultad\\2024\\cai\\tpcai\\cai_1c-2024-sprint1\\tp cai\\presentacion2\\supervisor_menu_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{6B9E809C-9635-42CF-920E-0FE31234C213}|Presentacion2\\Presentacion2.csproj|c:\\users\\agust\\downloads\\facultad\\2024\\cai\\tpcai\\cai_1c-2024-sprint1\\tp cai\\presentacion2\\vendedor_registarventa_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B9E809C-9635-42CF-920E-0FE31234C213}|Presentacion2\\Presentacion2.csproj|solutionrelative:presentacion2\\vendedor_registarventa_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B9E809C-9635-42CF-920E-0FE31234C213}|Presentacion2\\Presentacion2.csproj|C:\\Users\\agust\\Downloads\\FACULTAD\\2024\\cai\\TPCAI\\CAI_1C-2024-sprint1\\TP CAI\\presentacion2\\supervisor_menu_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{6B9E809C-9635-42CF-920E-0FE31234C213}|Presentacion2\\Presentacion2.csproj|solutionrelative:presentacion2\\supervisor_menu_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6B9E809C-9635-42CF-920E-0FE31234C213}|Presentacion2\\Presentacion2.csproj|c:\\users\\agust\\downloads\\facultad\\2024\\cai\\tpcai\\cai_1c-2024-sprint1\\tp cai\\presentacion2\\vendedor_menu_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6B9E809C-9635-42CF-920E-0FE31234C213}|Presentacion2\\Presentacion2.csproj|solutionrelative:presentacion2\\vendedor_menu_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{6B9E809C-9635-42CF-920E-0FE31234C213}|Presentacion2\\Presentacion2.csproj|c:\\users\\agust\\downloads\\facultad\\2024\\cai\\tpcai\\cai_1c-2024-sprint1\\tp cai\\presentacion2\\supervisor_devolucion_venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6B9E809C-9635-42CF-920E-0FE31234C213}|Presentacion2\\Presentacion2.csproj|solutionrelative:presentacion2\\supervisor_devolucion_venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B9E809C-9635-42CF-920E-0FE31234C213}|Presentacion2\\Presentacion2.csproj|c:\\users\\agust\\downloads\\facultad\\2024\\cai\\tpcai\\cai_1c-2024-sprint1\\tp cai\\presentacion2\\admin_baja_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6B9E809C-9635-42CF-920E-0FE31234C213}|Presentacion2\\Presentacion2.csproj|solutionrelative:presentacion2\\admin_baja_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,18 +47,56 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "admin_menu_form.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\agust\\Downloads\\FACULTAD\\2024\\cai\\TPCAI\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion2\\admin_menu_form.cs",
-              "RelativeDocumentMoniker": "Presentacion2\\admin_menu_form.cs",
-              "ToolTip": "C:\\Users\\agust\\Downloads\\FACULTAD\\2024\\cai\\TPCAI\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion2\\admin_menu_form.cs [Design]",
-              "RelativeToolTip": "Presentacion2\\admin_menu_form.cs [Design]",
+              "Title": "supervisor_menu_form.cs",
+              "DocumentMoniker": "C:\\Users\\agust\\Downloads\\FACULTAD\\2024\\cai\\TPCAI\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion2\\supervisor_menu_form.cs",
+              "RelativeDocumentMoniker": "Presentacion2\\supervisor_menu_form.cs",
+              "ToolTip": "C:\\Users\\agust\\Downloads\\FACULTAD\\2024\\cai\\TPCAI\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion2\\supervisor_menu_form.cs",
+              "RelativeToolTip": "Presentacion2\\supervisor_menu_form.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAtwCYAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T19:03:11.396Z",
+              "WhenOpened": "2024-05-03T19:27:03.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "supervisor_devolucion_venta.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\agust\\Downloads\\FACULTAD\\2024\\cai\\TPCAI\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion2\\supervisor_devolucion_venta.cs",
+              "RelativeDocumentMoniker": "Presentacion2\\supervisor_devolucion_venta.cs",
+              "ToolTip": "C:\\Users\\agust\\Downloads\\FACULTAD\\2024\\cai\\TPCAI\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion2\\supervisor_devolucion_venta.cs [Design]",
+              "RelativeToolTip": "Presentacion2\\supervisor_devolucion_venta.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T19:24:51.549Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "admin_baja_form.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\agust\\Downloads\\FACULTAD\\2024\\cai\\TPCAI\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion2\\admin_baja_form.cs",
+              "RelativeDocumentMoniker": "Presentacion2\\admin_baja_form.cs",
+              "ToolTip": "C:\\Users\\agust\\Downloads\\FACULTAD\\2024\\cai\\TPCAI\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion2\\admin_baja_form.cs [Design]",
+              "RelativeToolTip": "Presentacion2\\admin_baja_form.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T19:24:12.291Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "vendedor_registarventa_form.cs",
+              "DocumentMoniker": "C:\\Users\\agust\\Downloads\\FACULTAD\\2024\\cai\\TPCAI\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion2\\vendedor_registarventa_form.cs",
+              "RelativeDocumentMoniker": "Presentacion2\\vendedor_registarventa_form.cs",
+              "ToolTip": "C:\\Users\\agust\\Downloads\\FACULTAD\\2024\\cai\\TPCAI\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion2\\vendedor_registarventa_form.cs",
+              "RelativeToolTip": "Presentacion2\\vendedor_registarventa_form.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAEwBUAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T19:14:18.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "supervisor_menu_form.cs [Design]",
               "DocumentMoniker": "C:\\Users\\agust\\Downloads\\FACULTAD\\2024\\cai\\TPCAI\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion2\\supervisor_menu_form.cs",
               "RelativeDocumentMoniker": "Presentacion2\\supervisor_menu_form.cs",
@@ -58,18 +104,6 @@
               "RelativeToolTip": "Presentacion2\\supervisor_menu_form.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-03T18:11:37.853Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "vendedor_menu_form.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\agust\\Downloads\\FACULTAD\\2024\\cai\\TPCAI\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion2\\vendedor_menu_form.cs",
-              "RelativeDocumentMoniker": "Presentacion2\\vendedor_menu_form.cs",
-              "ToolTip": "C:\\Users\\agust\\Downloads\\FACULTAD\\2024\\cai\\TPCAI\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion2\\vendedor_menu_form.cs [Design]",
-              "RelativeToolTip": "Presentacion2\\vendedor_menu_form.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T18:05:41.793Z",
               "EditorCaption": " [Design]"
             }
           ]

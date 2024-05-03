@@ -31,5 +31,12 @@ namespace Presentacion2
             iniciarsesion_form iniciarsesion_Form = new iniciarsesion_form();
             iniciarsesion_Form.Show();
         }
+
+        private void btnDevolucion_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            supervisor_devolucion_venta supervisor_Devolucion_Venta = new supervisor_devolucion_venta();
+            supervisor_Devolucion_Venta.Show();
+        }
     }
 }

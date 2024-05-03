@@ -77,9 +77,10 @@
             this.btnDevolucion.OnHoverTextColor = System.Drawing.Color.Gray;
             this.btnDevolucion.Size = new System.Drawing.Size(323, 41);
             this.btnDevolucion.TabIndex = 37;
-            this.btnDevolucion.Text = "DEVOLUCIÓN";
+            this.btnDevolucion.Text = "DEVOLVER VENTA";
             this.btnDevolucion.TextColor = System.Drawing.Color.Gray;
             this.btnDevolucion.UseVisualStyleBackColor = false;
+            this.btnDevolucion.Click += new System.EventHandler(this.btnDevolucion_Click);
             // 
             // btnReporteVentas
             // 
