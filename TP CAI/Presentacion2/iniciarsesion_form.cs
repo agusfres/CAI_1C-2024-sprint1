@@ -64,26 +64,38 @@ namespace Presentacion2
 
                     UsuarioService.Login(login);
 
-                    Usuario usuario = negocioUsuario.BuscarUsuario(nombreUsuarioActual);
+                    Usuario usuario = negocioUsuario.BuscarUsuarioBaseLocal(nombreUsuarioActual);
 
-                    int tipoUsuario = usuario.TipoUsuario;
-                    this.Hide();
-                    if (tipoUsuario == 0) //CAMBIAR!!!!
-                    {
-                        admin_menu_form admin_menu = new admin_menu_form();
-                        admin_menu.Show();
-                    }
-                    else if (tipoUsuario == 2)
+                    if (usuario.Contraseña != "CAI20232" && usuario != null)
                     {
                         this.Hide();
-                        supervisor_menu_form supervisor_menu = new supervisor_menu_form();
-                        supervisor_menu.Show();
+                        cambiocontra_form cambiocontra_ = new cambiocontra_form(nombreUsuarioActual);
+                        cambiocontra_.Show();
+                        
                     }
-                    else // El web service los guarda como 0 a todos
+                    else
                     {
-                        vendedor_menu_form vendedor_menu = new vendedor_menu_form();
-                        vendedor_menu.Show();
+                        int tipoUsuario = usuario.TipoUsuario;
+                        this.Hide();
+                        if (tipoUsuario == 0) //CAMBIAR!!!!
+                        {
+                            admin_menu_form admin_menu = new admin_menu_form();
+                            admin_menu.Show();
+                        }
+                        else if (tipoUsuario == 2)
+                        {
+                            this.Hide();
+                            supervisor_menu_form supervisor_menu = new supervisor_menu_form();
+                            supervisor_menu.Show();
+                        }
+                        else // El web service los guarda como 0 a todos
+                        {
+                            vendedor_menu_form vendedor_menu = new vendedor_menu_form();
+                            vendedor_menu.Show();
+                        }
                     }
+
+
                 }
                 catch (Exception ex)
                 {

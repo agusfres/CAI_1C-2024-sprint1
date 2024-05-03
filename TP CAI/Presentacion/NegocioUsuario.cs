@@ -12,7 +12,8 @@ using Datos;
 using Persistencia;
 using static System.Net.Mime.MediaTypeNames;
 using static System.Net.WebRequestMethods;
-
+using Negocio;
+using Presentacion;
 
 namespace Negocio
 {
@@ -76,7 +77,7 @@ namespace Negocio
 
         private void AgregarUsuarioBaseLocal(Usuario usuario)
         {
-            string docPath = @"C:\Users\USUARIOSISTEMA\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\UsuariosLocales.txt";
+            string docPath = @"C:\Users\USUARIOSISTEMA\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\UsuariosLocales.txt";
             string nombreUsuarioSistema = Environment.UserName;
             string docPathAdaptado = docPath.Replace("USUARIOSISTEMA", nombreUsuarioSistema);
            
@@ -96,7 +97,7 @@ namespace Negocio
 
         private void ModificarContraseñaEstadoBaseLocal(string usuario,string contraseña)
         {
-            string docPath = @"C:\Users\USUARIOSISTEMA\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\UsuariosLocales.txt";
+            string docPath = @"C:\Users\USUARIOSISTEMA\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\UsuariosLocales.txt";
             string nombreUsuarioSistema = Environment.UserName;
             string docPathAdaptado = docPath.Replace("USUARIOSISTEMA", nombreUsuarioSistema);
 
@@ -149,7 +150,7 @@ namespace Negocio
 
         public void ModificarEstadoBaseLocal(Guid idUsuario)
         {
-            string docPath = @"C:\Users\USUARIOSISTEMA\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\UsuariosLocales.txt";
+            string docPath = @"C:\Users\USUARIOSISTEMA\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\UsuariosLocales.txt";
             string nombreUsuarioSistema = Environment.UserName;
             string docPathAdaptado = docPath.Replace("USUARIOSISTEMA", nombreUsuarioSistema);
 
@@ -201,5 +202,54 @@ namespace Negocio
             System.IO.File.Delete(tempPath);
         }
 
+        public Usuario BuscarUsuarioBaseLocal(string nombreUsuario_)
+        {
+            string docPath = @"C:\Users\USUARIOSISTEMA\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\UsuariosLocales.txt";
+            string nombreUsuarioSistema = Environment.UserName;
+            string docPathAdaptado = docPath.Replace("USUARIOSISTEMA", nombreUsuarioSistema);
+
+            StreamReader sr = new StreamReader(docPathAdaptado);
+            string linea;
+
+            while ((linea = sr.ReadLine()) != null)
+            {
+                string[] vector = linea.Split('+');
+                // Si la línea actual no coincide con la línea que deseas eliminar, escríbela en el archivo temporal
+                if (vector[10] == nombreUsuario_)
+                {
+                    string id = vector[0];
+                    string nombre = vector[1];
+                    string apellido = vector[2];
+                    string direccion = vector[3];
+                    string telefono = vector[4];
+                    string email = vector[5];
+                    string fechaAlta = vector[6];
+                    string fechaNacimiento = vector[7];
+                    string fechaBaja = vector[8];
+                    string fechaUltAct = vector[9];
+                    string nombreUsuario = vector[10];
+                    string tipoUsuario = vector[11];
+                    string dni = vector[12];
+                    string contraseña = vector[13];
+                    string host = vector[14];
+                    string estado = vector[15];
+                    Operacion operacion = new Operacion();
+                    Guid idTransformado = operacion.TransformarStringGuid(id);
+                    DateTime fechaAltaTransformada = operacion.TransformarStringDatetime(fechaAlta);
+                    DateTime fechaNacimientoTransformada = operacion.TransformarStringDatetime(fechaNacimiento);
+                    DateTime fechaBajaTransformada = operacion.TransformarStringDatetime(fechaBaja);
+                    DateTime fechaUltimaActTransformada = operacion.TransformarStringDatetime(fechaUltAct);
+                    int tipoUsuarioTransformada = operacion.TransformarStringInt(tipoUsuario);
+                    int dniTransformada = operacion.TransformarStringInt(dni);
+                    int hostTransformada = operacion.TransformarStringInt(host);
+                    Usuario usuario = new Usuario(idTransformado, nombre, apellido, direccion, telefono, email, fechaAltaTransformada, fechaNacimientoTransformada, fechaBajaTransformada, fechaUltimaActTransformada, nombreUsuario, tipoUsuarioTransformada, dniTransformada, contraseña, hostTransformada, estado);
+
+                    return usuario;
+                }
+            }
+            sr.Close();
+            return null;
+
+        }
     }
 }
