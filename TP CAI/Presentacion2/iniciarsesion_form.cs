@@ -68,9 +68,7 @@ namespace Presentacion2
                     UsuarioService.Login(login);
 
                     Usuario usuario = negocioUsuario.BuscarUsuarioBaseLocal(nombreUsuarioActual);
-                    TimeSpan diferencia = (TimeSpan)(DateTime.Now - usuario.FechaUltimaAct);
-                    MessageBox.Show(diferencia.ToString());
-
+                    TimeSpan diferencia = DateTime.Now - usuario.FechaUltimaAct.Value;
                     this.Hide();
 
                     if (usuario == null)

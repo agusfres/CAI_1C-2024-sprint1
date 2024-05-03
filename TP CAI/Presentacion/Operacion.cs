@@ -18,11 +18,13 @@ namespace Presentacion
         }
         public DateTime TransformarStringDatetime(string texto)
         {
-            if (DateTime.TryParseExact(texto, "dd/MM/yyyy", null, System.Globalization.DateTimeStyles.None, out DateTime salida))
+            DateTime salida;
+
+            if (DateTime.TryParse(texto, out salida))
             {
                 return salida;
             }
-            return DateTime.Now;
+            return salida;
         }
         public int TransformarStringInt(string texto)
         {
