@@ -58,3 +58,9 @@ C:\Users\Cata\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Datos\obj\De
 C:\Users\Cata\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
 C:\Users\Cata\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Datos\obj\Debug\Datos.dll
 C:\Users\Cata\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Datos\obj\Debug\Datos.pdb
+C:\Users\agusc\OneDrive\Documents\GitHub\CAI_1C-2024-sprint1\TP CAI\Datos\bin\Debug\Datos.dll
+C:\Users\agusc\OneDrive\Documents\GitHub\CAI_1C-2024-sprint1\TP CAI\Datos\bin\Debug\Datos.pdb
+C:\Users\agusc\OneDrive\Documents\GitHub\CAI_1C-2024-sprint1\TP CAI\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\Users\agusc\OneDrive\Documents\GitHub\CAI_1C-2024-sprint1\TP CAI\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\agusc\OneDrive\Documents\GitHub\CAI_1C-2024-sprint1\TP CAI\Datos\obj\Debug\Datos.dll
+C:\Users\agusc\OneDrive\Documents\GitHub\CAI_1C-2024-sprint1\TP CAI\Datos\obj\Debug\Datos.pdb

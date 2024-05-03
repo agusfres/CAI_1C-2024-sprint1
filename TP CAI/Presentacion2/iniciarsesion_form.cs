@@ -61,14 +61,12 @@ namespace Presentacion2
                 try
                 {
                     Login login = new Login(nombreUsuarioActual, contraseñaActual);
-                    Operacion operacion = new Operacion();
 
                     listaUsuarios = negocioUsuario.TraerUsuariosActivos();
 
                     UsuarioService.Login(login);
 
                     Usuario usuario = negocioUsuario.BuscarUsuarioBaseLocal(nombreUsuarioActual);
-                    TimeSpan diferencia = DateTime.Now - usuario.FechaUltimaAct.Value;
                     this.Hide();
 
                     if (usuario == null)
@@ -84,29 +82,32 @@ namespace Presentacion2
                             cambiocontra_form cambiocontra_ = new cambiocontra_form(nombreUsuarioActual);
                             cambiocontra_.Show();
                         }
-                        else if(diferencia.Days >= 30)
-                        {
-                            negocioUsuario.ModificarEstadoBaseLocal(usuario.Id);
-                            cambiocontra_form cambiocontra_ = new cambiocontra_form(nombreUsuarioActual);
-                            cambiocontra_.Show();
-                        }
                         else
                         {
-                            int tipoUsuario = usuario.TipoUsuario;
-                            if (tipoUsuario == 3)
+                            TimeSpan diferencia = DateTime.Now - usuario.FechaUltimaAct.Value;
+                            if (diferencia.Days >= 30)
                             {
-                                admin_menu_form admin_menu = new admin_menu_form();
-                                admin_menu.Show();
-                            }
-                            else if (tipoUsuario == 2)
-                            {
-                                supervisor_menu_form supervisor_menu = new supervisor_menu_form();
-                                supervisor_menu.Show();
+                                cambiocontra_form cambiocontra_ = new cambiocontra_form(nombreUsuarioActual);
+                                cambiocontra_.Show();
                             }
                             else
                             {
-                                vendedor_menu_form vendedor_menu = new vendedor_menu_form();
-                                vendedor_menu.Show();
+                                int tipoUsuario = usuario.TipoUsuario;
+                                if (tipoUsuario == 3)
+                                {
+                                    admin_menu_form admin_menu = new admin_menu_form();
+                                    admin_menu.Show();
+                                }
+                                else if (tipoUsuario == 2)
+                                {
+                                    supervisor_menu_form supervisor_menu = new supervisor_menu_form();
+                                    supervisor_menu.Show();
+                                }
+                                else
+                                {
+                                    vendedor_menu_form vendedor_menu = new vendedor_menu_form();
+                                    vendedor_menu.Show();
+                                }
                             }
                         }
                     }
