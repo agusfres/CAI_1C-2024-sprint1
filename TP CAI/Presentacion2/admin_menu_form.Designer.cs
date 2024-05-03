@@ -161,6 +161,7 @@
             this.btnGestionarProductos.Text = "GESTIONAR PRODUCTOS";
             this.btnGestionarProductos.TextColor = System.Drawing.Color.Gray;
             this.btnGestionarProductos.UseVisualStyleBackColor = false;
+            this.btnGestionarProductos.Click += new System.EventHandler(this.btnGestionarProductos_Click);
             // 
             // pictureBox1
             // 

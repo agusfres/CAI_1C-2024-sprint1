@@ -40,5 +40,12 @@ namespace Presentacion2
            admin_gestionproveedor_form Admin_gestionproveedor_form = new admin_gestionproveedor_form();
             Admin_gestionproveedor_form.Show();
         }
+
+        private void btnGestionarProductos_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            altaproducto_form altaproducto = new altaproducto_form();
+            altaproducto.Show();
+        }
     }
 }

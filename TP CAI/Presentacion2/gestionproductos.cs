@@ -8,21 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
 namespace Presentacion2
 {
-    public partial class vendedor_menu_form : Form
+    public partial class gestionproductos : Form
     {
-        public vendedor_menu_form()
+        public gestionproductos()
         {
             InitializeComponent();
         }
 
-        private void linkLabelVolver_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void linkLabelCerrarSesion_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            this.Hide();
-            iniciarsesion_form iniciarsesion_Form = new iniciarsesion_form();
-            iniciarsesion_Form.Show();
+            //depende de si es admin o vendedor a donde lo lleva
         }
     }
 }

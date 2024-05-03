@@ -54,6 +54,12 @@
     <Compile Include="admin_gestionproveedor_form.Designer.cs">
       <DependentUpon>admin_gestionproveedor_form.cs</DependentUpon>
     </Compile>
+    <Compile Include="altaproducto_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="altaproducto_form.Designer.cs">
+      <DependentUpon>altaproducto_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Button_WOC.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -80,6 +86,12 @@
     </Compile>
     <Compile Include="admin_edit_proveedor.Designer.cs">
       <DependentUpon>admin_edit_proveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gestionproductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gestionproductos.Designer.cs">
+      <DependentUpon>gestionproductos.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -149,6 +161,12 @@
     <EmbeddedResource Include="admin_bajaproveedor_form.resx">
       <DependentUpon>admin_bajaproveedor_form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="altaproducto_form.resx">
+      <DependentUpon>altaproducto_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gestionproductos.resx">
+      <DependentUpon>gestionproductos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="iniciarsesion_form.resx">
       <DependentUpon>iniciarsesion_form.cs</DependentUpon>
     </EmbeddedResource>
@@ -194,6 +212,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\New Project %282%29 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Project %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Project %284%29 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Project %284%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

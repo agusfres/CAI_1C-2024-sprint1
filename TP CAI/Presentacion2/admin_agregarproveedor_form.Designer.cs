@@ -229,7 +229,7 @@
             this.pictureBox1.Image = global::Presentacion2.Properties.Resources.New_Project;
             this.pictureBox1.Location = new System.Drawing.Point(-3, -1);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(757, 381);
+            this.pictureBox1.Size = new System.Drawing.Size(722, 381);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 69;
             this.pictureBox1.TabStop = false;
@@ -238,7 +238,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(751, 378);
+            this.ClientSize = new System.Drawing.Size(716, 378);
             this.Controls.Add(this.lblMensaje);
             this.Controls.Add(this.btnConfirmar);
             this.Controls.Add(this.lblErrorEmail);

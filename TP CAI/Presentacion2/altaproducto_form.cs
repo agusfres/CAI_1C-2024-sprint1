@@ -8,12 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
 namespace Presentacion2
 {
-    public partial class vendedor_menu_form : Form
+    public partial class altaproducto_form : Form
     {
-        public vendedor_menu_form()
+        public altaproducto_form()
         {
             InitializeComponent();
         }
@@ -21,8 +20,14 @@ namespace Presentacion2
         private void linkLabelVolver_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            iniciarsesion_form iniciarsesion_Form = new iniciarsesion_form();
-            iniciarsesion_Form.Show();
+            gestionproductos gestionproductos = new gestionproductos();
+            gestionproductos.Hide();
+
+        }
+
+        private void altaproducto_form_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

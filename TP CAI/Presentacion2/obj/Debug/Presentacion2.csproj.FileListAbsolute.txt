@@ -304,3 +304,5 @@ C:\Users\agusc\OneDrive\Documents\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion
 C:\Users\agusc\OneDrive\Documents\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.csproj.CopyComplete
 C:\Users\agusc\OneDrive\Documents\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.exe
 C:\Users\agusc\OneDrive\Documents\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.pdb
+C:\Users\agust\Downloads\FACULTAD\2024\cai\TPCAI\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.altaproducto_form.resources
+C:\Users\agust\Downloads\FACULTAD\2024\cai\TPCAI\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.gestionproductos.resources
