@@ -28,7 +28,7 @@ namespace Presentacion2
             string txApellido = txtApellido.Text;
             string txCuit = txtCuit.Text;
             string txEmail = txtEmail.Text;
-            var seleccionCategoriaProd = ListbxCategorias.CheckedIndices;
+            List<int> seleccionCategoriaProd = new List<int>(ListbxCategorias.CheckedIndices.Cast<int>());
 
 
             string errorNombre = validadorCampos.ValidarNombre(txNombre, "Nombre");
@@ -51,7 +51,7 @@ namespace Presentacion2
                 NegocioProveedor negocioProveedor = new NegocioProveedor();
                 try
                 {
-                    negocioProveedor.AgregarProveedor(txNombre, txApellido, txCuit, txEmail);
+                    negocioProveedor.AgregarProveedor(txNombre, txApellido, txCuit, txEmail, seleccionCategoriaProd);
 
                     LimpiarCampos();
                     Congrats();
@@ -70,6 +70,13 @@ namespace Presentacion2
             txtApellido.Clear();
             txtCuit.Clear();
             txtEmail.Clear();
+            for (int i = 0; i < ListbxCategorias.Items.Count; i++)
+            {
+
+                ListbxCategorias.SetItemChecked(i, false);
+            }
+
+
         }
 
 

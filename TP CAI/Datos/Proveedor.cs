@@ -16,9 +16,10 @@ namespace Datos
         string cuit;
         DateTime fechaAlta;
         DateTime? fechaBaja;
+        List<int> seleccionCategoriaProd;
 
 
-        public Proveedor(Guid id, string nombre, string apellido, string email, string cuit, DateTime fechaAlta, DateTime? fechaBaja)
+        public Proveedor(Guid id, string nombre, string apellido, string email, string cuit, DateTime fechaAlta, DateTime? fechaBaja, List<int> seleccionCategoriaProd)
         {
             this.id = id;
             this.nombre = nombre;
@@ -27,6 +28,7 @@ namespace Datos
             this.cuit = cuit;
             this.fechaAlta = fechaAlta;
             this.fechaBaja = fechaBaja;
+            this.seleccionCategoriaProd = seleccionCategoriaProd;
         }
 
 
@@ -37,6 +39,7 @@ namespace Datos
         public string Cuit { get => cuit; set => cuit = value; }
         public DateTime FechaAlta { get => fechaAlta; set => fechaAlta = value; }
         public DateTime? FechaBaja { get => fechaBaja; set => fechaBaja = value; }
+        public List<int> SeleccionCategoriaProd { get => seleccionCategoriaProd; set => seleccionCategoriaProd = value;  }
 
     }
 }
