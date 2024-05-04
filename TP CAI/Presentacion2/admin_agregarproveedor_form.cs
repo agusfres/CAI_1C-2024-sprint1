@@ -28,18 +28,23 @@ namespace Presentacion2
             string txApellido = txtApellido.Text;
             string txCuit = txtCuit.Text;
             string txEmail = txtEmail.Text;
+            var seleccionCategoriaProd = ListbxCategorias.CheckedIndices;
+
 
             string errorNombre = validadorCampos.ValidarNombre(txNombre, "Nombre");
             string errorApellido = validadorCampos.ValidarNombre(txApellido, "Apellido");
             string errorCuit = validadorCampos.ValidarCuit(txCuit, "CUIT");
             string errorEmail = validadorCampos.ValidarEmail(txEmail, "Email");
+            string errorCategoriaProducto = validadorCampos.ValidarCategoriaProducto(ListbxCategorias);
 
             lblErrorNombre.Text = errorNombre;
             lblErrorApellido.Text = errorApellido;
             lblErrorCuit.Text = errorCuit;
             lblErrorEmail.Text = errorEmail;
+            lblErrorCategoria.Text = errorCategoriaProducto;
 
-            string acumuladorErrores = errorNombre + errorApellido + errorCuit + errorEmail;
+
+            string acumuladorErrores = errorNombre + errorApellido + errorCuit + errorEmail + errorCategoriaProducto;
 
             if (string.IsNullOrEmpty(acumuladorErrores))
             {

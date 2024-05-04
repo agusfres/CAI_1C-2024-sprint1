@@ -45,6 +45,8 @@
             this.lblMensaje = new System.Windows.Forms.Label();
             this.btnConfirmar = new ePOSOne.btnProduct.Button_WOC();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ListbxCategorias = new System.Windows.Forms.CheckedListBox();
+            this.lblErrorCategoria = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -234,11 +236,35 @@
             this.pictureBox1.TabIndex = 69;
             this.pictureBox1.TabStop = false;
             // 
+            // ListbxCategorias
+            // 
+            this.ListbxCategorias.FormattingEnabled = true;
+            this.ListbxCategorias.Items.AddRange(new object[] {
+            "1. Audio",
+            "2. Celulares",
+            "3. Electro hogar",
+            "4. Informática",
+            "5. Smart TV"});
+            this.ListbxCategorias.Location = new System.Drawing.Point(49, 214);
+            this.ListbxCategorias.Name = "ListbxCategorias";
+            this.ListbxCategorias.Size = new System.Drawing.Size(120, 94);
+            this.ListbxCategorias.TabIndex = 70;
+            // 
+            // lblErrorCategoria
+            // 
+            this.lblErrorCategoria.AutoSize = true;
+            this.lblErrorCategoria.Location = new System.Drawing.Point(49, 311);
+            this.lblErrorCategoria.Name = "lblErrorCategoria";
+            this.lblErrorCategoria.Size = new System.Drawing.Size(0, 13);
+            this.lblErrorCategoria.TabIndex = 71;
+            // 
             // admin_agregarproveedor_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(716, 378);
+            this.Controls.Add(this.lblErrorCategoria);
+            this.Controls.Add(this.ListbxCategorias);
             this.Controls.Add(this.lblMensaje);
             this.Controls.Add(this.btnConfirmar);
             this.Controls.Add(this.lblErrorEmail);
@@ -283,5 +309,7 @@
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Label lblMensaje;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.CheckedListBox ListbxCategorias;
+        private System.Windows.Forms.Label lblErrorCategoria;
     }
 }

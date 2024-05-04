@@ -21,7 +21,8 @@ namespace Negocio
     {
         private UsuarioService usuarioService = new UsuarioService();
         private Guid idAdministrador = Guid.Parse("70b37dc1-8fde-4840-be47-9ababd0ee7e5");
-        string rutaLocal = @"C:\Users\USUARIOSISTEMA\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\UsuariosLocales.txt";
+        string rutaLocal = @"C:\Users\USUARIOSISTEMA\Documents\GitHub\CAI_1C-2024-sprint1\TP CAI\UsuariosLocales.txt";
+
 
         public void AgregarUsuario(string nombre, string apellido, string direccion, string telefono, string email, DateTime fechaNacimiento, string nombreUsuario, int tipoUsuario, int dni, string contraseña)
         {
@@ -130,7 +131,7 @@ namespace Negocio
                         string dni = vector[12];
                         string host = vector[14];
 
-                        sw.WriteLine(id + '+' + nombre + '+' + apellido + '+' + direccion + '+' + telefono + '+' + email + '+' + fechaAlta + '+' + fechaNacimiento + '+' + fechaBaja + '+' + fechaUltAct + '+' + usuario + '+' + tipoUsuario + '+' + dni + '+' + contraseña + '+' + host + "+ACTIVO");
+                        sw.WriteLine(id + '+' + nombre + '+' + apellido + '+' + direccion + '+' + telefono + '+' + email + '+' + fechaAlta + '+' + fechaNacimiento + '+' + fechaBaja + '+' + DateTime.Now + '+' + usuario + '+' + tipoUsuario + '+' + dni + '+' + contraseña + '+' + host + "+ACTIVO");
                     }
                     catch { Console.WriteLine("Error");  }
                 }
@@ -183,7 +184,7 @@ namespace Negocio
                         string contraseña = vector[13];
                         string host = vector[14];
 
-                        sw.WriteLine(id + '+' + nombre + '+' + apellido + '+' + direccion + '+' + telefono + '+' + email + '+' + fechaAlta + '+' + fechaNacimiento + '+' + fechaBaja + '+' + fechaUltAct + '+' + nombreUsuario + '+' + tipoUsuario + '+' + dni + '+' + contraseña + '+' + host + "+INACTIVO");
+                        sw.WriteLine(id + '+' + nombre + '+' + apellido + '+' + direccion + '+' + telefono + '+' + email + '+' + fechaAlta + '+' + fechaNacimiento + '+' + DateTime.Now + '+' + fechaUltAct + '+' + nombreUsuario + '+' + tipoUsuario + '+' + dni + '+' + contraseña + '+' + host + "+INACTIVO");
                     }
                     catch { Console.WriteLine("Error"); }
                 }

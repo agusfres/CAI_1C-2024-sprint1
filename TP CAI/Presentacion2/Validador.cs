@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 
 namespace Presentacion2
@@ -261,13 +262,23 @@ namespace Presentacion2
             string msgError = "";
             List<string> opciones = new List<string>() { "1. Vendedor ", "2. Supervisor ", "3. Administrador " };
             msgError += ValidarVacio(texto, campo);
-            
+
             if (!opciones.Contains(texto))
             {
                 msgError += "El campo " + campo + " debe ser alguna de las opciones indicadas." + System.Environment.NewLine;
             }
 
             return msgError;
+        }
+        public string ValidarCategoriaProducto(CheckedListBox ListbxCategorias)
+        {
+            string msgError = "";
+            if (ListbxCategorias.CheckedItems.Count == 0)
+            {
+                msgError += "Debe seleccionar al menos una categoría";
+            }
+            return msgError;
+
         }
     }
 }

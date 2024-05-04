@@ -62,8 +62,6 @@ namespace Presentacion2
                 {
                     Login login = new Login(nombreUsuarioActual, contraseñaActual);
 
-                    listaUsuarios = negocioUsuario.TraerUsuariosActivos();
-
                     UsuarioService.Login(login);
 
                     Usuario usuario = negocioUsuario.BuscarUsuarioBaseLocal(nombreUsuarioActual);
