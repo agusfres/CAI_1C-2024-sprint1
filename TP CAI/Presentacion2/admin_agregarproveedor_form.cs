@@ -35,7 +35,7 @@ namespace Presentacion2
             string errorApellido = validadorCampos.ValidarNombre(txApellido, "Apellido");
             string errorCuit = validadorCampos.ValidarCuit(txCuit, "CUIT");
             string errorEmail = validadorCampos.ValidarEmail(txEmail, "Email");
-            string errorCategoriaProducto = validadorCampos.ValidarCategoriaProducto(ListbxCategorias);
+            string errorCategoriaProducto = validadorCampos.ValidarCategoriaProducto1(ListbxCategorias);
 
             lblErrorNombre.Text = errorNombre;
             lblErrorApellido.Text = errorApellido;

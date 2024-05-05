@@ -270,7 +270,7 @@ namespace Presentacion2
 
             return msgError;
         }
-        public string ValidarCategoriaProducto(CheckedListBox ListbxCategorias)
+        public string ValidarCategoriaProducto1(CheckedListBox ListbxCategorias)
         {
             string msgError = "";
             if (ListbxCategorias.CheckedItems.Count == 0)
@@ -279,6 +279,33 @@ namespace Presentacion2
             }
             return msgError;
 
+        }
+        public string ValidarCategoriaProducto2(string texto, string campo)
+        {
+            string msgError = "";
+            List<string> opciones = new List<string>() { "1. Audio ","2. Celulares ","3. Electro Hogar ","4. Informática ","5. Smart TV " };
+            msgError += ValidarVacio(texto, campo);
+
+            if (!opciones.Contains(texto))
+            {
+                msgError += "El campo " + campo + " debe ser alguna de las opciones indicadas." + System.Environment.NewLine;
+            }
+
+            return msgError;
+        }
+        public string ValidarNombreProducto(string texto, string campo)
+        {
+            string msgError = "";
+            msgError += ValidarLongitud(texto, campo, 2, 50);
+
+            return msgError;
+        }
+        public string ValidarStockPrecio(string texto, string campo)
+        {
+            string msgError = "";
+            msgError += ValidarVacio(texto, campo);
+            msgError += ValidarFormatoNumero(texto, campo);
+            return msgError;
         }
     }
 }

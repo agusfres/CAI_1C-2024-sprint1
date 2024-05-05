@@ -19,6 +19,14 @@ namespace Presentacion2
             return -1;
         }
 
+        public double TransformarStringDouble(string texto)
+        {
+            if (double.TryParse(texto, out double salida))
+            {
+                return salida;
+            }
+            return -1;
+        }
 
         public DateTime TransformarStringDatetime(string texto)
         {

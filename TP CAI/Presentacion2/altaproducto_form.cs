@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Negocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,10 +25,55 @@ namespace Presentacion2
             gestionproductos.Hide();
 
         }
-
         private void altaproducto_form_Load(object sender, EventArgs e)
         {
 
+
         }
+
+        private void altaProducto_btnConfirmar_Click(object sender, EventArgs e)
+        {
+            lblErrorNombre.Text = "";
+            lblErrorStock.Text = ""; ;
+            lblErrorprecio.Text = "";
+
+
+
+            Validador validadorCampos = new Validador();
+
+            string txNombre = txtNombre.Text;
+            string cmCategoria = comboBox1.Text;
+            string txPrecio = txtprecio.Text;
+            string txStock = txtstock.Text;
+            string errorNombre = validadorCampos.ValidarNombreProducto(txNombre, "Nombre");
+            string errorPrecio = validadorCampos.ValidarStockPrecio(txPrecio, "Precio");
+            string errorStock = validadorCampos.ValidarStockPrecio(txStock, "Stock");
+            // Buscar forma para que no haya que crear dos validaciones de un mismo atributo (Modificar a ListBox?)
+            string errorCategoria = validadorCampos.ValidarCategoriaProducto2(cmCategoria, "Categoria");
+
+            lblErrorNombre.Text = errorNombre;
+            lblErrorStock.Text = errorStock;
+            lblErrorprecio.Text = errorPrecio;
+            lblErrorCategoria.Text = errorCategoria;
+
+            string acumuladorErrores = errorNombre + errorStock + errorPrecio + errorCategoria;
+
+            if (string.IsNullOrEmpty(acumuladorErrores))
+            {
+                Operacion operacion = new Operacion();
+                double doubleTxPrecio = operacion.TransformarStringDouble(txPrecio);
+                int intTxDNI = operacion.TransformarStringInt(txStock);
+
+
+            }
+        }
+        private void LimpiarCampos()
+        {
+            txtNombre.Clear();
+            txtprecio.Clear();
+            txtstock.Clear();
+            comboBox1.SelectedIndex = -1;
+        }
+
     }
 }
