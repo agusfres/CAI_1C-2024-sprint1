@@ -57,6 +57,8 @@ namespace Presentacion2
                 return -1;
             }
         }
+
+
         public int ObtenerTipoCategoria(string texto)
         {
             Dictionary<char, int> tipoUsuarioMapping = new Dictionary<char, int>

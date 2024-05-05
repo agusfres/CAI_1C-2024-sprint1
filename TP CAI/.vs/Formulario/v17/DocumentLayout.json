@@ -1,16 +1,7 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Cata\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{6B9E809C-9635-42CF-920E-0FE31234C213}|Presentacion2\\Presentacion2.csproj|C:\\Users\\Cata\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\presentacion2\\altaproducto_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B9E809C-9635-42CF-920E-0FE31234C213}|Presentacion2\\Presentacion2.csproj|solutionrelative:presentacion2\\altaproducto_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B9E809C-9635-42CF-920E-0FE31234C213}|Presentacion2\\Presentacion2.csproj|c:\\users\\cata\\onedrive\\documentos\\github\\cai_1c-2024-sprint1\\tp cai\\presentacion2\\admin_agregar_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6B9E809C-9635-42CF-920E-0FE31234C213}|Presentacion2\\Presentacion2.csproj|solutionrelative:presentacion2\\admin_agregar_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    }
-  ],
+  "WorkspaceRootPath": "C:\\Users\\lauta\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,19 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": -1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "admin_agregar_form.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Cata\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion2\\admin_agregar_form.cs",
-              "RelativeDocumentMoniker": "Presentacion2\\admin_agregar_form.cs",
-              "ToolTip": "C:\\Users\\Cata\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion2\\admin_agregar_form.cs [Design]",
-              "RelativeToolTip": "Presentacion2\\admin_agregar_form.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T21:46:23.118Z",
-              "EditorCaption": " [Design]"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Bookmark",
@@ -38,24 +21,7 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "altaproducto_form.cs",
-              "DocumentMoniker": "C:\\Users\\Cata\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion2\\altaproducto_form.cs",
-              "RelativeDocumentMoniker": "Presentacion2\\altaproducto_form.cs",
-              "ToolTip": "C:\\Users\\Cata\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion2\\altaproducto_form.cs",
-              "RelativeToolTip": "Presentacion2\\altaproducto_form.cs",
-              "ViewState": "AQIAADUAAAAAAAAAAAAAAEYAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T19:52:04.534Z",
-              "EditorCaption": ""
             }
           ]
         }

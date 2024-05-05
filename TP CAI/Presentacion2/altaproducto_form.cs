@@ -1,4 +1,6 @@
-﻿using Negocio;
+﻿using Datos;
+using Negocio;
+using Presentacion;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace Presentacion2
 {
@@ -34,46 +37,54 @@ namespace Presentacion2
         private void altaProducto_btnConfirmar_Click(object sender, EventArgs e)
         {
             lblErrorNombre.Text = "";
-            lblErrorStock.Text = ""; ;
+            lblErrorCategoria.Text = "";
             lblErrorprecio.Text = "";
-
+            lblErrorStock.Text = "";
+            lblErrorIdProveedor.Text = "";
 
 
             Validador validadorCampos = new Validador();
 
             string txNombre = txtNombre.Text;
-            string cmCategoria = comboBox1.Text;
-            string txPrecio = txtprecio.Text;
-            string txStock = txtstock.Text;
+            string cmCategoria = cmbCategoria.Text;
+            string txPrecio = txtPrecio.Text;
+            string txStock = txtStock.Text;
+            string txIdProveedor = txtIdProveedor.Text;
+
             string errorNombre = validadorCampos.ValidarNombreProducto(txNombre, "Nombre");
-            string errorPrecio = validadorCampos.ValidarStockPrecio(txPrecio, "Precio");
-            string errorStock = validadorCampos.ValidarStockPrecio(txStock, "Stock");
             // Buscar forma para que no haya que crear dos validaciones de un mismo atributo (Modificar a ListBox?)
             string errorCategoria = validadorCampos.ValidarCategoriaProducto2(cmCategoria, "Categoria");
+            string errorPrecio = validadorCampos.ValidarStockPrecio(txPrecio, "Precio");
+            string errorStock = validadorCampos.ValidarStockPrecio(txStock, "Stock");
+            string errorIdProveedor = validadorCampos.ValidarIdProveedor(txIdProveedor, "ID Proveedor");
 
             lblErrorNombre.Text = errorNombre;
-            lblErrorStock.Text = errorStock;
-            lblErrorprecio.Text = errorPrecio;
             lblErrorCategoria.Text = errorCategoria;
+            lblErrorprecio.Text = errorPrecio;
+            lblErrorStock.Text = errorStock;
+            lblErrorIdProveedor.Text = errorIdProveedor;
 
-            string acumuladorErrores = errorNombre + errorStock + errorPrecio + errorCategoria;
+            string acumuladorErrores = errorNombre + errorCategoria + errorPrecio + errorStock + errorIdProveedor;
 
             if (string.IsNullOrEmpty(acumuladorErrores))
             {
                 Operacion operacion = new Operacion();
+                
+                int intCmCategoria = operacion.ObtenerTipoCategoria(cmCategoria);
                 double doubleTxPrecio = operacion.TransformarStringDouble(txPrecio);
                 int intTxStock = operacion.TransformarStringInt(txStock);
-                int intCmCategoria = operacion.ObtenerTipoCategoria(cmCategoria);
-               // NegocioProducto negocioProducto = new NegocioProducto();
+                Guid guidIdProveedor = Guid.Parse(txIdProveedor);
+
+                NegocioProducto negocioProducto = new NegocioProducto();
 
                 try
                 {
-                    //negocioProducto.AgregarProducto(txNombre, intCmCategoria, idUsuario, idProveedor,doubleTxPrecio,intTxStock);
+                    negocioProducto.AgregarProducto(txNombre, intCmCategoria, doubleTxPrecio, intTxStock, guidIdProveedor);
                     LimpiarCampos();
                 }
                 catch (Exception ex)
                 {
-                    //lblMensajeAgregar.Text = ex.Message;
+                    lblErrorAgregar.Text = ex.Message;
                 }
 
             }
@@ -81,10 +92,9 @@ namespace Presentacion2
         private void LimpiarCampos()
         {
             txtNombre.Clear();
-            txtprecio.Clear();
-            txtstock.Clear();
-            comboBox1.SelectedIndex = -1;
+            txtPrecio.Clear();
+            txtStock.Clear();
+            cmbCategoria.SelectedIndex = -1;
         }
-
     }
 }

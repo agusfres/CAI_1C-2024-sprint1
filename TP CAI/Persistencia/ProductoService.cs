@@ -95,5 +95,23 @@ namespace Persistencia
                 throw new Exception($"Exception: {ex.Message}");
             }
         }
+
+
+        public List<Producto> TraerProductos()
+        {
+            string path = "/api/Producto/TraerProductos";
+
+            List<Producto> listaProductos = new List<Producto>();
+
+            HttpResponseMessage response = WebHelper.Get(path);
+
+            if (response.IsSuccessStatusCode)
+            {
+                var contentStream = response.Content.ReadAsStringAsync().Result;
+                listaProductos = JsonConvert.DeserializeObject<List<Producto>>(contentStream);
+            }
+
+            return listaProductos;
+        }
     }
 }

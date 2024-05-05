@@ -13,11 +13,11 @@ namespace Datos
         Guid idUsuario;
         Guid idProveedor;
         string nombre;
-        int precio;
+        double precio;
         int stock;
 
 
-        public AltaProducto(int idCategoria, Guid idUsuario, Guid idProveedor, string nombre, int precio, int stock)
+        public AltaProducto(int idCategoria, Guid idUsuario, Guid idProveedor, string nombre, double precio, int stock)
         {
             this.idCategoria = idCategoria;
             this.idUsuario = idUsuario;
@@ -32,7 +32,7 @@ namespace Datos
         public Guid IdUsuario { get => idUsuario; set => idUsuario = value; }
         public Guid IdProveedor { get => idProveedor; set => idProveedor = value; }
         public string Nombre { get => nombre; set => nombre = value; }
-        public int Precio { get => precio; set => precio = value; }
+        public double Precio { get => precio; set => precio = value; }
         public int Stock { get => stock; set => stock = value; }
     }
 }

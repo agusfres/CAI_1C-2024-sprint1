@@ -10,19 +10,49 @@ using System.Threading.Tasks;
 
 namespace Presentacion
 {
-    internal class NegocioProducto
+    public class NegocioProducto
     {
         private ProductoService productoService = new ProductoService();
         private Guid idAdministrador = Guid.Parse("70b37dc1-8fde-4840-be47-9ababd0ee7e5");
-        string rutaLocal = @"C:\Users\USUARIOSISTEMA\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Productos.txt";
-        public void AgregarProducto(string nombre,int idCategoria, Guid idUsuario, Guid idProveedor, double precio, int stock)
-        {
-           // AltaProducto altaProducto = new AltaProducto(idCategoria, idUsuario, idProveedor, precio, stock);
-           // productoService.AgregarProducto(altaProducto);
-           // Producto producto = new Producto(id,idCategoria,DateTime.Now,null, precio, stock, idProveedor, idUsuario);
-           // AgregarProductoBaseLocal(producto);
+        string rutaLocal = @"C:\Users\USUARIOSISTEMA\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\ProductosLocales.txt";
 
+
+        public void AgregarProducto(string nombre, int idCategoria, double precio, int stock, Guid idProveedor)
+        {
+            AltaProducto altaProducto = new AltaProducto(idCategoria, idAdministrador, idProveedor, nombre, precio, stock);
+            productoService.AgregarProducto(altaProducto);
+
+            Producto productoAuxiliar = BuscarProducto(nombre);
+
+            Producto producto = new Producto(productoAuxiliar.IdProducto, idCategoria, nombre, DateTime.Now, null, precio, stock, idAdministrador, idProveedor);
+            AgregarProductoBaseLocal(producto);
         }
+
+
+        public List<Producto> TraerProductos()
+        {
+            return productoService.TraerProductos();
+        }
+
+
+        public Producto BuscarProducto(string nombre)
+        {
+            List<Producto> listaProductos = TraerProductos();
+
+            if (listaProductos != null)
+            {
+                foreach (Producto producto in listaProductos)
+                {
+                    if (producto.Nombre == nombre)
+                    {
+                        return producto;
+                    }
+                }
+            }
+            return null;
+        }
+
+
         private void AgregarProductoBaseLocal(Producto producto)
         {
             string docPath = rutaLocal;
@@ -33,7 +63,7 @@ namespace Presentacion
 
             try
             {
-                writer.WriteLine(producto.Id + "+" + producto.IdCategoria + "+" + producto.Nombre +  "+" + producto.FechaAlta + "+null+" + producto.Precio + "+" + producto.Stock + "+" + producto.IdUsuario + "+" + producto.IdProveedor);
+                writer.WriteLine(producto.IdProducto + "+" + producto.IdCategoria + "+" + producto.Nombre + "+" + producto.FechaAlta + "+null+" + producto.Precio + "+" + producto.Stock + "+" + producto.IdUsuario + "+" + producto.IdProveedor);
             }
             catch
             {

@@ -252,8 +252,30 @@ namespace Presentacion2
             {
                 return "El campo " + campo + " debe contener únicamente números." + System.Environment.NewLine;
             }
-
             return "";
+        }
+
+
+        private string ValidarFormatoGuid(string texto, string campo)
+        {
+            if (!Guid.TryParse(texto, out _))
+            {
+                return "El campo " + campo + " es inválido." + System.Environment.NewLine;
+            }
+            return "";
+        }
+
+
+        private string ValidarPositivo(string texto, string campo)
+        {
+            if (double.TryParse(texto, out double numero))
+            {
+                if (numero > 0)
+                {
+                    return "";
+                }
+            }
+            return "El campo " + campo + " no puede ser negativo." + System.Environment.NewLine; ;
         }
 
 
@@ -267,9 +289,10 @@ namespace Presentacion2
             {
                 msgError += "El campo " + campo + " debe ser alguna de las opciones indicadas." + System.Environment.NewLine;
             }
-
             return msgError;
         }
+
+
         public string ValidarCategoriaProducto1(CheckedListBox ListbxCategorias)
         {
             string msgError = "";
@@ -278,8 +301,9 @@ namespace Presentacion2
                 msgError += "Debe seleccionar al menos una categoría";
             }
             return msgError;
-
         }
+
+
         public string ValidarCategoriaProducto2(string texto, string campo)
         {
             string msgError = "";
@@ -300,11 +324,23 @@ namespace Presentacion2
 
             return msgError;
         }
+
+
         public string ValidarStockPrecio(string texto, string campo)
         {
             string msgError = "";
             msgError += ValidarVacio(texto, campo);
             msgError += ValidarFormatoNumero(texto, campo);
+            msgError += ValidarPositivo(texto, campo);
+            return msgError;
+        }
+
+
+        public string ValidarIdProveedor(string texto, string campo)
+        {
+            string msgError = "";
+            msgError += ValidarVacio(texto, campo);
+            msgError += ValidarFormatoGuid(texto, campo);
             return msgError;
         }
     }
