@@ -62,8 +62,19 @@ namespace Presentacion2
             {
                 Operacion operacion = new Operacion();
                 double doubleTxPrecio = operacion.TransformarStringDouble(txPrecio);
-                int intTxDNI = operacion.TransformarStringInt(txStock);
+                int intTxStock = operacion.TransformarStringInt(txStock);
+                int intCmCategoria = operacion.ObtenerTipoCategoria(cmCategoria);
+               // NegocioProducto negocioProducto = new NegocioProducto();
 
+                try
+                {
+                    //negocioProducto.AgregarProducto(txNombre, intCmCategoria, idUsuario, idProveedor,doubleTxPrecio,intTxStock);
+                    LimpiarCampos();
+                }
+                catch (Exception ex)
+                {
+                    //lblMensajeAgregar.Text = ex.Message;
+                }
 
             }
         }

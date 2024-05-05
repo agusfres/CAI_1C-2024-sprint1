@@ -57,6 +57,27 @@ namespace Presentacion2
                 return -1;
             }
         }
+        public int ObtenerTipoCategoria(string texto)
+        {
+            Dictionary<char, int> tipoUsuarioMapping = new Dictionary<char, int>
+            {
+                {'1', 1},
+                {'2', 2},
+                {'3', 3},
+                {'4', 4},
+                {'5', 5}
+            };
+            char primerCaracter = texto.FirstOrDefault();
+
+            if (tipoUsuarioMapping.ContainsKey(primerCaracter))
+            {
+                return tipoUsuarioMapping[primerCaracter];
+            }
+            else
+            {
+                return -1;
+            }
+        }
 
     }
 }

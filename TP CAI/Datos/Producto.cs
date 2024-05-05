@@ -9,7 +9,7 @@ namespace Datos
     public class Producto
     {
         Guid id;
-        Guid idCategoria;
+        int idCategoria;
         string nombre;
         DateTime fechaAlta;
         DateTime? fechaBaja;
@@ -19,7 +19,7 @@ namespace Datos
         Guid idProveedor;
 
 
-        public Producto(Guid id, Guid idCategoria, string nombre, DateTime fechaAlta, DateTime? fechaBaja,double precio, int stock, Guid idUsuario, Guid idProveedor)
+        public Producto(Guid id, int idCategoria, string nombre, DateTime fechaAlta, DateTime? fechaBaja,double precio, int stock, Guid idUsuario, Guid idProveedor)
         {
             this.id = id;
             this.idCategoria = idCategoria;
@@ -34,7 +34,7 @@ namespace Datos
 
 
         public Guid Id { get => id; set => id = value; }
-        public Guid IdCategoria { get => idCategoria; set => idCategoria = value; }
+        public int IdCategoria { get => idCategoria; set => idCategoria = value; }
         public string Nombre { get => nombre; set => nombre = value; }
         public DateTime FechaAlta { get => fechaAlta; set => fechaAlta = value; }
         public DateTime? FechaBaja { get => fechaBaja; set => fechaBaja = value; }
