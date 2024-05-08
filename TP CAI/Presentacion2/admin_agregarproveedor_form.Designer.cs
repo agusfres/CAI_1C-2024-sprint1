@@ -181,6 +181,7 @@
             this.linkLabelVolver.TabStop = true;
             this.linkLabelVolver.Text = "Volver";
             this.linkLabelVolver.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelVolver_LinkClicked);
+            
             // 
             // lblTitulo
             // 
@@ -219,7 +220,7 @@
             this.btnConfirmar.OnHoverBorderColor = System.Drawing.Color.Salmon;
             this.btnConfirmar.OnHoverButtonColor = System.Drawing.Color.Salmon;
             this.btnConfirmar.OnHoverTextColor = System.Drawing.Color.Gray;
-            this.btnConfirmar.Size = new System.Drawing.Size(145, 61);
+            this.btnConfirmar.Size = new System.Drawing.Size(155, 61);
             this.btnConfirmar.TabIndex = 66;
             this.btnConfirmar.Text = "Confirmar";
             this.btnConfirmar.TextColor = System.Drawing.Color.White;
@@ -245,7 +246,7 @@
             "3. Electro hogar",
             "4. Informática",
             "5. Smart TV"});
-            this.ListbxCategorias.Location = new System.Drawing.Point(49, 214);
+            this.ListbxCategorias.Location = new System.Drawing.Point(83, 230);
             this.ListbxCategorias.Name = "ListbxCategorias";
             this.ListbxCategorias.Size = new System.Drawing.Size(120, 94);
             this.ListbxCategorias.TabIndex = 70;
@@ -253,7 +254,7 @@
             // lblErrorCategoria
             // 
             this.lblErrorCategoria.AutoSize = true;
-            this.lblErrorCategoria.Location = new System.Drawing.Point(49, 311);
+            this.lblErrorCategoria.Location = new System.Drawing.Point(83, 326);
             this.lblErrorCategoria.Name = "lblErrorCategoria";
             this.lblErrorCategoria.Size = new System.Drawing.Size(0, 13);
             this.lblErrorCategoria.TabIndex = 71;

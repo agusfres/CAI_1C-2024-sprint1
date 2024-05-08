@@ -68,7 +68,7 @@ namespace Presentacion2
         {
             this.Hide();
             admin_gestionproveedor_form admin_Gestionproveedor_Form = new admin_gestionproveedor_form();
-            this.Show();
+            admin_Gestionproveedor_Form.Show();
         }
     }
 }

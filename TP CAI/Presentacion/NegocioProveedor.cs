@@ -42,7 +42,7 @@ namespace Presentacion
 
             try
             {
-                writer.WriteLine(proveedor.Id + "+" + proveedor.Nombre + "+" + proveedor.Apellido + "+" + proveedor.Email + "+" + proveedor.Cuit + "+" + proveedor.FechaAlta + "+" + proveedor.FechaBaja + "+" + proveedor.SeleccionCategoriaProd );
+                writer.WriteLine(proveedor.Id + "+" + proveedor.Nombre + "+" + proveedor.Apellido + "+" + proveedor.Email + "+" + proveedor.Cuit + "+" + proveedor.FechaAlta + "+null+" + proveedor.SeleccionCategoriaProd );
             }
             catch
             {
