@@ -12,7 +12,7 @@ namespace Presentacion
 {
     public class NegocioProveedor
     {
-        string rutaLocal = @"C:\Users\USUARIOSISTEMA\Documents\GitHub\CAI_1C-2024-sprint1\TP CAI\ProveedoresLocales.txt";
+        string rutaLocal = @"C:\Users\USUARIOSISTEMA\OneDrive\Documents\GitHub\CAI_1C-2024-sprint1\TP CAI\ProveedoresLocales.txt";
         private ProveedorService proveedorService = new ProveedorService();
         private Guid idAdministrador = Guid.Parse("70b37dc1-8fde-4840-be47-9ababd0ee7e5");
 
@@ -21,12 +21,35 @@ namespace Presentacion
         {
             AltaProveedor altaProveedor = new AltaProveedor(idAdministrador, nombre, apellido, email, cuit);
             proveedorService.AgregarProveedor(altaProveedor);
-            Proveedor proveedor = new Proveedor(idAdministrador, nombre, apellido, email, cuit, DateTime.Now, null, seleccionCategoriaProd);
-            AgregarProveedorBaseLocal(proveedor);
+            Proveedor proveedorAuxiliar = BuscarProveedor(nombre);
 
+            Guid idProveedorAuxiliar = proveedorAuxiliar.Id;
+            Proveedor proveedor = new Proveedor(idProveedorAuxiliar, nombre, apellido, email, cuit, DateTime.Now, null, seleccionCategoriaProd);
+            AgregarProveedorBaseLocal(proveedor);
 
         }
 
+        public Proveedor BuscarProveedor(string nombreProveedor)
+        {
+            List<Proveedor> listaProveedores = TraerProveedoresActivos();
+
+            if (listaProveedores != null)
+            {
+                foreach (Proveedor proveedor in listaProveedores)
+                {
+                    if (proveedor.Nombre == nombreProveedor)
+                    {
+                        return proveedor;
+                    }
+                }
+            }
+            return null;
+        }
+
+        public List<Proveedor> TraerProveedoresActivos()
+        {
+            return proveedorService.TraerProveedoresActivos();
+        }
 
         public void BajaProveedor(Guid id)
         {

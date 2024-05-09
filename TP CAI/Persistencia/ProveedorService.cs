@@ -60,5 +60,23 @@ namespace Persistencia
                 throw new Exception("Hubo un error, intente nuevamente en unos segundos");
             }
         }
+    
+
+        public List<Proveedor> TraerProveedoresActivos()
+        {
+            string path = "/api/Proveedor/TraerProveedores";
+
+            List<Proveedor> listaProveedores = new List<Proveedor>();
+
+            HttpResponseMessage response = WebHelper.Get(path);
+
+            if (response.IsSuccessStatusCode)
+            {
+                var contentStream = response.Content.ReadAsStringAsync().Result;
+                listaProveedores = JsonConvert.DeserializeObject<List<Proveedor>>(contentStream);
+            }
+
+            return listaProveedores;
+        }
     }
 }
