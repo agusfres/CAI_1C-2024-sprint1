@@ -322,3 +322,5 @@ C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacio
 C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.gestionproductos.resources
 C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.supervisor_devolucion_venta.resources
 C:\Users\lauta\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.vendedor_registarventa_form.resources
+C:\Users\agust\Downloads\FACULTAD\2024\cai\TPCAI\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.supervisor_devolucion_venta.resources
+C:\Users\agust\Downloads\FACULTAD\2024\cai\TPCAI\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.vendedor_registarventa_form.resources

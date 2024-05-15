@@ -14,7 +14,7 @@ namespace Presentacion
     {
         private ProductoService productoService = new ProductoService();
         private Guid idAdministrador = Guid.Parse("70b37dc1-8fde-4840-be47-9ababd0ee7e5");
-        string rutaLocal = @"C:\Users\USUARIOSISTEMA\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\ProductosLocales.txt";
+        string rutaLocal = @"C:\Users\USUARIOSISTEMA\Desktop\ProductosLocales.txt";
 
 
         public void AgregarProducto(string nombre, int idCategoria, double precio, int stock, Guid idProveedor)

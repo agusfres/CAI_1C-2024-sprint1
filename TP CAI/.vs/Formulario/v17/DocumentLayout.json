@@ -1,26 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Cata\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\",
+  "WorkspaceRootPath": "C:\\Users\\agust\\Downloads\\FACULTAD\\2024\\cai\\TPCAI\\CAI_1C-2024-sprint1\\TP CAI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6B9E809C-9635-42CF-920E-0FE31234C213}|Presentacion2\\Presentacion2.csproj|c:\\users\\cata\\onedrive\\documentos\\github\\cai_1c-2024-sprint1\\tp cai\\presentacion2\\admin_agregarproveedor_form.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B9E809C-9635-42CF-920E-0FE31234C213}|Presentacion2\\Presentacion2.csproj|solutionrelative:presentacion2\\admin_agregarproveedor_form.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4D4D43B4-C908-49FE-B2C8-68E34EFE8114}|Presentacion\\Negocio.csproj|c:\\users\\agust\\downloads\\facultad\\2024\\cai\\tpcai\\cai_1c-2024-sprint1\\tp cai\\presentacion\\negociousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D4D43B4-C908-49FE-B2C8-68E34EFE8114}|Presentacion\\Negocio.csproj|solutionrelative:presentacion\\negociousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6B9E809C-9635-42CF-920E-0FE31234C213}|Presentacion2\\Presentacion2.csproj|c:\\users\\cata\\onedrive\\documentos\\github\\cai_1c-2024-sprint1\\tp cai\\presentacion2\\admin_agregarproveedor_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6B9E809C-9635-42CF-920E-0FE31234C213}|Presentacion2\\Presentacion2.csproj|solutionrelative:presentacion2\\admin_agregarproveedor_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B9E809C-9635-42CF-920E-0FE31234C213}|Presentacion2\\Presentacion2.csproj|c:\\users\\cata\\onedrive\\documentos\\github\\cai_1c-2024-sprint1\\tp cai\\presentacion2\\admin_edit_proveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B9E809C-9635-42CF-920E-0FE31234C213}|Presentacion2\\Presentacion2.csproj|solutionrelative:presentacion2\\admin_edit_proveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D4D43B4-C908-49FE-B2C8-68E34EFE8114}|Presentacion\\Negocio.csproj|c:\\users\\cata\\onedrive\\documentos\\github\\cai_1c-2024-sprint1\\tp cai\\presentacion\\negocioproveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D4D43B4-C908-49FE-B2C8-68E34EFE8114}|Presentacion\\Negocio.csproj|solutionrelative:presentacion\\negocioproveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D4D43B4-C908-49FE-B2C8-68E34EFE8114}|Presentacion\\Negocio.csproj|c:\\users\\cata\\onedrive\\documentos\\github\\cai_1c-2024-sprint1\\tp cai\\presentacion\\negocioproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4D4D43B4-C908-49FE-B2C8-68E34EFE8114}|Presentacion\\Negocio.csproj|C:\\Users\\agust\\Downloads\\FACULTAD\\2024\\cai\\TPCAI\\CAI_1C-2024-sprint1\\TP CAI\\presentacion\\negocioproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D4D43B4-C908-49FE-B2C8-68E34EFE8114}|Presentacion\\Negocio.csproj|solutionrelative:presentacion\\negocioproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D4D43B4-C908-49FE-B2C8-68E34EFE8114}|Presentacion\\Negocio.csproj|C:\\Users\\agust\\Downloads\\FACULTAD\\2024\\cai\\TPCAI\\CAI_1C-2024-sprint1\\TP CAI\\presentacion\\negocioproveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D4D43B4-C908-49FE-B2C8-68E34EFE8114}|Presentacion\\Negocio.csproj|solutionrelative:presentacion\\negocioproveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,25 +38,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "admin_agregarproveedor_form.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Cata\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion2\\admin_agregarproveedor_form.cs",
-              "RelativeDocumentMoniker": "Presentacion2\\admin_agregarproveedor_form.cs",
-              "ToolTip": "C:\\Users\\Cata\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion2\\admin_agregarproveedor_form.cs [Design]",
-              "RelativeToolTip": "Presentacion2\\admin_agregarproveedor_form.cs [Design]",
+              "DocumentIndex": 0,
+              "Title": "NegocioUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\agust\\Downloads\\FACULTAD\\2024\\cai\\TPCAI\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion\\NegocioUsuario.cs",
+              "RelativeDocumentMoniker": "Presentacion\\NegocioUsuario.cs",
+              "ToolTip": "C:\\Users\\agust\\Downloads\\FACULTAD\\2024\\cai\\TPCAI\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion\\NegocioUsuario.cs",
+              "RelativeToolTip": "Presentacion\\NegocioUsuario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T22:12:30.471Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-15T18:23:07.424Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "NegocioProducto.cs",
-              "DocumentMoniker": "C:\\Users\\Cata\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion\\NegocioProducto.cs",
+              "DocumentMoniker": "C:\\Users\\agust\\Downloads\\FACULTAD\\2024\\cai\\TPCAI\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion\\NegocioProducto.cs",
               "RelativeDocumentMoniker": "Presentacion\\NegocioProducto.cs",
-              "ToolTip": "C:\\Users\\Cata\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion\\NegocioProducto.cs",
+              "ToolTip": "C:\\Users\\agust\\Downloads\\FACULTAD\\2024\\cai\\TPCAI\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion\\NegocioProducto.cs",
               "RelativeToolTip": "Presentacion\\NegocioProducto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAABTAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-08T22:10:15.615Z",
               "EditorCaption": ""
@@ -72,38 +65,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "admin_edit_proveedor.cs",
-              "DocumentMoniker": "C:\\Users\\Cata\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion2\\admin_edit_proveedor.cs",
-              "RelativeDocumentMoniker": "Presentacion2\\admin_edit_proveedor.cs",
-              "ToolTip": "C:\\Users\\Cata\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion2\\admin_edit_proveedor.cs",
-              "RelativeToolTip": "Presentacion2\\admin_edit_proveedor.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABcAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T22:09:16.579Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "admin_agregarproveedor_form.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Cata\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion2\\admin_agregarproveedor_form.Designer.cs",
-              "RelativeDocumentMoniker": "Presentacion2\\admin_agregarproveedor_form.Designer.cs",
-              "ToolTip": "C:\\Users\\Cata\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion2\\admin_agregarproveedor_form.Designer.cs",
-              "RelativeToolTip": "Presentacion2\\admin_agregarproveedor_form.Designer.cs",
-              "ViewState": "AQIAAO0AAAAAAAAAAAAAAAABAABOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T22:04:54.368Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "NegocioProveedor.cs",
-              "DocumentMoniker": "C:\\Users\\Cata\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion\\NegocioProveedor.cs",
+              "DocumentMoniker": "C:\\Users\\agust\\Downloads\\FACULTAD\\2024\\cai\\TPCAI\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion\\NegocioProveedor.cs",
               "RelativeDocumentMoniker": "Presentacion\\NegocioProveedor.cs",
-              "ToolTip": "C:\\Users\\Cata\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion\\NegocioProveedor.cs",
+              "ToolTip": "C:\\Users\\agust\\Downloads\\FACULTAD\\2024\\cai\\TPCAI\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion\\NegocioProveedor.cs",
               "RelativeToolTip": "Presentacion\\NegocioProveedor.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAAACwAAAC1AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-08T21:58:47.169Z",
               "EditorCaption": ""
