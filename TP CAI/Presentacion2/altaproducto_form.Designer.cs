@@ -48,6 +48,7 @@
             this.lblErrorIdProveedor = new System.Windows.Forms.Label();
             this.txtIdProveedor = new System.Windows.Forms.TextBox();
             this.lblIdProveedor = new System.Windows.Forms.Label();
+            this.lblConfirmar = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -273,11 +274,21 @@
             this.lblIdProveedor.TabIndex = 89;
             this.lblIdProveedor.Text = "ID Proveedor";
             // 
+            // lblConfirmar
+            // 
+            this.lblConfirmar.AutoSize = true;
+            this.lblConfirmar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.lblConfirmar.Location = new System.Drawing.Point(360, 297);
+            this.lblConfirmar.Name = "lblConfirmar";
+            this.lblConfirmar.Size = new System.Drawing.Size(0, 13);
+            this.lblConfirmar.TabIndex = 92;
+            // 
             // altaproducto_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(664, 361);
+            this.Controls.Add(this.lblConfirmar);
             this.Controls.Add(this.lblErrorIdProveedor);
             this.Controls.Add(this.txtIdProveedor);
             this.Controls.Add(this.lblIdProveedor);
@@ -328,5 +339,6 @@
         private System.Windows.Forms.Label lblErrorIdProveedor;
         private System.Windows.Forms.TextBox txtIdProveedor;
         private System.Windows.Forms.Label lblIdProveedor;
+        private System.Windows.Forms.Label lblConfirmar;
     }
 }

@@ -12,7 +12,7 @@ namespace Presentacion
 {
     public class NegocioProveedor
     {
-        string rutaLocal = @"C:\Users\USUARIOSISTEMA\Desktop\ProveedoresLocales.txt";
+        string rutaLocal = @"C:\Users\USUARIOSISTEMA\ProveedoresLocales.txt";
         private ProveedorService proveedorService = new ProveedorService();
         private Guid idAdministrador = Guid.Parse("70b37dc1-8fde-4840-be47-9ababd0ee7e5");
 

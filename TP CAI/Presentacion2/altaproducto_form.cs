@@ -81,6 +81,7 @@ namespace Presentacion2
                 {
                     negocioProducto.AgregarProducto(txNombre, intCmCategoria, doubleTxPrecio, intTxStock, guidIdProveedor);
                     LimpiarCampos();
+                    Congrats();
                 }
                 catch (Exception ex)
                 {
@@ -95,6 +96,14 @@ namespace Presentacion2
             txtPrecio.Clear();
             txtStock.Clear();
             cmbCategoria.SelectedIndex = -1;
+            txtIdProveedor.Clear();
+        }
+
+        private async void Congrats()
+        {
+            lblConfirmar.Text = "Usuario cargado con éxito";
+            await Task.Delay(5000);
+            lblConfirmar.Text = "";
         }
     }
 }
