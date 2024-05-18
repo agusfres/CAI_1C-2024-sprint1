@@ -140,6 +140,7 @@
             this.btnGestionarClientes.Text = "GESTIONAR CLIENTES";
             this.btnGestionarClientes.TextColor = System.Drawing.Color.Gray;
             this.btnGestionarClientes.UseVisualStyleBackColor = false;
+            this.btnGestionarClientes.Click += new System.EventHandler(this.btnGestionarCliente_Click);
             // 
             // btnGestionarProductos
             // 

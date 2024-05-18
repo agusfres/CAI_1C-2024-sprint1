@@ -47,5 +47,12 @@ namespace Presentacion2
             altaproducto_form altaproducto = new altaproducto_form();
             altaproducto.Show();
         }
+
+        private void btnGestionarCliente_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            admin_gestioncliente_form Admin_gestioncliente_form = new admin_gestioncliente_form();
+            Admin_gestioncliente_form.Show();
+        }
     }
 }

@@ -55,6 +55,12 @@
     <Compile Include="admin_gestionproveedor_form.Designer.cs">
       <DependentUpon>admin_gestionproveedor_form.cs</DependentUpon>
     </Compile>
+    <Compile Include="admin_gestioncliente_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_gestioncliente_form.Designer.cs">
+      <DependentUpon>admin_gestioncliente_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="altaproducto_form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,6 +179,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="admin_bajaproveedor_form.resx">
       <DependentUpon>admin_bajaproveedor_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_gestioncliente_form.resx">
+      <DependentUpon>admin_gestioncliente_form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="altaproducto_form.resx">
       <DependentUpon>altaproducto_form.cs</DependentUpon>
