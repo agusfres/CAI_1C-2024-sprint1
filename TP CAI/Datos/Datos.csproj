@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AltaCliente.cs" />
     <Compile Include="AltaUsuario.cs" />
     <Compile Include="Altaventa.cs" />
     <Compile Include="BajaUsuario.cs" />
