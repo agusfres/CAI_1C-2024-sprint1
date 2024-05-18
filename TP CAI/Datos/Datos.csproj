@@ -47,6 +47,7 @@
     <Compile Include="AltaProducto.cs" />
     <Compile Include="BajaProducto.cs" />
     <Compile Include="Bajaventa.cs" />
+    <Compile Include="Cliente.cs" />
     <Compile Include="ModificarProveedor.cs" />
     <Compile Include="ModificarProducto.cs" />
     <Compile Include="Login.cs" />
