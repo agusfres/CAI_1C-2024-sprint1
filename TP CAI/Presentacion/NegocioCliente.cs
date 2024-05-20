@@ -66,5 +66,55 @@ namespace Presentacion
             }
             writer.Close();
         }
-    }
+
+        public void ModificarCliente(Guid idUsuario, string direccion, string telefono, string email)
+        {
+            string docPath = rutaLocal;
+            string nombreUsuarioSistema = Environment.UserName;
+            string docPathAdaptado = docPath.Replace("USUARIOSISTEMA", nombreUsuarioSistema);
+            string tempPath = Path.GetTempFileName(); // Ruta temporal para escribir el contenido actualizado
+
+            StreamReader sr = new StreamReader(docPathAdaptado);
+            StreamWriter sw = new StreamWriter(tempPath);
+            string linea;
+            while ((linea = sr.ReadLine()) != null)
+            {
+                string[] vector = linea.Split('+');
+                // Si la línea actual no coincide con la línea que deseas eliminar, escríbela en el archivo temporal
+                if (vector[0] != idUsuario.ToString())
+                {
+                    sw.WriteLine(linea);
+                }
+                else
+                {
+                    try
+                    {
+                        string id = vector[0];
+                        string nombre = vector[1];
+                        string apellido = vector[2];
+                         direccion = vector[3];
+                         telefono = vector[4];
+                         email = vector[5];
+                        string fechaAlta = vector[6];
+                        string fechaNacimiento = vector[7];
+                        string fechaBaja = vector[8];
+                        string idusuario = vector[9];
+                        string dni = vector[10];
+                        string host = vector[11];
+
+                        sw.WriteLine(id + '+' + nombre + '+' + apellido + '+' + direccion + '+' + telefono + '+' + email + '+' + fechaAlta + '+' + fechaNacimiento + '+' + DateTime.Now + '+' + idUsuario + '+' + dni + '+'  + host);
+                    }
+                    catch { Console.WriteLine("Error"); }
+                }
+            }
+            sw.Close();
+            sr.Close();
+            // Reemplaza el archivo original con el archivo temporal
+            System.IO.File.Delete(docPathAdaptado);
+            System.IO.File.Move(tempPath, docPathAdaptado);
+            // Borra el archivo temporal
+            System.IO.File.Delete(tempPath);
+        }
+
+          }
 }

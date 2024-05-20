@@ -8,7 +8,7 @@ namespace Datos
 {
     public class Cliente 
     {
-        Guid idCliente;
+        Guid id;
         string nombre;
         string apellido;
         string direccion;
@@ -22,9 +22,9 @@ namespace Datos
         int dni;
 
 
-        public Cliente(Guid idCliente, string nombre, string apellido, string direccion, string telefono, string email, DateTime fechaAlta, DateTime fechaNacimiento, DateTime? fechaBaja, Guid idUsuario, int host, int dni)
+        public Cliente(Guid id, string nombre, string apellido, string direccion, string telefono, string email, DateTime fechaAlta, DateTime fechaNacimiento, DateTime? fechaBaja, Guid idUsuario, int host, int dni)
         {
-            this.idCliente = idCliente;
+            this.id = id;
             this.nombre = nombre;
             this.apellido = apellido;
             this.direccion = direccion;
@@ -44,7 +44,7 @@ namespace Datos
         }
 
 
-        public Guid IdCliente { get => idCliente; set => idCliente = value; }
+        public Guid IdCliente { get => id; set => id = value; }
         public string Nombre { get => nombre; set => nombre = value; }
         public string Apellido { get => apellido; set => apellido = value; }
         public string Direccion { get => direccion; set => direccion = value; }

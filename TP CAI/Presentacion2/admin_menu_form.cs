@@ -54,5 +54,12 @@ namespace Presentacion2
             admin_gestioncliente_form Admin_gestioncliente_form = new admin_gestioncliente_form();
             Admin_gestioncliente_form.Show();
         }
+
+        private void btnReportes_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            agregarventa_form agregarventa_Form = new agregarventa_form();
+            agregarventa_Form.Show();
+        }
     }
 }

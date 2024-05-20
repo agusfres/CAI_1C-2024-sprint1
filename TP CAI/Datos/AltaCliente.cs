@@ -8,7 +8,7 @@ namespace Datos
 {
     public class AltaCliente
     {
-        Guid idUsuario;
+        Guid id;
         string nombre;
         string apellido;
         int dni;
@@ -19,9 +19,9 @@ namespace Datos
         int host;
 
 
-        public AltaCliente(Guid idUsuario, string nombre, string apellido, int dni, string direccion, string telefono, string email, DateTime fechaNacimiento, int host)
+        public AltaCliente(Guid id, string nombre, string apellido, int dni, string direccion, string telefono, string email, DateTime fechaNacimiento, int host)
         {
-            this.idUsuario = idUsuario;
+            this.id = id;
             this.nombre = nombre;
             this.apellido = apellido;
             this.dni = dni;
@@ -33,7 +33,7 @@ namespace Datos
         }
 
 
-        public Guid IdUsuario { get => idUsuario; set => idUsuario = value; }
+        public Guid IdUsuario { get => id; set => id = value; }
         public int Host { get => host; set => host = value; }
         public string Nombre { get => nombre; set => nombre = value; }
         public string Apellido { get => apellido; set => apellido = value; }

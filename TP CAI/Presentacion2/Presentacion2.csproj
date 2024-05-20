@@ -61,6 +61,12 @@
     <Compile Include="admin_gestioncliente_form.Designer.cs">
       <DependentUpon>admin_gestioncliente_form.cs</DependentUpon>
     </Compile>
+    <Compile Include="agregarventa_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="agregarventa_form.Designer.cs">
+      <DependentUpon>agregarventa_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="altaproducto_form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,6 +188,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="admin_gestioncliente_form.resx">
       <DependentUpon>admin_gestioncliente_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="agregarventa_form.resx">
+      <DependentUpon>agregarventa_form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="altaproducto_form.resx">
       <DependentUpon>altaproducto_form.cs</DependentUpon>
