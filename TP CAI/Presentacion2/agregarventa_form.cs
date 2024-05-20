@@ -29,13 +29,19 @@ namespace Presentacion2
                 comboBox1.Items.Add(producto.Nombre);
             }
 
+            //string productoSeleccionado = comboBox1.SelectedItem.ToString();
+
+            // dataGridView1.Rows.Add(productoSeleccionado)  
+               
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string productoSeleccionado = comboBox1.SelectedItem.ToString();
+            string combobox = comboBox1.Text;
+            ProductoService productoService = new ProductoService();
+            List<Producto> listaproductos = productoService.TraerProductos();
+            Producto producto = listaproductos.Find(p => p.Nombre == combobox);
 
-            dataGridView1.Rows.Add(productoSeleccionado);
         }
     }
 }

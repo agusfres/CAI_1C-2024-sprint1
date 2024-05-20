@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblagregarproductos = new System.Windows.Forms.Label();
             this.lblcantidad = new System.Windows.Forms.Label();
             this.btnventa = new System.Windows.Forms.Button();
@@ -37,14 +40,13 @@
             this.lbltotaltexto = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lbltotal = new System.Windows.Forms.Label();
             this.labeldesc = new System.Windows.Forms.Label();
             this.labeltotal = new System.Windows.Forms.Label();
+            this.lblErrorProducto = new System.Windows.Forms.Label();
+            this.lblErrorCantidad = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,14 +62,29 @@
             this.dataGridView1.Size = new System.Drawing.Size(513, 127);
             this.dataGridView1.TabIndex = 0;
             // 
+            // Producto
+            // 
+            this.Producto.HeaderText = "Producto";
+            this.Producto.Name = "Producto";
+            // 
+            // Cantidad
+            // 
+            this.Cantidad.HeaderText = "Cantidad";
+            this.Cantidad.Name = "Cantidad";
+            // 
+            // Precio
+            // 
+            this.Precio.HeaderText = "Precio";
+            this.Precio.Name = "Precio";
+            // 
             // lblagregarproductos
             // 
             this.lblagregarproductos.AutoSize = true;
             this.lblagregarproductos.Location = new System.Drawing.Point(121, 70);
             this.lblagregarproductos.Name = "lblagregarproductos";
-            this.lblagregarproductos.Size = new System.Drawing.Size(106, 13);
+            this.lblagregarproductos.Size = new System.Drawing.Size(102, 13);
             this.lblagregarproductos.TabIndex = 2;
-            this.lblagregarproductos.Text = "indique un productos";
+            this.lblagregarproductos.Text = "Indique un producto";
             // 
             // lblcantidad
             // 
@@ -130,21 +147,6 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "Carrito:";
             // 
-            // Producto
-            // 
-            this.Producto.HeaderText = "Producto";
-            this.Producto.Name = "Producto";
-            // 
-            // Cantidad
-            // 
-            this.Cantidad.HeaderText = "Cantidad";
-            this.Cantidad.Name = "Cantidad";
-            // 
-            // Precio
-            // 
-            this.Precio.HeaderText = "Precio";
-            this.Precio.Name = "Precio";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -187,11 +189,29 @@
             this.labeltotal.Size = new System.Drawing.Size(0, 13);
             this.labeltotal.TabIndex = 14;
             // 
+            // lblErrorProducto
+            // 
+            this.lblErrorProducto.AutoSize = true;
+            this.lblErrorProducto.Location = new System.Drawing.Point(123, 119);
+            this.lblErrorProducto.Name = "lblErrorProducto";
+            this.lblErrorProducto.Size = new System.Drawing.Size(0, 13);
+            this.lblErrorProducto.TabIndex = 15;
+            // 
+            // lblErrorCantidad
+            // 
+            this.lblErrorCantidad.AutoSize = true;
+            this.lblErrorCantidad.Location = new System.Drawing.Point(324, 119);
+            this.lblErrorCantidad.Name = "lblErrorCantidad";
+            this.lblErrorCantidad.Size = new System.Drawing.Size(0, 13);
+            this.lblErrorCantidad.TabIndex = 16;
+            // 
             // agregarventa_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 341);
+            this.Controls.Add(this.lblErrorCantidad);
+            this.Controls.Add(this.lblErrorProducto);
             this.Controls.Add(this.labeltotal);
             this.Controls.Add(this.labeldesc);
             this.Controls.Add(this.lbltotal);
@@ -234,5 +254,7 @@
         private System.Windows.Forms.Label lbltotal;
         private System.Windows.Forms.Label labeldesc;
         private System.Windows.Forms.Label labeltotal;
+        private System.Windows.Forms.Label lblErrorProducto;
+        private System.Windows.Forms.Label lblErrorCantidad;
     }
 }
