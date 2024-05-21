@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="admin_modif_cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_modif_cliente.Designer.cs">
+      <DependentUpon>admin_modif_cliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="altacliente_form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -179,6 +185,9 @@
   <ItemGroup>
     <EmbeddedResource Include="admin_agregarproveedor_form.resx">
       <DependentUpon>admin_agregarproveedor_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_modif_cliente.resx">
+      <DependentUpon>admin_modif_cliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="altacliente_form.resx">
       <DependentUpon>altacliente_form.cs</DependentUpon>

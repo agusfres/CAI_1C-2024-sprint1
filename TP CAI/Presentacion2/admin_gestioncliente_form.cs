@@ -28,10 +28,10 @@ namespace Presentacion2
 
 
 
-        private void btnBajaUsuario_Click_1(object sender, EventArgs e)
+        private void btnModificarCliente_Click_1(object sender, EventArgs e)
         {
             this.Hide();
-            admin_baja_form form6 = new admin_baja_form();
+            admin_modif_cliente form6 = new admin_modif_cliente();
             form6.Show();
         }
 

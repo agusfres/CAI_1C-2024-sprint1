@@ -109,11 +109,11 @@ namespace Presentacion2
         }
 
 
-        private void linkLabelVolver_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        private void linkLabelVolver_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            admin_gestioncliente_form cliente_gestion = new admin_gestioncliente_form();
-            cliente_gestion.Show();
+            admin_gestioncliente_form admin_Gestioncliente_Form = new admin_gestioncliente_form();
+            admin_Gestioncliente_Form.Show();
         }
     }
 }

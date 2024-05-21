@@ -87,7 +87,7 @@
             this.linkLabelVolver.TabIndex = 1;
             this.linkLabelVolver.TabStop = true;
             this.linkLabelVolver.Text = "Volver";
-            this.linkLabelVolver.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelVolver_LinkClicked_1);
+            this.linkLabelVolver.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelVolver_LinkClicked);
             // 
             // lblNombre
             // 

@@ -106,7 +106,7 @@
             this.btnModificarCliente.Text = "MODIFICAR CLIENTE";
             this.btnModificarCliente.TextColor = System.Drawing.Color.Gray;
             this.btnModificarCliente.UseVisualStyleBackColor = false;
-            this.btnModificarCliente.Click += new System.EventHandler(this.btnBajaUsuario_Click_1);
+            this.btnModificarCliente.Click += new System.EventHandler(this.btnModificarCliente_Click_1);
             // 
             // pictureBox1
             // 
