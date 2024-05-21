@@ -56,9 +56,6 @@ namespace Presentacion2
         }
         private void btnReportes_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            agregarventa_form agregarventa_Form = new agregarventa_form();
-            agregarventa_Form.Show();
         }
 
     }
