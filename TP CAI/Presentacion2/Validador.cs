@@ -189,6 +189,13 @@ namespace Presentacion2
             return msgError;
         }
 
+        public string ValidarNombreCliente(string cliente, string nombre, string apellido, string campo)
+        {
+            string msgError = "";
+            msgError += ValidarLongitud(cliente, campo, 8, 15);
+            msgError += ValidarUsuario(cliente, nombre, apellido);
+            return msgError;
+        }
 
         public string ValidarContraseña(string contraseña)
         {

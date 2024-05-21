@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="altacliente_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="altacliente_form.Designer.cs">
+      <DependentUpon>altacliente_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="admin_gestionproveedor_form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,6 +179,9 @@
   <ItemGroup>
     <EmbeddedResource Include="admin_agregarproveedor_form.resx">
       <DependentUpon>admin_agregarproveedor_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="altacliente_form.resx">
+      <DependentUpon>altacliente_form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="admin_agregar_form.resx">
       <DependentUpon>admin_agregar_form.cs</DependentUpon>
