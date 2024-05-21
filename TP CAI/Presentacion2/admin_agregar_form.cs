@@ -60,7 +60,7 @@ namespace Presentacion2
             string errorTelefono = validadorCampos.ValidarTelefono(txTelefono, "Teléfono");
             string errorEmail = validadorCampos.ValidarEmail(txEmail, "Email");
             string errorFecha = validadorCampos.ValidarFecha(txFechaNac, "Fecha");
-            string errorUsuario = validadorCampos.ValidarNombreUsuario(txNombreUsuario, txNombre, txApellido, "Usuario");
+            string errorUsuario = validadorCampos.ValidarDato(txNombreUsuario, txNombre, txApellido, "Usuario");
             string errorTipoUsuario = validadorCampos.ValidarTipoUsuario(cmTipoUsuario, "Tipo de usuario");
             string errorDNI = validadorCampos.ValidarDNI(txDNI, "DNI");
             string errorContraseña = validadorCampos.ValidarContraseña(txContraseña);
