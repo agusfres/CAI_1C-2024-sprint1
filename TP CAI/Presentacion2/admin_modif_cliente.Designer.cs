@@ -94,6 +94,7 @@
             this.btnConfirmar.Text = "Confirmar";
             this.btnConfirmar.TextColor = System.Drawing.Color.White;
             this.btnConfirmar.UseVisualStyleBackColor = true;
+            this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
             // 
             // txtEmail
             // 
@@ -128,9 +129,9 @@
             this.lblDNI.Location = new System.Drawing.Point(92, 220);
             this.lblDNI.Name = "lblDNI";
             this.lblDNI.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblDNI.Size = new System.Drawing.Size(42, 18);
+            this.lblDNI.Size = new System.Drawing.Size(33, 18);
             this.lblDNI.TabIndex = 77;
-            this.lblDNI.Text = "CUIT";
+            this.lblDNI.Text = "DNI";
             // 
             // lblErrorApellido
             // 
@@ -219,18 +220,18 @@
             this.lblIngresaCliente.ForeColor = System.Drawing.Color.DimGray;
             this.lblIngresaCliente.Location = new System.Drawing.Point(92, 84);
             this.lblIngresaCliente.Name = "lblIngresaCliente";
-            this.lblIngresaCliente.Size = new System.Drawing.Size(344, 18);
+            this.lblIngresaCliente.Size = new System.Drawing.Size(340, 18);
             this.lblIngresaCliente.TabIndex = 68;
             this.lblIngresaCliente.Text = "Ingrese el nombre de Cliente que debería modificar";
             // 
-            // lblGestionClientesTitulo
+            // lblGestionClienteTitulo
             // 
             this.lblGestionClienteTitulo.AutoSize = true;
             this.lblGestionClienteTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGestionClienteTitulo.ForeColor = System.Drawing.Color.DimGray;
             this.lblGestionClienteTitulo.Location = new System.Drawing.Point(255, 27);
-            this.lblGestionClienteTitulo.Name = "lblGestionClientesTitulo";
-            this.lblGestionClienteTitulo.Size = new System.Drawing.Size(296, 31);
+            this.lblGestionClienteTitulo.Name = "lblGestionClienteTitulo";
+            this.lblGestionClienteTitulo.Size = new System.Drawing.Size(238, 31);
             this.lblGestionClienteTitulo.TabIndex = 67;
             this.lblGestionClienteTitulo.Text = "EDITAR CLIENTE";
             // 
@@ -294,7 +295,7 @@
             this.Controls.Add(this.lblIngresaCliente);
             this.Controls.Add(this.lblGestionClienteTitulo);
             this.Controls.Add(this.linkLabelVolver);
-            this.Name = "admin_edit_proveedor";
+            this.Name = "admin_modif_cliente";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();

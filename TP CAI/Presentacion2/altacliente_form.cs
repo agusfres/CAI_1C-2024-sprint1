@@ -109,7 +109,7 @@ namespace Presentacion2
         }
 
 
-        private void linkLabelVolver_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
             admin_gestioncliente_form admin_Gestioncliente_Form = new admin_gestioncliente_form();

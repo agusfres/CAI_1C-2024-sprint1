@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Presentacion;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,6 +23,40 @@ namespace Presentacion2
             this.Hide();
             admin_gestioncliente_form admin_Gestioncliente_Form = new admin_gestioncliente_form();
             admin_Gestioncliente_Form.Show();
+        }
+
+        private void btnConfirmar_Click(object sender, EventArgs e)
+        {
+            lblErrorNombre.Text = "";
+            lblErrorApellido.Text = ""; ;
+            lblErrorEmail.Text = "";
+            lblErrorDNI.Text = "";
+
+            Validador validadorCampos = new Validador();
+
+            string txNombre = txtNombre.Text;
+            string txApellido = txtApellido.Text;
+            string txEmail = txtEmail.Text;
+            string txDNI = txtDNI.Text;
+
+            string errorNombre = validadorCampos.ValidarNombre(txNombre, "Nombre");
+            string errorApellido = validadorCampos.ValidarNombre(txApellido, "Apellido");
+            string errorEmail = validadorCampos.ValidarEmail(txEmail, "Email");
+            string errorDNI = validadorCampos.ValidarDNI(txDNI, "DNI");
+
+            lblErrorNombre.Text = errorNombre;
+            lblErrorApellido.Text = errorApellido;
+            lblErrorEmail.Text = errorEmail;
+            lblErrorDNI.Text = errorDNI;
+
+            string acumuladorErrores = errorNombre + errorApellido + errorEmail + errorDNI;
+
+            if (string.IsNullOrEmpty(acumuladorErrores))
+            {
+                Operacion operacion = new Operacion();
+                int intTxDNI = operacion.TransformarStringInt(txDNI);
+            }
+            // FALTA VALIDACIÓN DE BUSCAR Y MODIFICAR CLIENTE EN LA API
         }
     }
 }
