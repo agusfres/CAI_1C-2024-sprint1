@@ -1,42 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Cata\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\",
+  "WorkspaceRootPath": "C:\\Users\\agust\\Downloads\\FACULTAD\\2024\\cai\\TPCAI\\CAI_1C-2024-sprint1\\TP CAI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6B9E809C-9635-42CF-920E-0FE31234C213}|Presentacion2\\Presentacion2.csproj|c:\\users\\cata\\onedrive\\documentos\\github\\cai_1c-2024-sprint1\\tp cai\\presentacion2\\agregarventa_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6B9E809C-9635-42CF-920E-0FE31234C213}|Presentacion2\\Presentacion2.csproj|c:\\users\\agust\\downloads\\facultad\\2024\\cai\\tpcai\\cai_1c-2024-sprint1\\tp cai\\presentacion2\\agregarventa_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6B9E809C-9635-42CF-920E-0FE31234C213}|Presentacion2\\Presentacion2.csproj|solutionrelative:presentacion2\\agregarventa_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D785466A-9765-483C-B6FA-3779406BE546}|Datos\\Datos.csproj|C:\\Users\\Cata\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\datos\\carritoproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D785466A-9765-483C-B6FA-3779406BE546}|Datos\\Datos.csproj|solutionrelative:datos\\carritoproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D785466A-9765-483C-B6FA-3779406BE546}|Datos\\Datos.csproj|C:\\Users\\Cata\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\datos\\venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D785466A-9765-483C-B6FA-3779406BE546}|Datos\\Datos.csproj|solutionrelative:datos\\venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D4D43B4-C908-49FE-B2C8-68E34EFE8114}|Presentacion\\Negocio.csproj|C:\\Users\\Cata\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\presentacion\\negocioventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D4D43B4-C908-49FE-B2C8-68E34EFE8114}|Presentacion\\Negocio.csproj|solutionrelative:presentacion\\negocioventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75D739F2-5534-466A-AE90-62F438787CD6}|Persistencia\\Persistencia.csproj|C:\\Users\\Cata\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\persistencia\\ventaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75D739F2-5534-466A-AE90-62F438787CD6}|Persistencia\\Persistencia.csproj|solutionrelative:persistencia\\ventaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B9E809C-9635-42CF-920E-0FE31234C213}|Presentacion2\\Presentacion2.csproj|C:\\Users\\Cata\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\presentacion2\\validador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B9E809C-9635-42CF-920E-0FE31234C213}|Presentacion2\\Presentacion2.csproj|solutionrelative:presentacion2\\validador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B9E809C-9635-42CF-920E-0FE31234C213}|Presentacion2\\Presentacion2.csproj|C:\\Users\\Cata\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\presentacion2\\vendedor_registarventa_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6B9E809C-9635-42CF-920E-0FE31234C213}|Presentacion2\\Presentacion2.csproj|solutionrelative:presentacion2\\vendedor_registarventa_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D785466A-9765-483C-B6FA-3779406BE546}|Datos\\Datos.csproj|C:\\Users\\Cata\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\datos\\altausuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D785466A-9765-483C-B6FA-3779406BE546}|Datos\\Datos.csproj|solutionrelative:datos\\altausuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D4D43B4-C908-49FE-B2C8-68E34EFE8114}|Presentacion\\Negocio.csproj|C:\\Users\\Cata\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\presentacion\\operacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D4D43B4-C908-49FE-B2C8-68E34EFE8114}|Presentacion\\Negocio.csproj|solutionrelative:presentacion\\operacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6B9E809C-9635-42CF-920E-0FE31234C213}|Presentacion2\\Presentacion2.csproj|c:\\users\\agust\\downloads\\facultad\\2024\\cai\\tpcai\\cai_1c-2024-sprint1\\tp cai\\presentacion2\\agregarventa_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6B9E809C-9635-42CF-920E-0FE31234C213}|Presentacion2\\Presentacion2.csproj|solutionrelative:presentacion2\\agregarventa_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,111 +34,28 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "agregarventa_form.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\agust\\Downloads\\FACULTAD\\2024\\cai\\TPCAI\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion2\\agregarventa_form.cs",
+              "RelativeDocumentMoniker": "Presentacion2\\agregarventa_form.cs",
+              "ToolTip": "C:\\Users\\agust\\Downloads\\FACULTAD\\2024\\cai\\TPCAI\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion2\\agregarventa_form.cs [Design]",
+              "RelativeToolTip": "Presentacion2\\agregarventa_form.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T22:33:40.173Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "agregarventa_form.cs",
-              "DocumentMoniker": "C:\\Users\\Cata\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion2\\agregarventa_form.cs",
+              "DocumentMoniker": "C:\\Users\\agust\\Downloads\\FACULTAD\\2024\\cai\\TPCAI\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion2\\agregarventa_form.cs",
               "RelativeDocumentMoniker": "Presentacion2\\agregarventa_form.cs",
-              "ToolTip": "C:\\Users\\Cata\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion2\\agregarventa_form.cs",
+              "ToolTip": "C:\\Users\\agust\\Downloads\\FACULTAD\\2024\\cai\\TPCAI\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion2\\agregarventa_form.cs",
               "RelativeToolTip": "Presentacion2\\agregarventa_form.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAAAEMAAAAvAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAACIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-20T22:10:35.413Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CarritoProducto.cs",
-              "DocumentMoniker": "C:\\Users\\Cata\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\Datos\\CarritoProducto.cs",
-              "RelativeDocumentMoniker": "Datos\\CarritoProducto.cs",
-              "ToolTip": "C:\\Users\\Cata\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\Datos\\CarritoProducto.cs",
-              "RelativeToolTip": "Datos\\CarritoProducto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T04:04:49.358Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Venta.cs",
-              "DocumentMoniker": "C:\\Users\\Cata\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\Datos\\Venta.cs",
-              "RelativeDocumentMoniker": "Datos\\Venta.cs",
-              "ToolTip": "C:\\Users\\Cata\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\Datos\\Venta.cs",
-              "RelativeToolTip": "Datos\\Venta.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T03:49:50.268Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "NegocioVenta.cs",
-              "DocumentMoniker": "C:\\Users\\Cata\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion\\NegocioVenta.cs",
-              "RelativeDocumentMoniker": "Presentacion\\NegocioVenta.cs",
-              "ToolTip": "C:\\Users\\Cata\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion\\NegocioVenta.cs",
-              "RelativeToolTip": "Presentacion\\NegocioVenta.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAADwvw0AAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T03:39:55.799Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "VentaService.cs",
-              "DocumentMoniker": "C:\\Users\\Cata\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\Persistencia\\VentaService.cs",
-              "RelativeDocumentMoniker": "Persistencia\\VentaService.cs",
-              "ToolTip": "C:\\Users\\Cata\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\Persistencia\\VentaService.cs",
-              "RelativeToolTip": "Persistencia\\VentaService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T03:48:07.493Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Validador.cs",
-              "DocumentMoniker": "C:\\Users\\Cata\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion2\\Validador.cs",
-              "RelativeDocumentMoniker": "Presentacion2\\Validador.cs",
-              "ToolTip": "C:\\Users\\Cata\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion2\\Validador.cs",
-              "RelativeToolTip": "Presentacion2\\Validador.cs",
-              "ViewState": "AQIAAG4BAAAAAAAAAAAAAH4BAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T03:28:11.489Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "vendedor_registarventa_form.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Cata\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion2\\vendedor_registarventa_form.cs",
-              "RelativeDocumentMoniker": "Presentacion2\\vendedor_registarventa_form.cs",
-              "ToolTip": "C:\\Users\\Cata\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion2\\vendedor_registarventa_form.cs [Design]",
-              "RelativeToolTip": "Presentacion2\\vendedor_registarventa_form.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T03:25:57.859Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Operacion.cs",
-              "DocumentMoniker": "C:\\Users\\Cata\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion\\Operacion.cs",
-              "RelativeDocumentMoniker": "Presentacion\\Operacion.cs",
-              "ToolTip": "C:\\Users\\Cata\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\Presentacion\\Operacion.cs",
-              "RelativeToolTip": "Presentacion\\Operacion.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABwAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T21:33:04.704Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AltaUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\Cata\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\Datos\\AltaUsuario.cs",
-              "RelativeDocumentMoniker": "Datos\\AltaUsuario.cs",
-              "ToolTip": "C:\\Users\\Cata\\OneDrive\\Documentos\\GitHub\\CAI_1C-2024-sprint1\\TP CAI\\Datos\\AltaUsuario.cs",
-              "RelativeToolTip": "Datos\\AltaUsuario.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T21:25:27.058Z"
             }
           ]
         }

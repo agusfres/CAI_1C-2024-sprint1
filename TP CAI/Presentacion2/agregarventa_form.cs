@@ -32,14 +32,17 @@ namespace Presentacion2
             {
                 comboBox1.Items.Add(producto.Nombre);
             }
-               
+
+   
+
         }
         List<CarritoProducto> carritoProductos = new List<CarritoProducto>();
         private void button1_Click_1(object sender, EventArgs e)
-        {
+        { //Falta Validar el dni en la api. Ojo que la clase cliente el host esta int y es string
             double Total = 0;
             string combobox = comboBox1.Text;
             string txCantidad = txtCantidad.Text;
+            string txdni = txtdni.Text;
 
             Validador validadorCampos = new Validador();
             ProductoService productoService = new ProductoService();
@@ -51,10 +54,12 @@ namespace Presentacion2
 
             string errorCantidad = validadorCampos.ValidarCantidadProd(txCantidad, "Cantidad",stock);
             string errorCombo = validadorCampos.ValidarComboBox(combobox,"Producto");
+            string errorDni = validadorCampos.ValidarDNI(txdni, "DNI");
 
             lblErrorCantidad.Text = errorCantidad;
             lblErrorProducto.Text = errorCombo;
-            string acumulador = errorCantidad + errorCombo;
+            lblerrordni.Text = errorDni;
+            string acumulador = errorCantidad + errorCombo + errorDni;
 
             if (acumulador == "")
             {
