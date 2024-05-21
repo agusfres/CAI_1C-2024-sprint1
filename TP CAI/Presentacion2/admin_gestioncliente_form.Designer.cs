@@ -84,7 +84,7 @@
             this.btnAgregarCrearCliente.Text = "AGREGAR/CREAR CLIENTE";
             this.btnAgregarCrearCliente.TextColor = System.Drawing.Color.Gray;
             this.btnAgregarCrearCliente.UseVisualStyleBackColor = false;
-            this.btnAgregarCrearCliente.Click += new System.EventHandler(this.btnAgregarCrearUsuario_Click_1);
+            this.btnAgregarCrearCliente.Click += new System.EventHandler(this.btnAgregarCrearCliente_Click_1);
             // 
             // btnModificarCliente
             // 
@@ -118,7 +118,7 @@
             this.pictureBox1.TabIndex = 39;
             this.pictureBox1.TabStop = false;
             // 
-            // admin_gestion_form
+            // admin_gestioncliente_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -128,7 +128,7 @@
             this.Controls.Add(this.lblGestionClienteTitulo);
             this.Controls.Add(this.linkLabelVolver);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "admin_gestion_form";
+            this.Name = "admin_gestioncliente_form";
             this.Text = "Form5";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

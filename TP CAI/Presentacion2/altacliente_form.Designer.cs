@@ -69,7 +69,7 @@
             this.lblTitulo.ForeColor = System.Drawing.Color.DimGray;
             this.lblTitulo.Location = new System.Drawing.Point(149, 9);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(433, 31);
+            this.lblTitulo.Size = new System.Drawing.Size(424, 31);
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "AGREGAR UN NUEVO CLIENTE";
             // 
@@ -300,25 +300,25 @@
             // 
             // txtCliente
             // 
-            this.txtCliente.Location = new System.Drawing.Point(46, 365);
+            this.txtCliente.Location = new System.Drawing.Point(0, 0);
             this.txtCliente.Name = "txtCliente";
-            this.txtCliente.Size = new System.Drawing.Size(253, 20);
-            this.txtCliente.TabIndex = 24;
+            this.txtCliente.Size = new System.Drawing.Size(100, 20);
+            this.txtCliente.TabIndex = 35;
             // 
             // lblCliente
             // 
-            this.lblCliente.AutoSize = true;
-            this.lblCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.lblCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCliente.ForeColor = System.Drawing.Color.DimGray;
-            this.lblCliente.Location = new System.Drawing.Point(48, 343);
+            this.lblCliente.Location = new System.Drawing.Point(0, 0);
             this.lblCliente.Name = "lblCliente";
-            this.lblCliente.Size = new System.Drawing.Size(60, 18);
-            this.lblCliente.TabIndex = 23;
-            this.lblCliente.Text = "Cliente";
+            this.lblCliente.Size = new System.Drawing.Size(100, 23);
+            this.lblCliente.TabIndex = 36;
             // 
-
-
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(100, 23);
+            this.label2.TabIndex = 34;
+            // 
             // lblMensajeAgregar
             // 
             this.lblMensajeAgregar.AutoSize = true;
@@ -348,7 +348,7 @@
             this.btnConfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConfirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfirmar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnConfirmar.Location = new System.Drawing.Point(386, 415);
+            this.btnConfirmar.Location = new System.Drawing.Point(469, 366);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.OnHoverBorderColor = System.Drawing.Color.Salmon;
             this.btnConfirmar.OnHoverButtonColor = System.Drawing.Color.Salmon;
@@ -360,7 +360,7 @@
             this.btnConfirmar.UseVisualStyleBackColor = false;
             this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click_1);
             // 
-            // admin_agregar_form
+            // altacliente_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;

@@ -19,11 +19,11 @@ namespace Presentacion2
         }
 
 
-        private void btnAgregarCrearUsuario_Click_1(object sender, EventArgs e)
+        private void btnAgregarCrearCliente_Click_1(object sender, EventArgs e)
         {
             this.Hide();
-            admin_agregar_form form1 = new admin_agregar_form();
-            form1.Show();
+            altacliente_form form4 = new altacliente_form();
+            form4.Show();
         }
 
 

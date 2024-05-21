@@ -37,7 +37,6 @@ namespace Presentacion2
             lblErrorDireccion.Text = "";
             lblErrorFecha.Text = "";
             lblErrorDNI.Text = "";
-            lblErrorCliente.Text = "";
             lblErrorTelefono.Text = "";
 
             Validador validadorCampos = new Validador();
@@ -48,7 +47,6 @@ namespace Presentacion2
             string txDireccion = txtDireccion.Text;
             string txFechaNac = txtFechaNac.Text;
             string txDNI = txtDNI.Text;
-            string txNombreCliente = txtCliente.Text;
             string txTelefono = txtTelefono.Text;
 
             string errorNombre = validadorCampos.ValidarNombre(txNombre, "Nombre");
@@ -57,7 +55,6 @@ namespace Presentacion2
             string errorTelefono = validadorCampos.ValidarTelefono(txTelefono, "Teléfono");
             string errorEmail = validadorCampos.ValidarEmail(txEmail, "Email");
             string errorFecha = validadorCampos.ValidarFecha(txFechaNac, "Fecha");
-            string errorCliente = validadorCampos.ValidarNombreCliente(txNombreCliente, txNombre, txApellido, "Cliente");
             string errorDNI = validadorCampos.ValidarDNI(txDNI, "DNI");
 
             lblErrorNombre.Text = errorNombre;
@@ -66,10 +63,9 @@ namespace Presentacion2
             lblErrorDireccion.Text = errorDireccion;
             lblErrorFecha.Text = errorFecha;
             lblErrorDNI.Text = errorDNI;
-            lblErrorCliente.Text = errorCliente;
             lblErrorTelefono.Text = errorTelefono;
 
-            string acumuladorErrores = errorApellido + errorFecha + errorDireccion + errorDNI + errorCliente + errorTelefono + errorNombre + errorEmail;
+            string acumuladorErrores = errorApellido + errorFecha + errorDireccion + errorDNI  + errorTelefono + errorNombre + errorEmail;
 
             if (string.IsNullOrEmpty(acumuladorErrores))
             {
@@ -116,8 +112,8 @@ namespace Presentacion2
         private void linkLabelVolver_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            altacliente_form alta_cliente = new altacliente_form();
-            alta_cliente.Show();
+            admin_gestioncliente_form cliente_gestion = new admin_gestioncliente_form();
+            cliente_gestion.Show();
         }
     }
 }
