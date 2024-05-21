@@ -119,6 +119,7 @@
             this.btnReportes.Text = "REPORTES";
             this.btnReportes.TextColor = System.Drawing.Color.Gray;
             this.btnReportes.UseVisualStyleBackColor = false;
+            this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
 
             // 
             // btnGestionarClientes

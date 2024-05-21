@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Datos
 {
-    internal class Venta
+    public class Venta
     {
         Guid id;
         int cantidad;

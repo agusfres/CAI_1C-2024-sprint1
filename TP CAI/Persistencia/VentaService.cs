@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Persistencia
 {
-    internal class VentaService
+    public class VentaService
     {
         public void AgregarVenta(Altaventa altaVenta)
         {

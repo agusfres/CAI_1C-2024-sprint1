@@ -359,12 +359,29 @@ namespace Presentacion2
         }
         */ 
 
-        public string ValidarCantidadProd(string texto, string campo)
+        public string ValidarCantidadProd(string cantidad, string campo,int stock)
+        {
+            string msgError = "";
+            msgError += ValidarVacio(cantidad, campo);
+            msgError += ValidarFormatoNumero(cantidad, campo);
+            Operacion operacion = new Operacion();
+            int cantidadInt = operacion.TransformarStringInt(cantidad);
+            if (msgError == "")
+            {
+                if(cantidadInt > stock)
+                {
+                    msgError += "La cantidad debe ser igual o menor al stock: " + stock;
+                }
+            }
+            return msgError;
+        }
+        public string ValidarComboBox(string texto, string campo)
         {
             string msgError = "";
             msgError += ValidarVacio(texto, campo);
-            msgError += ValidarFormatoNumero(texto, campo);
+
             return msgError;
+
         }
     }
 }
