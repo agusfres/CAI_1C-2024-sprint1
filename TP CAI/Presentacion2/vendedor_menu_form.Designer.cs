@@ -71,6 +71,7 @@
             this.btnVenta.Text = "REGISTRAR VENTA";
             this.btnVenta.TextColor = System.Drawing.Color.Gray;
             this.btnVenta.UseVisualStyleBackColor = false;
+            this.btnVenta.Click += new System.EventHandler(this.btnVenta_Click);
             // 
             // btnReporteVentas
             // 

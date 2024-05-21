@@ -24,5 +24,12 @@ namespace Presentacion2
             iniciarsesion_form iniciarsesion_Form = new iniciarsesion_form();
             iniciarsesion_Form.Show();
         }
+
+        private void btnVenta_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            agregarventa_form agregarventa = new agregarventa_form();
+            agregarventa.Show();
+        }
     }
 }

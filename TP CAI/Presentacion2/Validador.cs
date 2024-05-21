@@ -343,5 +343,28 @@ namespace Presentacion2
             msgError += ValidarFormatoGuid(texto, campo);
             return msgError;
         }
+
+        /* LO DEJO COMENTADO PORQUE NO SE COMO COMBOBOX DE LA API
+       public string ValidarProducto(string texto, string campo)
+        {
+            string msgError = "";
+            List<string> opciones = new List<string>();
+            msgError += ValidarVacio(texto, campo);
+
+            if (!opciones.Contains(texto))
+            {
+                msgError += "El campo " + campo + " debe ser alguna de las opciones indicadas." + System.Environment.NewLine;
+            }
+            return msgError;
+        }
+        */ 
+
+        public string ValidarCantidadProd(string texto, string campo)
+        {
+            string msgError = "";
+            msgError += ValidarVacio(texto, campo);
+            msgError += ValidarFormatoNumero(texto, campo);
+            return msgError;
+        }
     }
 }

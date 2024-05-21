@@ -55,11 +55,5 @@ namespace Presentacion2
             Admin_gestioncliente_form.Show();
         }
 
-        private void btnReportes_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            agregarventa_form agregarventa_Form = new agregarventa_form();
-            agregarventa_Form.Show();
-        }
     }
 }
