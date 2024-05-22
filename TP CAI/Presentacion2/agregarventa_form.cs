@@ -68,6 +68,8 @@ namespace Presentacion2
                 CarritoProducto cp = new CarritoProducto(combobox, producto.Precio, cantidad,producto.IdCategoria);
                 carritoProductos.Add(cp);
                 dataGridView1.Rows.Add(combobox, cantidad, producto.Precio);
+
+
                 foreach(CarritoProducto c in carritoProductos)
                 {
                     if(c.idCategoria == 3)
@@ -104,6 +106,16 @@ namespace Presentacion2
             this.Hide();
             vendedor_menu_form vendedor_menu = new vendedor_menu_form();
             vendedor_menu.Show();
+        }
+
+        private void button_WOC1_Click(object sender, EventArgs e)
+        {
+            //*No olvidar restar una vez confirmada la compra el stock
+
+            this.Hide();
+            remito_form remito_Form = new remito_form();
+            remito_Form.Show();
+
         }
     }
 }
