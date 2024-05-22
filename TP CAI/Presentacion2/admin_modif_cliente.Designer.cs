@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             this.lblErrorEmail = new System.Windows.Forms.Label();
-            this.lblErrorDNI = new System.Windows.Forms.Label();
-            this.lblErrorNombre = new System.Windows.Forms.Label();
+            this.lblErrorEstado = new System.Windows.Forms.Label();
+            this.lblErrorTelefono = new System.Windows.Forms.Label();
             this.btnConfirmar = new ePOSOne.btnProduct.Button_WOC();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
-            this.txtDNI = new System.Windows.Forms.TextBox();
-            this.lblDNI = new System.Windows.Forms.Label();
-            this.lblErrorApellido = new System.Windows.Forms.Label();
-            this.txtApellido = new System.Windows.Forms.TextBox();
-            this.lblApellido = new System.Windows.Forms.Label();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.lblNombre = new System.Windows.Forms.Label();
+            this.txtEstado = new System.Windows.Forms.TextBox();
+            this.lblEstado = new System.Windows.Forms.Label();
+            this.lblErrorDireccion = new System.Windows.Forms.Label();
+            this.txtDireccion = new System.Windows.Forms.TextBox();
+            this.lblDireccion = new System.Windows.Forms.Label();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.lblTelefono = new System.Windows.Forms.Label();
             this.btnBuscarCliente = new ePOSOne.btnProduct.Button_WOC();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtIngresoCliente = new System.Windows.Forms.TextBox();
-            this.lblIngresaCliente = new System.Windows.Forms.Label();
+            this.txtIngresoDNI = new System.Windows.Forms.TextBox();
+            this.lblIngresoDNI = new System.Windows.Forms.Label();
             this.lblGestionClienteTitulo = new System.Windows.Forms.Label();
             this.linkLabelVolver = new System.Windows.Forms.LinkLabel();
             this.label1 = new System.Windows.Forms.Label();
@@ -59,21 +59,21 @@
             this.lblErrorEmail.Size = new System.Drawing.Size(0, 13);
             this.lblErrorEmail.TabIndex = 100;
             // 
-            // lblErrorDNI
+            // lblErrorEstado
             // 
-            this.lblErrorDNI.AutoSize = true;
-            this.lblErrorDNI.Location = new System.Drawing.Point(92, 265);
-            this.lblErrorDNI.Name = "lblErrorDNI";
-            this.lblErrorDNI.Size = new System.Drawing.Size(0, 13);
-            this.lblErrorDNI.TabIndex = 99;
+            this.lblErrorEstado.AutoSize = true;
+            this.lblErrorEstado.Location = new System.Drawing.Point(92, 265);
+            this.lblErrorEstado.Name = "lblErrorEstado";
+            this.lblErrorEstado.Size = new System.Drawing.Size(0, 13);
+            this.lblErrorEstado.TabIndex = 99;
             // 
-            // lblErrorNombre
+            // lblErrorTelefono
             // 
-            this.lblErrorNombre.AutoSize = true;
-            this.lblErrorNombre.Location = new System.Drawing.Point(92, 191);
-            this.lblErrorNombre.Name = "lblErrorNombre";
-            this.lblErrorNombre.Size = new System.Drawing.Size(0, 13);
-            this.lblErrorNombre.TabIndex = 98;
+            this.lblErrorTelefono.AutoSize = true;
+            this.lblErrorTelefono.Location = new System.Drawing.Point(92, 191);
+            this.lblErrorTelefono.Name = "lblErrorTelefono";
+            this.lblErrorTelefono.Size = new System.Drawing.Size(0, 13);
+            this.lblErrorTelefono.TabIndex = 98;
             // 
             // btnConfirmar
             // 
@@ -114,68 +114,68 @@
             this.lblEmail.TabIndex = 82;
             this.lblEmail.Text = "Email";
             // 
-            // txtDNI
+            // txtEstado
             // 
-            this.txtDNI.Location = new System.Drawing.Point(92, 242);
-            this.txtDNI.Name = "txtDNI";
-            this.txtDNI.Size = new System.Drawing.Size(253, 20);
-            this.txtDNI.TabIndex = 78;
+            this.txtEstado.Location = new System.Drawing.Point(92, 242);
+            this.txtEstado.Name = "txtEstado";
+            this.txtEstado.Size = new System.Drawing.Size(253, 20);
+            this.txtEstado.TabIndex = 78;
             // 
-            // lblDNI
+            // lblEstado
             // 
-            this.lblDNI.AutoSize = true;
-            this.lblDNI.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDNI.ForeColor = System.Drawing.Color.DimGray;
-            this.lblDNI.Location = new System.Drawing.Point(92, 220);
-            this.lblDNI.Name = "lblDNI";
-            this.lblDNI.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblDNI.Size = new System.Drawing.Size(33, 18);
-            this.lblDNI.TabIndex = 77;
-            this.lblDNI.Text = "DNI";
+            this.lblEstado.AutoSize = true;
+            this.lblEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEstado.ForeColor = System.Drawing.Color.DimGray;
+            this.lblEstado.Location = new System.Drawing.Point(92, 220);
+            this.lblEstado.Name = "lblEstado";
+            this.lblEstado.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblEstado.Size = new System.Drawing.Size(55, 18);
+            this.lblEstado.TabIndex = 77;
+            this.lblEstado.Text = "Estado";
             // 
-            // lblErrorApellido
+            // lblErrorDireccion
             // 
-            this.lblErrorApellido.AutoSize = true;
-            this.lblErrorApellido.Location = new System.Drawing.Point(431, 194);
-            this.lblErrorApellido.Name = "lblErrorApellido";
-            this.lblErrorApellido.Size = new System.Drawing.Size(0, 13);
-            this.lblErrorApellido.TabIndex = 76;
+            this.lblErrorDireccion.AutoSize = true;
+            this.lblErrorDireccion.Location = new System.Drawing.Point(431, 194);
+            this.lblErrorDireccion.Name = "lblErrorDireccion";
+            this.lblErrorDireccion.Size = new System.Drawing.Size(0, 13);
+            this.lblErrorDireccion.TabIndex = 76;
             // 
-            // txtApellido
+            // txtDireccion
             // 
-            this.txtApellido.Location = new System.Drawing.Point(431, 168);
-            this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(253, 20);
-            this.txtApellido.TabIndex = 75;
+            this.txtDireccion.Location = new System.Drawing.Point(431, 168);
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(253, 20);
+            this.txtDireccion.TabIndex = 75;
             // 
-            // lblApellido
+            // lblDireccion
             // 
-            this.lblApellido.AutoSize = true;
-            this.lblApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblApellido.ForeColor = System.Drawing.Color.DimGray;
-            this.lblApellido.Location = new System.Drawing.Point(431, 146);
-            this.lblApellido.Name = "lblApellido";
-            this.lblApellido.Size = new System.Drawing.Size(59, 18);
-            this.lblApellido.TabIndex = 74;
-            this.lblApellido.Text = "Apellido";
+            this.lblDireccion.AutoSize = true;
+            this.lblDireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDireccion.ForeColor = System.Drawing.Color.DimGray;
+            this.lblDireccion.Location = new System.Drawing.Point(431, 146);
+            this.lblDireccion.Name = "lblDireccion";
+            this.lblDireccion.Size = new System.Drawing.Size(71, 18);
+            this.lblDireccion.TabIndex = 74;
+            this.lblDireccion.Text = "Direccion";
             // 
-            // txtNombre
+            // txtTelefono
             // 
-            this.txtNombre.Location = new System.Drawing.Point(92, 168);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(253, 20);
-            this.txtNombre.TabIndex = 73;
+            this.txtTelefono.Location = new System.Drawing.Point(92, 168);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(253, 20);
+            this.txtTelefono.TabIndex = 73;
             // 
-            // lblNombre
+            // lblTelefono
             // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.ForeColor = System.Drawing.Color.DimGray;
-            this.lblNombre.Location = new System.Drawing.Point(92, 146);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(62, 18);
-            this.lblNombre.TabIndex = 72;
-            this.lblNombre.Text = "Nombre";
+            this.lblTelefono.AutoSize = true;
+            this.lblTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelefono.ForeColor = System.Drawing.Color.DimGray;
+            this.lblTelefono.Location = new System.Drawing.Point(92, 146);
+            this.lblTelefono.Name = "lblTelefono";
+            this.lblTelefono.Size = new System.Drawing.Size(66, 18);
+            this.lblTelefono.TabIndex = 72;
+            this.lblTelefono.Text = "Telefono";
             // 
             // btnBuscarCliente
             // 
@@ -196,6 +196,7 @@
             this.btnBuscarCliente.Text = "Buscar Cliente";
             this.btnBuscarCliente.TextColor = System.Drawing.Color.White;
             this.btnBuscarCliente.UseVisualStyleBackColor = true;
+            this.btnBuscarCliente.Click += new System.EventHandler(this.btnBuscarCliente_Click);
             // 
             // label2
             // 
@@ -206,23 +207,23 @@
             this.label2.Size = new System.Drawing.Size(0, 15);
             this.label2.TabIndex = 70;
             // 
-            // txtIngresoCliente
+            // txtIngresoDNI
             // 
-            this.txtIngresoCliente.Location = new System.Drawing.Point(92, 106);
-            this.txtIngresoCliente.Name = "txtIngresoCliente";
-            this.txtIngresoCliente.Size = new System.Drawing.Size(377, 20);
-            this.txtIngresoCliente.TabIndex = 69;
+            this.txtIngresoDNI.Location = new System.Drawing.Point(92, 106);
+            this.txtIngresoDNI.Name = "txtIngresoDNI";
+            this.txtIngresoDNI.Size = new System.Drawing.Size(377, 20);
+            this.txtIngresoDNI.TabIndex = 69;
             // 
-            // lblIngresaCliente
+            // lblIngresoDNI
             // 
-            this.lblIngresaCliente.AutoSize = true;
-            this.lblIngresaCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIngresaCliente.ForeColor = System.Drawing.Color.DimGray;
-            this.lblIngresaCliente.Location = new System.Drawing.Point(92, 84);
-            this.lblIngresaCliente.Name = "lblIngresaCliente";
-            this.lblIngresaCliente.Size = new System.Drawing.Size(340, 18);
-            this.lblIngresaCliente.TabIndex = 68;
-            this.lblIngresaCliente.Text = "Ingrese el nombre de Cliente que debería modificar";
+            this.lblIngresoDNI.AutoSize = true;
+            this.lblIngresoDNI.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIngresoDNI.ForeColor = System.Drawing.Color.DimGray;
+            this.lblIngresoDNI.Location = new System.Drawing.Point(92, 84);
+            this.lblIngresoDNI.Name = "lblIngresoDNI";
+            this.lblIngresoDNI.Size = new System.Drawing.Size(306, 18);
+            this.lblIngresoDNI.TabIndex = 68;
+            this.lblIngresoDNI.Text = "Ingrese el DNI de Cliente que desea modificar";
             // 
             // lblGestionClienteTitulo
             // 
@@ -277,22 +278,22 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblErrorEmail);
-            this.Controls.Add(this.lblErrorDNI);
-            this.Controls.Add(this.lblErrorNombre);
+            this.Controls.Add(this.lblErrorEstado);
+            this.Controls.Add(this.lblErrorTelefono);
             this.Controls.Add(this.btnConfirmar);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.lblEmail);
-            this.Controls.Add(this.txtDNI);
-            this.Controls.Add(this.lblDNI);
-            this.Controls.Add(this.lblErrorApellido);
-            this.Controls.Add(this.txtApellido);
-            this.Controls.Add(this.lblApellido);
-            this.Controls.Add(this.txtNombre);
-            this.Controls.Add(this.lblNombre);
+            this.Controls.Add(this.txtEstado);
+            this.Controls.Add(this.lblEstado);
+            this.Controls.Add(this.lblErrorDireccion);
+            this.Controls.Add(this.txtDireccion);
+            this.Controls.Add(this.lblDireccion);
+            this.Controls.Add(this.txtTelefono);
+            this.Controls.Add(this.lblTelefono);
             this.Controls.Add(this.btnBuscarCliente);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtIngresoCliente);
-            this.Controls.Add(this.lblIngresaCliente);
+            this.Controls.Add(this.txtIngresoDNI);
+            this.Controls.Add(this.lblIngresoDNI);
             this.Controls.Add(this.lblGestionClienteTitulo);
             this.Controls.Add(this.linkLabelVolver);
             this.Name = "admin_modif_cliente";
@@ -304,22 +305,22 @@
 
         #endregion
         private System.Windows.Forms.Label lblErrorEmail;
-        private System.Windows.Forms.Label lblErrorDNI;
-        private System.Windows.Forms.Label lblErrorNombre;
+        private System.Windows.Forms.Label lblErrorEstado;
+        private System.Windows.Forms.Label lblErrorTelefono;
         private ePOSOne.btnProduct.Button_WOC btnConfirmar;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label lblEmail;
-        private System.Windows.Forms.TextBox txtDNI;
-        private System.Windows.Forms.Label lblDNI;
-        private System.Windows.Forms.Label lblErrorApellido;
-        private System.Windows.Forms.TextBox txtApellido;
-        private System.Windows.Forms.Label lblApellido;
-        private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.TextBox txtEstado;
+        private System.Windows.Forms.Label lblEstado;
+        private System.Windows.Forms.Label lblErrorDireccion;
+        private System.Windows.Forms.TextBox txtDireccion;
+        private System.Windows.Forms.Label lblDireccion;
+        private System.Windows.Forms.TextBox txtTelefono;
+        private System.Windows.Forms.Label lblTelefono;
         private ePOSOne.btnProduct.Button_WOC btnBuscarCliente;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtIngresoCliente;
-        private System.Windows.Forms.Label lblIngresaCliente;
+        private System.Windows.Forms.TextBox txtIngresoDNI;
+        private System.Windows.Forms.Label lblIngresoDNI;
         private System.Windows.Forms.Label lblGestionClienteTitulo;
         private System.Windows.Forms.LinkLabel linkLabelVolver;
         private System.Windows.Forms.Label label1;
