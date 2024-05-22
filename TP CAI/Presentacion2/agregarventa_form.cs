@@ -48,7 +48,7 @@ namespace Presentacion2
             int cantidad = operacion.TransformarStringInt(txCantidad);
             int dni = operacion.TransformarStringInt(txdni);
             string errorCombo = validadorCampos.ValidarComboBox(combobox, "Producto");
-            string errorDni = validadorCampos.ValidarDNIVenta(txdni, "DNI");
+            string errorDni = validadorCampos.ValidarDNIExistente(txdni, "DNI");
             ProductoService productoService = new ProductoService();
             List<Producto> listaproductos = productoService.TraerProductos();
             Producto producto = listaproductos.Find(p => p.Nombre == combobox);

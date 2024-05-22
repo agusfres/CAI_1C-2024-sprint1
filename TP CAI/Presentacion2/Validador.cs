@@ -248,7 +248,7 @@ namespace Presentacion2
 
             return msgError;
         }
-        public string ValidarDNIVenta(string texto, string campo)
+        public string ValidarDNIExistente(string texto, string campo)
         {
             string msgError = "";
             msgError += ValidarLongitud(texto, campo, 7, 8);

@@ -31,6 +31,7 @@
             this.lblErrorEmail = new System.Windows.Forms.Label();
             this.lblErrorEstado = new System.Windows.Forms.Label();
             this.lblErrorTelefono = new System.Windows.Forms.Label();
+            this.lblErrorDNI = new System.Windows.Forms.Label();
             this.btnConfirmar = new ePOSOne.btnProduct.Button_WOC();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
@@ -58,6 +59,14 @@
             this.lblErrorEmail.Name = "lblErrorEmail";
             this.lblErrorEmail.Size = new System.Drawing.Size(0, 13);
             this.lblErrorEmail.TabIndex = 100;
+            // 
+            // lblErrorDNI
+            // 
+            this.lblErrorDNI.AutoSize = true;
+            this.lblErrorDNI.Location = new System.Drawing.Point(390, 20);
+            this.lblErrorDNI.Name = "lblErrorDNI";
+            this.lblErrorDNI.Size = new System.Drawing.Size(0, 13);
+            this.lblErrorDNI.TabIndex = 100;
             // 
             // lblErrorEstado
             // 
@@ -275,6 +284,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 456);
+            this.Controls.Add(this.lblErrorDNI);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblErrorEmail);
@@ -300,10 +310,12 @@
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
+            
 
         }
 
         #endregion
+        private System.Windows.Forms.Label lblErrorDNI;
         private System.Windows.Forms.Label lblErrorEmail;
         private System.Windows.Forms.Label lblErrorEstado;
         private System.Windows.Forms.Label lblErrorTelefono;

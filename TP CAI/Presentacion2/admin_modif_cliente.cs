@@ -1,4 +1,5 @@
-﻿using Presentacion;
+﻿using Datos;
+using Presentacion;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -38,10 +39,10 @@ namespace Presentacion2
             string errorNombre = validadorCampos.ValidarNombre(txNombre, "Nombre");
             string errorApellido = validadorCampos.ValidarNombre(txApellido, "Apellido");
             string errorEmail = validadorCampos.ValidarEmail(txEmail, "Email");
-            string errorDNI = validadorCampos.ValidarDNI(txDNI, "DNI");
+            string errorEstado = validadorCampos.ValidarDNI(txDNI, "DNI");
 
 
-            string acumuladorErrores = errorNombre + errorApellido + errorEmail + errorDNI;
+            string acumuladorErrores = errorNombre + errorApellido + errorEmail + errorEstado;
 
             if (string.IsNullOrEmpty(acumuladorErrores))
             {
@@ -53,7 +54,21 @@ namespace Presentacion2
 
         private void btnBuscarCliente_Click(object sender, EventArgs e)
         {
+            string txtDNI = txtIngresoDNI.Text;
+            Validador validador = new Validador();
+            string errorDNI = validador.ValidarDNIExistente(txtDNI, "DNI");
+            lblErrorDNI.Text = errorDNI;
+            if (errorDNI.Length == 0)
+            {
+                Operacion operacion = new Operacion();
+                int DNI = operacion.TransformarStringInt(txtDNI);
 
+                NegocioCliente negociocliente = new NegocioCliente();
+                Cliente cliente = negociocliente.BuscarCliente(DNI);
+                txtDireccion.Text = cliente.Direccion;
+                txtEmail.Text = cliente.Email;
+                txtTelefono.Text = cliente.Telefono;    
+            }
         }
     }
 }
