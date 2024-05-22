@@ -79,7 +79,7 @@ namespace Persistencia
             }
         }
 
-        public static void ModificarCliente(string idUsuario, string direccion, string telefono, string email  )
+        public  void ModificarCliente(string idUsuario, string direccion, string telefono, string email  )
         {
             string path = "/api/Cliente/PatchCliente";
 

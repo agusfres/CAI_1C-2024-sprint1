@@ -71,6 +71,12 @@ namespace Presentacion
 
         public void ModificarCliente(Guid idUsuario, string direccion, string telefono, string email)
         {
+            ClienteService clienteService = new ClienteService();
+            clienteService.ModificarCliente(idUsuario.ToString(), direccion, telefono, email);
+            ModificarClienteBaseLocal(idUsuario,direccion, telefono,email);
+        }
+        public void ModificarClienteBaseLocal(Guid idUsuario, string direccion, string telefono, string email)
+        {
             string docPath = rutaLocal;
             string nombreUsuarioSistema = Environment.UserName;
             string docPathAdaptado = docPath.Replace("USUARIOSISTEMA", nombreUsuarioSistema);
