@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Datos;
+using Presentacion;
 
 
 namespace Presentacion2
@@ -242,6 +245,27 @@ namespace Presentacion2
             string msgError = "";
             msgError += ValidarLongitud(texto, campo, 7, 8);
             msgError += ValidarFormatoNumero(texto, campo);
+
+            return msgError;
+        }
+        public string ValidarDNIVenta(string texto, string campo)
+        {
+            string msgError = "";
+            msgError += ValidarLongitud(texto, campo, 7, 8);
+            msgError += ValidarFormatoNumero(texto, campo);
+
+            if (msgError == "")
+            {
+                Operacion operacion = new Operacion();
+                int dni = operacion.TransformarStringInt(texto);
+                NegocioCliente negocio = new NegocioCliente();
+                Cliente cliente = negocio.BuscarCliente(dni);
+                if (cliente == null)
+                {
+                    msgError = "El cliente ingresado no existe.";
+                }
+            }
+
             return msgError;
         }
 

@@ -18,11 +18,11 @@ namespace Datos
         DateTime fechaNacimiento;
         DateTime? fechaBaja;
         Guid idUsuario;
-        int host;
+        string host;
         int dni;
 
 
-        public Cliente(Guid id, string nombre, string apellido, string direccion, string telefono, string email, DateTime fechaAlta, DateTime fechaNacimiento, DateTime? fechaBaja, Guid idUsuario, int host, int dni)
+        public Cliente(Guid id, string nombre, string apellido, string direccion, string telefono, string email, DateTime fechaAlta, DateTime fechaNacimiento, DateTime? fechaBaja, Guid idUsuario, string host, int dni)
         {
             this.id = id;
             this.nombre = nombre;
@@ -55,6 +55,6 @@ namespace Datos
         public DateTime? FechaBaja { get => fechaBaja; set => fechaBaja = value; }
         public Guid IdUsuario { get => idUsuario; set => idUsuario = value; }
         public int Dni { get => dni; set => dni = value; }
-        public int Host { get => host; set => host = value; }
+        public string Host { get => host; set => host = value; }
     }
 }

@@ -11,15 +11,27 @@ namespace Presentacion
     public class NegocioVenta
     {
         private Guid idUsuario = Guid.Parse("70b37dc1-8fde-4840-be47-9ababd0ee7e5");
-        //public List<Producto> AgregarAlCarrito(string nombre, int cantidad)
-        //{
-            // Ponemos host como 1 ya que al usar 5 el web service da error 409 porqu solo permite un enum de 1, 2 o 3
-            // int host = 1;
-            //AltaUsuario altaUsuario = new AltaUsuario(idAdministrador, host, nombre, apellido, dni, direccion, telefono, email, fechaNacimiento, nombreUsuario, contraseña);
-            //usuarioService.AgregarUsuario(altaUsuario);
-            //Usuario usuarioAuxiliar = BuscarUsuario(nombreUsuario);
-            //Usuario usuario = new Usuario(usuarioAuxiliar.Id, nombre, apellido, direccion, telefono, email, DateTime.Now, fechaNacimiento, null, null, nombreUsuario, tipoUsuario, dni, contraseña, host, "INACTIVO");
-            //AgregarUsuarioBaseLocal(usuario);
+
+        public double DescuentoPrimerCompra(int dni,double importeResto, double importeElectro)
+        {
+            double descuento;
+            NegocioCliente negocioCliente = new NegocioCliente();
+            Cliente cliente = negocioCliente.BuscarCliente(dni);
+
+            VentaService ventaService = new VentaService();
+            List<Venta> ventasCliente= ventaService.TraerVenta(dni.ToString());
+
+            if (ventasCliente.Count == 0)
+            {
+                descuento = (importeResto + importeElectro) * 0.05;
+            }
+            else
+            {
+                descuento = 0;
+            }
+
+            return descuento;
         }
+
     }
-//}
+}

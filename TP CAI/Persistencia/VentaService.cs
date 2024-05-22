@@ -61,6 +61,24 @@ namespace Persistencia
                 throw new Exception("Hubo un error, intente nuevamente en unos segundos");
             }
         }
+
+        public List<Venta> TraerVenta(string idCliente)
+        {
+            string path = "/api/Usuario/TraerUsuariosActivos?id=" + idCliente;
+
+            List<Venta> listaVenta = new List<Venta>();
+
+            HttpResponseMessage response = WebHelper.Get(path);
+
+            if (response.IsSuccessStatusCode)
+            {
+                var contentStream = response.Content.ReadAsStringAsync().Result;
+                listaVenta = JsonConvert.DeserializeObject<List<Venta>>(contentStream);
+            }
+
+            return listaVenta;
+        }
+        
     }
 }
 

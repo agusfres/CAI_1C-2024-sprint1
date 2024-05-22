@@ -20,13 +20,13 @@ namespace Presentacion
         public void AgregarCliente(string nombre, string apellido, string direccion, string telefono, string email, DateTime fechaNacimiento,  int dni)
         {
             // Ponemos host como 1 ya que al usar 5 el web service da error 409 porqu solo permite un enum de 1, 2 o 3
-            int host = 1;
+            string host = "1";
             AltaCliente altaCliente = new AltaCliente(idVendedor, nombre, apellido, dni, direccion, telefono, email, fechaNacimiento, host);
             clienteService.AgregarCliente(altaCliente);
             Operacion operacion = new Operacion();
             Guid dniGuid = operacion.TransformarStringGuid(dni.ToString());
             Cliente clienteAuxiliar = BuscarCliente(dni);
-            Cliente cliente = new Cliente(clienteAuxiliar.IdCliente, nombre, apellido, direccion, telefono, email, DateTime.Now, fechaNacimiento, null, dniGuid, host, dni);
+            Cliente cliente = new Cliente(clienteAuxiliar.IdCliente, nombre, apellido, direccion, telefono, email, DateTime.Now, fechaNacimiento, null, dniGuid, host.ToString(), dni);
             AgregarClienteBaseLocal(cliente);
         }
         public Cliente BuscarCliente(int dni)
@@ -47,7 +47,8 @@ namespace Presentacion
         }
         public List<Cliente> TraerClientes()
         {
-            return clienteService.TraerClientesActivos();
+            List<Cliente> listaCliente = clienteService.TraerClientesActivos();
+            return listaCliente;
         }
         private void AgregarClienteBaseLocal(Cliente cliente)
         {

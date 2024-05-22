@@ -16,10 +16,10 @@ namespace Datos
         string telefono;
         string email;
         DateTime fechaNacimiento;
-        int host;
+        string host;
 
 
-        public AltaCliente(Guid id, string nombre, string apellido, int dni, string direccion, string telefono, string email, DateTime fechaNacimiento, int host)
+        public AltaCliente(Guid id, string nombre, string apellido, int dni, string direccion, string telefono, string email, DateTime fechaNacimiento, string host)
         {
             this.id = id;
             this.nombre = nombre;
@@ -34,7 +34,7 @@ namespace Datos
 
 
         public Guid IdUsuario { get => id; set => id = value; }
-        public int Host { get => host; set => host = value; }
+        public string Host { get => host; set => host = value; }
         public string Nombre { get => nombre; set => nombre = value; }
         public string Apellido { get => apellido; set => apellido = value; }
         public int Dni { get => dni; set => dni = value; }
