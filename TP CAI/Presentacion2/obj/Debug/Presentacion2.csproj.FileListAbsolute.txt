@@ -340,3 +340,4 @@ C:\Users\Cata\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion
 C:\Users\Cata\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.altacliente_form.resources
 C:\Users\agust\Downloads\FACULTAD\2024\cai\TPCAI\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.admin_modif_cliente.resources
 C:\Users\agust\Downloads\FACULTAD\2024\cai\TPCAI\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.altacliente_form.resources
+C:\Users\agust\Downloads\FACULTAD\2024\cai\TPCAI\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.remito_form.resources

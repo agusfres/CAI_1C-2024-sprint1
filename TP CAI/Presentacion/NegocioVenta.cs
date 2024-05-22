@@ -15,7 +15,7 @@ namespace Presentacion
         string rutaLocal = @"C:\Users\USUARIOSISTEMA\VentasLocales.txt";
 
 
-        private void AgregarVentaBaseLocal(Venta venta)
+        public void AgregarVentaBaseLocal(List<CarritoProducto> carritoProductos)
         {
             string docPath = rutaLocal;
             string nombreUsuarioSistema = Environment.UserName;
@@ -23,19 +23,25 @@ namespace Presentacion
 
             StreamWriter writer = new StreamWriter(docPathAdaptado, true);
 
+
             try
             {
                 Guid idVentaLocal = Guid.NewGuid();
-                writer.WriteLine(venta.Id + "+" + venta.Cantidad + "+" + venta.FechaAlta + "+" + venta.Estado + "+" + idVentaLocal);
-                //*Falta agregar de la grilla a la base local
+                foreach (CarritoProducto c in carritoProductos)
+
+                {
+
+                    writer.WriteLine(c.IdProducto + "+" + c.Nombre + "+" + c.Cantidad + "+" + c.Precio + "+" + (c.Precio*c.Cantidad) + "+" + idVentaLocal);
+                }
             }
 
             catch
             {
                 Console.WriteLine("error");
             }
-            writer.Close();
-        }
+                writer.Close();
+            }
+      
 
         public double DescuentoPrimerCompra(int dni,double importeResto, double importeElectro)
         {

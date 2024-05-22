@@ -65,7 +65,7 @@ namespace Presentacion2
  
             if (acumulador == "")
             {
-                CarritoProducto cp = new CarritoProducto(combobox, producto.Precio, cantidad,producto.IdCategoria);
+                CarritoProducto cp = new CarritoProducto(combobox, producto.Precio, cantidad,producto.IdCategoria,producto.IdProducto);
                 carritoProductos.Add(cp);
                 dataGridView1.Rows.Add(combobox, cantidad, producto.Precio);
 
@@ -111,6 +111,8 @@ namespace Presentacion2
         private void button_WOC1_Click(object sender, EventArgs e)
         {
             //*No olvidar restar una vez confirmada la compra el stock
+            NegocioVenta negocioVenta = new NegocioVenta();
+            negocioVenta.AgregarVentaBaseLocal(carritoProductos);
 
             this.Hide();
             remito_form remito_Form = new remito_form();
