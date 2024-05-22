@@ -30,5 +30,7 @@ namespace Presentacion2
             vendedor_menu_form vendedor_Menu_Form = new vendedor_menu_form();
            vendedor_Menu_Form.Show();
         }
+
+
     }
 }
