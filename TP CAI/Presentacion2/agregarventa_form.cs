@@ -114,8 +114,13 @@ namespace Presentacion2
             NegocioVenta negocioVenta = new NegocioVenta();
             negocioVenta.AgregarVentaBaseLocal(carritoProductos);
 
+            string dniCliente = txtdni.Text;
+            double descuentoFinal = double.Parse(labeldesc.Text.Replace("$", "").Trim());
+            double totalFinal = double.Parse(labeltotal.Text.Replace("$", "").Trim());
+
+
             this.Hide();
-            remito_form remito_Form = new remito_form();
+            remito_form remito_Form = new remito_form(dniCliente,carritoProductos,descuentoFinal,totalFinal);
             remito_Form.Show();
 
         }
