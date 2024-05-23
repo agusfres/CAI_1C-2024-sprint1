@@ -32,7 +32,6 @@
             this.lblErrorEstado = new System.Windows.Forms.Label();
             this.lblErrorTelefono = new System.Windows.Forms.Label();
             this.lblErrorDNI = new System.Windows.Forms.Label();
-            this.btnConfirmar = new ePOSOne.btnProduct.Button_WOC();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
             this.txtEstado = new System.Windows.Forms.TextBox();
@@ -42,7 +41,6 @@
             this.lblDireccion = new System.Windows.Forms.Label();
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.lblTelefono = new System.Windows.Forms.Label();
-            this.btnBuscarCliente = new ePOSOne.btnProduct.Button_WOC();
             this.label2 = new System.Windows.Forms.Label();
             this.txtIngresoDNI = new System.Windows.Forms.TextBox();
             this.lblIngresoDNI = new System.Windows.Forms.Label();
@@ -50,28 +48,22 @@
             this.linkLabelVolver = new System.Windows.Forms.LinkLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnConfirmar = new ePOSOne.btnProduct.Button_WOC();
+            this.btnBuscarCliente = new ePOSOne.btnProduct.Button_WOC();
             this.SuspendLayout();
             // 
             // lblErrorEmail
             // 
             this.lblErrorEmail.AutoSize = true;
-            this.lblErrorEmail.Location = new System.Drawing.Point(431, 265);
+            this.lblErrorEmail.Location = new System.Drawing.Point(429, 280);
             this.lblErrorEmail.Name = "lblErrorEmail";
             this.lblErrorEmail.Size = new System.Drawing.Size(0, 13);
             this.lblErrorEmail.TabIndex = 100;
             // 
-            // lblErrorDNI
-            // 
-            this.lblErrorDNI.AutoSize = true;
-            this.lblErrorDNI.Location = new System.Drawing.Point(390, 20);
-            this.lblErrorDNI.Name = "lblErrorDNI";
-            this.lblErrorDNI.Size = new System.Drawing.Size(0, 13);
-            this.lblErrorDNI.TabIndex = 100;
-            // 
             // lblErrorEstado
             // 
             this.lblErrorEstado.AutoSize = true;
-            this.lblErrorEstado.Location = new System.Drawing.Point(92, 265);
+            this.lblErrorEstado.Location = new System.Drawing.Point(90, 280);
             this.lblErrorEstado.Name = "lblErrorEstado";
             this.lblErrorEstado.Size = new System.Drawing.Size(0, 13);
             this.lblErrorEstado.TabIndex = 99;
@@ -79,35 +71,22 @@
             // lblErrorTelefono
             // 
             this.lblErrorTelefono.AutoSize = true;
-            this.lblErrorTelefono.Location = new System.Drawing.Point(92, 191);
+            this.lblErrorTelefono.Location = new System.Drawing.Point(90, 206);
             this.lblErrorTelefono.Name = "lblErrorTelefono";
             this.lblErrorTelefono.Size = new System.Drawing.Size(0, 13);
             this.lblErrorTelefono.TabIndex = 98;
             // 
-            // btnConfirmar
+            // lblErrorDNI
             // 
-            this.btnConfirmar.BorderColor = System.Drawing.Color.Transparent;
-            this.btnConfirmar.ButtonColor = System.Drawing.Color.Salmon;
-            this.btnConfirmar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnConfirmar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnConfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConfirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfirmar.ForeColor = System.Drawing.Color.Transparent;
-            this.btnConfirmar.Location = new System.Drawing.Point(322, 338);
-            this.btnConfirmar.Name = "btnConfirmar";
-            this.btnConfirmar.OnHoverBorderColor = System.Drawing.Color.Salmon;
-            this.btnConfirmar.OnHoverButtonColor = System.Drawing.Color.Salmon;
-            this.btnConfirmar.OnHoverTextColor = System.Drawing.Color.Gray;
-            this.btnConfirmar.Size = new System.Drawing.Size(145, 61);
-            this.btnConfirmar.TabIndex = 96;
-            this.btnConfirmar.Text = "Confirmar";
-            this.btnConfirmar.TextColor = System.Drawing.Color.White;
-            this.btnConfirmar.UseVisualStyleBackColor = true;
-            this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
+            this.lblErrorDNI.AutoSize = true;
+            this.lblErrorDNI.Location = new System.Drawing.Point(93, 131);
+            this.lblErrorDNI.Name = "lblErrorDNI";
+            this.lblErrorDNI.Size = new System.Drawing.Size(0, 13);
+            this.lblErrorDNI.TabIndex = 100;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(431, 242);
+            this.txtEmail.Location = new System.Drawing.Point(429, 257);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(253, 20);
             this.txtEmail.TabIndex = 83;
@@ -117,7 +96,7 @@
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmail.ForeColor = System.Drawing.Color.DimGray;
-            this.lblEmail.Location = new System.Drawing.Point(431, 220);
+            this.lblEmail.Location = new System.Drawing.Point(429, 235);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(45, 18);
             this.lblEmail.TabIndex = 82;
@@ -125,7 +104,7 @@
             // 
             // txtEstado
             // 
-            this.txtEstado.Location = new System.Drawing.Point(92, 242);
+            this.txtEstado.Location = new System.Drawing.Point(90, 257);
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(253, 20);
             this.txtEstado.TabIndex = 78;
@@ -135,7 +114,7 @@
             this.lblEstado.AutoSize = true;
             this.lblEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEstado.ForeColor = System.Drawing.Color.DimGray;
-            this.lblEstado.Location = new System.Drawing.Point(92, 220);
+            this.lblEstado.Location = new System.Drawing.Point(90, 235);
             this.lblEstado.Name = "lblEstado";
             this.lblEstado.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lblEstado.Size = new System.Drawing.Size(55, 18);
@@ -145,14 +124,14 @@
             // lblErrorDireccion
             // 
             this.lblErrorDireccion.AutoSize = true;
-            this.lblErrorDireccion.Location = new System.Drawing.Point(431, 194);
+            this.lblErrorDireccion.Location = new System.Drawing.Point(429, 209);
             this.lblErrorDireccion.Name = "lblErrorDireccion";
             this.lblErrorDireccion.Size = new System.Drawing.Size(0, 13);
             this.lblErrorDireccion.TabIndex = 76;
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(431, 168);
+            this.txtDireccion.Location = new System.Drawing.Point(429, 183);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(253, 20);
             this.txtDireccion.TabIndex = 75;
@@ -162,7 +141,7 @@
             this.lblDireccion.AutoSize = true;
             this.lblDireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDireccion.ForeColor = System.Drawing.Color.DimGray;
-            this.lblDireccion.Location = new System.Drawing.Point(431, 146);
+            this.lblDireccion.Location = new System.Drawing.Point(429, 161);
             this.lblDireccion.Name = "lblDireccion";
             this.lblDireccion.Size = new System.Drawing.Size(71, 18);
             this.lblDireccion.TabIndex = 74;
@@ -170,7 +149,7 @@
             // 
             // txtTelefono
             // 
-            this.txtTelefono.Location = new System.Drawing.Point(92, 168);
+            this.txtTelefono.Location = new System.Drawing.Point(90, 183);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(253, 20);
             this.txtTelefono.TabIndex = 73;
@@ -180,38 +159,17 @@
             this.lblTelefono.AutoSize = true;
             this.lblTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTelefono.ForeColor = System.Drawing.Color.DimGray;
-            this.lblTelefono.Location = new System.Drawing.Point(92, 146);
+            this.lblTelefono.Location = new System.Drawing.Point(90, 161);
             this.lblTelefono.Name = "lblTelefono";
             this.lblTelefono.Size = new System.Drawing.Size(66, 18);
             this.lblTelefono.TabIndex = 72;
             this.lblTelefono.Text = "Telefono";
             // 
-            // btnBuscarCliente
-            // 
-            this.btnBuscarCliente.BorderColor = System.Drawing.Color.Transparent;
-            this.btnBuscarCliente.ButtonColor = System.Drawing.Color.Salmon;
-            this.btnBuscarCliente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnBuscarCliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnBuscarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarCliente.ForeColor = System.Drawing.Color.Transparent;
-            this.btnBuscarCliente.Location = new System.Drawing.Point(560, 84);
-            this.btnBuscarCliente.Name = "btnBuscarCliente";
-            this.btnBuscarCliente.OnHoverBorderColor = System.Drawing.Color.Salmon;
-            this.btnBuscarCliente.OnHoverButtonColor = System.Drawing.Color.Salmon;
-            this.btnBuscarCliente.OnHoverTextColor = System.Drawing.Color.Gray;
-            this.btnBuscarCliente.Size = new System.Drawing.Size(138, 38);
-            this.btnBuscarCliente.TabIndex = 71;
-            this.btnBuscarCliente.Text = "Buscar Cliente";
-            this.btnBuscarCliente.TextColor = System.Drawing.Color.White;
-            this.btnBuscarCliente.UseVisualStyleBackColor = true;
-            this.btnBuscarCliente.Click += new System.EventHandler(this.btnBuscarCliente_Click);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(92, 127);
+            this.label2.Location = new System.Drawing.Point(90, 129);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(0, 15);
             this.label2.TabIndex = 70;
@@ -239,7 +197,7 @@
             this.lblGestionClienteTitulo.AutoSize = true;
             this.lblGestionClienteTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGestionClienteTitulo.ForeColor = System.Drawing.Color.DimGray;
-            this.lblGestionClienteTitulo.Location = new System.Drawing.Point(255, 27);
+            this.lblGestionClienteTitulo.Location = new System.Drawing.Point(262, 30);
             this.lblGestionClienteTitulo.Name = "lblGestionClienteTitulo";
             this.lblGestionClienteTitulo.Size = new System.Drawing.Size(238, 31);
             this.lblGestionClienteTitulo.TabIndex = 67;
@@ -263,7 +221,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(473, 376);
+            this.label1.Location = new System.Drawing.Point(475, 387);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 13);
             this.label1.TabIndex = 101;
@@ -273,11 +231,53 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DimGray;
-            this.label3.Location = new System.Drawing.Point(222, 307);
+            this.label3.Location = new System.Drawing.Point(224, 318);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(355, 18);
             this.label3.TabIndex = 102;
             this.label3.Text = "Modifique los campos que quiera y toque \"confirmar\"";
+            // 
+            // btnConfirmar
+            // 
+            this.btnConfirmar.BorderColor = System.Drawing.Color.Transparent;
+            this.btnConfirmar.ButtonColor = System.Drawing.Color.Salmon;
+            this.btnConfirmar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnConfirmar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnConfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConfirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfirmar.ForeColor = System.Drawing.Color.Transparent;
+            this.btnConfirmar.Location = new System.Drawing.Point(324, 349);
+            this.btnConfirmar.Name = "btnConfirmar";
+            this.btnConfirmar.OnHoverBorderColor = System.Drawing.Color.Salmon;
+            this.btnConfirmar.OnHoverButtonColor = System.Drawing.Color.Salmon;
+            this.btnConfirmar.OnHoverTextColor = System.Drawing.Color.Gray;
+            this.btnConfirmar.Size = new System.Drawing.Size(145, 61);
+            this.btnConfirmar.TabIndex = 96;
+            this.btnConfirmar.Text = "Confirmar";
+            this.btnConfirmar.TextColor = System.Drawing.Color.White;
+            this.btnConfirmar.UseVisualStyleBackColor = true;
+            this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
+            // 
+            // btnBuscarCliente
+            // 
+            this.btnBuscarCliente.BorderColor = System.Drawing.Color.Transparent;
+            this.btnBuscarCliente.ButtonColor = System.Drawing.Color.Salmon;
+            this.btnBuscarCliente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnBuscarCliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnBuscarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarCliente.ForeColor = System.Drawing.Color.Transparent;
+            this.btnBuscarCliente.Location = new System.Drawing.Point(560, 84);
+            this.btnBuscarCliente.Name = "btnBuscarCliente";
+            this.btnBuscarCliente.OnHoverBorderColor = System.Drawing.Color.Salmon;
+            this.btnBuscarCliente.OnHoverButtonColor = System.Drawing.Color.Salmon;
+            this.btnBuscarCliente.OnHoverTextColor = System.Drawing.Color.Gray;
+            this.btnBuscarCliente.Size = new System.Drawing.Size(138, 38);
+            this.btnBuscarCliente.TabIndex = 71;
+            this.btnBuscarCliente.Text = "Buscar Cliente";
+            this.btnBuscarCliente.TextColor = System.Drawing.Color.White;
+            this.btnBuscarCliente.UseVisualStyleBackColor = true;
+            this.btnBuscarCliente.Click += new System.EventHandler(this.btnBuscarCliente_Click);
             // 
             // admin_modif_cliente
             // 
@@ -310,7 +310,6 @@
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
-            
 
         }
 
