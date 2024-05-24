@@ -12,14 +12,30 @@ namespace Presentacion2
 {
     public partial class admin_gestionreportes_form : Form
     {
-        public admin_gestionreportes_form()
+        private int tipousuario;
+
+
+        public admin_gestionreportes_form(int tipousuario)
         {
             InitializeComponent();
+            this.tipousuario = tipousuario;
+
         }
 
         private void linkLabelVolver_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            //depende el usuario
+            if(tipousuario == 3)
+            {
+                this.Hide();
+                admin_menu_form form4 = new admin_menu_form();
+                form4.Show();
+            }
+            else if (tipousuario == 2)
+            {
+                this.Hide();
+                supervisor_menu_form form5 = new supervisor_menu_form();
+                form5.Show();
+            }
         }
 
         private void btnRepVentasVendedor_Click(object sender, EventArgs e)

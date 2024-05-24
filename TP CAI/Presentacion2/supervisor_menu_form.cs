@@ -24,6 +24,18 @@ namespace Presentacion2
             altaproducto_form altaproducto = new altaproducto_form();
             altaproducto.Show();
         }
+        private void btnReporteVentas_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            admin_gestionreportes_form admin_Gestioncliente_Form = new admin_gestionreportes_form(2);
+            admin_Gestioncliente_Form.Show();
+        }
+        private void btnDevolucion_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            supervisor_devolucion_venta supervisor_devolucion_venta = new supervisor_devolucion_venta();
+            supervisor_devolucion_venta.Show();
+        }
 
         private void linkLabelVolver_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -33,11 +45,6 @@ namespace Presentacion2
         }
 
 
-        private void btnReporteVentas_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            admin_gestionreportes_form admin_Gestioncliente_Form = new admin_gestionreportes_form();
-            admin_Gestioncliente_Form.Show();
-        }
+        
     }
 }

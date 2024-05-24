@@ -32,6 +32,7 @@
             this.btnReporteVentas = new ePOSOne.btnProduct.Button_WOC();
             this.linkLabelVolver = new System.Windows.Forms.LinkLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnDevolucion = new ePOSOne.btnProduct.Button_WOC();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -105,11 +106,34 @@
             this.pictureBox1.TabIndex = 42;
             this.pictureBox1.TabStop = false;
             // 
+            // btnDevolucion
+            // 
+            this.btnDevolucion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnDevolucion.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnDevolucion.ButtonColor = System.Drawing.Color.White;
+            this.btnDevolucion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnDevolucion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnDevolucion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDevolucion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDevolucion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnDevolucion.Location = new System.Drawing.Point(116, 124);
+            this.btnDevolucion.Name = "btnDevolucion";
+            this.btnDevolucion.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnDevolucion.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnDevolucion.OnHoverTextColor = System.Drawing.Color.Gray;
+            this.btnDevolucion.Size = new System.Drawing.Size(323, 41);
+            this.btnDevolucion.TabIndex = 43;
+            this.btnDevolucion.Text = "DEVOLUCION VENTA";
+            this.btnDevolucion.TextColor = System.Drawing.Color.Gray;
+            this.btnDevolucion.UseVisualStyleBackColor = false;
+            this.btnDevolucion.Click += new System.EventHandler(this.btnDevolucion_Click);
+            // 
             // supervisor_menu_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(559, 415);
+            this.Controls.Add(this.btnDevolucion);
             this.Controls.Add(this.linkLabelVolver);
             this.Controls.Add(this.btnReporteVentas);
             this.Controls.Add(this.btnGestionarProductos);
@@ -128,5 +152,6 @@
         private ePOSOne.btnProduct.Button_WOC btnReporteVentas;
         private System.Windows.Forms.LinkLabel linkLabelVolver;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private ePOSOne.btnProduct.Button_WOC btnDevolucion;
     }
 }
