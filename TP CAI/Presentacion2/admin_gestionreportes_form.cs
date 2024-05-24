@@ -19,30 +19,24 @@ namespace Presentacion2
 
         private void linkLabelVolver_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            this.Hide();
-            admin_menu_form form4 = new admin_menu_form();
-            form4.Show();
+            //depende el usuario
         }
 
         private void btnRepVentasVendedor_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            admin_agregarproveedor_form admin_Agregarproveedor_Form = new admin_agregarproveedor_form  ();
-            admin_Agregarproveedor_Form.Show();
+          
         }
 
         private void btnRepMasVendidos_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            admin_edit_proveedor admin_Edit_Proveedor = new admin_edit_proveedor ();
-            admin_Edit_Proveedor.Show();
+            
         }
 
         private void btnRepStockCritico_Click(object sender, EventArgs e)
         {
             this.Hide ();
-            admin_bajaproveedor_form admin_Bajaproveedor_Form = new admin_bajaproveedor_form();
-            admin_Bajaproveedor_Form.Show();
+            ReporteStock reporteStock = new ReporteStock();
+            reporteStock.Show();
 
         }
     }

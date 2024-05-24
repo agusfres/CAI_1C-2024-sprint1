@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(admin_gestionreportes_form));
             this.btnRepVentasVendedor = new ePOSOne.btnProduct.Button_WOC();
             this.btnRepMasVendidos = new ePOSOne.btnProduct.Button_WOC();
             this.btnRepStockCritico = new ePOSOne.btnProduct.Button_WOC();
@@ -112,7 +111,7 @@
             this.lblGestionReportesTitulo.ForeColor = System.Drawing.Color.DimGray;
             this.lblGestionReportesTitulo.Location = new System.Drawing.Point(153, 37);
             this.lblGestionReportesTitulo.Name = "lblGestionReportesTitulo";
-            this.lblGestionReportesTitulo.Size = new System.Drawing.Size(363, 31);
+            this.lblGestionReportesTitulo.Size = new System.Drawing.Size(339, 31);
             this.lblGestionReportesTitulo.TabIndex = 40;
             this.lblGestionReportesTitulo.Text = "GESTIÓN DE REPORTES";
             // 
@@ -134,7 +133,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Image = global::Presentacion2.Properties.Resources.New_Project__5_;
             this.pictureBox1.Location = new System.Drawing.Point(-2, -5);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(635, 420);

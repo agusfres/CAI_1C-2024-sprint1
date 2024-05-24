@@ -32,11 +32,12 @@ namespace Presentacion2
             iniciarsesion_Form.Show();
         }
 
-        private void btnDevolucion_Click(object sender, EventArgs e)
+
+        private void btnReporteVentas_Click(object sender, EventArgs e)
         {
             this.Hide();
-            supervisor_devolucion_venta supervisor_Devolucion_Venta = new supervisor_devolucion_venta();
-            supervisor_Devolucion_Venta.Show();
+            admin_gestionreportes_form admin_Gestioncliente_Form = new admin_gestionreportes_form();
+            admin_Gestioncliente_Form.Show();
         }
     }
 }
