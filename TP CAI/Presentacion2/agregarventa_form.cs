@@ -7,6 +7,8 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -37,6 +39,7 @@ namespace Presentacion2
 
         }
         List<CarritoProducto> carritoProductos = new List<CarritoProducto>();
+
         private void button1_Click_1(object sender, EventArgs e)
         { 
             string combobox = comboBox1.Text;
@@ -62,7 +65,10 @@ namespace Presentacion2
             string acumulador = errorCantidad + errorCombo + errorDni;
             double totalElectro = 0;
             double totalResto = 0;
- 
+            string promosAplicadas = "";
+
+
+
             if (acumulador == "")
             {
                 CarritoProducto cp = new CarritoProducto(combobox, producto.Precio, cantidad,producto.IdCategoria,producto.IdProducto);
@@ -88,16 +94,23 @@ namespace Presentacion2
                 if (totalElectro > 100000)
                 {
                     descuentoElectro = totalElectro * 0.05;
+                    promosAplicadas += "Promo Electro Hogar, ";
                 }
 
                 NegocioVenta negocioVenta = new NegocioVenta();
                 double descuentoPrimerCompra = negocioVenta.DescuentoPrimerCompra(dni,totalResto,totalElectro);
+                if (descuentoPrimerCompra > 0)
+                {
+                    promosAplicadas += "Promo Cliente Nuevo, ";
+                }
                 double descuentoFinal = descuentoElectro + descuentoPrimerCompra;
                 double totalFinal = totalResto + totalElectro - descuentoFinal;
                 labeldesc.Text = "$   " + descuentoFinal;
                 labeltotal.Text = "$   " + totalFinal;
+              
+                
             }
-
+            
 
         }
 
@@ -112,17 +125,51 @@ namespace Presentacion2
         {
             //*No olvidar restar una vez confirmada la compra el stock
             NegocioVenta negocioVenta = new NegocioVenta();
+
             negocioVenta.AgregarVentaBaseLocal(carritoProductos);
 
             string dniCliente = txtdni.Text;
             double descuentoFinal = double.Parse(labeldesc.Text.Replace("$", "").Trim());
             double totalFinal = double.Parse(labeltotal.Text.Replace("$", "").Trim());
+            double totalElectro = 0;
+            double totalResto = 0;
+            string promosAplicadas = "";
+            string txdni = txtdni.Text;
+            Operacion operacion = new Operacion();
+            int dni = operacion.TransformarStringInt(txdni);
 
+            foreach (CarritoProducto c in carritoProductos)
+            {
+                if (c.idCategoria == 3)
+                {
+                    totalElectro += c.Cantidad * c.Precio;
+                }
+                else
+                {
+                    totalResto += c.Cantidad * c.Precio;
+                }
+
+            }
+            double descuentoElectro = 0;
+
+
+            if (totalElectro > 100000)
+            {
+                promosAplicadas += "Promo electro hogar, ";
+                descuentoElectro = totalElectro * 0.05;
+            }
+
+            double descuentoPrimerCompra = negocioVenta.DescuentoPrimerCompra(dni, totalResto, totalElectro);
+            if (descuentoPrimerCompra > 0)
+            {
+                promosAplicadas += "Promo cliente nuevo, ";
+            }
 
             this.Hide();
-            remito_form remito_Form = new remito_form(dniCliente,carritoProductos,descuentoFinal,totalFinal);
+            remito_form remito_Form = new remito_form(dniCliente,carritoProductos,descuentoFinal, totalFinal, promosAplicadas);
             remito_Form.Show();
 
         }
+
     }
 }

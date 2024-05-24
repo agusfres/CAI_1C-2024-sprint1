@@ -17,15 +17,18 @@ namespace Presentacion2
         private List<CarritoProducto> carritoProductos;
         private double descuentoFinal;
         private double totalFinal;
+        private string promosAplicadas;
 
-        public remito_form(string dni, List<CarritoProducto> carritoProductos, double descuentoFinal,double totalFinal)
+
+
+        public remito_form(string dni, List<CarritoProducto> carritoProductos, double descuentoFinal,double totalFinal, string promosAplicadas)
         {
             InitializeComponent();
             this.clienteDNI = dni;
             this.carritoProductos = carritoProductos;
             this.descuentoFinal = descuentoFinal;
             this.totalFinal = totalFinal;
-
+            this.promosAplicadas = promosAplicadas;
         }
 
         private void btnventa_Click(object sender, EventArgs e)
@@ -55,6 +58,8 @@ namespace Presentacion2
 
             lblPromociones.Text = this.descuentoFinal.ToString("F2");
             lblTotal.Text = this.totalFinal.ToString("F2");
+            lblNombrePromo.Text = this.promosAplicadas;
+
         }
     }
 }
