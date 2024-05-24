@@ -44,8 +44,8 @@ namespace Presentacion2
         private void btnGestionarProductos_Click(object sender, EventArgs e)
         {
             this.Hide();
-            altaproducto_form altaproducto = new altaproducto_form();
-            altaproducto.Show();
+            gestionproductos gestionproductos = new gestionproductos(3);
+            gestionproductos.Show();
         }
 
         private void btnGestionarCliente_Click(object sender, EventArgs e)

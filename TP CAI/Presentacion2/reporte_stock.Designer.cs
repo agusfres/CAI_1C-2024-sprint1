@@ -1,6 +1,6 @@
 ﻿namespace Presentacion2
 {
-    partial class ReporteStock
+    partial class reporte_stock
     {
         /// <summary>
         /// Required designer variable.

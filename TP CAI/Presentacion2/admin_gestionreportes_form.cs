@@ -21,6 +21,11 @@ namespace Presentacion2
             this.tipousuario = tipousuario;
 
         }
+        public admin_gestionreportes_form()
+        {
+            InitializeComponent();
+
+        }
 
         private void linkLabelVolver_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -51,7 +56,7 @@ namespace Presentacion2
         private void btnRepStockCritico_Click(object sender, EventArgs e)
         {
             this.Hide ();
-            ReporteStock reporteStock = new ReporteStock();
+            reporte_stock reporteStock = new reporte_stock();
             reporteStock.Show();
 
         }

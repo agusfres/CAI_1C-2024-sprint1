@@ -383,7 +383,7 @@ namespace Presentacion2
         }
         */ 
 
-        public string ValidarCantidadProd(string cantidad, string campo,int stock)
+        public string ValidarCantidadProd(string cantidad, string campo,int stock,List<CarritoProducto> carrito)
         {
             string msgError = "";
             msgError += ValidarVacio(cantidad, campo);

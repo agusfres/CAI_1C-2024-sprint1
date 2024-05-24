@@ -14,6 +14,12 @@ namespace Presentacion2
 {
     public partial class gestionproductos : Form
     {
+        private int tipousuario;
+        public gestionproductos(int tipousuario)
+        {
+            InitializeComponent();
+            this.tipousuario = tipousuario;
+        }
         public gestionproductos()
         {
             InitializeComponent();
@@ -21,8 +27,18 @@ namespace Presentacion2
 
         public void linkLabelCerrarSesion_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            
-            //depende de si es admin o vendedor a donde lo lleva
+            if (tipousuario == 3)
+            {
+                this.Hide();
+                admin_menu_form form4 = new admin_menu_form();
+                form4.Show();
+            }
+            else if (tipousuario == 2)
+            {
+                this.Hide();
+                supervisor_menu_form form5 = new supervisor_menu_form();
+                form5.Show();
+            }
         }
     }
 }

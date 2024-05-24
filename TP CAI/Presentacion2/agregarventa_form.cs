@@ -56,7 +56,7 @@ namespace Presentacion2
             List<Producto> listaproductos = productoService.TraerProductos();
             Producto producto = listaproductos.Find(p => p.Nombre == combobox);
             int stock = producto.Stock;
-            string errorCantidad = validadorCampos.ValidarCantidadProd(txCantidad, "Cantidad",stock);
+            string errorCantidad = validadorCampos.ValidarCantidadProd(txCantidad, "Cantidad",stock, carritoProductos);
 
 
             lblErrorCantidad.Text = errorCantidad;

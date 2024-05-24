@@ -129,11 +129,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="ReporteStock.cs">
+    <Compile Include="reporte_stock.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ReporteStock.Designer.cs">
-      <DependentUpon>ReporteStock.cs</DependentUpon>
+    <Compile Include="reporte_stock.Designer.cs">
+      <DependentUpon>reporte_stock.cs</DependentUpon>
     </Compile>
     <Compile Include="remito_form.cs">
       <SubType>Form</SubType>
@@ -259,8 +259,8 @@
     <EmbeddedResource Include="remito_form.resx">
       <DependentUpon>remito_form.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ReporteStock.resx">
-      <DependentUpon>ReporteStock.cs</DependentUpon>
+    <EmbeddedResource Include="reporte_stock.resx">
+      <DependentUpon>reporte_stock.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="supervisor_devolucion_venta.resx">
       <DependentUpon>supervisor_devolucion_venta.cs</DependentUpon>
