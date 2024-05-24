@@ -56,7 +56,9 @@ namespace Presentacion2
         }
         private void btnReportes_Click(object sender, EventArgs e)
         {
-            
+            this.Hide();
+            admin_gestionreportes_form Admin_gestionreportes_form = new admin_gestionreportes_form();
+            Admin_gestionreportes_form.Show();
         }
 
     }
