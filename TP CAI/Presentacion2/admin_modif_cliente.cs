@@ -8,6 +8,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -28,52 +29,7 @@ namespace Presentacion2
             admin_gestioncliente_form admin_Gestioncliente_Form = new admin_gestioncliente_form();
             admin_Gestioncliente_Form.Show();
         }
-       
-        
-        private void btnConfirmar_Click(object sender, EventArgs e)
-        {
-          
-            Validador validadorCampos = new Validador();
 
-            string txUsuario = string.Empty;
-            string txTelefono = txtTelefono.Text;
-            string txDireccion = txtDireccion.Text;
-            string txEmail = txtEmail.Text;
-            string txEstado = txtEstado.Text;
-
-            string errorTelefono = validadorCampos.ValidarNombre(txTelefono, "Telefono");
-            string errorDireccion = validadorCampos.ValidarDireccion(txDireccion, "Direccion");
-            string errorEmail = validadorCampos.ValidarEmail(txEmail, "Email");
-            string errorEstado = validadorCampos.ValidarDNI(txEstado, "ESTADO");
-
-            lblErrorTelefono.Text = errorTelefono;
-            lblErrorDireccion.Text = errorDireccion;
-            lblErrorEmail.Text = errorEmail;
-            lblErrorEstado.Text = errorEstado;
-
-            string acumuladorErrores = errorTelefono + errorDireccion + errorEmail + errorEstado;
-
-            if (string.IsNullOrEmpty(acumuladorErrores))
-            {
-                Operacion operacion = new Operacion();
-                int intTxDNI = operacion.TransformarStringInt(txUsuario);
-
-            }
-            // FALTA VALIDACIÓN DE BUSCAR Y MODIFICAR CLIENTE EN LA API
-
-            /*NegocioCliente negociocliente = new NegocioCliente();
-            try
-            {
-                negociocliente.ModificarClienteBaseLocal(txUsuario, txDireccion ,txTelefono , txEmail);
-                LimpiarCampos();
-                Congrats();
-            }
-            catch(Exception ex)
-            {
-                lblMensajeAgregar.Text = ex.Message;
-            }
-            */
-        }
 
         private void btnBuscarCliente_Click(object sender, EventArgs e)
         {
@@ -88,12 +44,73 @@ namespace Presentacion2
 
                 NegocioCliente negociocliente = new NegocioCliente();
                 Cliente cliente = negociocliente.BuscarCliente(DNI);
+                Cliente clienteLocal = negociocliente.BuscarClienteBaseLocal(txtDNI);
                 txtDireccion.Text = cliente.Direccion;
                 txtEmail.Text = cliente.Email;
-                txtTelefono.Text = cliente.Telefono;    
+                txtTelefono.Text = cliente.Telefono;
+                txtEstado.Text = clienteLocal.Estado;
             }
         }
+        private void btnConfirmar_Click(object sender, EventArgs e)
+        {
+          
+            Validador validadorCampos = new Validador();
+            string txtDNI = txtIngresoDNI.Text;
+            Operacion operacion = new Operacion();
+            int DNI = operacion.TransformarStringInt(txtDNI);
+            NegocioCliente negociocliente = new NegocioCliente();
+            Cliente cliente = negociocliente.BuscarCliente(DNI);
 
+            //string txUsuario = string.Empty;
+            string txTelefono = txtTelefono.Text;
+            string txDireccion = txtDireccion.Text;
+            string txEmail = txtEmail.Text;
+            string txEstado = txtEstado.Text;
+            string estado = cliente.Estado;
+
+            string errorDireccion = validadorCampos.ValidarDireccion(txDireccion, "Dirección");
+            string errorTelefono = validadorCampos.ValidarTelefono(txTelefono, "Teléfono");
+            string errorEmail = validadorCampos.ValidarEmail(txEmail, "Email");
+            string errorEstado = validadorCampos.ValidarEstado(estado, txEstado, "Estado");
+
+            lblErrorTelefono.Text = errorTelefono;
+            lblErrorDireccion.Text = errorDireccion;
+            lblErrorEmail.Text = errorEmail;
+            lblErrorEstado.Text = errorEstado;
+
+            string acumuladorErrores = errorTelefono + errorDireccion + errorEmail + errorEstado;
+
+            if (string.IsNullOrEmpty(acumuladorErrores))
+            {
+                try
+                {
+                     negociocliente.ModificarCliente(cliente.IdCliente,txDireccion ,txTelefono , txEmail,txEstado);
+                     LimpiarCampos();
+                     Congrats();
+                }
+                catch(Exception ex)
+                {
+                    lblMensaje.Text = ex.Message;
+                }
+
+            }
+        }
+        private void LimpiarCampos()
+        {
+            txtTelefono.Clear();
+            txtDireccion.Clear();
+            txtEmail.Clear();
+            txtEstado.Clear();
+            txtIngresoDNI.Clear();
+
+        }
+
+        private async void Congrats()
+        {
+            lblMensaje.Text = "Proveedor cargado exitosamente";
+            await Task.Delay(5000);
+            lblMensaje.Text = "";
+        }
 
     }
 }

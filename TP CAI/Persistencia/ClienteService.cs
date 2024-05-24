@@ -79,13 +79,13 @@ namespace Persistencia
             }
         }
 
-        public  void ModificarCliente(string idUsuario, string direccion, string telefono, string email  )
+        public static void ModificarCliente(string id, string direccion, string telefono, string email  )
         {
             string path = "/api/Cliente/PatchCliente";
 
             Dictionary<string, string> map = new Dictionary<string, string>
             {
-                { "id", idUsuario },
+                { "id", id},
                 { "direccion", direccion },
                 { "telefono", telefono },
                 { "email", email }

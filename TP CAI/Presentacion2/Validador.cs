@@ -407,5 +407,12 @@ namespace Presentacion2
             return msgError;
 
         }
+
+        public string ValidarEstado(string estado,string texto, string campo)
+        {
+            string msgError = "";
+            msgError += ValidarVacio(texto, campo);
+            return msgError;
+        }
     }
 }

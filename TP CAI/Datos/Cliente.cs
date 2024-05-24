@@ -20,9 +20,10 @@ namespace Datos
         Guid idUsuario;
         string host;
         int dni;
+        string estado;
 
 
-        public Cliente(Guid id, string nombre, string apellido, string direccion, string telefono, string email, DateTime fechaAlta, DateTime fechaNacimiento, DateTime? fechaBaja, Guid idUsuario, string host, int dni)
+        public Cliente(Guid id, string nombre, string apellido, string direccion, string telefono, string email, DateTime fechaAlta, DateTime fechaNacimiento, DateTime? fechaBaja, Guid idUsuario, string host, int dni, string estado)
         {
             this.id = id;
             this.nombre = nombre;
@@ -36,7 +37,7 @@ namespace Datos
             this.idUsuario = idUsuario;
             this.dni = dni;
             this.host = host;
-
+            this.estado = estado;
         }
         public Cliente()
         {
@@ -56,5 +57,6 @@ namespace Datos
         public Guid IdUsuario { get => idUsuario; set => idUsuario = value; }
         public int Dni { get => dni; set => dni = value; }
         public string Host { get => host; set => host = value; }
+        public string Estado { get => estado; set => estado = value; }
     }
 }

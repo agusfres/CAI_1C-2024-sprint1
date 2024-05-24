@@ -26,7 +26,7 @@ namespace Presentacion
             Operacion operacion = new Operacion();
             Guid dniGuid = operacion.TransformarStringGuid(dni.ToString());
             Cliente clienteAuxiliar = BuscarCliente(dni);
-            Cliente cliente = new Cliente(clienteAuxiliar.IdCliente, nombre, apellido, direccion, telefono, email, DateTime.Now, fechaNacimiento, null, dniGuid, host.ToString(), dni);
+            Cliente cliente = new Cliente(clienteAuxiliar.IdCliente, nombre, apellido, direccion, telefono, email, DateTime.Now, fechaNacimiento, null, dniGuid, host.ToString(), dni,"ACTIVO");
             AgregarClienteBaseLocal(cliente);
         }
         public Cliente BuscarCliente(int dni)
@@ -45,6 +45,54 @@ namespace Presentacion
             }
             return null;
         }
+        public Cliente BuscarClienteBaseLocal(string dniCliente)
+        {
+            string docPath = rutaLocal;
+            string nombreUsuarioSistema = Environment.UserName;
+            string docPathAdaptado = docPath.Replace("USUARIOSISTEMA", nombreUsuarioSistema);
+
+            StreamReader sr = new StreamReader(docPathAdaptado);
+            string linea;
+
+            while ((linea = sr.ReadLine()) != null)
+            {
+                string[] vector = linea.Split('+');
+                // Si la línea actual no coincide con la línea que deseas eliminar, escríbela en el archivo temporal
+                if (vector[11] == dniCliente)
+                {
+                    string id = vector[0];
+                    string nombre = vector[1];
+                    string apellido = vector[2];
+                    string direccion = vector[3];
+                    string telefono = vector[4];
+                    string email = vector[5];
+                    string fechaAlta = vector[6];
+                    string fechaNacimiento = vector[7];
+                    string fechaBaja = vector[8];
+                    string idUsuario = vector[9];
+                    string host = vector[10];
+                    string dni = vector[11];
+                    string estado = vector[12];
+
+
+
+                    Operacion operacion = new Operacion();
+                    Guid idTransformado = operacion.TransformarStringGuid(id);
+                    DateTime fechaAltaTransformada = operacion.TransformarStringDatetime(fechaAlta);
+                    DateTime fechaNacimientoTransformada = operacion.TransformarStringDatetime(fechaNacimiento);
+                    DateTime fechaBajaTransformada = operacion.TransformarStringDatetime(fechaBaja);
+                    Guid idUsuarioTransformado = operacion.TransformarStringGuid(idUsuario);
+                    int dniTransformada = operacion.TransformarStringInt(dni);
+
+                    Cliente cliente = new Cliente(idTransformado, nombre, apellido, direccion, telefono, email, fechaAltaTransformada, fechaNacimientoTransformada, fechaBajaTransformada, idUsuarioTransformado, host, dniTransformada, estado);
+                    sr.Close();
+                    return cliente;
+                }
+            }
+            sr.Close();
+            return null;
+        }
+
         public List<Cliente> TraerClientes()
         {
             List<Cliente> listaCliente = clienteService.TraerClientesActivos();
@@ -60,7 +108,7 @@ namespace Presentacion
 
             try
             {
-                writer.WriteLine(cliente.IdCliente + "+" + cliente.Nombre + "+" + cliente.Apellido + "+" + cliente.Direccion + "+" + cliente.Telefono + "+" + cliente.Email + "+" + cliente.FechaAlta + "+" + cliente.FechaNacimiento + "+null+" + cliente.IdUsuario + "+" + cliente.Dni + "+"  + cliente.Host);
+                writer.WriteLine(cliente.IdCliente + "+" + cliente.Nombre + "+" + cliente.Apellido + "+" + cliente.Direccion + "+" + cliente.Telefono + "+" + cliente.Email + "+" + cliente.FechaAlta + "+" + cliente.FechaNacimiento + "+null+" + cliente.IdUsuario + "+"  + cliente.Host + "+" + cliente.Dni + "+" + cliente.Estado);
             }
             catch
             {
@@ -69,13 +117,12 @@ namespace Presentacion
             writer.Close();
         }
 
-        public void ModificarCliente(Guid idUsuario, string direccion, string telefono, string email)
+        public void ModificarCliente(Guid idUsuario, string direccion, string telefono, string email,string estado)
         {
-            ClienteService clienteService = new ClienteService();
-            clienteService.ModificarCliente(idUsuario.ToString(), direccion, telefono, email);
-            ModificarClienteBaseLocal(idUsuario,direccion, telefono,email);
+            ClienteService.ModificarCliente(idUsuario.ToString(), direccion, telefono, email);
+            ModificarClienteBaseLocal(idUsuario,direccion, telefono,email,estado);
         }
-        public void ModificarClienteBaseLocal(Guid idUsuario, string direccion, string telefono, string email)
+        public void ModificarClienteBaseLocal(Guid idUsuario, string direccion, string telefono, string email,string estado)
         {
             string docPath = rutaLocal;
             string nombreUsuarioSistema = Environment.UserName;
@@ -100,17 +147,18 @@ namespace Presentacion
                         string id = vector[0];
                         string nombre = vector[1];
                         string apellido = vector[2];
-                         direccion = vector[3];
-                         telefono = vector[4];
-                         email = vector[5];
+                        direccion = vector[3];
+                        telefono = vector[4];
+                        email = vector[5];
                         string fechaAlta = vector[6];
                         string fechaNacimiento = vector[7];
                         string fechaBaja = vector[8];
                         string idusuario = vector[9];
                         string dni = vector[10];
                         string host = vector[11];
+                        estado = vector[12];
 
-                        sw.WriteLine(id + '+' + nombre + '+' + apellido + '+' + direccion + '+' + telefono + '+' + email + '+' + fechaAlta + '+' + fechaNacimiento + '+' + DateTime.Now + '+' + idUsuario + '+' + dni + '+'  + host);
+                        sw.WriteLine(id + '+' + nombre + '+' + apellido + '+' + direccion + '+' + telefono + '+' + email + '+' + fechaAlta + '+' + fechaNacimiento + '+' + DateTime.Now + '+' + idUsuario + '+' + host + '+'  + dni + '+' + estado);
                     }
                     catch { Console.WriteLine("Error"); }
                 }
