@@ -129,6 +129,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="reporte_ventas_cat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reporte_ventas_cat.Designer.cs">
+      <DependentUpon>reporte_ventas_cat.cs</DependentUpon>
+    </Compile>
     <Compile Include="reporte_stock.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -258,6 +264,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="remito_form.resx">
       <DependentUpon>remito_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reporte_ventas_cat.resx">
+      <DependentUpon>reporte_ventas_cat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="reporte_stock.resx">
       <DependentUpon>reporte_stock.cs</DependentUpon>

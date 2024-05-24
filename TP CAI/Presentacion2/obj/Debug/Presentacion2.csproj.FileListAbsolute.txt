@@ -345,6 +345,7 @@ C:\Users\catac\Documents\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Deb
 C:\Users\agusc\OneDrive\Documents\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.remito_form.resources
 C:\Users\Cata\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.remito_form.resources
 C:\Users\agusc\OneDrive\Documents\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.admin_gestionreportes_form.resources
-C:\Users\agusc\OneDrive\Documents\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.ReporteStock.resources
 C:\Users\Cata\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.admin_gestionreportes_form.resources
 C:\Users\Cata\OneDrive\Documentos\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.ReporteStock.resources
+C:\Users\agusc\OneDrive\Documents\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.reporte_ventas_cat.resources
+C:\Users\agusc\OneDrive\Documents\GitHub\CAI_1C-2024-sprint1\TP CAI\Presentacion2\obj\Debug\Presentacion2.reporte_stock.resources

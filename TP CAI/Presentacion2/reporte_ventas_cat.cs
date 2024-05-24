@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Presentacion2
 {
-    public partial class reporte_stock : Form
+    public partial class reporte_ventas_cat : Form
     {
-        public reporte_stock()
+        public reporte_ventas_cat()
         {
             InitializeComponent();
         }
@@ -23,5 +23,7 @@ namespace Presentacion2
             admin_gestionreportes_form admin_gestionreportes_form = new admin_gestionreportes_form();
             admin_gestionreportes_form.Show();
         }
+
+        
     }
 }

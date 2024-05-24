@@ -45,12 +45,14 @@ namespace Presentacion2
 
         private void btnRepVentasVendedor_Click(object sender, EventArgs e)
         {
-          
+            
         }
 
         private void btnRepMasVendidos_Click(object sender, EventArgs e)
         {
-            
+            this.Hide();
+            reporte_ventas_cat reporte_ventas_cat = new reporte_ventas_cat();
+            reporte_ventas_cat.Show();
         }
 
         private void btnRepStockCritico_Click(object sender, EventArgs e)
