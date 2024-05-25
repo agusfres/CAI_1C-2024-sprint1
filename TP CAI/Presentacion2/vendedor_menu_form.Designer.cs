@@ -93,6 +93,7 @@
             this.btnReporteVentas.Text = "REPORTE VENTAS";
             this.btnReporteVentas.TextColor = System.Drawing.Color.Gray;
             this.btnReporteVentas.UseVisualStyleBackColor = false;
+            this.btnReporteVentas.Click += new System.EventHandler(this.btnReporteVentas_Click);
             // 
             // pictureBox1
             // 

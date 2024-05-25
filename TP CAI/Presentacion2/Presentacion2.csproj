@@ -118,6 +118,12 @@
     <Compile Include="admin_edit_proveedor.Designer.cs">
       <DependentUpon>admin_edit_proveedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="reporte_ventasxvendedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reporte_ventasxvendedor.Designer.cs">
+      <DependentUpon>reporte_ventasxvendedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="gestionproductos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -264,6 +270,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="remito_form.resx">
       <DependentUpon>remito_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reporte_ventasxvendedor.resx">
+      <DependentUpon>reporte_ventasxvendedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="reporte_ventas_cat.resx">
       <DependentUpon>reporte_ventas_cat.cs</DependentUpon>

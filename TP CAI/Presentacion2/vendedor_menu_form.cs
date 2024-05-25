@@ -31,5 +31,12 @@ namespace Presentacion2
             agregarventa_form agregarventa = new agregarventa_form();
             agregarventa.Show();
         }
+
+        private void btnReporteVentas_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            reporte_ventasxvendedor reporteventas = new reporte_ventasxvendedor();
+            reporteventas.Show();
+        }
     }
 }
