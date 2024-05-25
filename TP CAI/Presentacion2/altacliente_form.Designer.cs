@@ -323,7 +323,7 @@
             // 
             this.lblMensajeAgregar.AutoSize = true;
             this.lblMensajeAgregar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.lblMensajeAgregar.Location = new System.Drawing.Point(387, 479);
+            this.lblMensajeAgregar.Location = new System.Drawing.Point(487, 455);
             this.lblMensajeAgregar.Name = "lblMensajeAgregar";
             this.lblMensajeAgregar.Size = new System.Drawing.Size(0, 13);
             this.lblMensajeAgregar.TabIndex = 33;
@@ -331,9 +331,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Presentacion2.Properties.Resources.New_Project;
-            this.pictureBox1.Location = new System.Drawing.Point(-6, -10);
+            this.pictureBox1.Location = new System.Drawing.Point(-6, -27);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(773, 557);
+            this.pictureBox1.Size = new System.Drawing.Size(773, 574);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 34;
             this.pictureBox1.TabStop = false;

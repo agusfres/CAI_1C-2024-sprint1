@@ -34,25 +34,28 @@
             this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblagregarproductos = new System.Windows.Forms.Label();
             this.lblcantidad = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbProducto = new System.Windows.Forms.ComboBox();
             this.txtCantidad = new System.Windows.Forms.TextBox();
-            this.lbltotaltexto = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lbltotal = new System.Windows.Forms.Label();
-            this.labeldesc = new System.Windows.Forms.Label();
-            this.labeltotal = new System.Windows.Forms.Label();
+            this.lblTotalTexto = new System.Windows.Forms.Label();
+            this.lblDescuentosTexto = new System.Windows.Forms.Label();
+            this.lblTotalFinalTexto = new System.Windows.Forms.Label();
+            this.lblTotal = new System.Windows.Forms.Label();
+            this.lblDescuentos = new System.Windows.Forms.Label();
+            this.lblTotalFinal = new System.Windows.Forms.Label();
             this.lblErrorProducto = new System.Windows.Forms.Label();
             this.lblErrorCantidad = new System.Windows.Forms.Label();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.linkLabelVolver = new System.Windows.Forms.LinkLabel();
-            this.lblerrordni = new System.Windows.Forms.Label();
+            this.lblErrorDNI = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtdni = new System.Windows.Forms.TextBox();
+            this.lblPromociones = new System.Windows.Forms.Label();
+            this.lblPromocionesTexto = new System.Windows.Forms.Label();
             this.button_WOC1 = new ePOSOne.btnProduct.Button_WOC();
             this.button1 = new ePOSOne.btnProduct.Button_WOC();
+            this.lblErrorFinalizar = new System.Windows.Forms.Label();
+            this.lblErrorCarrito = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -64,10 +67,10 @@
             this.Producto,
             this.Cantidad,
             this.Precio});
-            this.dataGridView1.Location = new System.Drawing.Point(32, 177);
+            this.dataGridView1.Location = new System.Drawing.Point(302, 58);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(398, 108);
+            this.dataGridView1.Size = new System.Drawing.Size(364, 139);
             this.dataGridView1.TabIndex = 0;
             // 
             // Producto
@@ -95,7 +98,7 @@
             // 
             this.lblagregarproductos.AutoSize = true;
             this.lblagregarproductos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.lblagregarproductos.Location = new System.Drawing.Point(148, 70);
+            this.lblagregarproductos.Location = new System.Drawing.Point(35, 135);
             this.lblagregarproductos.Name = "lblagregarproductos";
             this.lblagregarproductos.Size = new System.Drawing.Size(102, 13);
             this.lblagregarproductos.TabIndex = 2;
@@ -105,95 +108,85 @@
             // 
             this.lblcantidad.AutoSize = true;
             this.lblcantidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.lblcantidad.Location = new System.Drawing.Point(300, 70);
+            this.lblcantidad.Location = new System.Drawing.Point(37, 212);
             this.lblcantidad.Name = "lblcantidad";
             this.lblcantidad.Size = new System.Drawing.Size(100, 13);
             this.lblcantidad.TabIndex = 3;
             this.lblcantidad.Text = "Indique su cantidad";
             // 
-            // comboBox1
+            // cmbProducto
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(151, 95);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 5;
+            this.cmbProducto.FormattingEnabled = true;
+            this.cmbProducto.Location = new System.Drawing.Point(38, 160);
+            this.cmbProducto.Name = "cmbProducto";
+            this.cmbProducto.Size = new System.Drawing.Size(121, 21);
+            this.cmbProducto.TabIndex = 5;
             // 
             // txtCantidad
             // 
-            this.txtCantidad.Location = new System.Drawing.Point(300, 95);
+            this.txtCantidad.Location = new System.Drawing.Point(37, 237);
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(100, 20);
             this.txtCantidad.TabIndex = 6;
             // 
-            // lbltotaltexto
+            // lblTotalTexto
             // 
-            this.lbltotaltexto.AutoSize = true;
-            this.lbltotaltexto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.lbltotaltexto.Location = new System.Drawing.Point(537, 168);
-            this.lbltotaltexto.Name = "lbltotaltexto";
-            this.lbltotaltexto.Size = new System.Drawing.Size(34, 13);
-            this.lbltotaltexto.TabIndex = 7;
-            this.lbltotaltexto.Text = "Total:";
+            this.lblTotalTexto.AutoSize = true;
+            this.lblTotalTexto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblTotalTexto.Location = new System.Drawing.Point(299, 223);
+            this.lblTotalTexto.Name = "lblTotalTexto";
+            this.lblTotalTexto.Size = new System.Drawing.Size(34, 13);
+            this.lblTotalTexto.TabIndex = 7;
+            this.lblTotalTexto.Text = "Total:";
             // 
-            // label1
+            // lblDescuentosTexto
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label1.Location = new System.Drawing.Point(41, 151);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 13);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Carrito:";
+            this.lblDescuentosTexto.AutoSize = true;
+            this.lblDescuentosTexto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblDescuentosTexto.Location = new System.Drawing.Point(299, 252);
+            this.lblDescuentosTexto.Name = "lblDescuentosTexto";
+            this.lblDescuentosTexto.Size = new System.Drawing.Size(67, 13);
+            this.lblDescuentosTexto.TabIndex = 10;
+            this.lblDescuentosTexto.Text = "Descuentos:";
             // 
-            // label2
+            // lblTotalFinalTexto
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label2.Location = new System.Drawing.Point(504, 195);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 13);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Descuentos:";
+            this.lblTotalFinalTexto.AutoSize = true;
+            this.lblTotalFinalTexto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblTotalFinalTexto.Location = new System.Drawing.Point(299, 305);
+            this.lblTotalFinalTexto.Name = "lblTotalFinalTexto";
+            this.lblTotalFinalTexto.Size = new System.Drawing.Size(56, 13);
+            this.lblTotalFinalTexto.TabIndex = 11;
+            this.lblTotalFinalTexto.Text = "Total final:";
             // 
-            // label3
+            // lblTotal
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label3.Location = new System.Drawing.Point(515, 225);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 13);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "Total final:";
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Location = new System.Drawing.Point(384, 223);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(0, 13);
+            this.lblTotal.TabIndex = 12;
             // 
-            // lbltotal
+            // lblDescuentos
             // 
-            this.lbltotal.AutoSize = true;
-            this.lbltotal.Location = new System.Drawing.Point(577, 168);
-            this.lbltotal.Name = "lbltotal";
-            this.lbltotal.Size = new System.Drawing.Size(0, 13);
-            this.lbltotal.TabIndex = 12;
+            this.lblDescuentos.AutoSize = true;
+            this.lblDescuentos.Location = new System.Drawing.Point(384, 252);
+            this.lblDescuentos.Name = "lblDescuentos";
+            this.lblDescuentos.Size = new System.Drawing.Size(0, 13);
+            this.lblDescuentos.TabIndex = 13;
             // 
-            // labeldesc
+            // lblTotalFinal
             // 
-            this.labeldesc.AutoSize = true;
-            this.labeldesc.Location = new System.Drawing.Point(571, 195);
-            this.labeldesc.Name = "labeldesc";
-            this.labeldesc.Size = new System.Drawing.Size(0, 13);
-            this.labeldesc.TabIndex = 13;
-            // 
-            // labeltotal
-            // 
-            this.labeltotal.AutoSize = true;
-            this.labeltotal.Location = new System.Drawing.Point(577, 225);
-            this.labeltotal.Name = "labeltotal";
-            this.labeltotal.Size = new System.Drawing.Size(0, 13);
-            this.labeltotal.TabIndex = 14;
+            this.lblTotalFinal.AutoSize = true;
+            this.lblTotalFinal.Location = new System.Drawing.Point(384, 305);
+            this.lblTotalFinal.Name = "lblTotalFinal";
+            this.lblTotalFinal.Size = new System.Drawing.Size(0, 13);
+            this.lblTotalFinal.TabIndex = 14;
             // 
             // lblErrorProducto
             // 
             this.lblErrorProducto.AutoSize = true;
-            this.lblErrorProducto.Location = new System.Drawing.Point(150, 119);
+            this.lblErrorProducto.Location = new System.Drawing.Point(37, 184);
             this.lblErrorProducto.Name = "lblErrorProducto";
             this.lblErrorProducto.Size = new System.Drawing.Size(0, 13);
             this.lblErrorProducto.TabIndex = 15;
@@ -201,7 +194,7 @@
             // lblErrorCantidad
             // 
             this.lblErrorCantidad.AutoSize = true;
-            this.lblErrorCantidad.Location = new System.Drawing.Point(300, 119);
+            this.lblErrorCantidad.Location = new System.Drawing.Point(37, 261);
             this.lblErrorCantidad.Name = "lblErrorCantidad";
             this.lblErrorCantidad.Size = new System.Drawing.Size(0, 13);
             this.lblErrorCantidad.TabIndex = 16;
@@ -221,7 +214,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Presentacion2.Properties.Resources.New_Project__4_;
-            this.pictureBox1.Location = new System.Drawing.Point(-4, -30);
+            this.pictureBox1.Location = new System.Drawing.Point(-4, -21);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(686, 381);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -244,19 +237,19 @@
             this.linkLabelVolver.Text = "Volver";
             this.linkLabelVolver.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelVolver_LinkClicked);
             // 
-            // lblerrordni
+            // lblErrorDNI
             // 
-            this.lblerrordni.AutoSize = true;
-            this.lblerrordni.Location = new System.Drawing.Point(11, 119);
-            this.lblerrordni.Name = "lblerrordni";
-            this.lblerrordni.Size = new System.Drawing.Size(0, 13);
-            this.lblerrordni.TabIndex = 44;
+            this.lblErrorDNI.AutoSize = true;
+            this.lblErrorDNI.Location = new System.Drawing.Point(37, 107);
+            this.lblErrorDNI.Name = "lblErrorDNI";
+            this.lblErrorDNI.Size = new System.Drawing.Size(0, 13);
+            this.lblErrorDNI.TabIndex = 44;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label5.Location = new System.Drawing.Point(9, 70);
+            this.label5.Location = new System.Drawing.Point(35, 58);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(126, 13);
             this.label5.TabIndex = 42;
@@ -264,10 +257,28 @@
             // 
             // txtdni
             // 
-            this.txtdni.Location = new System.Drawing.Point(12, 96);
+            this.txtdni.Location = new System.Drawing.Point(38, 84);
             this.txtdni.Name = "txtdni";
             this.txtdni.Size = new System.Drawing.Size(100, 20);
             this.txtdni.TabIndex = 45;
+            // 
+            // lblPromociones
+            // 
+            this.lblPromociones.AutoSize = true;
+            this.lblPromociones.Location = new System.Drawing.Point(384, 277);
+            this.lblPromociones.Name = "lblPromociones";
+            this.lblPromociones.Size = new System.Drawing.Size(0, 13);
+            this.lblPromociones.TabIndex = 47;
+            // 
+            // lblPromocionesTexto
+            // 
+            this.lblPromocionesTexto.AutoSize = true;
+            this.lblPromocionesTexto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblPromocionesTexto.Location = new System.Drawing.Point(299, 277);
+            this.lblPromocionesTexto.Name = "lblPromocionesTexto";
+            this.lblPromocionesTexto.Size = new System.Drawing.Size(71, 13);
+            this.lblPromocionesTexto.TabIndex = 46;
+            this.lblPromocionesTexto.Text = "Promociones:";
             // 
             // button_WOC1
             // 
@@ -279,7 +290,7 @@
             this.button_WOC1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_WOC1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_WOC1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button_WOC1.Location = new System.Drawing.Point(467, 254);
+            this.button_WOC1.Location = new System.Drawing.Point(503, 223);
             this.button_WOC1.Name = "button_WOC1";
             this.button_WOC1.OnHoverBorderColor = System.Drawing.Color.Salmon;
             this.button_WOC1.OnHoverButtonColor = System.Drawing.Color.Salmon;
@@ -301,25 +312,45 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button1.Location = new System.Drawing.Point(450, 84);
+            this.button1.Location = new System.Drawing.Point(28, 286);
             this.button1.Name = "button1";
             this.button1.OnHoverBorderColor = System.Drawing.Color.Salmon;
             this.button1.OnHoverButtonColor = System.Drawing.Color.Salmon;
             this.button1.OnHoverTextColor = System.Drawing.Color.Gray;
             this.button1.Size = new System.Drawing.Size(163, 31);
             this.button1.TabIndex = 33;
-            this.button1.Text = "Agregar venta";
+            this.button1.Text = "Agregar al carrito";
             this.button1.TextColor = System.Drawing.Color.White;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // lblErrorFinalizar
+            // 
+            this.lblErrorFinalizar.AutoSize = true;
+            this.lblErrorFinalizar.Location = new System.Drawing.Point(513, 276);
+            this.lblErrorFinalizar.Name = "lblErrorFinalizar";
+            this.lblErrorFinalizar.Size = new System.Drawing.Size(0, 13);
+            this.lblErrorFinalizar.TabIndex = 48;
+            // 
+            // lblErrorCarrito
+            // 
+            this.lblErrorCarrito.AutoSize = true;
+            this.lblErrorCarrito.Location = new System.Drawing.Point(513, 257);
+            this.lblErrorCarrito.Name = "lblErrorCarrito";
+            this.lblErrorCarrito.Size = new System.Drawing.Size(0, 13);
+            this.lblErrorCarrito.TabIndex = 49;
             // 
             // agregarventa_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(678, 350);
+            this.Controls.Add(this.lblErrorCarrito);
+            this.Controls.Add(this.lblErrorFinalizar);
+            this.Controls.Add(this.lblPromociones);
+            this.Controls.Add(this.lblPromocionesTexto);
             this.Controls.Add(this.txtdni);
-            this.Controls.Add(this.lblerrordni);
+            this.Controls.Add(this.lblErrorDNI);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.linkLabelVolver);
             this.Controls.Add(this.lblTitulo);
@@ -327,15 +358,14 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblErrorCantidad);
             this.Controls.Add(this.lblErrorProducto);
-            this.Controls.Add(this.labeltotal);
-            this.Controls.Add(this.labeldesc);
-            this.Controls.Add(this.lbltotal);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.lbltotaltexto);
+            this.Controls.Add(this.lblTotalFinal);
+            this.Controls.Add(this.lblDescuentos);
+            this.Controls.Add(this.lblTotal);
+            this.Controls.Add(this.lblTotalFinalTexto);
+            this.Controls.Add(this.lblDescuentosTexto);
+            this.Controls.Add(this.lblTotalTexto);
             this.Controls.Add(this.txtCantidad);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbProducto);
             this.Controls.Add(this.lblcantidad);
             this.Controls.Add(this.lblagregarproductos);
             this.Controls.Add(this.dataGridView1);
@@ -355,18 +385,17 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label lblagregarproductos;
         private System.Windows.Forms.Label lblcantidad;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbProducto;
         private System.Windows.Forms.DataGridViewTextBoxColumn Producto;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn Precio;
         private System.Windows.Forms.TextBox txtCantidad;
-        private System.Windows.Forms.Label lbltotaltexto;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label lbltotal;
-        private System.Windows.Forms.Label labeldesc;
-        private System.Windows.Forms.Label labeltotal;
+        private System.Windows.Forms.Label lblTotalTexto;
+        private System.Windows.Forms.Label lblDescuentosTexto;
+        private System.Windows.Forms.Label lblTotalFinalTexto;
+        private System.Windows.Forms.Label lblTotal;
+        private System.Windows.Forms.Label lblDescuentos;
+        private System.Windows.Forms.Label lblTotalFinal;
         private System.Windows.Forms.Label lblErrorProducto;
         private System.Windows.Forms.Label lblErrorCantidad;
         private ePOSOne.btnProduct.Button_WOC button1;
@@ -374,8 +403,12 @@
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.LinkLabel linkLabelVolver;
-        private System.Windows.Forms.Label lblerrordni;
+        private System.Windows.Forms.Label lblErrorDNI;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtdni;
+        private System.Windows.Forms.Label lblPromociones;
+        private System.Windows.Forms.Label lblPromocionesTexto;
+        private System.Windows.Forms.Label lblErrorFinalizar;
+        private System.Windows.Forms.Label lblErrorCarrito;
     }
 }

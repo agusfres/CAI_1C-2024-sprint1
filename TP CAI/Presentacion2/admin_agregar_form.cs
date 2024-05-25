@@ -16,8 +16,6 @@ using Persistencia;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 
-
-
 namespace Presentacion2
 {
     public partial class admin_agregar_form : Form

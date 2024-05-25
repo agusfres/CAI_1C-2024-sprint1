@@ -37,13 +37,9 @@ namespace Presentacion2
         {
             string nombreUsuarioActual = txtUsuario.Text;
             string contraseñaActual = txtContraseña.Text;
-            List<Usuario> listaUsuarios;
             lblMensajeInicioSesion.Text = "";
             lblUsuarioError.Text = "";
             lblContraseñaError.Text = "";
-
-
-
 
             if ((validador.ValidarVacio(nombreUsuarioActual, "Usuario") != "") || (validador.ValidarVacio(contraseñaActual, "Contraseña") != ""))
             {
@@ -64,12 +60,19 @@ namespace Presentacion2
 
                     UsuarioService.Login(login);
 
+                    UsuarioLogueado.usuario = negocioUsuario.BuscarUsuario(nombreUsuarioActual);
+
                     Usuario usuario = negocioUsuario.BuscarUsuarioBaseLocal(nombreUsuarioActual);
                     this.Hide();
 
                     if (usuario == null)
                     {
                         // El usuario fue creado desde Swagger pero no desde la aplicación, entonces no está en el txt local, y el web service guarda los tipos de usuario como 0 (no existe ese)
+
+                        agregarventa_form BORRAR = new agregarventa_form();
+                        BORRAR.Show();
+
+
                         admin_menu_form admin_menu = new admin_menu_form();
                         admin_menu.Show();
                     }
@@ -121,11 +124,10 @@ namespace Presentacion2
                         lblErroresRestantes.ForeColor = Color.Red;
                         lblErroresRestantes.Text = "Agotaste los 3 intentos";
                         
-                        NegocioUsuario negocio = new NegocioUsuario();
-                        Usuario usuario = negocio.BuscarUsuario(nombreUsuarioActual);
+                        Usuario usuario = negocioUsuario.BuscarUsuario(nombreUsuarioActual);
                         if (usuario != null)
                         {
-                            negocio.ModificarEstadoBaseLocal(usuario.Id);
+                            negocioUsuario.ModificarEstadoBaseLocal(usuario.Id);
                         }
                         else
                         {

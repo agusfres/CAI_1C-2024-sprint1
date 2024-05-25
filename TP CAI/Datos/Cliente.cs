@@ -39,13 +39,9 @@ namespace Datos
             this.host = host;
             this.estado = estado;
         }
-        public Cliente()
-        {
-
-        }
 
 
-        public Guid IdCliente { get => id; set => id = value; }
+        public Guid Id { get => id; set => id = value; }
         public string Nombre { get => nombre; set => nombre = value; }
         public string Apellido { get => apellido; set => apellido = value; }
         public string Direccion { get => direccion; set => direccion = value; }

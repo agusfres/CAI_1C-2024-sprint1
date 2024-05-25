@@ -11,31 +11,25 @@ namespace Datos
         string nombre;
         double precio;
         int cantidad;
-        int idcategoria;
+        int idCategoria;
         Guid idProducto;
-
 
 
         public CarritoProducto( string nombre, double precio, int cantidad,int idCategoria, Guid idProducto)
         {
-
             this.nombre = nombre;
             this.precio = precio;
             this.cantidad = cantidad;
-            this.idcategoria = idCategoria;
+            this.idCategoria = idCategoria;
             this.idProducto = idProducto;
-
         }
-
 
        
         public string Nombre { get => nombre; set => nombre = value; }
         public double Precio { get => precio; set => precio = value; }
         public int Cantidad { get => cantidad; set => cantidad = value; }
-        public int idCategoria { get => idcategoria; set => idcategoria = value; }
-
+        public int IdCategoria { get => idCategoria; set => idCategoria = value; }
         public Guid IdProducto { get => idProducto; set => idProducto = value; }
-
     }
 }
 

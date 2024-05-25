@@ -43,13 +43,14 @@
   <ItemGroup>
     <Compile Include="AltaCliente.cs" />
     <Compile Include="AltaUsuario.cs" />
-    <Compile Include="Altaventa.cs" />
+    <Compile Include="AltaVenta.cs" />
     <Compile Include="BajaUsuario.cs" />
     <Compile Include="AltaProducto.cs" />
     <Compile Include="BajaProducto.cs" />
     <Compile Include="Bajaventa.cs" />
     <Compile Include="CarritoProducto.cs" />
     <Compile Include="Cliente.cs" />
+    <Compile Include="UsuarioLogueado.cs" />
     <Compile Include="ModificarProveedor.cs" />
     <Compile Include="ModificarProducto.cs" />
     <Compile Include="Login.cs" />

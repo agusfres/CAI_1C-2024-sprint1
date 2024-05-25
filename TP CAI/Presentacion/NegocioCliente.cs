@@ -12,23 +12,25 @@ namespace Presentacion
 {
     public class NegocioCliente
     {
+        Operacion operacion = new Operacion();
         private ClienteService clienteService = new ClienteService();
-        private Guid idVendedor = Guid.Parse("70b37dc1-8fde-4840-be47-9ababd0ee7e5");
+        private Guid idUsuario = Guid.Parse("70b37dc1-8fde-4840-be47-9ababd0ee7e5");
         string rutaLocal = @"C:\Users\USUARIOSISTEMA\ClientesLocales.txt";
 
 
         public void AgregarCliente(string nombre, string apellido, string direccion, string telefono, string email, DateTime fechaNacimiento,  int dni)
         {
-            // Ponemos host como 1 ya que al usar 5 el web service da error 409 porqu solo permite un enum de 1, 2 o 3
-            string host = "1";
-            AltaCliente altaCliente = new AltaCliente(idVendedor, nombre, apellido, dni, direccion, telefono, email, fechaNacimiento, host);
+            string host = "5";
+            AltaCliente altaCliente = new AltaCliente(idUsuario, nombre, apellido, dni, direccion, telefono, email, fechaNacimiento, host);
             clienteService.AgregarCliente(altaCliente);
-            Operacion operacion = new Operacion();
-            Guid dniGuid = operacion.TransformarStringGuid(dni.ToString());
+
             Cliente clienteAuxiliar = BuscarCliente(dni);
-            Cliente cliente = new Cliente(clienteAuxiliar.IdCliente, nombre, apellido, direccion, telefono, email, DateTime.Now, fechaNacimiento, null, dniGuid, host.ToString(), dni,"ACTIVO");
+
+            Cliente cliente = new Cliente(clienteAuxiliar.Id, nombre, apellido, direccion, telefono, email, DateTime.Now, fechaNacimiento, null, UsuarioLogueado.usuario.Id, host, dni, "ACTIVO");
             AgregarClienteBaseLocal(cliente);
         }
+
+
         public Cliente BuscarCliente(int dni)
         {
             List<Cliente> listaCliente = TraerClientes();
@@ -45,6 +47,8 @@ namespace Presentacion
             }
             return null;
         }
+
+
         public Cliente BuscarClienteBaseLocal(string dniCliente)
         {
             string docPath = rutaLocal;
@@ -74,9 +78,6 @@ namespace Presentacion
                     string dni = vector[11];
                     string estado = vector[12];
 
-
-
-                    Operacion operacion = new Operacion();
                     Guid idTransformado = operacion.TransformarStringGuid(id);
                     DateTime fechaAltaTransformada = operacion.TransformarStringDatetime(fechaAlta);
                     DateTime fechaNacimientoTransformada = operacion.TransformarStringDatetime(fechaNacimiento);
@@ -93,11 +94,14 @@ namespace Presentacion
             return null;
         }
 
+
         public List<Cliente> TraerClientes()
         {
-            List<Cliente> listaCliente = clienteService.TraerClientesActivos();
+            List<Cliente> listaCliente = clienteService.GetClientes();
             return listaCliente;
         }
+
+
         private void AgregarClienteBaseLocal(Cliente cliente)
         {
             string docPath = rutaLocal;
@@ -108,7 +112,7 @@ namespace Presentacion
 
             try
             {
-                writer.WriteLine(cliente.IdCliente + "+" + cliente.Nombre + "+" + cliente.Apellido + "+" + cliente.Direccion + "+" + cliente.Telefono + "+" + cliente.Email + "+" + cliente.FechaAlta + "+" + cliente.FechaNacimiento + "+null+" + cliente.IdUsuario + "+"  + cliente.Host + "+" + cliente.Dni + "+" + cliente.Estado);
+                writer.WriteLine(cliente.Id + "+" + cliente.Nombre + "+" + cliente.Apellido + "+" + cliente.Direccion + "+" + cliente.Telefono + "+" + cliente.Email + "+" + cliente.FechaAlta + "+" + cliente.FechaNacimiento + "+null+" + cliente.IdUsuario + "+"  + cliente.Host + "+" + cliente.Dni + "+" + cliente.Estado);
             }
             catch
             {
@@ -117,12 +121,15 @@ namespace Presentacion
             writer.Close();
         }
 
-        public void ModificarCliente(Guid idUsuario, string direccion, string telefono, string email,string estado)
+
+        public void ModificarCliente(Guid idUsuario, string telefono, string direccion, string estado, string email)
         {
-            ClienteService.ModificarCliente(idUsuario.ToString(), direccion, telefono, email);
-            ModificarClienteBaseLocal(idUsuario,direccion, telefono,email,estado);
+            ClienteService.ModificarCliente(idUsuario.ToString(), telefono, direccion, email);
+            ModificarClienteBaseLocal(idUsuario, telefono, direccion, estado, email);
         }
-        public void ModificarClienteBaseLocal(Guid idUsuario, string direccion, string telefono, string email,string estado)
+
+
+        public void ModificarClienteBaseLocal(Guid idUsuario, string telefono, string direccion, string estado, string email)
         {
             string docPath = rutaLocal;
             string nombreUsuarioSistema = Environment.UserName;
@@ -147,18 +154,14 @@ namespace Presentacion
                         string id = vector[0];
                         string nombre = vector[1];
                         string apellido = vector[2];
-                        direccion = vector[3];
-                        telefono = vector[4];
-                        email = vector[5];
                         string fechaAlta = vector[6];
                         string fechaNacimiento = vector[7];
                         string fechaBaja = vector[8];
-                        string idusuario = vector[9];
-                        string dni = vector[10];
-                        string host = vector[11];
-                        estado = vector[12];
+                        string idUser = vector[9];
+                        string host = vector[10];
+                        string dni = vector[11];
 
-                        sw.WriteLine(id + '+' + nombre + '+' + apellido + '+' + direccion + '+' + telefono + '+' + email + '+' + fechaAlta + '+' + fechaNacimiento + '+' + DateTime.Now + '+' + idUsuario + '+' + host + '+'  + dni + '+' + estado);
+                        sw.WriteLine(id + '+' + nombre + '+' + apellido + '+' + direccion + '+' + telefono + '+' + email + '+' + fechaAlta + '+' + fechaNacimiento + '+' + fechaBaja + '+' + idUser + '+' + host + '+' + dni + '+' + estado);
                     }
                     catch { Console.WriteLine("Error"); }
                 }
@@ -171,6 +174,5 @@ namespace Presentacion
             // Borra el archivo temporal
             System.IO.File.Delete(tempPath);
         }
-
-          }
+    }
 }

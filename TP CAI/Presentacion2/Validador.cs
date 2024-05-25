@@ -248,6 +248,8 @@ namespace Presentacion2
 
             return msgError;
         }
+
+
         public string ValidarDNIExistente(string texto, string campo)
         {
             string msgError = "";
@@ -341,6 +343,8 @@ namespace Presentacion2
 
             return msgError;
         }
+
+
         public string ValidarNombreProducto(string texto, string campo)
         {
             string msgError = "";
@@ -367,6 +371,7 @@ namespace Presentacion2
             msgError += ValidarFormatoGuid(texto, campo);
             return msgError;
         }
+
 
         /* LO DEJO COMENTADO PORQUE NO SE COMO COMBOBOX DE LA API
        public string ValidarProducto(string texto, string campo)
@@ -399,19 +404,26 @@ namespace Presentacion2
             }
             return msgError;
         }
+
+
         public string ValidarComboBox(string texto, string campo)
         {
             string msgError = "";
             msgError += ValidarVacio(texto, campo);
 
             return msgError;
-
         }
 
-        public string ValidarEstado(string estado,string texto, string campo)
+
+        public string ValidarEstado(string texto, string campo)
         {
             string msgError = "";
             msgError += ValidarVacio(texto, campo);
+            texto.ToUpper();
+            if (texto != "ACTIVO" && texto != "INACTIVO")
+            {
+                msgError += "El campo " + campo + " debe ser ACTIVO o INACTIVO." + System.Environment.NewLine;
+            }
             return msgError;
         }
     }

@@ -14,77 +14,78 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
+
 namespace Presentacion2
 {
     public partial class admin_modif_cliente : Form
     {
+        NegocioCliente negociocliente = new NegocioCliente();
+        Validador validador = new Validador();
+        Operacion operacion = new Operacion();
+
+
         public admin_modif_cliente()
         {
             InitializeComponent();
         }
 
-        private void linkLabelVolver_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            this.Hide();
-            admin_gestioncliente_form admin_Gestioncliente_Form = new admin_gestioncliente_form();
-            admin_Gestioncliente_Form.Show();
-        }
-
 
         private void btnBuscarCliente_Click(object sender, EventArgs e)
         {
-            string txtDNI = txtIngresoDNI.Text;
-            Validador validador = new Validador();
-            string errorDNI = validador.ValidarDNIExistente(txtDNI, "DNI");
-            lblErrorDNI.Text = errorDNI;
-            if (errorDNI.Length == 0)
-            {
-                Operacion operacion = new Operacion();
-                int DNI = operacion.TransformarStringInt(txtDNI);
+            string txDNI = txtDNI.Text;
 
-                NegocioCliente negociocliente = new NegocioCliente();
-                Cliente cliente = negociocliente.BuscarCliente(DNI);
-                Cliente clienteLocal = negociocliente.BuscarClienteBaseLocal(txtDNI);
+            string errorDNI = validador.ValidarDNIExistente(txDNI, "DNI");
+
+            lblErrorDNI.Text = errorDNI;
+
+            if (string.IsNullOrEmpty(errorDNI))
+            {
+                int dni = operacion.TransformarStringInt(txDNI);
+
+                Cliente cliente = negociocliente.BuscarCliente(dni);
+                Cliente clienteLocal = negociocliente.BuscarClienteBaseLocal(txDNI);
+
                 txtDireccion.Text = cliente.Direccion;
                 txtEmail.Text = cliente.Email;
                 txtTelefono.Text = cliente.Telefono;
-                txtEstado.Text = clienteLocal.Estado;
+                txtEstado.Text = "";
+
+                if (clienteLocal != null)
+                {
+                    txtEstado.Text = clienteLocal.Estado;
+                }
             }
         }
+
+
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
-          
-            Validador validadorCampos = new Validador();
-            string txtDNI = txtIngresoDNI.Text;
-            Operacion operacion = new Operacion();
-            int DNI = operacion.TransformarStringInt(txtDNI);
-            NegocioCliente negociocliente = new NegocioCliente();
+            string txDNI = this.txtDNI.Text;
+            int DNI = operacion.TransformarStringInt(txDNI);
             Cliente cliente = negociocliente.BuscarCliente(DNI);
 
-            //string txUsuario = string.Empty;
             string txTelefono = txtTelefono.Text;
             string txDireccion = txtDireccion.Text;
-            string txEmail = txtEmail.Text;
             string txEstado = txtEstado.Text;
-            string estado = cliente.Estado;
+            string txEmail = txtEmail.Text;
 
-            string errorDireccion = validadorCampos.ValidarDireccion(txDireccion, "Dirección");
-            string errorTelefono = validadorCampos.ValidarTelefono(txTelefono, "Teléfono");
-            string errorEmail = validadorCampos.ValidarEmail(txEmail, "Email");
-            string errorEstado = validadorCampos.ValidarEstado(estado, txEstado, "Estado");
+            string errorTelefono = validador.ValidarTelefono(txTelefono, "Teléfono");
+            string errorDireccion = validador.ValidarDireccion(txDireccion, "Dirección");
+            string errorEstado = validador.ValidarEstado(txEstado, "Estado");
+            string errorEmail = validador.ValidarEmail(txEmail, "Email");
 
             lblErrorTelefono.Text = errorTelefono;
             lblErrorDireccion.Text = errorDireccion;
-            lblErrorEmail.Text = errorEmail;
             lblErrorEstado.Text = errorEstado;
+            lblErrorEmail.Text = errorEmail;
 
-            string acumuladorErrores = errorTelefono + errorDireccion + errorEmail + errorEstado;
+            string acumuladorErrores = errorTelefono + errorDireccion + errorEstado + errorEmail;
 
             if (string.IsNullOrEmpty(acumuladorErrores))
             {
                 try
                 {
-                     negociocliente.ModificarCliente(cliente.IdCliente,txDireccion ,txTelefono , txEmail,txEstado);
+                     negociocliente.ModificarCliente(cliente.Id, txTelefono, txDireccion, txEstado, txEmail);
                      LimpiarCampos();
                      Congrats();
                 }
@@ -92,25 +93,33 @@ namespace Presentacion2
                 {
                     lblMensaje.Text = ex.Message;
                 }
-
             }
         }
+
+
         private void LimpiarCampos()
         {
+            txtDNI.Clear();
             txtTelefono.Clear();
             txtDireccion.Clear();
-            txtEmail.Clear();
             txtEstado.Clear();
-            txtIngresoDNI.Clear();
-
+            txtEmail.Clear();
         }
+
 
         private async void Congrats()
         {
-            lblMensaje.Text = "Proveedor cargado exitosamente";
+            lblMensaje.Text = "Cliente modificado exitosamente";
             await Task.Delay(5000);
             lblMensaje.Text = "";
         }
 
+
+        private void linkLabelVolver_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            admin_gestioncliente_form admin_Gestioncliente_Form = new admin_gestioncliente_form();
+            admin_Gestioncliente_Form.Show();
+        }
     }
 }

@@ -103,7 +103,7 @@ namespace Presentacion2
 
         private async void Congrats()
         {
-            lblMensajeAgregar.Text = "Usuario cargado con éxito";
+            lblMensajeAgregar.Text = "Cliente agregado con éxito";
             await Task.Delay(5000);
             lblMensajeAgregar.Text = "";
         }

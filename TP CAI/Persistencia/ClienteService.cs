@@ -14,7 +14,7 @@ namespace Persistencia
 {
     public class ClienteService
     {
-        public List<Cliente> TraerClientesActivos()
+        public List<Cliente> GetClientes()
         {
             string path = "/api/Cliente/GetClientes";
 
@@ -30,23 +30,6 @@ namespace Persistencia
 
             return listaClientes;
         }
-        public Cliente TraerCliente( Guid idVendedor)
-        {
-            string path = "/api/Cliente/GetClientes?id=" + idVendedor;
-
-            Cliente cliente = new Cliente();
-
-            HttpResponseMessage response = WebHelper.Get(path);
-
-            if (response.IsSuccessStatusCode)
-            {
-                var contentStream = response.Content.ReadAsStringAsync().Result;
-                cliente = JsonConvert.DeserializeObject<Cliente>(contentStream);
-            }
-
-            return cliente;
-        }
-
 
 
         public void AgregarCliente(AltaCliente altaCliente)
@@ -67,7 +50,7 @@ namespace Persistencia
             }
             if (response.StatusCode == HttpStatusCode.Conflict) // Valida error 409
             {
-                throw new Exception($"Error: {response.StatusCode} - {response.ReasonPhrase} - {response.Content}");
+                throw new Exception("El cliente ya existe");
             }
             if (response.StatusCode == HttpStatusCode.InternalServerError) // Valida error 500
             {
@@ -79,7 +62,8 @@ namespace Persistencia
             }
         }
 
-        public static void ModificarCliente(string id, string direccion, string telefono, string email  )
+
+        public static void ModificarCliente(string id, string telefono, string direccion, string email)
         {
             string path = "/api/Cliente/PatchCliente";
 
@@ -108,8 +92,5 @@ namespace Persistencia
                 throw new Exception("Verifique los datos ingresados e intente nuevamente");
             }
         }
-
-
-
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Datos
 {
-    public class Altaventa
+    public class AltaVenta
     {
         Guid idCliente;
         Guid idUsuario;
@@ -14,7 +14,7 @@ namespace Datos
         int cantidad;
 
 
-        public Altaventa(Guid idCliente, Guid idUsuario, Guid idProducto, int cantidad)
+        public AltaVenta(Guid idCliente, Guid idUsuario, Guid idProducto, int cantidad)
         {
             this.idCliente = idCliente;
             this.idUsuario = idUsuario;
@@ -22,8 +22,7 @@ namespace Datos
             this.cantidad = cantidad;
         }
 
-
-        public int IdCliente { get => IdCliente; set => IdCliente = value; }
+        public Guid IdCliente { get => idCliente; set => idCliente = value; }
         public Guid IdUsuario { get => idUsuario; set => idUsuario = value; }
         public Guid IdProducto { get => idProducto; set => idProducto = value; }
         public int Cantidad { get => cantidad; set => cantidad = value; }

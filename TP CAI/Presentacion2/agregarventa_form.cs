@@ -18,6 +18,12 @@ namespace Presentacion2
 {
     public partial class agregarventa_form : Form
     {
+        List<CarritoProducto> carritoProductos = new List<CarritoProducto>();
+        ProductoService productoService = new ProductoService();
+        NegocioVenta negocioVenta = new NegocioVenta();
+        Validador validadorCampos = new Validador();
+        Operacion operacion = new Operacion();
+
 
         public agregarventa_form()
         {
@@ -25,94 +31,116 @@ namespace Presentacion2
         }
 
 
-       
         public void agregarventa_form_Load(object sender, EventArgs e)
         {
-            ProductoService productoService = new ProductoService();
             List<Producto> listaproductos = productoService.TraerProductos();
             foreach (Producto producto in listaproductos)
             {
-                comboBox1.Items.Add(producto.Nombre);
+                cmbProducto.Items.Add(producto.Nombre);
             }
-
-   
-
         }
-        List<CarritoProducto> carritoProductos = new List<CarritoProducto>();
+        
 
         private void button1_Click_1(object sender, EventArgs e)
-        { 
-            string combobox = comboBox1.Text;
-            string txCantidad = txtCantidad.Text;
-            string txdni = txtdni.Text;
-
-            Validador validadorCampos = new Validador();
-            Operacion operacion = new Operacion();
-            int cantidad = operacion.TransformarStringInt(txCantidad);
-            int dni = operacion.TransformarStringInt(txdni);
-            string errorCombo = validadorCampos.ValidarComboBox(combobox, "Producto");
-            string errorDni = validadorCampos.ValidarDNIExistente(txdni, "DNI");
-            ProductoService productoService = new ProductoService();
-            List<Producto> listaproductos = productoService.TraerProductos();
-            Producto producto = listaproductos.Find(p => p.Nombre == combobox);
-            int stock = producto.Stock;
-            string errorCantidad = validadorCampos.ValidarCantidadProd(txCantidad, "Cantidad",stock, carritoProductos);
-
-
-            lblErrorCantidad.Text = errorCantidad;
-            lblErrorProducto.Text = errorCombo;
-            lblerrordni.Text = errorDni;
-            string acumulador = errorCantidad + errorCombo + errorDni;
+        {
             double totalElectro = 0;
             double totalResto = 0;
-            string promosAplicadas = "";
+            double descuentoElectro = 0;
+            string promocionesAplicadas = "";
 
+            string txDni = txtdni.Text;
+            string cmProducto = cmbProducto.Text;
+            string txCantidad = txtCantidad.Text;
 
+            int dni = operacion.TransformarStringInt(txDni);
+            int cantidad = operacion.TransformarStringInt(txCantidad);
 
-            if (acumulador == "")
+            string errorDni = validadorCampos.ValidarDNIExistente(txDni, "DNI");
+            string errorProducto = validadorCampos.ValidarComboBox(cmProducto, "Producto");
+            string errorCantidad = validadorCampos.ValidarStockPrecio(txCantidad, "Cantidad");
+
+            lblErrorDNI.Text = errorDni;
+            lblErrorProducto.Text = errorProducto;
+            lblErrorCantidad.Text = errorCantidad;
+
+            if (string.IsNullOrEmpty(errorCantidad))
             {
-                CarritoProducto cp = new CarritoProducto(combobox, producto.Precio, cantidad,producto.IdCategoria,producto.IdProducto);
-                carritoProductos.Add(cp);
-                dataGridView1.Rows.Add(combobox, cantidad, producto.Precio);
+                List<Producto> listaproductos = productoService.TraerProductos();
+                Producto producto = listaproductos.Find(p => p.Nombre == cmProducto);
+                int stock = producto.Stock;
+                errorCantidad = validadorCampos.ValidarCantidadProd(txCantidad, "Cantidad", stock, carritoProductos);
 
+                lblErrorCantidad.Text = errorCantidad;
 
-                foreach(CarritoProducto c in carritoProductos)
+                string acumuladorErrores = errorDni + errorProducto + errorCantidad;
+
+                if (string.IsNullOrEmpty(acumuladorErrores))
                 {
-                    if(c.idCategoria == 3)
+                    CarritoProducto cp = new CarritoProducto(cmProducto, producto.Precio, cantidad, producto.IdCategoria, producto.IdProducto);
+                    carritoProductos.Add(cp);
+                    dataGridView1.Rows.Add(cmProducto, cantidad, producto.Precio);
+
+                    foreach(CarritoProducto c in carritoProductos)
                     {
-                        totalElectro += c.Cantidad * c.Precio;
+                        if(c.IdCategoria == 3)
+                        {
+                            totalElectro += c.Cantidad * c.Precio;
+                        }
+                        else
+                        {
+                            totalResto += c.Cantidad * c.Precio;
+                        }
                     }
-                    else
+
+                    if (totalElectro > 100000)
                     {
-                        totalResto += c.Cantidad * c.Precio;
+                        descuentoElectro = totalElectro * 0.05;
+                        promocionesAplicadas += "Promo Electro Hogar, ";
                     }
-                    
-                }
-                lbltotal.Text = "$   " + (totalResto + totalElectro);
-                double descuentoElectro = 0;
 
-                if (totalElectro > 100000)
-                {
-                    descuentoElectro = totalElectro * 0.05;
-                    promosAplicadas += "Promo Electro Hogar, ";
-                }
+                    double descuentoPrimerCompra = negocioVenta.DescuentoPrimerCompra(dni, totalResto, totalElectro);
 
-                NegocioVenta negocioVenta = new NegocioVenta();
-                double descuentoPrimerCompra = negocioVenta.DescuentoPrimerCompra(dni,totalResto,totalElectro);
-                if (descuentoPrimerCompra > 0)
-                {
-                    promosAplicadas += "Promo Cliente Nuevo, ";
+                    if (descuentoPrimerCompra > 0)
+                    {
+                        promocionesAplicadas += "Promo Cliente Nuevo, ";
+                    }
+
+                    double total = totalResto + totalElectro;
+                    double descuentoFinal = descuentoElectro + descuentoPrimerCompra;
+                    double totalFinal = total - descuentoFinal;
+
+                    lblTotal.Text = "$   " + total;
+                    lblPromociones.Text = promocionesAplicadas;
+                    lblDescuentos.Text = "$   " + descuentoFinal;
+                    lblTotalFinal.Text = "$   " + totalFinal;
                 }
-                double descuentoFinal = descuentoElectro + descuentoPrimerCompra;
-                double totalFinal = totalResto + totalElectro - descuentoFinal;
-                labeldesc.Text = "$   " + descuentoFinal;
-                labeltotal.Text = "$   " + totalFinal;
-              
-                
             }
-            
-
         }
+
+
+        private void button_WOC1_Click(object sender, EventArgs e)
+        {
+            lblErrorCarrito.Text = "";
+
+            if ((dataGridView1.RowCount - 1) > 0)
+            {
+                negocioVenta.AgregarVenta(txtdni.Text, UsuarioLogueado.usuario.Id, carritoProductos);
+
+                string txDni = txtdni.Text;
+                double descuentoFinal = double.Parse(lblDescuentos.Text.Replace("$", "").Trim());
+                double totalFinal = double.Parse(lblTotalFinal.Text.Replace("$", "").Trim());
+                string promocionesAplicadas = lblPromociones.Text;
+
+                this.Hide();
+                remito_form remito_Form = new remito_form(txDni, carritoProductos, descuentoFinal, totalFinal, promocionesAplicadas);
+                remito_Form.Show();
+            }
+            else
+            {
+                lblErrorCarrito.Text = "El carrito no puede estar vacío";
+            }
+        }
+
 
         private void linkLabelVolver_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -120,56 +148,5 @@ namespace Presentacion2
             vendedor_menu_form vendedor_menu = new vendedor_menu_form();
             vendedor_menu.Show();
         }
-
-        private void button_WOC1_Click(object sender, EventArgs e)
-        {
-            //*No olvidar restar una vez confirmada la compra el stock
-            NegocioVenta negocioVenta = new NegocioVenta();
-
-            negocioVenta.AgregarVentaBaseLocal(carritoProductos);
-
-            string dniCliente = txtdni.Text;
-            double descuentoFinal = double.Parse(labeldesc.Text.Replace("$", "").Trim());
-            double totalFinal = double.Parse(labeltotal.Text.Replace("$", "").Trim());
-            double totalElectro = 0;
-            double totalResto = 0;
-            string promosAplicadas = "";
-            string txdni = txtdni.Text;
-            Operacion operacion = new Operacion();
-            int dni = operacion.TransformarStringInt(txdni);
-
-            foreach (CarritoProducto c in carritoProductos)
-            {
-                if (c.idCategoria == 3)
-                {
-                    totalElectro += c.Cantidad * c.Precio;
-                }
-                else
-                {
-                    totalResto += c.Cantidad * c.Precio;
-                }
-
-            }
-            double descuentoElectro = 0;
-
-
-            if (totalElectro > 100000)
-            {
-                promosAplicadas += "Promo electro hogar, ";
-                descuentoElectro = totalElectro * 0.05;
-            }
-
-            double descuentoPrimerCompra = negocioVenta.DescuentoPrimerCompra(dni, totalResto, totalElectro);
-            if (descuentoPrimerCompra > 0)
-            {
-                promosAplicadas += "Promo cliente nuevo, ";
-            }
-
-            this.Hide();
-            remito_form remito_Form = new remito_form(dniCliente,carritoProductos,descuentoFinal, totalFinal, promosAplicadas);
-            remito_Form.Show();
-
-        }
-
     }
 }

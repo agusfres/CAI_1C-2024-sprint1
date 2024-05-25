@@ -13,7 +13,7 @@ namespace Persistencia
 {
     public class VentaService
     {
-        public void AgregarVenta(Altaventa altaVenta)
+        public void AgregarVenta(AltaVenta altaVenta)
         {
             string path = "/api/Venta/AgregarVenta";
 
@@ -62,9 +62,9 @@ namespace Persistencia
             }
         }
 
-        public List<Venta> TraerVenta(string idCliente)
+        public List<Venta> GetVentasByCliente(Guid idCliente)
         {
-            string path = "/api/Usuario/TraerUsuariosActivos?id=" + idCliente;
+            string path = "/api/Venta/GetVentaByCliente?id=" + idCliente;
 
             List<Venta> listaVenta = new List<Venta>();
 
