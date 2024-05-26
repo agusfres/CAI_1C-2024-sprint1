@@ -4,52 +4,57 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Schema;
 
 namespace Presentacion
 {
     public class NegocioVenta
     {
         private VentaService ventaService = new VentaService();
-        private Guid idUsuario = Guid.Parse("70b37dc1-8fde-4840-be47-9ababd0ee7e5");
-        string rutaLocal = @"C:\Users\USUARIOSISTEMA\VentasLocales.txt";
+        string docPathAdaptado = @"C:\Users\USUARIOSISTEMA\VentasLocales.txt".Replace("USUARIOSISTEMA", Environment.UserName);
 
 
         public void AgregarVenta(string dni, Guid idUsuario, List<CarritoProducto> carritoProductos)
         {
             NegocioCliente negocioCliente = new NegocioCliente();
             Cliente cliente = negocioCliente.BuscarCliente(Int32.Parse(dni));
+            Guid idCarrito = GenerarGuidRandom();
 
             foreach (CarritoProducto itemCarrito in carritoProductos)
             {
-                ventaService.AgregarVenta(new AltaVenta(cliente.Id, idUsuario, itemCarrito.IdProducto, itemCarrito.Cantidad));
-            }
+                Guid idCliente = cliente.Id;
+                Guid idProducto = itemCarrito.IdProducto;
+                string nombre = itemCarrito.Nombre;
+                int idCategoria = itemCarrito.IdCategoria;
+                int cantidad = itemCarrito.Cantidad;
+                double precio =  itemCarrito.Precio;
+                double total = cantidad * precio;
 
-            AgregarVentaBaseLocal(carritoProductos);
+                ventaService.AgregarVenta(new AltaVenta(idCliente, idUsuario, idProducto, cantidad));
+                
+                Guid idVenta = ventaService.GetUltimaVentaCargada(cliente.Id);
+
+                AgregarVentaBaseLocal(idCarrito, idVenta, idCliente, idUsuario, idProducto, nombre, idCategoria, cantidad, precio, total);
+            }
         }
 
 
-        public void AgregarVentaBaseLocal(List<CarritoProducto> carritoProductos)
+        public void AgregarVentaBaseLocal(Guid idCarrito, Guid idVenta, Guid idCliente, Guid idUsuario, Guid idProducto, string nombre, int idCategoria, int cantidad, double precio, double total)
         {
-            string docPath = rutaLocal;
-            string nombreUsuarioSistema = Environment.UserName;
-            string docPathAdaptado = docPath.Replace("USUARIOSISTEMA", nombreUsuarioSistema);
-
             StreamWriter writer = new StreamWriter(docPathAdaptado, true);
 
             try
             {
-                Guid idVentaLocal = Guid.NewGuid();
-                foreach (CarritoProducto c in carritoProductos)
-                {
-                    writer.WriteLine(c.IdProducto + "+" + c.Nombre + "+" + c.Cantidad + "+" + c.Precio + "+" + (c.Precio*c.Cantidad) + "+" + idVentaLocal);
-                }
+                writer.WriteLine(idCarrito + "+" + idVenta + "+" + idCliente + "+" + idUsuario + "+" + idProducto + "+" + nombre + "+" + idCategoria + "+" + cantidad + "+" + precio + "+" + total + "+" + DateTime.Now + "+1");
             }
             catch
             {
                 Console.WriteLine("error");
             }
+
             writer.Close();
         }
 
@@ -72,6 +77,16 @@ namespace Presentacion
             }
 
             return descuento;
+        }
+
+
+        private Guid GenerarGuidRandom()
+        {
+            Random random = new Random();
+            byte[] bytes = new byte[16];
+            random.NextBytes(bytes);
+            Guid randomGuid = new Guid(bytes);
+            return randomGuid;
         }
     }
 }

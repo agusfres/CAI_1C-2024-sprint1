@@ -12,9 +12,10 @@ namespace Presentacion
 {
     public class NegocioProveedor
     {
-        string rutaLocal = @"C:\Users\USUARIOSISTEMA\ProveedoresLocales.txt";
         private ProveedorService proveedorService = new ProveedorService();
         private Guid idAdministrador = Guid.Parse("70b37dc1-8fde-4840-be47-9ababd0ee7e5");
+        string docPathAdaptado = @"C:\Users\USUARIOSISTEMA\ProveedoresLocales.txt".Replace("USUARIOSISTEMA", Environment.UserName);
+
 
 
         public void AgregarProveedor(string nombre, string apellido, string email, string cuit, List <int> seleccionCategoriaProd)
@@ -28,6 +29,7 @@ namespace Presentacion
             AgregarProveedorBaseLocal(proveedor);
 
         }
+
 
         public Proveedor BuscarProveedor(string nombreProveedor)
         {
@@ -43,24 +45,25 @@ namespace Presentacion
                     }
                 }
             }
+
             return null;
         }
+
 
         public List<Proveedor> TraerProveedoresActivos()
         {
             return proveedorService.TraerProveedoresActivos();
         }
 
+
         public void BajaProveedor(Guid id)
         {
             proveedorService.BajaProveedor(id, idAdministrador);
         }
+
+
         private void AgregarProveedorBaseLocal(Proveedor proveedor)
         {
-            string docPath = rutaLocal;
-            string nombreUsuarioSistema = Environment.UserName;
-            string docPathAdaptado = docPath.Replace("USUARIOSISTEMA", nombreUsuarioSistema);
-
             StreamWriter writer = new StreamWriter(docPathAdaptado, true);
 
             try
@@ -71,8 +74,8 @@ namespace Presentacion
             {
                 Console.WriteLine("error");
             }
+
             writer.Close();
         }
     }
-
 }

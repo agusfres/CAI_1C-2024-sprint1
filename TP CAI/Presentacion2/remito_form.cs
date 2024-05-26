@@ -56,6 +56,8 @@ namespace Presentacion2
                 dataGridView1.Rows.Add(producto.Nombre, producto.Cantidad, producto.Precio);
             }
 
+            double totalAntesPromo = totalFinal + descuentoFinal;
+            lblTotalAntesPromo.Text = totalAntesPromo.ToString("F2");
             lblPromociones.Text = this.descuentoFinal.ToString("F2");
             lblTotal.Text = this.totalFinal.ToString("F2");
             lblNombrePromo.Text = this.promosAplicadas;

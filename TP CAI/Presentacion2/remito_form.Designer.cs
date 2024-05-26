@@ -49,6 +49,8 @@
             this.btnmenu = new ePOSOne.btnProduct.Button_WOC();
             this.btnventa = new ePOSOne.btnProduct.Button_WOC();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblTotalAntesPromo = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -134,7 +136,7 @@
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.Location = new System.Drawing.Point(32, 247);
+            this.label4.Location = new System.Drawing.Point(32, 296);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(90, 16);
             this.label4.TabIndex = 40;
@@ -146,7 +148,7 @@
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label5.Location = new System.Drawing.Point(32, 289);
+            this.label5.Location = new System.Drawing.Point(32, 337);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(126, 16);
             this.label5.TabIndex = 41;
@@ -158,7 +160,7 @@
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label6.Location = new System.Drawing.Point(418, 327);
+            this.label6.Location = new System.Drawing.Point(418, 364);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(91, 16);
             this.label6.TabIndex = 42;
@@ -195,7 +197,7 @@
             // lblPromociones
             // 
             this.lblPromociones.AutoSize = true;
-            this.lblPromociones.Location = new System.Drawing.Point(351, 247);
+            this.lblPromociones.Location = new System.Drawing.Point(351, 296);
             this.lblPromociones.Name = "lblPromociones";
             this.lblPromociones.Size = new System.Drawing.Size(0, 13);
             this.lblPromociones.TabIndex = 46;
@@ -203,7 +205,7 @@
             // lblNombrePromo
             // 
             this.lblNombrePromo.AutoSize = true;
-            this.lblNombrePromo.Location = new System.Drawing.Point(351, 289);
+            this.lblNombrePromo.Location = new System.Drawing.Point(351, 337);
             this.lblNombrePromo.Name = "lblNombrePromo";
             this.lblNombrePromo.Size = new System.Drawing.Size(0, 13);
             this.lblNombrePromo.TabIndex = 47;
@@ -211,7 +213,7 @@
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
-            this.lblTotal.Location = new System.Drawing.Point(529, 327);
+            this.lblTotal.Location = new System.Drawing.Point(529, 364);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(0, 13);
             this.lblTotal.TabIndex = 48;
@@ -226,7 +228,7 @@
             this.btnmenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnmenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnmenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnmenu.Location = new System.Drawing.Point(416, 374);
+            this.btnmenu.Location = new System.Drawing.Point(416, 398);
             this.btnmenu.Name = "btnmenu";
             this.btnmenu.OnHoverBorderColor = System.Drawing.Color.Salmon;
             this.btnmenu.OnHoverButtonColor = System.Drawing.Color.Salmon;
@@ -248,7 +250,7 @@
             this.btnventa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnventa.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnventa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnventa.Location = new System.Drawing.Point(188, 374);
+            this.btnventa.Location = new System.Drawing.Point(188, 398);
             this.btnventa.Name = "btnventa";
             this.btnventa.OnHoverBorderColor = System.Drawing.Color.Salmon;
             this.btnventa.OnHoverButtonColor = System.Drawing.Color.Salmon;
@@ -263,18 +265,40 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Presentacion2.Properties.Resources.New_Project__4_;
-            this.pictureBox1.Location = new System.Drawing.Point(-1, -3);
+            this.pictureBox1.Location = new System.Drawing.Point(-1, 435);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(805, 455);
+            this.pictureBox1.Size = new System.Drawing.Size(805, 17);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 49;
             this.pictureBox1.TabStop = false;
+            // 
+            // lblTotalAntesPromo
+            // 
+            this.lblTotalAntesPromo.AutoSize = true;
+            this.lblTotalAntesPromo.Location = new System.Drawing.Point(529, 255);
+            this.lblTotalAntesPromo.Name = "lblTotalAntesPromo";
+            this.lblTotalAntesPromo.Size = new System.Drawing.Size(0, 13);
+            this.lblTotalAntesPromo.TabIndex = 51;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label8.Location = new System.Drawing.Point(418, 255);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(91, 16);
+            this.label8.TabIndex = 50;
+            this.label8.Text = "Total a pagar:";
             // 
             // remito_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblTotalAntesPromo);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.lblNombrePromo);
             this.Controls.Add(this.lblPromociones);
@@ -324,5 +348,7 @@
         private System.Windows.Forms.Label lblNombrePromo;
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblTotalAntesPromo;
+        private System.Windows.Forms.Label label8;
     }
 }

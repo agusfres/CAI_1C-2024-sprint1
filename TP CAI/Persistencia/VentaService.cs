@@ -9,6 +9,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Persistencia
 {
     public class VentaService
@@ -62,6 +63,7 @@ namespace Persistencia
             }
         }
 
+
         public List<Venta> GetVentasByCliente(Guid idCliente)
         {
             string path = "/api/Venta/GetVentaByCliente?id=" + idCliente;
@@ -78,7 +80,25 @@ namespace Persistencia
 
             return listaVenta;
         }
-        
+
+
+        public Guid GetUltimaVentaCargada(Guid idCliente)
+        {
+            string path = "/api/Venta/GetVentaByCliente?id=" + idCliente;
+
+            Guid idVenta = new Guid();
+
+            HttpResponseMessage response = WebHelper.Get(path);
+
+            if (response.IsSuccessStatusCode)
+            {
+                var contentStream = response.Content.ReadAsStringAsync().Result;
+                List<Venta> listaVenta = JsonConvert.DeserializeObject<List<Venta>>(contentStream);
+                idVenta = listaVenta[0].Id;
+            }
+
+            return idVenta;
+        }
     }
 }
 

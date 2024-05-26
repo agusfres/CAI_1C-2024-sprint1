@@ -15,7 +15,7 @@ namespace Presentacion
         Operacion operacion = new Operacion();
         private ClienteService clienteService = new ClienteService();
         private Guid idUsuario = Guid.Parse("70b37dc1-8fde-4840-be47-9ababd0ee7e5");
-        string rutaLocal = @"C:\Users\USUARIOSISTEMA\ClientesLocales.txt";
+        string docPathAdaptado = @"C:\Users\USUARIOSISTEMA\ClientesLocales.txt".Replace("USUARIOSISTEMA", Environment.UserName);
 
 
         public void AgregarCliente(string nombre, string apellido, string direccion, string telefono, string email, DateTime fechaNacimiento,  int dni)
@@ -45,16 +45,13 @@ namespace Presentacion
                     }
                 }
             }
+
             return null;
         }
 
 
         public Cliente BuscarClienteBaseLocal(string dniCliente)
         {
-            string docPath = rutaLocal;
-            string nombreUsuarioSistema = Environment.UserName;
-            string docPathAdaptado = docPath.Replace("USUARIOSISTEMA", nombreUsuarioSistema);
-
             StreamReader sr = new StreamReader(docPathAdaptado);
             string linea;
 
@@ -90,6 +87,7 @@ namespace Presentacion
                     return cliente;
                 }
             }
+
             sr.Close();
             return null;
         }
@@ -104,10 +102,6 @@ namespace Presentacion
 
         private void AgregarClienteBaseLocal(Cliente cliente)
         {
-            string docPath = rutaLocal;
-            string nombreUsuarioSistema = Environment.UserName;
-            string docPathAdaptado = docPath.Replace("USUARIOSISTEMA", nombreUsuarioSistema);
-
             StreamWriter writer = new StreamWriter(docPathAdaptado, true);
 
             try
@@ -118,6 +112,7 @@ namespace Presentacion
             {
                 Console.WriteLine("error");
             }
+
             writer.Close();
         }
 
@@ -131,9 +126,6 @@ namespace Presentacion
 
         public void ModificarClienteBaseLocal(Guid idUsuario, string telefono, string direccion, string estado, string email)
         {
-            string docPath = rutaLocal;
-            string nombreUsuarioSistema = Environment.UserName;
-            string docPathAdaptado = docPath.Replace("USUARIOSISTEMA", nombreUsuarioSistema);
             string tempPath = Path.GetTempFileName(); // Ruta temporal para escribir el contenido actualizado
 
             StreamReader sr = new StreamReader(docPathAdaptado);
@@ -166,6 +158,7 @@ namespace Presentacion
                     catch { Console.WriteLine("Error"); }
                 }
             }
+
             sw.Close();
             sr.Close();
             // Reemplaza el archivo original con el archivo temporal

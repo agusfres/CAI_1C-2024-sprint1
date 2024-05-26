@@ -426,5 +426,20 @@ namespace Presentacion2
             }
             return msgError;
         }
+
+
+        public string ValidarMes(string texto, string campo)
+        {
+            string msgError = "";
+            List<string> opciones = new List<string>() { "Enero ", "Febrero ", "Marzo ", "Abril ", "Mayo ", "Junio ", "Julio ", "Agosto ", "Septiembre ", "Octubre ", "Noviembre ", "Diciembre " };
+            msgError += ValidarVacio(texto, campo);
+
+            if (!opciones.Contains(texto))
+            {
+                msgError += "El campo " + campo + " debe ser alguna de las opciones indicadas." + System.Environment.NewLine;
+            }
+
+            return msgError;
+        }
     }
 }

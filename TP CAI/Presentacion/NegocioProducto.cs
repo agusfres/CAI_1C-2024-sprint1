@@ -15,7 +15,7 @@ namespace Presentacion
     {
         private ProductoService productoService = new ProductoService();
         private Guid idAdministrador = Guid.Parse("70b37dc1-8fde-4840-be47-9ababd0ee7e5");
-        string rutaLocal = @"C:\Users\USUARIOSISTEMA\ProductosLocales.txt";
+        string docPathAdaptado = @"C:\Users\USUARIOSISTEMA\ProductosLocales.txt".Replace("USUARIOSISTEMA", Environment.UserName);
 
 
         public void AgregarProducto(string nombre, int idCategoria, double precio, int stock, Guid idProveedor)
@@ -35,6 +35,7 @@ namespace Presentacion
             return productoService.TraerProductos();
         }
 
+
         public Producto BuscarProductoCat(int categoria)
         {
             List<Producto> listaProductos = TraerProductos();
@@ -49,6 +50,7 @@ namespace Presentacion
                     }
                 }
             }
+
             return null;
         }
 
@@ -67,16 +69,32 @@ namespace Presentacion
                     }
                 }
             }
+
+            return null;
+        }
+
+
+        public Producto BuscarProducto(Guid idProducto)
+        {
+            List<Producto> listaProductos = TraerProductos();
+
+            if (listaProductos != null)
+            {
+                foreach (Producto producto in listaProductos)
+                {
+                    if (producto.IdProducto == idProducto)
+                    {
+                        return producto;
+                    }
+                }
+            }
+
             return null;
         }
 
 
         private void AgregarProductoBaseLocal(Producto producto)
         {
-            string docPath = rutaLocal;
-            string nombreUsuarioSistema = Environment.UserName;
-            string docPathAdaptado = docPath.Replace("USUARIOSISTEMA", nombreUsuarioSistema);
-
             StreamWriter writer = new StreamWriter(docPathAdaptado, true);
 
             try
@@ -87,6 +105,7 @@ namespace Presentacion
             {
                 Console.WriteLine("error");
             }
+
             writer.Close();
         }
     }

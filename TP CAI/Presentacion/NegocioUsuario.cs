@@ -21,7 +21,7 @@ namespace Negocio
     {
         private UsuarioService usuarioService = new UsuarioService();
         private Guid idAdministrador = Guid.Parse("70b37dc1-8fde-4840-be47-9ababd0ee7e5");
-        string rutaLocal = @"C:\Users\USUARIOSISTEMA\UsuariosLocales.txt";
+        string docPathAdaptado = @"C:\Users\USUARIOSISTEMA\UsuariosLocales.txt".Replace("USUARIOSISTEMA", Environment.UserName);
 
 
         public void AgregarUsuario(string nombre, string apellido, string direccion, string telefono, string email, DateTime fechaNacimiento, string nombreUsuario, int tipoUsuario, int dni, string contraseña)
@@ -50,8 +50,29 @@ namespace Negocio
                     }
                 }
             }
+
             return null;
         }
+
+
+        public Usuario BuscarUsuario(Guid idUsuario)
+        {
+            List<Usuario> listaUsuarios = TraerUsuariosActivos();
+
+            if (listaUsuarios != null)
+            {
+                foreach (Usuario usuario in listaUsuarios)
+                {
+                    if (usuario.Id == idUsuario)
+                    {
+                        return usuario;
+                    }
+                }
+            }
+
+            return null;
+        }
+
 
 
         public List<Usuario> TraerUsuariosActivos()
@@ -77,10 +98,6 @@ namespace Negocio
 
         private void AgregarUsuarioBaseLocal(Usuario usuario)
         {
-            string docPath = rutaLocal;
-            string nombreUsuarioSistema = Environment.UserName;
-            string docPathAdaptado = docPath.Replace("USUARIOSISTEMA", nombreUsuarioSistema);
-           
             StreamWriter writer = new StreamWriter(docPathAdaptado, true);
 
             try
@@ -91,15 +108,13 @@ namespace Negocio
             {
                 Console.WriteLine("error");
             }
+
             writer.Close();
         }
 
 
         private void ModificarContraseñaEstadoBaseLocal(string usuario,string contraseña)
         {
-            string docPath = rutaLocal;
-            string nombreUsuarioSistema = Environment.UserName;
-            string docPathAdaptado = docPath.Replace("USUARIOSISTEMA", nombreUsuarioSistema);
             string tempPath = Path.GetTempFileName(); // Ruta temporal para escribir el contenido actualizado
 
             StreamReader sr = new StreamReader(docPathAdaptado);
@@ -136,6 +151,7 @@ namespace Negocio
                     catch { Console.WriteLine("Error");  }
                 }
             }
+
             sw.Close();
             sr.Close();
             // Reemplaza el archivo original con el archivo temporal
@@ -148,9 +164,6 @@ namespace Negocio
 
         public void ModificarEstadoBaseLocal(Guid idUsuario)
         {
-            string docPath = rutaLocal;
-            string nombreUsuarioSistema = Environment.UserName;
-            string docPathAdaptado = docPath.Replace("USUARIOSISTEMA", nombreUsuarioSistema);
             string tempPath = Path.GetTempFileName(); // Ruta temporal para escribir el contenido actualizado
 
             StreamReader sr = new StreamReader(docPathAdaptado);
@@ -189,6 +202,7 @@ namespace Negocio
                     catch { Console.WriteLine("Error"); }
                 }
             }
+
             sw.Close();
             sr.Close();
             // Reemplaza el archivo original con el archivo temporal
@@ -200,10 +214,6 @@ namespace Negocio
 
         public Usuario BuscarUsuarioBaseLocal(string nombreUsuario_)
         {
-            string docPath = rutaLocal;
-            string nombreUsuarioSistema = Environment.UserName;
-            string docPathAdaptado = docPath.Replace("USUARIOSISTEMA", nombreUsuarioSistema);
-
             StreamReader sr = new StreamReader(docPathAdaptado);
             string linea;
 
@@ -246,6 +256,7 @@ namespace Negocio
                     return usuario;
                 }
             }
+
             sr.Close();
             return null;
         }

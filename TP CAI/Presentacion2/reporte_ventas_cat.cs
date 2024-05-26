@@ -19,11 +19,11 @@ namespace Presentacion2
     
     public partial class reporte_ventas_cat : Form
     {
-        ProductoService productoService = new ProductoService();
         public reporte_ventas_cat()
         {
             InitializeComponent();
         }
+
 
         private void linkLabelVolver_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -32,24 +32,18 @@ namespace Presentacion2
             admin_gestionreportes_form.Show();
         }
 
+
         public void reporte_ventas_cat_Load(object sender, EventArgs e)
         {
-            int categoria= 1;
+            NegocioReporte negocioReporte = new NegocioReporte();
 
-            //Aca deberia buscar en el de ventas 
+            List<string> listaMasVendidosPorCat = negocioReporte.ReporteMasVendidoPorCategoria();
 
-            List <Producto> listaproductos = productoService.TraerProductosPorCategoria(categoria);
-           
-            foreach (Producto producto in listaproductos)
-            {
-                
-            }
-
-            //lblProducto1.Text=al producto con mas ventas
-
-            //repetir por cada categoria
+            lblProducto1.Text = listaMasVendidosPorCat[0];
+            lblProducto2.Text = listaMasVendidosPorCat[1];
+            lblProducto3.Text = listaMasVendidosPorCat[2];
+            lblProducto4.Text = listaMasVendidosPorCat[3];
+            lblProducto5.Text = listaMasVendidosPorCat[4];
         }
-
-
     }
 }

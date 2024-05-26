@@ -68,11 +68,6 @@ namespace Presentacion2
                     if (usuario == null)
                     {
                         // El usuario fue creado desde Swagger pero no desde la aplicación, entonces no está en el txt local, y el web service guarda los tipos de usuario como 0 (no existe ese)
-
-                        agregarventa_form BORRAR = new agregarventa_form();
-                        BORRAR.Show();
-
-
                         admin_menu_form admin_menu = new admin_menu_form();
                         admin_menu.Show();
                     }

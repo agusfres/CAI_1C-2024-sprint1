@@ -36,7 +36,10 @@ namespace Presentacion2
             List<Producto> listaproductos = productoService.TraerProductos();
             foreach (Producto producto in listaproductos)
             {
-                cmbProducto.Items.Add(producto.Nombre);
+                if (producto.Stock > 0)
+                {
+                    cmbProducto.Items.Add(producto.Nombre);
+                }
             }
         }
         

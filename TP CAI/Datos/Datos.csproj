@@ -49,6 +49,7 @@
     <Compile Include="BajaProducto.cs" />
     <Compile Include="Bajaventa.cs" />
     <Compile Include="CarritoProducto.cs" />
+    <Compile Include="ReporteVentasPorVendedor.cs" />
     <Compile Include="Cliente.cs" />
     <Compile Include="UsuarioLogueado.cs" />
     <Compile Include="ModificarProveedor.cs" />

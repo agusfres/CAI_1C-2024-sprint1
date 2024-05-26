@@ -34,9 +34,14 @@
             this.Vendedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CantVentas = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Monto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbMes = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnBuscar = new ePOSOne.btnProduct.Button_WOC();
+            this.lblErrorMes = new System.Windows.Forms.Label();
+            this.lblSinResultados = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitulo
@@ -74,9 +79,9 @@
             this.Vendedor,
             this.CantVentas,
             this.Monto});
-            this.dataGridView1.Location = new System.Drawing.Point(49, 175);
+            this.dataGridView1.Location = new System.Drawing.Point(209, 179);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(346, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(342, 169);
             this.dataGridView1.TabIndex = 46;
             // 
             // Vendedor
@@ -94,36 +99,102 @@
             this.Monto.HeaderText = "Monto";
             this.Monto.Name = "Monto";
             // 
-            // comboBox1
+            // cmbMes
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(49, 114);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 47;
+            this.cmbMes.FormattingEnabled = true;
+            this.cmbMes.Items.AddRange(new object[] {
+            "Enero ",
+            "Febrero ",
+            "Marzo ",
+            "Abril ",
+            "Mayo ",
+            "Junio ",
+            "Julio ",
+            "Agosto ",
+            "Septiembre ",
+            "Octubre ",
+            "Noviembre ",
+            "Diciembre "});
+            this.cmbMes.Location = new System.Drawing.Point(221, 110);
+            this.cmbMes.Name = "cmbMes";
+            this.cmbMes.Size = new System.Drawing.Size(155, 21);
+            this.cmbMes.TabIndex = 47;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(46, 98);
+            this.label1.Location = new System.Drawing.Point(227, 94);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(97, 13);
             this.label1.TabIndex = 48;
             this.label1.Text = "Seleccione un mes";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Presentacion2.Properties.Resources.New_Project__5_;
+            this.pictureBox1.Location = new System.Drawing.Point(-3, 442);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(807, 10);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 49;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnBuscar.BorderColor = System.Drawing.Color.Transparent;
+            this.btnBuscar.ButtonColor = System.Drawing.Color.Salmon;
+            this.btnBuscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnBuscar.Location = new System.Drawing.Point(419, 97);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.OnHoverBorderColor = System.Drawing.Color.Salmon;
+            this.btnBuscar.OnHoverButtonColor = System.Drawing.Color.Salmon;
+            this.btnBuscar.OnHoverTextColor = System.Drawing.Color.Gray;
+            this.btnBuscar.Size = new System.Drawing.Size(121, 43);
+            this.btnBuscar.TabIndex = 50;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.TextColor = System.Drawing.Color.White;
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
+            // lblErrorMes
+            // 
+            this.lblErrorMes.AutoSize = true;
+            this.lblErrorMes.Location = new System.Drawing.Point(227, 134);
+            this.lblErrorMes.Name = "lblErrorMes";
+            this.lblErrorMes.Size = new System.Drawing.Size(0, 13);
+            this.lblErrorMes.TabIndex = 51;
+            // 
+            // lblSinResultados
+            // 
+            this.lblSinResultados.AutoSize = true;
+            this.lblSinResultados.Location = new System.Drawing.Point(227, 371);
+            this.lblSinResultados.Name = "lblSinResultados";
+            this.lblSinResultados.Size = new System.Drawing.Size(0, 13);
+            this.lblSinResultados.TabIndex = 52;
             // 
             // reporte_ventasxvendedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblSinResultados);
+            this.Controls.Add(this.lblErrorMes);
+            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbMes);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.linkLabelVolver);
             this.Controls.Add(this.lblTitulo);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "reporte_ventasxvendedor";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -137,7 +208,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Vendedor;
         private System.Windows.Forms.DataGridViewTextBoxColumn CantVentas;
         private System.Windows.Forms.DataGridViewTextBoxColumn Monto;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbMes;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private ePOSOne.btnProduct.Button_WOC btnBuscar;
+        private System.Windows.Forms.Label lblErrorMes;
+        private System.Windows.Forms.Label lblSinResultados;
     }
 }
