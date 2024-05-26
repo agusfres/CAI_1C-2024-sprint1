@@ -77,7 +77,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Presentacion2.Properties.Resources.New_Project__5_;
-            this.pictureBox1.Location = new System.Drawing.Point(-4, -26);
+            this.pictureBox1.Location = new System.Drawing.Point(-2, -9);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(807, 481);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -89,7 +89,7 @@
             this.lblCategoria.AutoSize = true;
             this.lblCategoria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lblCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCategoria.ForeColor = System.Drawing.Color.Black;
+            this.lblCategoria.ForeColor = System.Drawing.Color.Gray;
             this.lblCategoria.Location = new System.Drawing.Point(88, 101);
             this.lblCategoria.Name = "lblCategoria";
             this.lblCategoria.Size = new System.Drawing.Size(141, 26);
@@ -101,7 +101,7 @@
             this.lblProducto.AutoSize = true;
             this.lblProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lblProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProducto.ForeColor = System.Drawing.Color.Black;
+            this.lblProducto.ForeColor = System.Drawing.Color.Gray;
             this.lblProducto.Location = new System.Drawing.Point(331, 101);
             this.lblProducto.Name = "lblProducto";
             this.lblProducto.Size = new System.Drawing.Size(137, 26);
@@ -113,19 +113,19 @@
             this.lblCat1.AutoSize = true;
             this.lblCat1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lblCat1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCat1.ForeColor = System.Drawing.Color.Black;
+            this.lblCat1.ForeColor = System.Drawing.Color.Gray;
             this.lblCat1.Location = new System.Drawing.Point(89, 154);
             this.lblCat1.Name = "lblCat1";
-            this.lblCat1.Size = new System.Drawing.Size(80, 20);
+            this.lblCat1.Size = new System.Drawing.Size(85, 20);
             this.lblCat1.TabIndex = 48;
-            this.lblCat1.Text = "1. AUDIO";
+            this.lblCat1.Text = "1. AUDIO:";
             // 
             // lblCat2
             // 
             this.lblCat2.AutoSize = true;
             this.lblCat2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lblCat2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCat2.ForeColor = System.Drawing.Color.Black;
+            this.lblCat2.ForeColor = System.Drawing.Color.Gray;
             this.lblCat2.Location = new System.Drawing.Point(89, 196);
             this.lblCat2.Name = "lblCat2";
             this.lblCat2.Size = new System.Drawing.Size(127, 20);
@@ -137,7 +137,7 @@
             this.lblCat3.AutoSize = true;
             this.lblCat3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lblCat3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCat3.ForeColor = System.Drawing.Color.Black;
+            this.lblCat3.ForeColor = System.Drawing.Color.Gray;
             this.lblCat3.Location = new System.Drawing.Point(89, 241);
             this.lblCat3.Name = "lblCat3";
             this.lblCat3.Size = new System.Drawing.Size(173, 20);
@@ -149,7 +149,7 @@
             this.lblCat4.AutoSize = true;
             this.lblCat4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lblCat4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCat4.ForeColor = System.Drawing.Color.Black;
+            this.lblCat4.ForeColor = System.Drawing.Color.Gray;
             this.lblCat4.Location = new System.Drawing.Point(89, 288);
             this.lblCat4.Name = "lblCat4";
             this.lblCat4.Size = new System.Drawing.Size(140, 20);
@@ -161,7 +161,7 @@
             this.lblCat5.AutoSize = true;
             this.lblCat5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lblCat5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCat5.ForeColor = System.Drawing.Color.Black;
+            this.lblCat5.ForeColor = System.Drawing.Color.Gray;
             this.lblCat5.Location = new System.Drawing.Point(89, 331);
             this.lblCat5.Name = "lblCat5";
             this.lblCat5.Size = new System.Drawing.Size(111, 20);
@@ -245,6 +245,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "reporte_ventas_cat";
             this.Text = "RemitoStock";
+            this.Load += new System.EventHandler(this.reporte_ventas_cat_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

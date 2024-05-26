@@ -113,5 +113,22 @@ namespace Persistencia
 
             return listaProductos;
         }
+
+        public List<Producto> TraerProductosPorCategoria(int categoria)
+        {
+            string path = "/api/Producto/TraerProductosPorCategoria?catnum=" + categoria;
+
+            List<Producto> listaProductosCat = new List<Producto>();
+
+            HttpResponseMessage response = WebHelper.Get(path);
+
+            if (response.IsSuccessStatusCode)
+            {
+                var contentStream = response.Content.ReadAsStringAsync().Result;
+                listaProductosCat = JsonConvert.DeserializeObject<List<Producto>>(contentStream);
+            }
+
+            return listaProductosCat;
+        }
     }
 }

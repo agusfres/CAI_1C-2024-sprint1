@@ -3,6 +3,7 @@ using Persistencia;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -32,6 +33,23 @@ namespace Presentacion
         public List<Producto> TraerProductos()
         {
             return productoService.TraerProductos();
+        }
+
+        public Producto BuscarProductoCat(int categoria)
+        {
+            List<Producto> listaProductos = TraerProductos();
+
+            if (listaProductos != null)
+            {
+                foreach (Producto producto in listaProductos)
+                {
+                    if (producto.IdCategoria == categoria)
+                    {
+                        return producto;
+                    }
+                }
+            }
+            return null;
         }
 
 
