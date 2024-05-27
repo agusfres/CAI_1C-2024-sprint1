@@ -89,7 +89,7 @@ namespace Presentacion
                 int cantidad = int.Parse(vector[7]);
                 double total = double.Parse(vector[9]);
                 DateTime fechaVenta = DateTime.Parse(vector[10]);
-                
+
                 try
                 {
                     if (fechaVenta.Month == mes)
@@ -119,5 +119,37 @@ namespace Presentacion
 
             return reporteVentas;
         }
+
+        public List<Producto> ReporteProductosBajoStock()
+        {
+            int stockMaximo = 100;
+            List<Producto> listaProductosBajoStock = new List<Producto>();
+            List<Producto> todosLosProductos = negocioProducto.TraerProductos();
+
+            foreach (Producto producto in todosLosProductos)
+            {
+
+                if (producto.Stock < stockMaximo * 0.25)
+                {
+                    listaProductosBajoStock.Add(producto); 
+
+                }
+            }
+
+            return listaProductosBajoStock;
+        } 
+
+        public int AlertaBajoStock()
+        {
+            List<Producto> reportestock = ReporteProductosBajoStock();
+            return reportestock.Count;
+        }
     }
+
+
+
 }
+
+    
+
+

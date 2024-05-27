@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Presentacion;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -61,5 +62,21 @@ namespace Presentacion2
             Admin_gestionreportes_form.Show();
         }
 
+        private void admin_menu_form_Load(object sender, EventArgs e)
+        {
+            NegocioReporte negocioReporte = new NegocioReporte();
+            int cantidad = negocioReporte.AlertaBajoStock();
+
+            if(cantidad > 0)
+            {
+                label1.Text = "Hay " + cantidad.ToString() + "productos con stock crítico!!!";
+            }
+            else
+            {
+                label1.Text = "";
+            }
+          
+            
+        }
     }
 }

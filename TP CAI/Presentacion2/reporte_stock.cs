@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Datos;
+using Presentacion;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,6 +24,15 @@ namespace Presentacion2
             this.Hide();
             admin_gestionreportes_form admin_gestionreportes_form = new admin_gestionreportes_form();
             admin_gestionreportes_form.Show();
+        }
+
+        private void reporte_stock_Load(object sender, EventArgs e)
+        {
+            NegocioReporte negocioReporte = new NegocioReporte();
+
+            dataGridView1.DataSource = negocioReporte.ReporteProductosBajoStock();
+            dataGridView1.Refresh();
+
         }
     }
 }

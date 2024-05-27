@@ -36,6 +36,7 @@
             this.btnGestionarClientes = new ePOSOne.btnProduct.Button_WOC();
             this.btnGestionarProductos = new ePOSOne.btnProduct.Button_WOC();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -120,7 +121,6 @@
             this.btnReportes.TextColor = System.Drawing.Color.Gray;
             this.btnReportes.UseVisualStyleBackColor = false;
             this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
-
             // 
             // btnGestionarClientes
             // 
@@ -176,11 +176,21 @@
             this.pictureBox1.TabIndex = 40;
             this.pictureBox1.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Silver;
+            this.label1.Location = new System.Drawing.Point(153, 348);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.TabIndex = 41;
+            // 
             // admin_menu_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(559, 415);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnGestionarProductos);
             this.Controls.Add(this.btnGestionarClientes);
             this.Controls.Add(this.btnReportes);
@@ -190,6 +200,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "admin_menu_form";
             this.Text = "Form4";
+            this.Load += new System.EventHandler(this.admin_menu_form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -205,5 +216,6 @@
         private ePOSOne.btnProduct.Button_WOC btnGestionarClientes;
         private ePOSOne.btnProduct.Button_WOC btnGestionarProductos;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
     }
 }

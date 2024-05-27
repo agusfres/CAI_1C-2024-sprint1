@@ -33,6 +33,7 @@
             this.linkLabelVolver = new System.Windows.Forms.LinkLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnDevolucion = new ePOSOne.btnProduct.Button_WOC();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -99,7 +100,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Presentacion2.Properties.Resources.New_Project__3_;
-            this.pictureBox1.Location = new System.Drawing.Point(-3, -5);
+            this.pictureBox1.Location = new System.Drawing.Point(-3, -19);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(566, 422);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -128,11 +129,21 @@
             this.btnDevolucion.UseVisualStyleBackColor = false;
             this.btnDevolucion.Click += new System.EventHandler(this.btnDevolucion_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Silver;
+            this.label1.Location = new System.Drawing.Point(159, 287);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.TabIndex = 44;
+            // 
             // supervisor_menu_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(559, 415);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnDevolucion);
             this.Controls.Add(this.linkLabelVolver);
             this.Controls.Add(this.btnReporteVentas);
@@ -140,6 +151,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "supervisor_menu_form";
             this.Text = "Form9";
+            this.Load += new System.EventHandler(this.supervisor_menu_form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -153,5 +165,6 @@
         private System.Windows.Forms.LinkLabel linkLabelVolver;
         private System.Windows.Forms.PictureBox pictureBox1;
         private ePOSOne.btnProduct.Button_WOC btnDevolucion;
+        private System.Windows.Forms.Label label1;
     }
 }
