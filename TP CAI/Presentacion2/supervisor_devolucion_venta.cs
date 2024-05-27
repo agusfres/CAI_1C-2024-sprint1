@@ -25,5 +25,35 @@ namespace Presentacion2
             supervisor_menu_form supervisor_Menu_Form = new supervisor_menu_form();
             supervisor_Menu_Form.Show();
         }
+
+        private void btnDevolver_Click(object sender, EventArgs e)
+        {
+            string id = txtIdventa.Text;
+            Validador validador = new Validador();
+            lblErrorEliminar.Text = validador.ValidarIdVenta(id, "ID Venta");
+           
+            if (lblErrorEliminar.Text == "")
+            {
+                NegocioVenta negocioVenta = new NegocioVenta();
+                negocioVenta.DevolucionCompra(id);
+
+                LimpiarCampos();
+                Congrats();
+
+            }
+        }
+        private void LimpiarCampos()
+        {
+            lblErrorEliminar.Text = "";
+            txtIdventa.Clear();
+        }
+
+        private async void Congrats()
+        {
+            lblMensajeEliminar.Text = "La venta fue devuelta exitosamente";
+            await Task.Delay(5000);
+            lblMensajeEliminar.Text = "";
+        }
     }
 }
+

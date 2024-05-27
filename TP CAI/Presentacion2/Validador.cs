@@ -364,12 +364,29 @@ namespace Presentacion2
         }
 
 
-        public string ValidarId(string texto, string campo)
+        public string ValidarIdProveedor(string texto, string campo)
         {
             string msgError = "";
             msgError += ValidarVacio(texto, campo);
             msgError += ValidarFormatoGuid(texto, campo);
             return msgError;
+        }
+
+        public string ValidarIdVenta(string texto, string campo)
+        {
+            string msgError = "";
+            msgError += ValidarVacio(texto, campo);
+            msgError += ValidarFormatoGuid(texto, campo);
+            
+            if(msgError == "")
+            {
+                NegocioVenta negocioVenta = new NegocioVenta();
+                msgError = negocioVenta.BuscarVentaBaseLocal(texto);
+            }
+
+            
+            return msgError;
+
         }
 
 
@@ -386,7 +403,7 @@ namespace Presentacion2
             }
             return msgError;
         }
-        */ 
+        */
 
         public string ValidarCantidadProd(string cantidad, string campo,int stock,List<CarritoProducto> carrito)
         {

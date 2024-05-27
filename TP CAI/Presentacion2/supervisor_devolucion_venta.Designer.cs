@@ -42,11 +42,10 @@
             // lblMensajeEliminar
             // 
             this.lblMensajeEliminar.AutoSize = true;
-            this.lblMensajeEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.lblMensajeEliminar.Location = new System.Drawing.Point(161, 245);
-            this.lblMensajeEliminar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblMensajeEliminar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.lblMensajeEliminar.Location = new System.Drawing.Point(166, 247);
             this.lblMensajeEliminar.Name = "lblMensajeEliminar";
-            this.lblMensajeEliminar.Size = new System.Drawing.Size(0, 16);
+            this.lblMensajeEliminar.Size = new System.Drawing.Size(0, 13);
             this.lblMensajeEliminar.TabIndex = 44;
             // 
             // btnDevolver
@@ -59,13 +58,12 @@
             this.btnDevolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDevolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDevolver.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnDevolver.Location = new System.Drawing.Point(160, 277);
-            this.btnDevolver.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDevolver.Location = new System.Drawing.Point(120, 192);
             this.btnDevolver.Name = "btnDevolver";
             this.btnDevolver.OnHoverBorderColor = System.Drawing.Color.Salmon;
             this.btnDevolver.OnHoverButtonColor = System.Drawing.Color.Salmon;
             this.btnDevolver.OnHoverTextColor = System.Drawing.Color.Gray;
-            this.btnDevolver.Size = new System.Drawing.Size(403, 47);
+            this.btnDevolver.Size = new System.Drawing.Size(302, 38);
             this.btnDevolver.TabIndex = 43;
             this.btnDevolver.Text = "Devolver Venta";
             this.btnDevolver.TextColor = System.Drawing.Color.White;
@@ -78,18 +76,16 @@
             this.lblErrorEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lblErrorEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblErrorEliminar.ForeColor = System.Drawing.Color.Red;
-            this.lblErrorEliminar.Location = new System.Drawing.Point(160, 202);
-            this.lblErrorEliminar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblErrorEliminar.Location = new System.Drawing.Point(120, 164);
             this.lblErrorEliminar.Name = "lblErrorEliminar";
-            this.lblErrorEliminar.Size = new System.Drawing.Size(0, 18);
+            this.lblErrorEliminar.Size = new System.Drawing.Size(0, 15);
             this.lblErrorEliminar.TabIndex = 42;
             // 
             // txtIdventa
             // 
-            this.txtIdventa.Location = new System.Drawing.Point(160, 171);
-            this.txtIdventa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtIdventa.Location = new System.Drawing.Point(120, 139);
             this.txtIdventa.Name = "txtIdventa";
-            this.txtIdventa.Size = new System.Drawing.Size(401, 22);
+            this.txtIdventa.Size = new System.Drawing.Size(302, 20);
             this.txtIdventa.TabIndex = 41;
             // 
             // label1
@@ -97,10 +93,9 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(195, 135);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(146, 110);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(291, 18);
+            this.label1.Size = new System.Drawing.Size(245, 15);
             this.label1.TabIndex = 40;
             this.label1.Text = "Ingrese el Id de la venta que desea devolver";
             // 
@@ -110,10 +105,9 @@
             this.lblGestionUsuariosTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lblGestionUsuariosTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGestionUsuariosTitulo.ForeColor = System.Drawing.Color.DimGray;
-            this.lblGestionUsuariosTitulo.Location = new System.Drawing.Point(203, 50);
-            this.lblGestionUsuariosTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblGestionUsuariosTitulo.Location = new System.Drawing.Point(152, 41);
             this.lblGestionUsuariosTitulo.Name = "lblGestionUsuariosTitulo";
-            this.lblGestionUsuariosTitulo.Size = new System.Drawing.Size(328, 39);
+            this.lblGestionUsuariosTitulo.Size = new System.Drawing.Size(260, 31);
             this.lblGestionUsuariosTitulo.TabIndex = 39;
             this.lblGestionUsuariosTitulo.Text = "DEVOLVER VENTA";
             // 
@@ -125,10 +119,9 @@
             this.linkLabelVolver.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(74)))), ((int)(((byte)(74)))));
             this.linkLabelVolver.ForeColor = System.Drawing.Color.Red;
             this.linkLabelVolver.LinkColor = System.Drawing.Color.Black;
-            this.linkLabelVolver.Location = new System.Drawing.Point(52, 50);
-            this.linkLabelVolver.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.linkLabelVolver.Location = new System.Drawing.Point(39, 41);
             this.linkLabelVolver.Name = "linkLabelVolver";
-            this.linkLabelVolver.Size = new System.Drawing.Size(46, 16);
+            this.linkLabelVolver.Size = new System.Drawing.Size(37, 13);
             this.linkLabelVolver.TabIndex = 38;
             this.linkLabelVolver.TabStop = true;
             this.linkLabelVolver.Text = "Volver";
@@ -137,19 +130,18 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Presentacion2.Properties.Resources.New_Project__3_;
-            this.pictureBox1.Location = new System.Drawing.Point(1, -2);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(0, -1);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(723, 427);
+            this.pictureBox1.Size = new System.Drawing.Size(542, 347);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 45;
             this.pictureBox1.TabStop = false;
             // 
             // supervisor_devolucion_venta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(719, 425);
+            this.ClientSize = new System.Drawing.Size(539, 345);
             this.Controls.Add(this.lblMensajeEliminar);
             this.Controls.Add(this.btnDevolver);
             this.Controls.Add(this.lblErrorEliminar);
@@ -158,7 +150,6 @@
             this.Controls.Add(this.lblGestionUsuariosTitulo);
             this.Controls.Add(this.linkLabelVolver);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "supervisor_devolucion_venta";
             this.Text = "supervisor_devolucion_venta";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

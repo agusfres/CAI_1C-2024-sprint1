@@ -104,6 +104,24 @@ namespace Presentacion
             System.IO.File.Delete(tempPath);
         }
 
+        public string BuscarVentaBaseLocal(string idVenta)
+        {
+            StreamReader sr = new StreamReader(docPathAdaptado);
+            string linea;
+
+            while ((linea = sr.ReadLine()) != null)
+            {
+                string[] vector = linea.Split('+');
+                // Si la línea actual no coincide con la línea que deseas eliminar, escríbela en el archivo temporal
+                if (vector[1] == idVenta)
+                {
+                    return "";
+                }
+            }
+            sr.Close();
+            return "No existe la Venta";
+        }
+
 
         public double DescuentoPrimerCompra(int dni, double importeResto, double importeElectro)
         {
