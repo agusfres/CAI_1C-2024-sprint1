@@ -56,7 +56,7 @@ namespace Presentacion2
             string errorCategoria = validadorCampos.ValidarCategoriaProducto2(cmCategoria, "Categoria");
             string errorPrecio = validadorCampos.ValidarStockPrecio(txPrecio, "Precio");
             string errorStock = validadorCampos.ValidarStockPrecio(txStock, "Stock");
-            string errorIdProveedor = validadorCampos.ValidarIdProveedor(txIdProveedor, "ID Proveedor");
+            string errorIdProveedor = validadorCampos.ValidarId(txIdProveedor, "ID Proveedor");
 
             lblErrorNombre.Text = errorNombre;
             lblErrorCategoria.Text = errorCategoria;

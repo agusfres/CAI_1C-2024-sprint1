@@ -57,6 +57,52 @@ namespace Presentacion
 
             writer.Close();
         }
+        public void DevolucionCompra(string idVentaIngresado)
+        {
+            string tempPath = Path.GetTempFileName(); // Ruta temporal para escribir el contenido actualizado
+
+            StreamReader sr = new StreamReader(docPathAdaptado);
+            StreamWriter sw = new StreamWriter(tempPath);
+            string linea;
+            while ((linea = sr.ReadLine()) != null)
+            {
+                string[] vector = linea.Split('+');
+                // Si la línea actual no coincide con la línea que deseas eliminar, escríbela en el archivo temporal
+                if (vector[1] != idVentaIngresado)
+                {
+                    sw.WriteLine(linea);
+                }
+
+                else
+                {
+                    try
+                    {
+                        string idCarrito = vector[0];
+                        string idVenta = vector[1];
+                        string idCliente = vector[2];
+                        string idUsuario = vector[3];
+                        string idProducto = vector[4];
+                        string nombre = vector[5];
+                        string idCategoria = vector[6];
+                        string cantidad = vector[7];
+                        string precio = vector[8];
+                        string total = vector[9];
+                        string fechaAlta = vector[10];
+
+
+                        sw.WriteLine(idCarrito + "+" + idVenta + "+" + idCliente + "+" + idUsuario + "+" + idProducto + "+" + nombre + "+" + idCategoria + "+" + cantidad + "+" + precio + "+" + total + "+" + fechaAlta + "+0");
+                    }
+                    catch { Console.WriteLine("Error"); }
+                }
+            }
+            sw.Close();
+            sr.Close();
+            // Reemplaza el archivo original con el archivo temporal
+            System.IO.File.Delete(docPathAdaptado);
+            System.IO.File.Move(tempPath, docPathAdaptado);
+            // Borra el archivo temporal
+            System.IO.File.Delete(tempPath);
+        }
 
 
         public double DescuentoPrimerCompra(int dni, double importeResto, double importeElectro)

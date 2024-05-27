@@ -364,7 +364,7 @@ namespace Presentacion2
         }
 
 
-        public string ValidarIdProveedor(string texto, string campo)
+        public string ValidarId(string texto, string campo)
         {
             string msgError = "";
             msgError += ValidarVacio(texto, campo);
