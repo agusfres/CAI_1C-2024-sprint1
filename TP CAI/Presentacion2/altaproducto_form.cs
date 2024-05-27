@@ -1,5 +1,6 @@
 ﻿using Datos;
 using Negocio;
+using Persistencia;
 using Presentacion;
 using System;
 using System.Collections.Generic;
@@ -28,9 +29,14 @@ namespace Presentacion2
             gestionproductos.Hide();
 
         }
-        private void altaproducto_form_Load(object sender, EventArgs e)
+        public void altaproducto_form_Load(object sender, EventArgs e)
         {
-
+            NegocioProveedor negocioproveedor = new NegocioProveedor();
+            List<Proveedor> listaproveedor = negocioproveedor.TraerProveedoresActivos();
+            foreach (Proveedor proveedor in listaproveedor)
+            {
+                cmbProveedores.Items.Add(proveedor.Cuit);
+            }
 
         }
 
@@ -49,7 +55,7 @@ namespace Presentacion2
             string cmCategoria = cmbCategoria.Text;
             string txPrecio = txtPrecio.Text;
             string txStock = txtStock.Text;
-            string txIdProveedor = txtIdProveedor.Text;
+            string txIdProveedor = cmbProveedores.Text;
 
             string errorNombre = validadorCampos.ValidarNombreProducto(txNombre, "Nombre");
             // Buscar forma para que no haya que crear dos validaciones de un mismo atributo (Modificar a ListBox?)
@@ -73,13 +79,14 @@ namespace Presentacion2
                 int intCmCategoria = operacion.ObtenerTipoCategoria(cmCategoria);
                 double doubleTxPrecio = operacion.TransformarStringDouble(txPrecio);
                 int intTxStock = operacion.TransformarStringInt(txStock);
-                Guid guidIdProveedor = Guid.Parse(txIdProveedor);
-
+                
+                NegocioProveedor negocioproveedor = new NegocioProveedor();
                 NegocioProducto negocioProducto = new NegocioProducto();
+                Proveedor proveedor = negocioproveedor.BuscarProveedor(txIdProveedor);
 
                 try
                 {
-                    negocioProducto.AgregarProducto(txNombre, intCmCategoria, doubleTxPrecio, intTxStock, guidIdProveedor);
+                    negocioProducto.AgregarProducto(txNombre, intCmCategoria, doubleTxPrecio, intTxStock, proveedor.Id);
                     LimpiarCampos();
                     Congrats();
                 }
@@ -96,12 +103,12 @@ namespace Presentacion2
             txtPrecio.Clear();
             txtStock.Clear();
             cmbCategoria.SelectedIndex = -1;
-            txtIdProveedor.Clear();
+            cmbProveedores.SelectedIndex = -1;
         }
 
         private async void Congrats()
         {
-            lblConfirmar.Text = "Usuario cargado con éxito";
+            lblConfirmar.Text = "Producto cargado con éxito";
             await Task.Delay(5000);
             lblConfirmar.Text = "";
         }

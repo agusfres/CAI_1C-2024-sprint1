@@ -46,9 +46,9 @@
             this.lblErrorStock = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblErrorIdProveedor = new System.Windows.Forms.Label();
-            this.txtIdProveedor = new System.Windows.Forms.TextBox();
             this.lblIdProveedor = new System.Windows.Forms.Label();
             this.lblConfirmar = new System.Windows.Forms.Label();
+            this.cmbProveedores = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,7 +74,7 @@
             this.lblTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.ForeColor = System.Drawing.Color.DimGray;
-            this.lblTitulo.Location = new System.Drawing.Point(131, 9);
+            this.lblTitulo.Location = new System.Drawing.Point(87, 9);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(465, 31);
             this.lblTitulo.TabIndex = 33;
@@ -238,7 +238,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Presentacion2.Properties.Resources.New_Project__4___1_;
-            this.pictureBox1.Location = new System.Drawing.Point(-3, -45);
+            this.pictureBox1.Location = new System.Drawing.Point(-9, -48);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(679, 411);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -250,17 +250,10 @@
             this.lblErrorIdProveedor.AutoSize = true;
             this.lblErrorIdProveedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lblErrorIdProveedor.ForeColor = System.Drawing.Color.Red;
-            this.lblErrorIdProveedor.Location = new System.Drawing.Point(37, 275);
+            this.lblErrorIdProveedor.Location = new System.Drawing.Point(38, 282);
             this.lblErrorIdProveedor.Name = "lblErrorIdProveedor";
             this.lblErrorIdProveedor.Size = new System.Drawing.Size(0, 13);
             this.lblErrorIdProveedor.TabIndex = 91;
-            // 
-            // txtIdProveedor
-            // 
-            this.txtIdProveedor.Location = new System.Drawing.Point(38, 249);
-            this.txtIdProveedor.Name = "txtIdProveedor";
-            this.txtIdProveedor.Size = new System.Drawing.Size(253, 20);
-            this.txtIdProveedor.TabIndex = 90;
             // 
             // lblIdProveedor
             // 
@@ -268,11 +261,11 @@
             this.lblIdProveedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lblIdProveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIdProveedor.ForeColor = System.Drawing.Color.DimGray;
-            this.lblIdProveedor.Location = new System.Drawing.Point(38, 227);
+            this.lblIdProveedor.Location = new System.Drawing.Point(38, 228);
             this.lblIdProveedor.Name = "lblIdProveedor";
-            this.lblIdProveedor.Size = new System.Drawing.Size(95, 18);
+            this.lblIdProveedor.Size = new System.Drawing.Size(115, 18);
             this.lblIdProveedor.TabIndex = 89;
-            this.lblIdProveedor.Text = "ID Proveedor";
+            this.lblIdProveedor.Text = "CUIT Proveedor";
             // 
             // lblConfirmar
             // 
@@ -283,14 +276,23 @@
             this.lblConfirmar.Size = new System.Drawing.Size(0, 13);
             this.lblConfirmar.TabIndex = 92;
             // 
+            // cmbProveedores
+            // 
+            this.cmbProveedores.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbProveedores.FormattingEnabled = true;
+            this.cmbProveedores.Location = new System.Drawing.Point(38, 249);
+            this.cmbProveedores.Name = "cmbProveedores";
+            this.cmbProveedores.Size = new System.Drawing.Size(253, 21);
+            this.cmbProveedores.TabIndex = 93;
+            // 
             // altaproducto_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(664, 361);
+            this.Controls.Add(this.cmbProveedores);
             this.Controls.Add(this.lblConfirmar);
             this.Controls.Add(this.lblErrorIdProveedor);
-            this.Controls.Add(this.txtIdProveedor);
             this.Controls.Add(this.lblIdProveedor);
             this.Controls.Add(this.cmbCategoria);
             this.Controls.Add(this.label1);
@@ -337,8 +339,8 @@
         private System.Windows.Forms.Label lblErrorStock;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblErrorIdProveedor;
-        private System.Windows.Forms.TextBox txtIdProveedor;
         private System.Windows.Forms.Label lblIdProveedor;
         private System.Windows.Forms.Label lblConfirmar;
+        private System.Windows.Forms.ComboBox cmbProveedores;
     }
 }

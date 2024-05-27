@@ -40,5 +40,12 @@ namespace Presentacion2
                 form5.Show();
             }
         }
+
+        private void btnGestionarProductos_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            altaproducto_form form4 = new altaproducto_form();
+            form4.Show();
+        }
     }
 }

@@ -22,7 +22,7 @@ namespace Presentacion
         {
             AltaProveedor altaProveedor = new AltaProveedor(idAdministrador, nombre, apellido, email, cuit);
             proveedorService.AgregarProveedor(altaProveedor);
-            Proveedor proveedorAuxiliar = BuscarProveedor(nombre);
+            Proveedor proveedorAuxiliar = BuscarProveedor(cuit);
 
             Guid idProveedorAuxiliar = proveedorAuxiliar.Id;
             Proveedor proveedor = new Proveedor(idProveedorAuxiliar, nombre, apellido, email, cuit, DateTime.Now, null, seleccionCategoriaProd);
@@ -31,7 +31,7 @@ namespace Presentacion
         }
 
 
-        public Proveedor BuscarProveedor(string nombreProveedor)
+        public Proveedor BuscarProveedor(string cuitProveedor)
         {
             List<Proveedor> listaProveedores = TraerProveedoresActivos();
 
@@ -39,7 +39,7 @@ namespace Presentacion
             {
                 foreach (Proveedor proveedor in listaProveedores)
                 {
-                    if (proveedor.Nombre == nombreProveedor)
+                    if (proveedor.Cuit == cuitProveedor)
                     {
                         return proveedor;
                     }

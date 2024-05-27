@@ -368,7 +368,6 @@ namespace Presentacion2
         {
             string msgError = "";
             msgError += ValidarVacio(texto, campo);
-            msgError += ValidarFormatoGuid(texto, campo);
             return msgError;
         }
 
