@@ -40,8 +40,10 @@
             this.btnBuscar = new ePOSOne.btnProduct.Button_WOC();
             this.lblErrorMes = new System.Windows.Forms.Label();
             this.lblSinResultados = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitulo
@@ -123,6 +125,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label1.Location = new System.Drawing.Point(227, 94);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(97, 13);
@@ -164,6 +167,7 @@
             // lblErrorMes
             // 
             this.lblErrorMes.AutoSize = true;
+            this.lblErrorMes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lblErrorMes.Location = new System.Drawing.Point(227, 134);
             this.lblErrorMes.Name = "lblErrorMes";
             this.lblErrorMes.Size = new System.Drawing.Size(0, 13);
@@ -172,10 +176,21 @@
             // lblSinResultados
             // 
             this.lblSinResultados.AutoSize = true;
+            this.lblSinResultados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lblSinResultados.Location = new System.Drawing.Point(227, 371);
             this.lblSinResultados.Name = "lblSinResultados";
             this.lblSinResultados.Size = new System.Drawing.Size(0, 13);
             this.lblSinResultados.TabIndex = 52;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Presentacion2.Properties.Resources.New_Project__5_;
+            this.pictureBox2.Location = new System.Drawing.Point(-3, -7);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(807, 452);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 53;
+            this.pictureBox2.TabStop = false;
             // 
             // reporte_ventasxvendedor
             // 
@@ -191,10 +206,12 @@
             this.Controls.Add(this.linkLabelVolver);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBox2);
             this.Name = "reporte_ventasxvendedor";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -214,5 +231,6 @@
         private ePOSOne.btnProduct.Button_WOC btnBuscar;
         private System.Windows.Forms.Label lblErrorMes;
         private System.Windows.Forms.Label lblSinResultados;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

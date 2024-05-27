@@ -51,31 +51,33 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblTotalAntesPromo = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label1.Location = new System.Drawing.Point(32, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(149, 16);
-            this.label1.TabIndex = 36;
+            this.label1.Size = new System.Drawing.Size(173, 20);
+            this.label1.TabIndex = 52;
             this.label1.Text = "Nombre de la empresa:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(32, 58);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(145, 16);
+            this.label2.Size = new System.Drawing.Size(170, 20);
             this.label2.TabIndex = 37;
             this.label2.Text = "Fecha de la operación:";
             // 
@@ -83,11 +85,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(32, 92);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(110, 16);
+            this.label3.Size = new System.Drawing.Size(131, 20);
             this.label3.TabIndex = 38;
             this.label3.Text = "Datos del cliente:";
             // 
@@ -134,11 +136,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label4.Location = new System.Drawing.Point(32, 296);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(90, 16);
+            this.label4.Size = new System.Drawing.Size(105, 20);
             this.label4.TabIndex = 40;
             this.label4.Text = "Promociones:";
             // 
@@ -146,11 +148,11 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label5.Location = new System.Drawing.Point(32, 337);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(126, 16);
+            this.label5.Size = new System.Drawing.Size(147, 20);
             this.label5.TabIndex = 41;
             this.label5.Text = "Nombre promoción:";
             // 
@@ -158,11 +160,11 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label6.Location = new System.Drawing.Point(418, 364);
+            this.label6.Location = new System.Drawing.Point(392, 364);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(91, 16);
+            this.label6.Size = new System.Drawing.Size(106, 20);
             this.label6.TabIndex = 42;
             this.label6.Text = "Total a pagar:";
             // 
@@ -170,52 +172,63 @@
             // 
             this.lblNombreEmp.AutoSize = true;
             this.lblNombreEmp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.lblNombreEmp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombreEmp.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblNombreEmp.Location = new System.Drawing.Point(351, 22);
+            this.lblNombreEmp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreEmp.ForeColor = System.Drawing.Color.Gray;
+            this.lblNombreEmp.Location = new System.Drawing.Point(226, 22);
             this.lblNombreEmp.Name = "lblNombreEmp";
-            this.lblNombreEmp.Size = new System.Drawing.Size(97, 15);
-            this.lblNombreEmp.TabIndex = 43;
+            this.lblNombreEmp.Size = new System.Drawing.Size(128, 24);
+            this.lblNombreEmp.TabIndex = 52;
             this.lblNombreEmp.Text = "ElectroHogar SA";
+            this.lblNombreEmp.UseCompatibleTextRendering = true;
             // 
             // lblFechaOp
             // 
             this.lblFechaOp.AutoSize = true;
+            this.lblFechaOp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFechaOp.ForeColor = System.Drawing.Color.Gray;
             this.lblFechaOp.Location = new System.Drawing.Point(351, 58);
             this.lblFechaOp.Name = "lblFechaOp";
-            this.lblFechaOp.Size = new System.Drawing.Size(0, 13);
+            this.lblFechaOp.Size = new System.Drawing.Size(0, 20);
             this.lblFechaOp.TabIndex = 44;
             // 
             // lblDatosCliente
             // 
             this.lblDatosCliente.AutoSize = true;
+            this.lblDatosCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDatosCliente.ForeColor = System.Drawing.Color.Gray;
             this.lblDatosCliente.Location = new System.Drawing.Point(351, 92);
             this.lblDatosCliente.Name = "lblDatosCliente";
-            this.lblDatosCliente.Size = new System.Drawing.Size(0, 13);
+            this.lblDatosCliente.Size = new System.Drawing.Size(0, 20);
             this.lblDatosCliente.TabIndex = 45;
             // 
             // lblPromociones
             // 
             this.lblPromociones.AutoSize = true;
-            this.lblPromociones.Location = new System.Drawing.Point(351, 296);
+            this.lblPromociones.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPromociones.ForeColor = System.Drawing.Color.Gray;
+            this.lblPromociones.Location = new System.Drawing.Point(311, 296);
             this.lblPromociones.Name = "lblPromociones";
-            this.lblPromociones.Size = new System.Drawing.Size(0, 13);
+            this.lblPromociones.Size = new System.Drawing.Size(0, 20);
             this.lblPromociones.TabIndex = 46;
             // 
             // lblNombrePromo
             // 
             this.lblNombrePromo.AutoSize = true;
-            this.lblNombrePromo.Location = new System.Drawing.Point(351, 337);
+            this.lblNombrePromo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombrePromo.ForeColor = System.Drawing.Color.Gray;
+            this.lblNombrePromo.Location = new System.Drawing.Point(311, 337);
             this.lblNombrePromo.Name = "lblNombrePromo";
-            this.lblNombrePromo.Size = new System.Drawing.Size(0, 13);
+            this.lblNombrePromo.Size = new System.Drawing.Size(0, 20);
             this.lblNombrePromo.TabIndex = 47;
             // 
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
+            this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal.ForeColor = System.Drawing.Color.Gray;
             this.lblTotal.Location = new System.Drawing.Point(529, 364);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(0, 13);
+            this.lblTotal.Size = new System.Drawing.Size(0, 20);
             this.lblTotal.TabIndex = 48;
             // 
             // btnmenu
@@ -275,22 +288,34 @@
             // lblTotalAntesPromo
             // 
             this.lblTotalAntesPromo.AutoSize = true;
+            this.lblTotalAntesPromo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalAntesPromo.ForeColor = System.Drawing.Color.Gray;
             this.lblTotalAntesPromo.Location = new System.Drawing.Point(529, 255);
             this.lblTotalAntesPromo.Name = "lblTotalAntesPromo";
-            this.lblTotalAntesPromo.Size = new System.Drawing.Size(0, 13);
+            this.lblTotalAntesPromo.Size = new System.Drawing.Size(0, 20);
             this.lblTotalAntesPromo.TabIndex = 51;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label8.Location = new System.Drawing.Point(418, 255);
+            this.label8.Location = new System.Drawing.Point(381, 255);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(91, 16);
+            this.label8.Size = new System.Drawing.Size(106, 20);
             this.label8.TabIndex = 50;
             this.label8.Text = "Total a pagar:";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Presentacion2.Properties.Resources.New_Project__5_;
+            this.pictureBox2.Location = new System.Drawing.Point(-1, -4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(805, 533);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 53;
+            this.pictureBox2.TabStop = false;
             // 
             // remito_form
             // 
@@ -315,11 +340,13 @@
             this.Controls.Add(this.btnmenu);
             this.Controls.Add(this.btnventa);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBox2);
             this.Name = "remito_form";
             this.Text = "remito_form";
             this.Load += new System.EventHandler(this.remito_form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -350,5 +377,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblTotalAntesPromo;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

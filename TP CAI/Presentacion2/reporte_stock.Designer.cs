@@ -70,7 +70,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(49, 118);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(679, 108);
+            this.dataGridView1.Size = new System.Drawing.Size(679, 242);
             this.dataGridView1.TabIndex = 42;
             // 
             // pictureBox1
