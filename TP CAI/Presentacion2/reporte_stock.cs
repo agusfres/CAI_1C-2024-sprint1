@@ -14,15 +14,17 @@ namespace Presentacion2
 {
     public partial class reporte_stock : Form
     {
-        public reporte_stock()
+        private int tipousuario;
+        public reporte_stock(int tipousuario)
         {
             InitializeComponent();
+            this.tipousuario = tipousuario;
         }
 
         private void linkLabelVolver_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            admin_gestionreportes_form admin_gestionreportes_form = new admin_gestionreportes_form();
+            admin_gestionreportes_form admin_gestionreportes_form = new admin_gestionreportes_form(tipousuario);
             admin_gestionreportes_form.Show();
         }
 

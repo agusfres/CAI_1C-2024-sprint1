@@ -69,7 +69,7 @@ namespace Presentacion2
 
             if(cantidad > 0)
             {
-                label1.Text = "Hay " + cantidad.ToString() + "productos con stock crítico!!!";
+                label1.Text = "Hay " + cantidad.ToString() + " productos con stock crítico!!!";
             }
             else
             {

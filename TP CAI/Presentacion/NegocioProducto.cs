@@ -25,7 +25,7 @@ namespace Presentacion
 
             Producto productoAuxiliar = BuscarProducto(nombre);
 
-            Producto producto = new Producto(productoAuxiliar.IdProducto, idCategoria, nombre, DateTime.Now, null, precio, stock, idAdministrador, idProveedor);
+            Producto producto = new Producto(productoAuxiliar.IdProducto, idCategoria, nombre, DateTime.Now, null, precio, stock, UsuarioLogueado.usuario.Id, idProveedor);
             AgregarProductoBaseLocal(producto);
         }
 

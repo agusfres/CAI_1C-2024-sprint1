@@ -20,10 +20,6 @@ namespace Presentacion2
             InitializeComponent();
             this.tipousuario = tipousuario;
         }
-        public gestionproductos()
-        {
-            InitializeComponent();
-        }
 
         public void linkLabelCerrarSesion_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -44,7 +40,7 @@ namespace Presentacion2
         private void btnGestionarProductos_Click(object sender, EventArgs e)
         {
             this.Hide();
-            altaproducto_form form4 = new altaproducto_form();
+            altaproducto_form form4 = new altaproducto_form(tipousuario);
             form4.Show();
         }
     }

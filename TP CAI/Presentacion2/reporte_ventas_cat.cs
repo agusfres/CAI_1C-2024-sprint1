@@ -19,16 +19,18 @@ namespace Presentacion2
     
     public partial class reporte_ventas_cat : Form
     {
-        public reporte_ventas_cat()
+        private int tipousuario;
+        public reporte_ventas_cat(int tipousuario)
         {
             InitializeComponent();
+            this.tipousuario = tipousuario;
         }
 
 
         private void linkLabelVolver_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            admin_gestionreportes_form admin_gestionreportes_form = new admin_gestionreportes_form();
+            admin_gestionreportes_form admin_gestionreportes_form = new admin_gestionreportes_form(tipousuario);
             admin_gestionreportes_form.Show();
         }
 

@@ -13,6 +13,7 @@ namespace Presentacion2
 {
     public partial class vendedor_menu_form : Form
     {
+        
         public vendedor_menu_form()
         {
             InitializeComponent();
@@ -35,7 +36,7 @@ namespace Presentacion2
         private void btnReporteVentas_Click(object sender, EventArgs e)
         {
             this.Hide();
-            reporte_ventasxvendedor reporteventas = new reporte_ventasxvendedor();
+            reporte_ventasxvendedor reporteventas = new reporte_ventasxvendedor(1);
             reporteventas.Show();
         }
     }

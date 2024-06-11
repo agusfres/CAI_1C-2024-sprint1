@@ -18,18 +18,29 @@ namespace Presentacion2
         Operacion operacion = new Operacion();
         NegocioReporte negocioReporte = new NegocioReporte();
 
-
-        public reporte_ventasxvendedor()
+        private int tipousuario;
+        public reporte_ventasxvendedor(int tipousuario)
         {
             InitializeComponent();
+            this.tipousuario = tipousuario;
         }
 
 
         private void linkLabelVolver_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            this.Hide();
-            vendedor_menu_form vendedormenu = new vendedor_menu_form();
-            vendedormenu.Show();
+            if (tipousuario == 1)
+            {
+                this.Hide();
+                vendedor_menu_form vendedormenu = new vendedor_menu_form();
+                vendedormenu.Show();
+            }
+            else
+            {
+                this.Hide();
+                admin_gestionreportes_form admin_gestionreportes_form = new admin_gestionreportes_form(tipousuario);
+                admin_gestionreportes_form.Show();
+
+            }
         }
 
 

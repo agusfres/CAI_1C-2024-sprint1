@@ -17,16 +17,19 @@ namespace Presentacion2
 {
     public partial class altaproducto_form : Form
     {
-        public altaproducto_form()
+        private int tipousuario;
+        public altaproducto_form(int tipousuario)
         {
             InitializeComponent();
+            this.tipousuario = tipousuario;
         }
+
 
         private void linkLabelVolver_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            gestionproductos gestionproductos = new gestionproductos();
-            gestionproductos.Hide();
+            gestionproductos gestionproductos = new gestionproductos(tipousuario);
+            gestionproductos.Show();
 
         }
         public void altaproducto_form_Load(object sender, EventArgs e)

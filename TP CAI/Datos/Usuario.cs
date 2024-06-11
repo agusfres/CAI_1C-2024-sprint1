@@ -7,14 +7,10 @@ using System.Threading.Tasks;
 
 namespace Datos
 {
-    public class Usuario
+    public class Usuario : Persona
     {
-        Guid id;
-        string nombre;
-        string apellido;
         string direccion;
         string telefono;
-        string email;
         DateTime fechaAlta;
         DateTime fechaNacimiento;
         DateTime? fechaBaja;
@@ -27,14 +23,10 @@ namespace Datos
         string estado;
 
 
-        public Usuario(Guid id, string nombre, string apellido, string direccion, string telefono, string email, DateTime fechaAlta, DateTime fechaNacimiento, DateTime? fechaBaja, DateTime? fechaUltimaAct, string nombreUsuario, int tipoUsuario, int dni, string contraseña, int host,string estado)
-        {
-            this.id = id;
-            this.nombre = nombre;
-            this.apellido = apellido;
+        public Usuario(Guid id, string nombre, string apellido, string direccion, string telefono, string email, DateTime fechaAlta, DateTime fechaNacimiento, DateTime? fechaBaja, DateTime? fechaUltimaAct, string nombreUsuario, int tipoUsuario, int dni, string contraseña, int host,string estado) : base(id, nombre, apellido, email)
+            {
             this.direccion = direccion;
             this.telefono = telefono;
-            this.email = email;
             this.fechaAlta = fechaAlta;
             this.fechaNacimiento = fechaNacimiento;
             this.fechaBaja = fechaBaja;
@@ -48,12 +40,8 @@ namespace Datos
         }
 
 
-        public Guid Id { get => id; set => id = value; }
-        public string Nombre { get => nombre; set => nombre = value; }
-        public string Apellido { get => apellido; set => apellido = value; }
         public string Direccion { get => direccion; set => direccion = value; }
         public string Telefono { get => telefono; set => telefono = value; }
-        public string Email { get => email; set => email = value; }
         public DateTime FechaAlta { get => fechaAlta; set => fechaAlta = value; }
         public DateTime FechaNacimiento { get => fechaNacimiento; set => fechaNacimiento = value; }
         public DateTime? FechaBaja { get => fechaBaja; set => fechaBaja = value; }
