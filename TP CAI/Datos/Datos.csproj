@@ -50,6 +50,7 @@
     <Compile Include="Bajaventa.cs" />
     <Compile Include="CarritoProducto.cs" />
     <Compile Include="Persona.cs" />
+    <Compile Include="ReporteStock.cs" />
     <Compile Include="ReporteVentasPorVendedor.cs" />
     <Compile Include="Cliente.cs" />
     <Compile Include="UsuarioLogueado.cs" />

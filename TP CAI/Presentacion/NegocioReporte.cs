@@ -120,10 +120,10 @@ namespace Presentacion
             return reporteVentas;
         }
 
-        public List<Producto> ReporteProductosBajoStock()
+        public List<ReporteStock> ReporteProductosBajoStock()
         {
             int stockMaximo = 100;
-            List<Producto> listaProductosBajoStock = new List<Producto>();
+            List<ReporteStock> listaProductosBajoStock = new List<ReporteStock>();
             List<Producto> todosLosProductos = negocioProducto.TraerProductos();
 
             foreach (Producto producto in todosLosProductos)
@@ -131,7 +131,8 @@ namespace Presentacion
 
                 if (producto.Stock < stockMaximo * 0.25)
                 {
-                    listaProductosBajoStock.Add(producto); 
+                    ReporteStock productostock = new ReporteStock(producto.IdProducto, producto.Nombre, producto.Stock, producto.Precio);
+                    listaProductosBajoStock.Add(productostock); 
 
                 }
             }
@@ -141,7 +142,7 @@ namespace Presentacion
 
         public int AlertaBajoStock()
         {
-            List<Producto> reportestock = ReporteProductosBajoStock();
+            List<ReporteStock> reportestock = ReporteProductosBajoStock();
             return reportestock.Count;
         }
     }
