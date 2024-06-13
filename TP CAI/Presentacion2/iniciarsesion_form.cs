@@ -88,13 +88,13 @@ namespace Presentacion2
                             }
                             else
                             {
-                                int tipoUsuario = usuario.TipoUsuario;
-                                if (tipoUsuario == 3)
+                                int host = usuario.Host;
+                                if (host == 3)
                                 {
                                     admin_menu_form admin_menu = new admin_menu_form();
                                     admin_menu.Show();
                                 }
-                                else if (tipoUsuario == 2)
+                                else if (host == 2)
                                 {
                                     supervisor_menu_form supervisor_menu = new supervisor_menu_form();
                                     supervisor_menu.Show();

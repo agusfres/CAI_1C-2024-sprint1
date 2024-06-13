@@ -16,14 +16,13 @@ namespace Datos
         DateTime? fechaBaja;
         DateTime? fechaUltimaAct;
         string nombreUsuario;
-        int tipoUsuario;
         int dni;
         string contraseña;
         int host;
         string estado;
 
 
-        public Usuario(Guid id, string nombre, string apellido, string direccion, string telefono, string email, DateTime fechaAlta, DateTime fechaNacimiento, DateTime? fechaBaja, DateTime? fechaUltimaAct, string nombreUsuario, int tipoUsuario, int dni, string contraseña, int host,string estado) : base(id, nombre, apellido, email)
+        public Usuario(Guid id, string nombre, string apellido, string direccion, string telefono, string email, DateTime fechaAlta, DateTime fechaNacimiento, DateTime? fechaBaja, DateTime? fechaUltimaAct, string nombreUsuario, int dni, string contraseña, int host,string estado) : base(id, nombre, apellido, email)
             {
             this.direccion = direccion;
             this.telefono = telefono;
@@ -32,7 +31,6 @@ namespace Datos
             this.fechaBaja = fechaBaja;
             this.fechaUltimaAct = fechaUltimaAct;
             this.nombreUsuario = nombreUsuario;
-            this.tipoUsuario = tipoUsuario;
             this.dni = dni;
             this.contraseña = contraseña;
             this.host = host;
@@ -47,7 +45,6 @@ namespace Datos
         public DateTime? FechaBaja { get => fechaBaja; set => fechaBaja = value; }
         public DateTime? FechaUltimaAct { get => fechaUltimaAct; set => fechaUltimaAct = value; }
         public string NombreUsuario { get => nombreUsuario; set => nombreUsuario = value; }
-        public int TipoUsuario { get => tipoUsuario; set => tipoUsuario = value; }
         public int Dni { get => dni; set => dni = value; }
         public string Contraseña { get => contraseña; set => contraseña = value; }
         public int Host { get => host; set => host = value; }

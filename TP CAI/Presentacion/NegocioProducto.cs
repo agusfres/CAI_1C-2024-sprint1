@@ -14,13 +14,12 @@ namespace Presentacion
     public class NegocioProducto
     {
         private ProductoService productoService = new ProductoService();
-        private Guid idAdministrador = Guid.Parse("70b37dc1-8fde-4840-be47-9ababd0ee7e5");
         string docPathAdaptado = @"C:\Users\USUARIOSISTEMA\ProductosLocales.txt".Replace("USUARIOSISTEMA", Environment.UserName);
 
 
         public void AgregarProducto(string nombre, int idCategoria, double precio, int stock, Guid idProveedor)
         {
-            AltaProducto altaProducto = new AltaProducto(idCategoria, idAdministrador, idProveedor, nombre, precio, stock);
+            AltaProducto altaProducto = new AltaProducto(idCategoria, UsuarioLogueado.usuario.Id, idProveedor, nombre, precio, stock);
             productoService.AgregarProducto(altaProducto);
 
             Producto productoAuxiliar = BuscarProducto(nombre);

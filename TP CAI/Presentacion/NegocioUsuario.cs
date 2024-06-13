@@ -24,14 +24,12 @@ namespace Negocio
         string docPathAdaptado = @"C:\Users\USUARIOSISTEMA\UsuariosLocales.txt".Replace("USUARIOSISTEMA", Environment.UserName);
 
 
-        public void AgregarUsuario(string nombre, string apellido, string direccion, string telefono, string email, DateTime fechaNacimiento, string nombreUsuario, int tipoUsuario, int dni, string contraseña)
+        public void AgregarUsuario(string nombre, string apellido, string direccion, string telefono, string email, DateTime fechaNacimiento, string nombreUsuario, int host, int dni, string contraseña)
         {
-            // Ponemos host como 1 ya que al usar 5 el web service da error 409 porqu solo permite un enum de 1, 2 o 3
-            int host = 1;
             AltaUsuario altaUsuario = new AltaUsuario(idAdministrador, host, nombre, apellido, dni, direccion, telefono, email, fechaNacimiento, nombreUsuario, contraseña);
             usuarioService.AgregarUsuario(altaUsuario);
             Usuario usuarioAuxiliar = BuscarUsuario(nombreUsuario);
-            Usuario usuario = new Usuario(usuarioAuxiliar.Id, nombre, apellido, direccion, telefono, email, DateTime.Now, fechaNacimiento, null, null, nombreUsuario, tipoUsuario, dni, contraseña, host,"INACTIVO");
+            Usuario usuario = new Usuario(usuarioAuxiliar.Id, nombre, apellido, direccion, telefono, email, DateTime.Now, fechaNacimiento, null, null, nombreUsuario, dni, contraseña, host,"INACTIVO");
             AgregarUsuarioBaseLocal(usuario);
         }
 
@@ -74,7 +72,6 @@ namespace Negocio
         }
 
 
-
         public List<Usuario> TraerUsuariosActivos()
         {
             return usuarioService.TraerUsuariosActivos(idAdministrador);
@@ -102,7 +99,7 @@ namespace Negocio
 
             try
             {
-                writer.WriteLine(usuario.Id + "+" + usuario.Nombre + "+" + usuario.Apellido + "+" + usuario.Direccion + "+" + usuario.Telefono + "+" + usuario.Email + "+" + usuario.FechaAlta + "+" + usuario.FechaNacimiento + "+null+null+" + usuario.NombreUsuario + "+" + usuario.TipoUsuario + "+" + usuario.Dni + "+" + usuario.Contraseña + "+" + usuario.Host + "+" + usuario.Estado);
+                writer.WriteLine(usuario.Id + "+" + usuario.Nombre + "+" + usuario.Apellido + "+" + usuario.Direccion + "+" + usuario.Telefono + "+" + usuario.Email + "+" + usuario.FechaAlta + "+" + usuario.FechaNacimiento + "+null+null+" + usuario.NombreUsuario + "+" + usuario.Dni + "+" + usuario.Contraseña + "+" + usuario.Host + "+" + usuario.Estado);
             }
             catch
             {
@@ -141,12 +138,10 @@ namespace Negocio
                         string fechaAlta = vector[6];
                         string fechaNacimiento = vector[7];
                         string fechaBaja = vector[8];
-                        string fechaUltAct = DateTime.Now.ToString();
-                        string tipoUsuario = vector[11];
-                        string dni = vector[12];
-                        string host = vector[14];
+                        string dni = vector[11];
+                        string host = vector[13];
 
-                        sw.WriteLine(id + '+' + nombre + '+' + apellido + '+' + direccion + '+' + telefono + '+' + email + '+' + fechaAlta + '+' + fechaNacimiento + '+' + fechaBaja + '+' + DateTime.Now + '+' + usuario + '+' + tipoUsuario + '+' + dni + '+' + contraseña + '+' + host + "+ACTIVO");
+                        sw.WriteLine(id + '+' + nombre + '+' + apellido + '+' + direccion + '+' + telefono + '+' + email + '+' + fechaAlta + '+' + fechaNacimiento + '+' + fechaBaja + '+' + DateTime.Now + '+' + usuario + '+' + dni + '+' + contraseña + '+' + host + "+ACTIVO");
                     }
                     catch { Console.WriteLine("Error");  }
                 }
@@ -192,12 +187,11 @@ namespace Negocio
                         string fechaBaja = vector[8];
                         string fechaUltAct = vector[9];
                         string nombreUsuario = vector[10];
-                        string tipoUsuario = vector[11];
-                        string dni = vector[12];
-                        string contraseña = vector[13];
-                        string host = vector[14];
+                        string dni = vector[11];
+                        string contraseña = vector[12];
+                        string host = vector[13];
 
-                        sw.WriteLine(id + '+' + nombre + '+' + apellido + '+' + direccion + '+' + telefono + '+' + email + '+' + fechaAlta + '+' + fechaNacimiento + '+' + DateTime.Now + '+' + fechaUltAct + '+' + nombreUsuario + '+' + tipoUsuario + '+' + dni + '+' + contraseña + '+' + host + "+INACTIVO");
+                        sw.WriteLine(id + '+' + nombre + '+' + apellido + '+' + direccion + '+' + telefono + '+' + email + '+' + fechaAlta + '+' + fechaNacimiento + '+' + DateTime.Now + '+' + fechaUltAct + '+' + nombreUsuario + '+' + dni + '+' + contraseña + '+' + host + "+INACTIVO");
                     }
                     catch { Console.WriteLine("Error"); }
                 }
@@ -211,6 +205,7 @@ namespace Negocio
             // Borra el archivo temporal
             System.IO.File.Delete(tempPath);
         }
+
 
         public Usuario BuscarUsuarioBaseLocal(string nombreUsuario_)
         {
@@ -247,11 +242,10 @@ namespace Negocio
                     DateTime fechaBajaTransformada = operacion.TransformarStringDatetime(fechaBaja);
                     DateTime fechaUltimaActTransformada = operacion.TransformarStringDatetime(fechaUltAct);
 
-                    int tipoUsuarioTransformada = operacion.TransformarStringInt(tipoUsuario);
                     int dniTransformada = operacion.TransformarStringInt(dni);
                     int hostTransformada = operacion.TransformarStringInt(host);
 
-                    Usuario usuario = new Usuario(idTransformado, nombre, apellido, direccion, telefono, email, fechaAltaTransformada, fechaNacimientoTransformada, fechaBajaTransformada, fechaUltimaActTransformada, nombreUsuario, tipoUsuarioTransformada, dniTransformada, contraseña, hostTransformada, estado);
+                    Usuario usuario = new Usuario(idTransformado, nombre, apellido, direccion, telefono, email, fechaAltaTransformada, fechaNacimientoTransformada, fechaBajaTransformada, fechaUltimaActTransformada, nombreUsuario, dniTransformada, contraseña, hostTransformada, estado);
                     sr.Close();
                     return usuario;
                 }
