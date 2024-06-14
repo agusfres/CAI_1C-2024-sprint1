@@ -18,6 +18,8 @@ namespace Presentacion2
     public partial class altaproducto_form : Form
     {
         private int tipousuario;
+
+
         public altaproducto_form(int tipousuario)
         {
             InitializeComponent();
@@ -25,13 +27,6 @@ namespace Presentacion2
         }
 
 
-        private void linkLabelVolver_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            this.Hide();
-            gestionproductos gestionproductos = new gestionproductos(tipousuario);
-            gestionproductos.Show();
-
-        }
         public void altaproducto_form_Load(object sender, EventArgs e)
         {
             NegocioProveedor negocioproveedor = new NegocioProveedor();
@@ -40,11 +35,18 @@ namespace Presentacion2
             {
                 cmbProveedores.Items.Add(proveedor.Cuit);
             }
-
         }
+
 
         private void altaProducto_btnConfirmar_Click(object sender, EventArgs e)
         {
+            lblErrorNombre.ForeColor = Color.Red;
+            lblErrorCategoria.ForeColor = Color.Red;
+            lblErrorprecio.ForeColor = Color.Red;
+            lblErrorStock.ForeColor = Color.Red;
+            lblErrorIdProveedor.ForeColor = Color.Red;
+            lblErrorAgregar.ForeColor = Color.Red;
+
             lblErrorNombre.Text = "";
             lblErrorCategoria.Text = "";
             lblErrorprecio.Text = "";
@@ -61,7 +63,6 @@ namespace Presentacion2
             string txIdProveedor = cmbProveedores.Text;
 
             string errorNombre = validadorCampos.ValidarNombreProducto(txNombre, "Nombre");
-            // Buscar forma para que no haya que crear dos validaciones de un mismo atributo (Modificar a ListBox?)
             string errorCategoria = validadorCampos.ValidarCategoriaProducto2(cmCategoria, "Categoria");
             string errorPrecio = validadorCampos.ValidarStockPrecio(txPrecio, "Precio");
             string errorStock = validadorCampos.ValidarStockPrecio(txStock, "Stock");
@@ -97,9 +98,10 @@ namespace Presentacion2
                 {
                     lblErrorAgregar.Text = ex.Message;
                 }
-
             }
         }
+
+
         private void LimpiarCampos()
         {
             txtNombre.Clear();
@@ -109,11 +111,21 @@ namespace Presentacion2
             cmbProveedores.SelectedIndex = -1;
         }
 
+
         private async void Congrats()
         {
+            lblConfirmar.ForeColor = Color.Green;
             lblConfirmar.Text = "Producto cargado con éxito";
             await Task.Delay(5000);
             lblConfirmar.Text = "";
+        }
+
+
+        private void linkLabelVolver_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            gestionproductos gestionproductos = new gestionproductos(tipousuario);
+            gestionproductos.Show();
         }
     }
 }

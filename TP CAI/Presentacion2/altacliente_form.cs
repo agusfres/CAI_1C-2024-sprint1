@@ -17,8 +17,6 @@ using Presentacion;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 
-
-
 namespace Presentacion2
 {
     public partial class altacliente_form : Form
@@ -31,6 +29,15 @@ namespace Presentacion2
 
         private void btnConfirmar_Click_1(object sender, EventArgs e)
         {
+            lblErrorNombre.ForeColor = Color.Red;
+            lblErrorApellido.ForeColor = Color.Red;
+            lblErrorEmail.ForeColor = Color.Red;
+            lblErrorDireccion.ForeColor = Color.Red;
+            lblErrorFecha.ForeColor = Color.Red;
+            lblErrorDNI.ForeColor = Color.Red;
+            lblErrorTelefono.ForeColor = Color.Red;
+            lblMensajeAgregar.ForeColor = Color.Red;
+
             lblErrorNombre.Text = "";
             lblErrorApellido.Text = ""; ;
             lblErrorEmail.Text = "";
@@ -103,6 +110,7 @@ namespace Presentacion2
 
         private async void Congrats()
         {
+            lblMensajeAgregar.ForeColor = Color.Green;
             lblMensajeAgregar.Text = "Cliente agregado con éxito";
             await Task.Delay(5000);
             lblMensajeAgregar.Text = "";

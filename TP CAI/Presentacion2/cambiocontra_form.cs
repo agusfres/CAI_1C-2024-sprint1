@@ -29,6 +29,8 @@ namespace Presentacion2
 
         private void btnCambiar_Click(object sender, EventArgs e)
         {
+            lblErrorContraseñaVieja.ForeColor = Color.Red;
+
             Validador validador = new Validador();
             NegocioUsuario negocioUsuario = new NegocioUsuario();
 
@@ -45,7 +47,7 @@ namespace Presentacion2
                     LimpiarCampos();
                     Congrats();
 
-                    Usuario usuario = negocioUsuario.BuscarUsuarioBaseLocal(nombreUsuarioActual);
+                    Usuario usuario = negocioUsuario.BuscarUsuario(nombreUsuarioActual);
 
                     this.Hide();
 
@@ -82,6 +84,7 @@ namespace Presentacion2
 
         private async void Congrats()
         {
+            lblCambioContraseñaExitosa.ForeColor = Color.Green;
             lblCambioContraseñaExitosa.Text = "Contraseña modificada exitosamente";
             await Task.Delay(5000);
             lblCambioContraseñaExitosa.Text = "";
@@ -94,6 +97,5 @@ namespace Presentacion2
             iniciarsesion_form form2 = new iniciarsesion_form();
             form2.Show();
         }
-
     }
 }

@@ -32,6 +32,9 @@ namespace Presentacion2
 
         private void btnBuscarCliente_Click(object sender, EventArgs e)
         {
+            lblErrorDNI.ForeColor = Color.Red;
+
+
             string txDNI = txtDNI.Text;
 
             string errorDNI = validador.ValidarDNIExistente(txDNI, "DNI");
@@ -60,6 +63,12 @@ namespace Presentacion2
 
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
+            lblErrorTelefono.ForeColor = Color.Red;
+            lblErrorDireccion.ForeColor = Color.Red;
+            lblErrorEstado.ForeColor = Color.Red;
+            lblErrorEmail.ForeColor = Color.Red;
+            lblMensaje.ForeColor = Color.Red;
+
             string txDNI = this.txtDNI.Text;
             int DNI = operacion.TransformarStringInt(txDNI);
             Cliente cliente = negociocliente.BuscarCliente(DNI);
@@ -109,6 +118,7 @@ namespace Presentacion2
 
         private async void Congrats()
         {
+            lblMensaje.ForeColor = Color.Green;
             lblMensaje.Text = "Cliente modificado exitosamente";
             await Task.Delay(5000);
             lblMensaje.Text = "";

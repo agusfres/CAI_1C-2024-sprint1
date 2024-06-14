@@ -19,6 +19,7 @@ namespace Presentacion2
             InitializeComponent();
         }
 
+
         private void linkLabelVolver_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
@@ -32,6 +33,7 @@ namespace Presentacion2
             agregarventa_form agregarventa = new agregarventa_form();
             agregarventa.Show();
         }
+
 
         private void btnReporteVentas_Click(object sender, EventArgs e)
         {

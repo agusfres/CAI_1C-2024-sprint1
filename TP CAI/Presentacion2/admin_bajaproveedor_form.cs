@@ -25,6 +25,9 @@ namespace Presentacion2
 
         private void btnEliminarProveedor_Click(object sender, EventArgs e)
         {
+            lblErrorId.ForeColor = Color.Red;
+            lblMensajeEliminar.ForeColor = Color.Red;
+
             lblErrorId.Text = "";
             string txId = txtId.Text;
            
@@ -58,6 +61,7 @@ namespace Presentacion2
 
         private async void Congrats()
         {
+            lblMensajeEliminar.ForeColor = Color.Green;
             lblMensajeEliminar.Text = "Proveedor eliminado exitosamente";
             await Task.Delay(5000);
             lblMensajeEliminar.Text = "";

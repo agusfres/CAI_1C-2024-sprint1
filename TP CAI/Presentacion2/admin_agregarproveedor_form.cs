@@ -22,6 +22,13 @@ namespace Presentacion2
 
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
+            lblErrorNombre.ForeColor = Color.Red;
+            lblErrorApellido.ForeColor = Color.Red;
+            lblErrorCuit.ForeColor = Color.Red;
+            lblErrorEmail.ForeColor = Color.Red;
+            lblErrorCategoria.ForeColor = Color.Red;
+            lblMensaje.ForeColor = Color.Red;
+
             Validador validadorCampos = new Validador();
 
             string txNombre = txtNombre.Text;
@@ -29,7 +36,6 @@ namespace Presentacion2
             string txCuit = txtCuit.Text;
             string txEmail = txtEmail.Text;
             List<int> seleccionCategoriaProd = new List<int>(ListbxCategorias.CheckedIndices.Cast<int>());
-
 
             string errorNombre = validadorCampos.ValidarNombre(txNombre, "Nombre");
             string errorApellido = validadorCampos.ValidarNombre(txApellido, "Apellido");
@@ -42,7 +48,6 @@ namespace Presentacion2
             lblErrorCuit.Text = errorCuit;
             lblErrorEmail.Text = errorEmail;
             lblErrorCategoria.Text = errorCategoriaProducto;
-
 
             string acumuladorErrores = errorNombre + errorApellido + errorCuit + errorEmail + errorCategoriaProducto;
 
@@ -72,16 +77,14 @@ namespace Presentacion2
             txtEmail.Clear();
             for (int i = 0; i < ListbxCategorias.Items.Count; i++)
             {
-
                 ListbxCategorias.SetItemChecked(i, false);
             }
-
-
         }
 
 
         private async void Congrats()
         {
+            lblMensaje.ForeColor = Color.Green;
             lblMensaje.Text = "Proveedor cargado exitosamente";
             await Task.Delay(5000);
             lblMensaje.Text = "";

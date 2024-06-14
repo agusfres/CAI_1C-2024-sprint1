@@ -23,6 +23,8 @@ namespace Presentacion2
 
         private void btnEliminarUsuario_Click(object sender, EventArgs e)
         {
+            lblErrorEliminar.ForeColor = Color.Red;
+
             string txIdUsuario = txtIdUsuario.Text;
             NegocioUsuario negocioUsuario = new NegocioUsuario();
 
@@ -64,6 +66,7 @@ namespace Presentacion2
 
         private async void Congrats()
         {
+            lblMensajeEliminar.ForeColor = Color.Green;
             lblMensajeEliminar.Text = "Usuario eliminado con éxito";
             await Task.Delay(5000);
             lblMensajeEliminar.Text = "";

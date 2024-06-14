@@ -46,6 +46,10 @@ namespace Presentacion2
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+            lblErrorDNI.ForeColor = Color.Red;
+            lblErrorProducto.ForeColor = Color.Red;
+            lblErrorCantidad.ForeColor = Color.Red;
+
             double totalElectro = 0;
             double totalResto = 0;
             double descuentoElectro = 0;
@@ -123,6 +127,7 @@ namespace Presentacion2
 
         private void button_WOC1_Click(object sender, EventArgs e)
         {
+            lblErrorCarrito.ForeColor = Color.Red;
             lblErrorCarrito.Text = "";
 
             if ((dataGridView1.RowCount - 1) > 0)

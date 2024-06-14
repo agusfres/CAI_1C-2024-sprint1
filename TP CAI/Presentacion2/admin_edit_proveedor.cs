@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Presentacion2
 {
     public partial class admin_edit_proveedor : Form
@@ -16,6 +17,7 @@ namespace Presentacion2
         {
             InitializeComponent();
         }
+
 
         private void linkLabelVolver_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {

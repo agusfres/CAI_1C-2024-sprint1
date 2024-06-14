@@ -28,8 +28,20 @@ namespace Presentacion2
 
         private void btnConfirmar_Click_1(object sender, EventArgs e)
         {
+            lblErrorNombre.ForeColor = Color.Red;
+            lblErrorApellido.ForeColor = Color.Red;
+            lblErrorEmail.ForeColor = Color.Red;
+            lblErrorDireccion.ForeColor = Color.Red;
+            lblErrorContraseña.ForeColor = Color.Red;
+            lblErrorFecha.ForeColor = Color.Red;
+            lblErrorDNI.ForeColor = Color.Red;
+            lblErrorUsuario.ForeColor = Color.Red;
+            lblErrorTelefono.ForeColor = Color.Red;
+            lblErrorTipoUsuario.ForeColor = Color.Red;
+            lblMensajeAgregar.ForeColor = Color.Red;
+
             lblErrorNombre.Text = "";
-            lblErrorApellido.Text = ""; ;
+            lblErrorApellido.Text = "";
             lblErrorEmail.Text = "";
             lblErrorDireccion.Text = "";
             lblErrorContraseña.Text = "";
@@ -115,6 +127,7 @@ namespace Presentacion2
 
         private async void Congrats()
         {
+            lblMensajeAgregar.ForeColor = Color.Green;
             lblMensajeAgregar.Text = "Usuario cargado con éxito";
             await Task.Delay(5000);
             lblMensajeAgregar.Text = "";

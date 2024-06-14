@@ -19,18 +19,23 @@ namespace Presentacion2
             InitializeComponent();
         }
 
+
         private void btnGestionarProductos_Click(object sender, EventArgs e)
         {
             this.Hide();
             gestionproductos gestionproductos = new gestionproductos(2);
             gestionproductos.Show();
         }
+
+
         private void btnReporteVentas_Click(object sender, EventArgs e)
         {
             this.Hide();
             admin_gestionreportes_form admin_Gestioncliente_Form = new admin_gestionreportes_form(2);
             admin_Gestioncliente_Form.Show();
         }
+
+
         private void btnDevolucion_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -38,12 +43,14 @@ namespace Presentacion2
             supervisor_devolucion_venta.Show();
         }
 
+
         private void linkLabelVolver_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
             iniciarsesion_form iniciarsesion_Form = new iniciarsesion_form();
             iniciarsesion_Form.Show();
         }
+
 
         private void supervisor_menu_form_Load(object sender, EventArgs e)
         {

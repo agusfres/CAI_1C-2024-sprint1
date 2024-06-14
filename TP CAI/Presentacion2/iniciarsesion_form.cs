@@ -62,10 +62,9 @@ namespace Presentacion2
 
                     UsuarioLogueado.usuario = negocioUsuario.BuscarUsuario(nombreUsuarioActual);
 
-                    Usuario usuario = negocioUsuario.BuscarUsuarioBaseLocal(nombreUsuarioActual);
                     this.Hide();
 
-                    if (usuario == null)
+                    if (UsuarioLogueado.usuario == null)
                     {
                         // El usuario fue creado desde Swagger pero no desde la aplicación, entonces no está en el txt local, y el web service guarda los tipos de usuario como 0 (no existe ese)
                         admin_menu_form admin_menu = new admin_menu_form();
@@ -73,22 +72,26 @@ namespace Presentacion2
                     }
                     else
                     {
-                        if (usuario.Contraseña != "CAI20232")
+                        if (UsuarioLogueado.usuario.Contraseña != "CAI20232" && UsuarioLogueado.usuario.Contraseña != null)
                         {
                             cambiocontra_form cambiocontra_ = new cambiocontra_form(nombreUsuarioActual);
                             cambiocontra_.Show();
                         }
                         else
                         {
-                            TimeSpan diferencia = DateTime.Now - usuario.FechaUltimaAct.Value;
-                            if (diferencia.Days >= 30)
+                            if (UsuarioLogueado.usuario.FechaUltimaAct != null)
                             {
-                                cambiocontra_form cambiocontra_ = new cambiocontra_form(nombreUsuarioActual);
-                                cambiocontra_.Show();
+                                TimeSpan diferencia = (TimeSpan)(DateTime.Now - UsuarioLogueado.usuario.FechaUltimaAct);
+
+                                if (diferencia.Days >= 30)
+                                {
+                                    cambiocontra_form cambiocontra_ = new cambiocontra_form(nombreUsuarioActual);
+                                    cambiocontra_.Show();
+                                }
                             }
                             else
                             {
-                                int host = usuario.Host;
+                                int host = UsuarioLogueado.usuario.Host;
                                 if (host == 3)
                                 {
                                     admin_menu_form admin_menu = new admin_menu_form();
